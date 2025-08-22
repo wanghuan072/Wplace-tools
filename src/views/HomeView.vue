@@ -307,14 +307,6 @@
                             <span class="btn-icon">✍️</span>
                             Start with Wplace Text Converter
                         </router-link>
-                        <router-link to="/wplace-template" class="get-started-btn secondary">
-                            <span class="btn-icon">📋</span>
-                            Explore Templates
-                        </router-link>
-                        <router-link to="/wplace-plugins" class="get-started-btn secondary">
-                            <span class="btn-icon">🔌</span>
-                            Browse Plugins
-                        </router-link>
                     </div>
 
                     <p class="get-started-note">No registration required • Free to use • Instant results • Professional

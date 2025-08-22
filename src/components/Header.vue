@@ -4,7 +4,7 @@
             <div class="header-content">
                 <div class="logo">
                     <router-link to="/" class="logo-link">
-                        <span class="logo-icon">🎨</span>
+                        <img src="/images/logo.png" alt="Wplace Tools" class="logo-icon">
                         <span class="logo-text">Wplace Tools</span>
                     </router-link>
                 </div>
@@ -55,8 +55,15 @@ export default {
     font-size: 20px;
 }
 
-.logo-icon {
-    font-size: 28px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
 }
 
 .logo-text {

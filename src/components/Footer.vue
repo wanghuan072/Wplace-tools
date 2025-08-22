@@ -6,7 +6,7 @@
                 <div class="footer-section brand-section">
                     <div class="brand-info">
                         <div class="brand-logo">
-                            <span class="logo-icon">🎨</span>
+                            <img src="/images/logo.png" alt="Wplace Tools" class="logo-icon">
                             <span class="brand-title">Wplace Tools</span>
                         </div>
                         <p class="brand-description">Professional pixel art conversion tools that transform your
@@ -109,12 +109,9 @@ export default {
     margin-bottom: 5px;
 }
 
-.logo-icon {
-    font-size: 32px;
-    background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.brand-logo img {
+    width: 30px;
+    height: 30px;
 }
 
 .brand-title {
