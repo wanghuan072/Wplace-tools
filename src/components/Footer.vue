@@ -55,7 +55,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="copyright">© 2024 Wplace Tools. All rights reserved.</p>
+                <p class="copyright">© 2025 wplacetools.org. All rights reserved.</p>
             </div>
         </div>
     </footer>
