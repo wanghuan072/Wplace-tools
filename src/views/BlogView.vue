@@ -108,7 +108,7 @@ export default {
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
 }
 
 .blog-card {
@@ -126,8 +126,8 @@ export default {
 }
 
 .blog-image {
-    height: 250px;
     overflow: hidden;
+    aspect-ratio: 5/3;
 }
 
 .blog-img {
@@ -142,7 +142,7 @@ export default {
 }
 
 .blog-content {
-    padding: 30px;
+    padding: 20px;
 }
 
 .blog-meta {
@@ -204,18 +204,102 @@ export default {
     transform: translateX(3px);
 }
 
-@media (max-width: 768px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+/* 响应式设计 */
+@media (max-width: 1024px) {
+
+    .blog-hero-section,
+    .blog-list-section {
+        padding: 60px 0;
     }
 
     .page-title {
         font-size: 36px;
     }
 
+    .page-subtitle {
+        font-size: 18px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
     .blog-content {
-        padding: 20px;
+        padding: 25px;
+    }
+
+    .blog-title a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .blog-hero-section,
+    .blog-list-section {
+        padding: 40px 0;
+    }
+
+    .page-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .page-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .blog-content {
+        padding: 10px;
+    }
+
+    .blog-title a {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .blog-description {
+        font-size: 12px;
+    }
+
+    .read-more-btn {
+        font-size: 12px;
+    }
+
+    .blog-meta {
+        margin-bottom: 0
+    }
+
+
+    .publish-date {
+        font-size: 12px;
+        padding: 0;
+        line-height: 1.5;
+        display: block;
+    }
+
+    .blog-image {
+        margin-bottom: 0;
+    }
+
+    .blog-img {
+        border-radius: 8px;
+    }
+
+    .blog-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .blog-description {
+        font-size: 12px;
     }
 }
 </style>

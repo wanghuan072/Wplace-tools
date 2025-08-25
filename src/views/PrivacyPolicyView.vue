@@ -128,4 +128,56 @@ export default {
 .policy-content-text strong {
     color: #333;
 }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .policy-section {
+        padding: 50px 0;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .policy-content-text h2 {
+        font-size: 22px;
+        margin: 25px 0 12px 0;
+    }
+
+    .policy-content-text p,
+    .policy-content-text li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .policy-section {
+        padding: 40px 0;
+    }
+
+    .page-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .last-updated {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .policy-content-text h2 {
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+    }
+
+    .policy-content-text p,
+    .policy-content-text li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .policy-content {
+        padding: 0 10px;
+    }
+}
 </style>

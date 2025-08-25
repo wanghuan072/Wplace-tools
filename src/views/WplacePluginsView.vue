@@ -76,7 +76,6 @@ export default {
 
 <style scoped>
 .wplace-plugins-view {
-    min-height: 100vh;
     background: #f8f9fa;
 }
 
@@ -310,5 +309,119 @@ export default {
 
 .wplace-info a:hover {
     color: #e0f7fa;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+
+    .plugins-section,
+    .get-started-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .plugins-grid {
+        gap: 25px;
+    }
+
+    .plugin-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 25px;
+        gap: 10px;
+    }
+
+    .plugin-right {
+        min-width: auto;
+    }
+
+    .plugin-actions {
+        justify-content: center;
+    }
+
+    .get-started-buttons {
+        gap: 15px;
+    }
+
+    .get-started-btn {
+        padding: 16px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .plugins-section,
+    .get-started-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .plugins-grid {
+        gap: 10px;
+    }
+
+    .plugin-card {
+        padding: 10px;
+
+    }
+
+    .plugin-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .plugin-description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .plugin-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+        min-width: 80px;
+    }
+
+    .get-started-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .get-started-btn {
+        padding: 15px 25px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .get-started-note {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .wplace-info {
+        padding: 15px;
+        margin: 0 15px;
+    }
+
+    .wplace-info p {
+        font-size: 14px;
+    }
 }
 </style>

@@ -787,4 +787,264 @@ export default {
 .wplace-info a:hover {
     color: #e0f7fa;
 }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .banner-section,
+    .features-section,
+    .tech-advantages-section,
+    .workflow-section,
+    .use-cases-section,
+    .faq-section,
+    .get-started-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .tech-advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .workflow-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .feature-card,
+    .tech-advantage-item,
+    .workflow-step,
+    .use-case-item {
+        padding: 30px 25px;
+    }
+
+    .feature-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .banner-section,
+    .features-section,
+    .tech-advantages-section,
+    .workflow-section,
+    .use-cases-section,
+    .faq-section,
+    .get-started-section {
+        padding: 20px 0;
+    }
+
+    .top-hint {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tech-advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tech-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .tech-advantage-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tech-advantage-item p {
+        font-size: 12px;
+    }
+
+    .workflow-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px;
+    }
+
+    .step-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .step-description {
+        font-size: 12px;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .use-case-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .use-case-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .use-case-item p {
+        font-size: 12px;
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .feature-card,
+    .tech-advantage-item,
+    .workflow-step,
+    .use-case-item {
+        padding: 10px;
+    }
+
+    .feature-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .feature-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feature-description {
+        font-size: 12px;
+    }
+
+    .feature-buttons {
+        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .feature-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .get-started-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .get-started-btn {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .get-started-note {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .wplace-info {
+        padding: 10px;
+    }
+
+    .wplace-info p {
+        font-size: 12px;
+    }
+
+    .wplace-info a {
+        font-size: 12px;
+    }
+
+    .description-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .description-text p {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+
+
+
+
+    .bottom-hint {
+        font-size: 12px;
+    }
+}
 </style>

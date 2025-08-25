@@ -389,4 +389,135 @@ export default {
     line-height: 1.6;
     color: #666;
 }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+
+    .features-section,
+    .instructions-section,
+    .tech-section,
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .instructions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .feature-card,
+    .instruction-step,
+    .tech-item,
+    .faq-item {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .features-section,
+    .instructions-section,
+    .tech-section,
+    .faq-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .instructions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .feature-card,
+    .instruction-step,
+    .tech-item,
+    .faq-item {
+        padding: 10px;
+    }
+
+    .feature-icon,
+    .step-number {
+        font-size: 28px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .feature-title,
+    .step-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feature-description,
+    .step-description {
+        font-size: 12px;
+    }
+
+    .tech-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tech-item p {
+        font-size: 12px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+}
 </style>

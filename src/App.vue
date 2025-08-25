@@ -26,6 +26,10 @@ import Footer from '@/components/Footer.vue'
   flex-direction: column;
 }
 
+.main-content {
+  flex: 1;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

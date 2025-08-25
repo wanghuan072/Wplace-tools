@@ -192,4 +192,45 @@ export default {
     font-size: 14px;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .brand-title {
+        font-size: 18px;
+    }
+
+    .brand-description {
+        font-size: 12px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 10px;
+    }
+
+    .footer-links li {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .brand-info {
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        padding-top: 10px;
+    }
+}
 </style>

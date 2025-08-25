@@ -176,4 +176,81 @@ export default {
 .contact-info p:last-child {
     margin-bottom: 0;
 }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .about-view {
+        padding: 30px 0;
+    }
+
+    .about-content {
+        padding: 40px;
+    }
+
+    .about-header {
+        margin-bottom: 40px;
+    }
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-subtitle {
+        font-size: 18px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-view {
+        padding: 20px 0;
+    }
+
+    .about-content {
+        padding: 25px 20px;
+    }
+
+    .about-header {
+        margin-bottom: 30px;
+    }
+
+    .about-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .about-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .about-section {
+        margin-bottom: 20px;
+    }
+
+    .about-section p {
+        font-size: 12px;
+    }
+
+    .feature-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tech-list li {
+        font-size: 12px;
+    }
+}
 </style>

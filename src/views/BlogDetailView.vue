@@ -25,7 +25,7 @@
                         <article class="blog-article">
                             <div v-html="blog.detailsHtml" class="blog-content-html"></div>
                         </article>
-                        
+
                         <!-- 相关链接 -->
                         <div class="blog-actions">
                             <router-link to="/blog" class="back-to-blog-btn">
@@ -203,6 +203,44 @@ export default {
     font-size: 16px;
     line-height: 1.8;
     color: #555;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.blog-content-html img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.blog-content-html blockquote {
+    border-left: 4px solid #00bcd4;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+.blog-content-html code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.blog-content-html pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.blog-content-html pre code {
+    background: none;
+    padding: 0;
 }
 
 .blog-content-html h2 {
@@ -300,47 +338,156 @@ export default {
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
-    .blog-title {
-        font-size: 36px;
-    }
-    
-    .blog-article {
-        padding: 40px 20px;
-    }
-    
+@media (max-width: 1024px) {
     .blog-hero-section {
         min-height: 400px;
     }
-    
+
     .blog-hero-content {
         padding: 60px 20px;
     }
-    
+
     .blog-content-section {
         padding: 60px 0;
     }
-    
-    .blog-content-html h2 {
-        font-size: 28px;
-    }
-    
-    .blog-content-html h3 {
-        font-size: 22px;
-    }
-}
 
-@media (max-width: 480px) {
-    .blog-title {
-        font-size: 28px;
+    .blog-article {
+        padding: 40px 30px;
     }
-    
+
+    .blog-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
     .blog-description {
         font-size: 16px;
     }
-    
+
+    .blog-content-html h2 {
+        font-size: 28px;
+        margin: 30px 0 15px 0;
+    }
+
+    .blog-content-html h3 {
+        font-size: 22px;
+        margin: 25px 0 12px 0;
+    }
+
+    .blog-content-html {
+        font-size: 15px;
+    }
+
+    .blog-content-html p {
+        margin-bottom: 15px;
+    }
+
+    .blog-content-html ul {
+        margin: 15px 0;
+    }
+
+    .blog-content-html li {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-hero-section {
+        min-height: 350px;
+    }
+
     .blog-hero-content {
         padding: 40px 20px;
+    }
+
+    .blog-content-section {
+        padding: 40px 0;
+    }
+
+    .blog-article {
+        padding: 20px 15px;
+    }
+
+    .blog-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .blog-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .blog-meta {
+        margin-bottom: 10px;
+    }
+
+    .publish-date {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .blog-content-html h2 {
+        font-size: 16px;
+        margin: 15px 0 10px 0;
+    }
+
+    .blog-content-html h3 {
+        font-size: 14px;
+        margin: 12px 0 8px 0;
+    }
+
+    .blog-content-html {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .blog-content-html p {
+        margin-bottom: 10px;
+    }
+
+    .blog-content-html ul {
+        margin: 10px 0;
+        padding-left: 15px;
+    }
+
+    .blog-content-html li {
+        margin-bottom: 6px;
+    }
+
+    .blog-content-html img {
+        margin: 15px 0;
+        border-radius: 6px;
+    }
+
+    .blog-content-html blockquote {
+        padding-left: 15px;
+        margin: 15px 0;
+    }
+
+    .blog-content-html code {
+        padding: 1px 4px;
+        font-size: 12px;
+    }
+
+    .blog-content-html pre {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .back-to-blog-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .not-found-content h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .not-found-content p {
+        font-size: 14px;
+        margin-bottom: 30px;
     }
 }
 </style>
