@@ -59,8 +59,8 @@ const router = createRouter({
       }
     },
     {
-      path: '/wplace-plugins',
-      name: 'wplacePlugins',
+      path: '/wplace-extensions',
+      name: 'wplaceExtensions',
       component: () => import('@/views/WplacePluginsView.vue'),
       meta: {
         seo: {

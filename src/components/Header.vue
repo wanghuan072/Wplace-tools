@@ -23,8 +23,8 @@
                         Art</router-link>
                     <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">Text to Pixel
                         Art</router-link>
-                    <router-link to="/wplace-plugins" class="nav-link" active-class="active">Wplace
-                        Plugins</router-link>
+                    <router-link to="/wplace-extensions" class="nav-link" active-class="active">Wplace
+                        Extensions</router-link>
                 </nav>
             </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="mobile-menu-overlay" :class="{ 'active': isMobileMenuOpen }" @click="closeMobileMenu"></div>
         <nav class="mobile-menu" :class="{ 'active': isMobileMenuOpen }">
             <div class="mobile-menu-header">
-                <h3>Menu</h3>
+                <span>Menu</span>
                 <button class="close-btn" @click="closeMobileMenu">×</button>
             </div>
             <div class="mobile-menu-links">
@@ -43,8 +43,8 @@
                     @click="closeMobileMenu">Image to Pixel Art</router-link>
                 <router-link to="/text-to-pixel-art" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">Text to Pixel Art</router-link>
-                <router-link to="/wplace-plugins" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Wplace Plugins</router-link>
+                <router-link to="/wplace-extensions" class="mobile-nav-link" active-class="active"
+                    @click="closeMobileMenu">Wplace Extensions</router-link>
             </div>
         </nav>
     </header>
