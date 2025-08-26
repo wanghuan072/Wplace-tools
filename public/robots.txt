@@ -1,5 +1,7 @@
 # Wplace Tools - Robots.txt
-# 允许所有搜索引擎爬虫访问
+# 此文件由 src/config/seo.js 自动生成
+# 如需修改，请编辑 src/config/seo.js 文件
+
 User-agent: *
 Allow: /
 
@@ -101,3 +103,4 @@ Disallow: /api/
 # 最后更新: 2025年
 # 网站: https://wplacetools.org
 # 联系: jasonzim904@gmail.com
+# 配置文件: src/config/seo.js

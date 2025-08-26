@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { setPageSEO, resetToDefaultSEO, setCanonicalUrl } from '../utils/seo.js'
+import { setPageSEO, resetToDefaultSEO, setCanonicalUrl } from '../config/seo.js'
 import {
   insertMultipleStructuredData,
   generateOrganizationSchema,
@@ -8,7 +8,7 @@ import {
   generateToolSchema,
   generateArticleSchema,
   generateToolListSchema
-} from '../utils/structuredData.js'
+} from '../config/structuredData.js'
 import { blogData } from '../data/blogData.js'
 
 const router = createRouter({

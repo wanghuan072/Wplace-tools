@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import sitemap from 'vite-plugin-sitemap'
-import { getAllRoutes } from './src/utils/sitemapConfig.js'
+import { getAllRoutes } from './src/config/seo.js'
 
 // https://vite.dev/config/
 export default defineConfig({

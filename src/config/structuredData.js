@@ -2,14 +2,14 @@
  * 结构化数据工具 - 生成JSON-LD格式的Schema.org数据
  */
 
-import { socialMediaConfig } from '../config/socialMedia.js'
+import { socialMediaConfig, siteConfig } from './seo.js'
 
 // 网站基础信息
 const siteInfo = {
-    name: 'Wplace Tools',
-    url: 'https://wplacetools.org',
-    logo: '/favicon.ico',
-    description: 'Professional pixel art conversion tools that transform your creative ideas into stunning pixel art masterpieces with unlimited possibilities.',
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: siteConfig.logo,
+    description: siteConfig.description,
     sameAs: socialMediaConfig.getSocialLinks()
 }
 

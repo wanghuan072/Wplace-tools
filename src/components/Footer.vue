@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import { socialMediaConfig } from '../config/socialMedia.js'
+import { socialMediaConfig } from '../config/seo.js'
 
 export default {
     name: 'Footer',
