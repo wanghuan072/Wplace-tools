@@ -24,7 +24,7 @@
                     <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">Text to Pixel
                         Art</router-link>
                     <router-link to="/wplace-extension" class="nav-link" active-class="active">Wplace
-                        Extensions</router-link>
+                        Extension</router-link>
                 </nav>
             </div>
         </div>
