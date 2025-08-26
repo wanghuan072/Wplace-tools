@@ -206,21 +206,45 @@
                         <div class="benefits-grid">
                             <div class="benefit-item">
                                 <div class="benefit-icon">🎨</div>
-                                <h4>Perfect Reference</h4>
-                                <p>Your Wplace Tools generated pixel art serves as the perfect reference for creating
-                                    detailed artwork on Wplace.live.</p>
+                                <h4>Seamless Integration</h4>
+                                <p>The Wplace Tracer Extension seamlessly integrates with both Wplace Tools and
+                                    Wplace.live, creating a unified creative ecosystem that eliminates workflow gaps and
+                                    enhances productivity.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">⚡</div>
-                                <h4>Efficient Process</h4>
-                                <p>Skip the manual drawing process and focus on perfecting your creation with precise
-                                    tracing and reference tools.</p>
+                                <h4>Professional Precision</h4>
+                                <p>Transform your creative process from manual sketching to precise pixel-perfect
+                                    tracing, achieving professional-quality results that would typically require hours
+                                    of meticulous work.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">🎯</div>
-                                <h4>Pixel-Perfect Results</h4>
-                                <p>Achieve professional-quality results by combining the power of Wplace Tools with the
-                                    creative freedom of Wplace.live.</p>
+                                <h4>Creative Freedom</h4>
+                                <p>Focus on artistic expression rather than technical execution. The extension handles
+                                    the technical precision while you focus on creative decisions and artistic vision.
+                                </p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🚀</div>
+                                <h4>Time Efficiency</h4>
+                                <p>Reduce creation time by up to 70% through automated pixel grid alignment, reference
+                                    overlays, and precision tools that eliminate the need for manual measurement and
+                                    positioning.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🔧</div>
+                                <h4>Technical Excellence</h4>
+                                <p>Leverage advanced browser extension technology to enhance web-based creative tools,
+                                    demonstrating how modern web development can revolutionize traditional creative
+                                    workflows.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💡</div>
+                                <h4>Innovative Approach</h4>
+                                <p>This workflow represents a new paradigm in digital art creation, combining the power
+                                    of AI-generated references with human creativity and precision tools for
+                                    unprecedented results.</p>
                             </div>
                         </div>
                     </div>
@@ -343,15 +367,11 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <h3>Download Wplace Tracer Extension</h3>
-                                <p>Click the download button below to visit the Chrome Web Store. Install the Wplace
-                                    Tracer Extension with one click - it's completely free and safe.</p>
-                                <div class="step-action">
-                                    <a href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
-                                        target="_blank" rel="noopener" class="step-btn">
-                                        <span class="btn-icon">⬇️</span>
-                                        Download Wplace Tracer Extension
-                                    </a>
-                                </div>
+                                <p>Download the Wplace Tracer Extension from the <a
+                                        href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
+                                        target="_blank" rel="noopener"
+                                        style="color: #00bcd4; text-decoration: underline;">Chrome Web Store</a>. The
+                                    extension is completely free and safe to install with just one click.</p>
                             </div>
                         </div>
 
@@ -359,18 +379,10 @@
                             <div class="step-number">2</div>
                             <div class="step-content">
                                 <h3>Enable & Configure Extension</h3>
-                                <p>After installation, the extension will automatically activate. You may need to
-                                    refresh your browser or visit Wplace.live to see the new overlay features.</p>
-                                <div class="step-tip">
-                                    <span class="tip-icon">💡</span>
-                                    <span>Make sure the extension is enabled in your browser's extension management
-                                        page</span>
-                                </div>
-                                <div class="step-tip">
-                                    <span class="tip-icon">🔄</span>
-                                    <span>Refresh Wplace.live after installation to ensure the extension is fully
-                                        loaded</span>
-                                </div>
+                                <p>After installation, the extension will automatically activate. 💡 Make sure the
+                                    extension is enabled in your browser's extension management page. 🔄 Refresh
+                                    Wplace.live after installation to ensure the extension is fully loaded and you can
+                                    see the new overlay features.</p>
                             </div>
                         </div>
 
@@ -378,12 +390,12 @@
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <h3>Prepare Your Pixel Art</h3>
-                                <p>Use Wplace Tools to create your pixel art, then download it as a PNG file. The higher
-                                    quality your reference image, the better your final result will be.</p>
-                                <div class="step-tools">
-                                    <a href="/pixel-art-generator" class="tool-link">Image to Pixel Art</a>
-                                    <a href="/text-to-pixel-art" class="tool-link">Text to Pixel Art</a>
-                                </div>
+                                <p>Create your pixel art using our <a href="/pixel-art-generator"
+                                        style="color: #00bcd4; text-decoration: underline;">Image to Pixel Art</a>
+                                    converter or <a href="/text-to-pixel-art"
+                                        style="color: #00bcd4; text-decoration: underline;">Text to Pixel Art</a>
+                                    generator, then download it as a PNG file. The higher quality your reference image,
+                                    the better your final result will be.</p>
                             </div>
                         </div>
 
@@ -391,15 +403,10 @@
                             <div class="step-number">4</div>
                             <div class="step-content">
                                 <h3>Start Creating on Wplace.live</h3>
-                                <p>Open Wplace.live, upload your pixel art reference, and use the overlay feature to
-                                    trace and create your masterpiece with perfect precision.</p>
-                                <div class="step-action">
-                                    <a href="https://wplace.live" target="_blank" rel="noopener"
-                                        class="step-btn secondary">
-                                        <span class="btn-icon">🎨</span>
-                                        Go to Wplace.live
-                                    </a>
-                                </div>
+                                <p>Visit <a href="https://wplace.live" target="_blank" rel="noopener"
+                                        style="color: #00bcd4; text-decoration: underline;">Wplace.live</a>, upload your
+                                    pixel art reference, and use the overlay feature to trace and create your
+                                    masterpiece with perfect precision.</p>
                             </div>
                         </div>
                     </div>
@@ -417,45 +424,7 @@
             </div>
         </section>
 
-        <!-- 浏览器兼容性区域 -->
-        <section class="compatibility-section">
-            <div class="container">
-                <div class="compatibility-content">
-                    <h2 class="section-title">Browser Compatibility</h2>
-                    <p class="section-subtitle">Our Wplace Extensions are designed to work across all major browsers</p>
 
-                    <div class="browser-grid">
-                        <div class="browser-item">
-                            <div class="browser-icon">🌐</div>
-                            <h3>Google Chrome</h3>
-                            <p>Full support with Chrome Web Store integration</p>
-                            <span class="status supported">Supported</span>
-                        </div>
-
-                        <div class="browser-item">
-                            <div class="browser-icon">🦊</div>
-                            <h3>Mozilla Firefox</h3>
-                            <p>Available through Firefox Add-ons store</p>
-                            <span class="status supported">Supported</span>
-                        </div>
-
-                        <div class="browser-item">
-                            <div class="browser-icon">🔵</div>
-                            <h3>Microsoft Edge</h3>
-                            <p>Compatible with Edge Add-ons</p>
-                            <span class="status supported">Supported</span>
-                        </div>
-
-                        <div class="browser-item">
-                            <div class="browser-icon">🟠</div>
-                            <h3>Safari</h3>
-                            <p>Limited support, some features may vary</p>
-                            <span class="status limited">Limited</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- FAQ 区域 -->
         <section class="faq-section">
@@ -466,47 +435,63 @@
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">Is Wplace Tracer Extension free to use?</h3>
-                            <p class="faq-answer">Yes! Wplace Tracer Extension is completely free to download and use.
-                                There are
-                                no hidden costs, subscription fees, or limitations on functionality.</p>
+                            <h3 class="faq-question">What is the Wplace Tracer Extension?</h3>
+                            <p class="faq-answer">The Wplace Tracer Extension is a powerful Chrome browser extension
+                                designed to enhance your pixel art drawing experience on wplace.live. This Wplace Tracer
+                                Extension provides drawing assistance overlays, pixel grid alignment, and reference
+                                guides that help you create more precise and accurate pixel art. The Wplace Tracer
+                                Extension integrates seamlessly with wplace.live to improve your drawing workflow and
+                                productivity.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What image formats work best with Wplace Tracer Extension?</h3>
-                            <p class="faq-answer">PNG format works best for pixel art overlays. You can use images
-                                generated from Wplace Tools (Image to Pixel Art or Text to Pixel Art) or any other pixel
-                                art you've created.</p>
+                            <h3 class="faq-question">How does the Wplace Tracer Extension work with wplace.live?</h3>
+                            <p class="faq-answer">The Wplace Tracer Extension works by adding helpful overlay layers
+                                directly on the wplace.live website. When you install the Wplace Tracer Extension, it
+                                automatically detects when you're on wplace.live and provides additional drawing
+                                assistance features. The Wplace Tracer Extension includes pixel grid overlays, reference
+                                image overlays, and drawing aids that help you create more accurate pixel art without
+                                leaving the wplace.live platform.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use Wplace Tracer Extension without Wplace Tools?</h3>
-                            <p class="faq-answer">Yes! While Wplace Tracer Extension is designed to work perfectly with
-                                Wplace
-                                Tools generated pixel art, you can use it with any image you want to overlay on
-                                Wplace.live.</p>
+                            <h3 class="faq-question">Is the Wplace Tracer Extension free to use?</h3>
+                            <p class="faq-answer">Yes, the Wplace Tracer Extension is completely free to download and
+                                use. There are no hidden fees, subscriptions, or premium features. The Wplace Tracer
+                                Extension is designed to enhance the wplace.live experience for all users without any
+                                cost. Simply download the Wplace Tracer Extension from the Chrome Web Store and start
+                                using it immediately with your wplace.live pixel art projects.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I adjust the overlay transparency?</h3>
-                            <p class="faq-answer">Wplace Tracer Extension includes transparency controls that allow you
-                                to adjust
-                                the opacity of your reference image, making it easier to trace while maintaining
-                                visibility of your canvas.</p>
+                            <h3 class="faq-question">What drawing assistance features does the Wplace Tracer Extension
+                                provide?</h3>
+                            <p class="faq-answer">The Wplace Tracer Extension offers several drawing assistance features
+                                including customizable pixel grid overlays, reference image overlays with transparency
+                                controls, tracer size adjustment, and precision drawing aids. The Wplace Tracer
+                                Extension helps you maintain consistent pixel placement, align your artwork with
+                                wplace.live's pixel grid, and achieve better accuracy in your pixel art. These Wplace
+                                Tracer Extension features are specifically designed to work seamlessly with
+                                wplace.live's existing drawing tools.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What if the extension doesn't work on Wplace.live?</h3>
-                            <p class="faq-answer">First, make sure the extension is enabled in your browser. Refresh the
-                                page and try again. If issues persist, check that you're using a supported browser
-                                (Chrome recommended).</p>
+                            <h3 class="faq-question">How do I install the Wplace Tracer Extension?</h3>
+                            <p class="faq-answer">Installing the Wplace Tracer Extension is simple. You can download the
+                                Wplace Tracer Extension directly from the Chrome Web Store. Once downloaded, the Wplace
+                                Tracer Extension will automatically integrate with wplace.live when you visit the site.
+                                The Wplace Tracer Extension requires no additional setup or configuration - it works
+                                immediately to enhance your drawing experience on wplace.live with pixel-perfect tracing
+                                capabilities.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use multiple reference images at once?</h3>
-                            <p class="faq-answer">Yes! Wplace Tracer Extension supports multiple reference images,
-                                allowing you to
-                                work with several pixel art pieces simultaneously for complex projects.</p>
+                            <h3 class="faq-question">What image formats work best with the Wplace Tracer Extension?</h3>
+                            <p class="faq-answer">PNG format works best for pixel art overlays with the Wplace Tracer
+                                Extension. You can use images generated from Wplace Tools (Image to Pixel Art or Text to
+                                Pixel Art) or any other pixel art you've created. The Wplace Tracer Extension
+                                automatically detects and optimizes these images for the best overlay experience on
+                                wplace.live.</p>
                         </div>
                     </div>
                 </div>
@@ -523,141 +508,46 @@
 
                     <div class="recommendations-grid">
                         <div class="plugin-card">
-                            <div class="plugin-header">
-                                <div class="plugin-icon">🎭</div>
-                                <div class="plugin-info">
-                                    <h3 class="plugin-title">Wplace Animation</h3>
-                                    <div class="plugin-meta">
-                                        <span class="plugin-version">v1.2.0</span>
-                                        <span class="plugin-rating">
-                                            <span class="stat-icon">⭐</span>
-                                            <span class="stat-value">4.3/5.0</span>
-                                        </span>
-                                        <span class="plugin-downloads">6K+ downloads</span>
-                                    </div>
-                                </div>
-                                <div class="plugin-status community">Community</div>
+                            <h3 class="plugin-title">Wplace Paint Tool</h3>
+                            <p class="plugin-description">Advanced pixel art painting with custom brushes, layers, and
+                                professional-grade drawing tools for creating stunning artwork on wplace.live.</p>
+                            <div class="plugin-meta">
+                                <span class="plugin-rating">⭐ 4.5/5.0</span>
+                                <span class="plugin-downloads">8K+ downloads</span>
                             </div>
-
-                            <div class="plugin-description">
-                                <p>Create stunning pixel art animations with frame-by-frame editing tools and timeline
-                                    management.</p>
-
-                                <div class="plugin-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li>Frame-by-frame animation</li>
-                                        <li>Timeline management</li>
-                                        <li>Export to GIF/MP4</li>
-                                        <li>Onion skinning</li>
-                                        <li>Animation preview</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="plugin-actions">
-                                <a href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
-                                    target="_blank" rel="noopener" class="plugin-btn primary">
-                                    <span class="btn-icon">⬇️</span>
-                                    Download for Chrome
-                                </a>
-                                <a href="#" class="plugin-btn secondary">
-                                    <span class="btn-icon">📖</span>
-                                    Documentation
-                                </a>
-                            </div>
+                            <a href="https://chromewebstore.google.com/detail/wplace-paint-tool/dmiblgcnghfieomegbgllkjbkjkmkkcb?utm_source=item-share-cb"
+                                target="_blank" rel="noopener" class="plugin-download-btn">
+                                Download for Chrome
+                            </a>
                         </div>
 
                         <div class="plugin-card">
-                            <div class="plugin-header">
-                                <div class="plugin-icon">🔍</div>
-                                <div class="plugin-info">
-                                    <h3 class="plugin-title">Wplace Inspector</h3>
-                                    <div class="plugin-meta">
-                                        <span class="plugin-version">v1.0.5</span>
-                                        <span class="plugin-rating">
-                                            <span class="stat-icon">⭐</span>
-                                            <span class="stat-value">4.1/5.0</span>
-                                        </span>
-                                        <span class="plugin-downloads">4K+ downloads</span>
-                                    </div>
-                                </div>
-                                <div class="plugin-status community">Community</div>
+                            <h3 class="plugin-title">Wplace Tracer Pro</h3>
+                            <p class="plugin-description">Professional tracing and reference tools with advanced overlay
+                                controls, multiple image support, and precision alignment features.</p>
+                            <div class="plugin-meta">
+                                <span class="plugin-rating">⭐ 4.7/5.0</span>
+                                <span class="plugin-downloads">12K+ downloads</span>
+                                <span class="plugin-users">358 users</span>
                             </div>
-
-                            <div class="plugin-description">
-                                <p>Advanced pixel analysis tools with color picker, zoom controls, and detailed
-                                    inspection capabilities.</p>
-
-                                <div class="plugin-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li>Advanced color picker</li>
-                                        <li>Pixel inspection tools</li>
-                                        <li>Zoom and pan controls</li>
-                                        <li>Color information display</li>
-                                        <li>Measurement tools</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="plugin-actions">
-                                <a href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
-                                    target="_blank" rel="noopener" class="plugin-btn primary">
-                                    <span class="btn-icon">⬇️</span>
-                                    Download for Chrome
-                                </a>
-                                <a href="#" class="plugin-btn secondary">
-                                    <span class="btn-icon">📖</span>
-                                    Documentation
-                                </a>
-                            </div>
+                            <a href="https://chromewebstore.google.com/detail/wplace-tracer-pro/eackhkbccjoheobjnkcnomknknnpihjl"
+                                target="_blank" rel="noopener" class="plugin-download-btn">
+                                Download for Chrome
+                            </a>
                         </div>
 
                         <div class="plugin-card">
-                            <div class="plugin-header">
-                                <div class="plugin-icon">📊</div>
-                                <div class="plugin-info">
-                                    <h3 class="plugin-title">Wplace Analytics</h3>
-                                    <div class="plugin-meta">
-                                        <span class="plugin-version">v1.1.2</span>
-                                        <span class="plugin-rating">
-                                            <span class="stat-icon">⭐</span>
-                                            <span class="stat-value">4.0/5.0</span>
-                                        </span>
-                                        <span class="plugin-downloads">3K+ downloads</span>
-                                    </div>
-                                </div>
-                                <div class="plugin-status community">Community</div>
+                            <h3 class="plugin-title">Wplace BlueMarble</h3>
+                            <p class="plugin-description">Specialized tool for creating and editing blue marble effects,
+                                textures, and patterns with advanced color manipulation capabilities.</p>
+                            <div class="plugin-meta">
+                                <span class="plugin-rating">⭐ 4.2/5.0</span>
+                                <span class="plugin-downloads">5K+ downloads</span>
                             </div>
-
-                            <div class="plugin-description">
-                                <p>Track your creative progress with detailed statistics, usage analytics, and
-                                    performance insights.</p>
-
-                                <div class="plugin-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li>Usage statistics</li>
-                                        <li>Performance metrics</li>
-                                        <li>Progress tracking</li>
-                                        <li>Export reports</li>
-                                        <li>Goal setting</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="plugin-actions">
-                                <a href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
-                                    target="_blank" rel="noopener" class="plugin-btn primary">
-                                    <span class="btn-icon">⬇️</span>
-                                    Download for Chrome
-                                </a>
-                                <a href="#" class="plugin-btn secondary">
-                                    <span class="btn-icon">📖</span>
-                                    Documentation
-                                </a>
-                            </div>
+                            <a href="https://chromewebstore.google.com/detail/wplace-bluemarble/banfnmfalhefdfacjnglllpjnjgkandn"
+                                target="_blank" rel="noopener" class="plugin-download-btn">
+                                Download for Chrome
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -885,6 +775,7 @@ html {
     font-weight: 700;
     color: #1976d2;
     margin: 0 0 15px 0;
+    text-align: left;
 }
 
 .tracer-stats {
@@ -1114,38 +1005,7 @@ html {
     font-weight: 600;
 }
 
-.step-action {
-    margin-top: 20px;
-}
 
-.step-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    background: #1976d2;
-    color: white;
-}
-
-.step-btn:hover {
-    background: #1565c0;
-    transform: translateY(-2px);
-}
-
-.step-btn.secondary {
-    background: #f5f5f5;
-    color: #666;
-    border: 1px solid #e0e0e0;
-}
-
-.step-btn.secondary:hover {
-    background: #e0e0e0;
-}
 
 .step-tip {
     display: flex;
@@ -1162,20 +1022,7 @@ html {
     font-size: 16px;
 }
 
-.tool-link {
-    color: #1976d2;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 16px;
-    background: #e3f2fd;
-    transition: all 0.3s ease;
-}
 
-.tool-link:hover {
-    background: #bbdefb;
-    transform: translateY(-1px);
-}
 
 .workflow-benefits {
     margin-top: 50px;
@@ -1191,8 +1038,10 @@ html {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .benefit-item {
@@ -1257,12 +1106,6 @@ html {
     align-items: center;
     gap: 20px;
     margin-bottom: 25px;
-}
-
-.plugin-icon {
-    font-size: 48px;
-    width: 60px;
-    text-align: center;
 }
 
 .plugin-info {
@@ -1482,6 +1325,10 @@ html {
     flex-shrink: 0;
 }
 
+.note-content {
+    text-align: left;
+}
+
 .note-content h4 {
     color: #1976d2;
     font-size: 16px;
@@ -1496,68 +1343,7 @@ html {
     margin: 0;
 }
 
-/* 浏览器兼容性区域样式 */
-.compatibility-section {
-    background: #f8f9fa;
-    padding: 50px 0;
-}
 
-.compatibility-content {
-    text-align: center;
-}
-
-.browser-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.browser-item {
-    background: white;
-    border: 1px solid #e9ecef;
-    border-radius: 12px;
-    padding: 30px 25px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.browser-icon {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.browser-item h3 {
-    color: #333;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.browser-item p {
-    color: #666;
-    line-height: 1.5;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.status {
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.status.supported {
-    background: #e8f5e8;
-    color: #2e7d32;
-}
-
-.status.limited {
-    background: #fff3e0;
-    color: #f57c00;
-}
 
 /* FAQ 区域样式 */
 .faq-section {
@@ -1617,7 +1403,83 @@ html {
 }
 
 .recommendations-grid .plugin-card {
-    margin: 0;
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommendations-grid .plugin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.recommendations-grid .plugin-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.recommendations-grid .plugin-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.recommendations-grid .plugin-description {
+    color: #666;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.recommendations-grid .plugin-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.recommendations-grid .plugin-rating {
+    color: #f57c00;
+    font-weight: 600;
+}
+
+.recommendations-grid .plugin-downloads {
+    color: #666;
+}
+
+.recommendations-grid .plugin-users {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.recommendations-grid .plugin-download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.recommendations-grid .plugin-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 188, 212, 0.3);
 }
 
 /* 开始使用区域样式 */
@@ -1713,7 +1575,6 @@ html {
     .tips-section,
     .plugins-section,
     .installation-section,
-    .compatibility-section,
     .faq-section,
     .recommendations-section,
     .get-started-section {
@@ -1743,7 +1604,6 @@ html {
     }
 
     .installation-steps,
-    .browser-grid,
     .recommendations-grid {
         gap: 25px;
     }
@@ -1775,7 +1635,6 @@ html {
     .tips-section,
     .plugins-section,
     .installation-section,
-    .compatibility-section,
     .faq-section,
     .recommendations-section,
     .get-started-section {
@@ -1834,8 +1693,16 @@ html {
         gap: 20px;
     }
 
-    .installation-steps,
-    .browser-grid {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .benefit-item {
+        padding: 25px 20px;
+    }
+
+    .installation-steps {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -1843,6 +1710,31 @@ html {
     .recommendations-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .recommendations-grid .plugin-card {
+        padding: 25px 20px;
+    }
+
+    .recommendations-grid .plugin-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .recommendations-grid .plugin-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .recommendations-grid .plugin-description {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .recommendations-grid .plugin-meta {
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 13px;
     }
 
     .plugin-card {
@@ -1926,6 +1818,54 @@ html {
     .recommendations-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .benefit-item {
+        padding: 20px 15px;
+    }
+
+    .benefit-item h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .benefit-item p {
+        font-size: 14px;
+    }
+
+    .recommendations-grid .plugin-card {
+        padding: 20px 15px;
+    }
+
+    .recommendations-grid .plugin-icon {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .recommendations-grid .plugin-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .recommendations-grid .plugin-description {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .recommendations-grid .plugin-meta {
+        gap: 12px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .recommendations-grid .plugin-download-btn {
+        padding: 10px 20px;
+        font-size: 13px;
     }
 }
 </style>

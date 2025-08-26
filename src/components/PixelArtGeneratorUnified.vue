@@ -120,11 +120,11 @@
 
                             <!-- 积分统计板块 -->
                             <div class="points-panel">
-                                <h4 class="points-title">Points Statistics</h4>
+                                <h4 class="points-title">Wplace Droplets Statistics</h4>
                                 <div class="points-summary">
                                     <span>Premium Color Types: {{ premiumUsage.items.length }}</span>
                                     <span>Premium Pixel Total: {{ premiumUsage.totalBlocks }}</span>
-                                    <span>Total Points: {{ premiumUsage.totalPoints }}</span>
+                                    <span>Total Wplace Droplets: {{ premiumUsage.totalPoints }}</span>
                                 </div>
                                 <div class="points-list">
                                     <div v-for="item in premiumUsage.items" :key="item.color" class="points-item">
@@ -133,7 +133,7 @@
                                             <span class="color-hex">{{ item.color }}</span>
                                             <div class="usage-info">
                                                 <span class="pixel-count">{{ item.count }}px</span>
-                                                <span class="points">{{ item.points }} integral</span>
+                                                <span class="points">{{ item.points }} Droplets</span>
                                             </div>
                                         </div>
                                     </div>
