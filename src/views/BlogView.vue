@@ -157,14 +157,15 @@ export default {
 
 .blog-title {
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .blog-title a {
     color: #333;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1;
     transition: color 0.3s ease;
 }
 

@@ -33,9 +33,9 @@
                             <span class="btn-icon">📋</span>
                             Wplace Blog
                         </router-link>
-                        <router-link to="/wplace-extensions" class="feature-btn secondary">
+                        <router-link to="/wplace-extension" class="feature-btn secondary">
                             <span class="btn-icon">🔌</span>
-                            Wplace Extensions
+                            Wplace Extension
                         </router-link>
                     </div>
 

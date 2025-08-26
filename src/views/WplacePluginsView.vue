@@ -1,5 +1,5 @@
 <template>
-    <div class="wplace-extensions-view">
+    <div class="wplace-extension-view">
         <!-- Banner 区域 -->
         <section class="banner-section">
             <div class="container">
@@ -9,13 +9,13 @@
                     </div>
 
                     <h1 class="main-title">
-                        Enhance Your <span class="highlight">Wplace.live</span> Experience with Wplace Extensions
+                        Enhance Your <span class="highlight">Wplace.live</span> Experience with Wplace Extension
                     </h1>
 
                     <div class="description-text">
-                        <p>Discover official and community Wplace Extensions that extend <a href="/"
+                        <p>Discover official and community Wplace Extension that extend <a href="/"
                                 style="color: #e0f7fa; text-decoration: underline;">Wplace Tools</a> functionality.</p>
-                        <p>Transform your creative workflow with professional Wplace Extensions and <a href="/"
+                        <p>Transform your creative workflow with professional Wplace Extension and <a href="/"
                                 style="color: #e0f7fa; text-decoration: underline;">creative tools</a>.</p>
                     </div>
 
@@ -46,7 +46,7 @@
                 <div class="tracer-intro-content">
                     <h2 class="section-title">Wplace Tracer Extension - Your Bridge to Creative Freedom</h2>
                     <p class="section-subtitle">Transform Wplace Tools generated artwork into stunning Wplace.live
-                        creations with powerful Wplace Extensions</p>
+                        creations with powerful Wplace Extension</p>
 
                     <div class="tracer-overview">
                         <div class="tracer-main-info">
@@ -83,7 +83,7 @@
                         <div class="tracer-features">
                             <h4>Key Capabilities:</h4>
                             <ul>
-                                <li>Overlay artwork from Wplace Tools onto Wplace.live using Wplace Extensions</li>
+                                <li>Overlay artwork from Wplace Tools onto Wplace.live using Wplace Extension</li>
                                 <li>Adjustable transparency and positioning</li>
                                 <li>Multiple reference image support</li>
                                 <li>Quick toggle on/off functionality</li>
@@ -100,7 +100,7 @@
         <section id="workflow" class="workflow-section">
             <div class="container">
                 <div class="workflow-content">
-                    <h2 class="section-title">Complete Creative Workflow with Wplace Extensions</h2>
+                    <h2 class="section-title">Complete Creative Workflow with Wplace Extension</h2>
                     <p class="section-subtitle">From artwork generation to Wplace.live masterpiece using powerful Wplace
                         Extensions</p>
 
@@ -112,7 +112,7 @@
                                 <p>Use our <a href="/pixel-art-generator" target="_blank">Image to Pixel Art</a> or <a
                                         href="/text-to-pixel-art" target="_blank">Text to Pixel Art</a> tools to
                                     generate your artwork. Adjust settings, colors, and styles to match your creative
-                                    vision with Wplace Extensions.</p>
+                                    vision with Wplace Extension.</p>
                                 <div class="step-tools">
                                     <span class="tool-tag">Image to Pixel Art</span>
                                     <span class="tool-tag">Text to Pixel Art</span>
@@ -153,7 +153,7 @@
                                 <h3>Upload & Activate Overlay</h3>
                                 <p>Open Wplace.live, upload your artwork as a reference image. The Wplace Tracer
                                     Extension
-                                    will automatically detect and activate the overlay feature using Wplace Extensions.
+                                    will automatically detect and activate the overlay feature using Wplace Extension.
                                 </p>
                                 <div class="step-tools">
                                     <span class="tool-tag">Image Upload</span>
@@ -173,7 +173,7 @@
                                 <h3>Align Pixel Grids</h3>
                                 <p>Carefully align your artwork reference with Wplace.live's pixel grid. Use the
                                     overlay controls to ensure perfect pixel-to-pixel alignment for accurate tracing
-                                    with Wplace Extensions.
+                                    with Wplace Extension.
                                 </p>
                                 <div class="step-tools">
                                     <span class="tool-tag">Grid Alignment</span>
@@ -193,7 +193,7 @@
                                 <h3>Trace & Create Your Artwork</h3>
                                 <p>With your reference perfectly aligned, start tracing pixel by pixel. The overlay
                                     feature makes it easy to see exactly where each pixel should go on your canvas using
-                                    Wplace Extensions.</p>
+                                    Wplace Extension.</p>
                                 <div class="step-tools">
                                     <span class="tool-tag">Pixel Tracing</span>
                                     <span class="tool-tag">Color Matching</span>
@@ -276,7 +276,7 @@
                                     <div class="tip-content">
                                         <h4>Image Overlay</h4>
                                         <p>Upload your artwork reference image to display as an overlay on Wplace.live
-                                            using Wplace Extensions
+                                            using Wplace Extension
                                         </p>
                                     </div>
                                 </div>
@@ -314,7 +314,7 @@
                                     <div class="tip-content">
                                         <h4>Pixel Grid Matching</h4>
                                         <p>Align your reference image's pixel grid with Wplace.live's canvas grid for
-                                            accurate tracing with Wplace Extensions</p>
+                                            accurate tracing with Wplace Extension</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
@@ -322,7 +322,7 @@
                                     <div class="tip-content">
                                         <h4>Transparent Background</h4>
                                         <p>Reference images with transparent backgrounds work best for clear overlay
-                                            visibility when using Wplace Extensions</p>
+                                            visibility when using Wplace Extension</p>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +336,7 @@
                                     <div class="tip-content">
                                         <h4>Optimal Image Size</h4>
                                         <p>Use images with dimensions that match your target canvas size for best
-                                            results with Wplace Extensions</p>
+                                            results with Wplace Extension</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
@@ -344,7 +344,7 @@
                                     <div class="tip-content">
                                         <h4>Browser Zoom</h4>
                                         <p>Use browser zoom controls to get closer alignment for pixel-perfect tracing
-                                            with Wplace Extensions</p>
+                                            with Wplace Extension</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
@@ -352,7 +352,7 @@
                                     <div class="tip-content">
                                         <h4>Quick Toggle</h4>
                                         <p>Toggle the overlay on/off to compare your work with the reference image using
-                                            Wplace Extensions</p>
+                                            Wplace Extension</p>
                                     </div>
                                 </div>
                             </div>
@@ -366,8 +366,8 @@
         <section class="installation-section">
             <div class="container">
                 <div class="installation-content">
-                    <h2 class="section-title">How to Install Wplace Extensions</h2>
-                    <p class="section-subtitle">Simple step-by-step guide to get your Wplace Extensions up and running
+                    <h2 class="section-title">How to Install Wplace Extension</h2>
+                    <p class="section-subtitle">Simple step-by-step guide to get your Wplace Extension up and running
                     </p>
 
                     <div class="installation-steps">
@@ -405,7 +405,7 @@
                                     generator from <a href="/"
                                         style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>, then
                                     download it as a PNG file. The higher quality your reference image,
-                                    the better your final result will be with Wplace Extensions.</p>
+                                    the better your final result will be with Wplace Extension.</p>
                             </div>
                         </div>
 
@@ -416,7 +416,7 @@
                                 <p>Visit <a href="/" target="_blank" rel="noopener"
                                         style="color: #00bcd4; text-decoration: underline;">Wplace.live</a>, upload your
                                     artwork reference, and use the overlay feature to trace and create your
-                                    masterpiece with perfect precision using Wplace Extensions.</p>
+                                    masterpiece with perfect precision using Wplace Extension.</p>
                             </div>
                         </div>
                     </div>
@@ -439,7 +439,7 @@
             <div class="container">
                 <div class="faq-content">
                     <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about Wplace Extensions</p>
+                    <p class="section-subtitle">Everything you need to know about Wplace Extension</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
@@ -449,7 +449,7 @@
                                 Extension provides drawing assistance overlays, pixel grid alignment, and reference
                                 guides that help you create more precise and accurate artwork. The Wplace Tracer
                                 Extension integrates seamlessly with wplace.live to improve your drawing workflow and
-                                productivity using Wplace Extensions.</p>
+                                productivity using Wplace Extension.</p>
                         </div>
 
                         <div class="faq-item">
@@ -459,7 +459,7 @@
                                 automatically detects when you're on wplace.live and provides additional drawing
                                 assistance features. The Wplace Tracer Extension includes pixel grid overlays, reference
                                 image overlays, and drawing aids that help you create more accurate artwork without
-                                leaving the wplace.live platform using Wplace Extensions.</p>
+                                leaving the wplace.live platform using Wplace Extension.</p>
                         </div>
 
                         <div class="faq-item">
@@ -468,7 +468,7 @@
                                 use. There are no hidden fees, subscriptions, or premium features. The Wplace Tracer
                                 Extension is designed to enhance the wplace.live experience for all users without any
                                 cost. Simply download the Wplace Tracer Extension from the Chrome Web Store and start
-                                using it immediately with your wplace.live artwork projects using Wplace Extensions.</p>
+                                using it immediately with your wplace.live artwork projects using Wplace Extension.</p>
                         </div>
 
                         <div class="faq-item">
@@ -480,7 +480,7 @@
                                 Extension helps you maintain consistent pixel placement, align your artwork with
                                 wplace.live's pixel grid, and achieve better accuracy in your artwork. These Wplace
                                 Tracer Extension features are specifically designed to work seamlessly with
-                                wplace.live's existing drawing tools using Wplace Extensions.</p>
+                                wplace.live's existing drawing tools using Wplace Extension.</p>
                         </div>
 
                         <div class="faq-item">
@@ -490,7 +490,7 @@
                                 Tracer Extension will automatically integrate with wplace.live when you visit the site.
                                 The Wplace Tracer Extension requires no additional setup or configuration - it works
                                 immediately to enhance your drawing experience on wplace.live with pixel-perfect tracing
-                                capabilities using Wplace Extensions.</p>
+                                capabilities using Wplace Extension.</p>
                         </div>
 
                         <div class="faq-item">
@@ -501,7 +501,7 @@
                                 Art or Text to
                                 Pixel Art) or any other artwork you've created. The Wplace Tracer Extension
                                 automatically detects and optimizes these images for the best overlay experience using
-                                Wplace Extensions.</p>
+                                Wplace Extension.</p>
                         </div>
                     </div>
                 </div>
@@ -512,8 +512,8 @@
         <section id="download-plugins" class="recommendations-section">
             <div class="container">
                 <div class="recommendations-content">
-                    <h2 class="section-title">More Recommended Wplace Extensions</h2>
-                    <p class="section-subtitle">Discover additional powerful Wplace Extensions for your creative
+                    <h2 class="section-title">More Recommended Wplace Extension</h2>
+                    <p class="section-subtitle">Discover additional powerful Wplace Extension for your creative
                         workflow</p>
 
                     <div class="recommendations-grid">
@@ -521,7 +521,7 @@
                             <h3 class="plugin-title">Wplace Paint Tool</h3>
                             <p class="plugin-description">Advanced artwork painting with custom brushes, layers, and
                                 professional-grade drawing tools for creating stunning artwork using
-                                Wplace Extensions and <a href="/"
+                                Wplace Extension and <a href="/"
                                     style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>.</p>
                             <div class="plugin-meta">
                                 <span class="plugin-rating">⭐ 4.5/5.0</span>
@@ -575,7 +575,7 @@
             <div class="container">
                 <div class="get-started-content">
                     <h2 class="section-title">Ready to Enhance Your Wplace.live Experience?</h2>
-                    <p class="section-subtitle">Download Wplace Extensions and start creating with enhanced tools</p>
+                    <p class="section-subtitle">Download Wplace Extension and start creating with enhanced tools</p>
 
                     <div class="get-started-buttons">
                         <a href="https://wplace.live/" target="_blank" rel="noopener" class="get-started-btn primary">
@@ -585,16 +585,16 @@
                         <a href="#" @click.prevent="scrollToSection('download-plugins')"
                             class="get-started-btn secondary" style="cursor: pointer;">
                             <span class="btn-icon">📋</span>
-                            Browse All Wplace Extensions
+                            Browse All Wplace Extension
                         </a>
                     </div>
 
                     <div class="get-started-note">
-                        Free Wplace Extensions • Official support • Community driven • Easy installation
+                        Free Wplace Extension • Official support • Community driven • Easy installation
                     </div>
 
                     <div class="wplace-info">
-                        <p>All Wplace Extensions are designed to work seamlessly with <a href="/" target="_blank"
+                        <p>All Wplace Extension are designed to work seamlessly with <a href="/" target="_blank"
                                 rel="noopener">Wplace Tools</a> - your ultimate creative platform.</p>
                     </div>
                 </div>
@@ -648,7 +648,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.wplace-extensions-view {
+.wplace-extension-view {
     background: #f8f9fa;
 }
 

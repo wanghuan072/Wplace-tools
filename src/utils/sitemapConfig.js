@@ -6,7 +6,7 @@ export function getAllRoutes() {
         '/',
         '/pixel-art-generator',
         '/text-to-pixel-art',
-        '/wplace-extensions',
+        '/wplace-extension',
         '/about',
         '/blog',
         '/privacy-policy',

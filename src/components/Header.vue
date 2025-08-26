@@ -23,7 +23,7 @@
                         Art</router-link>
                     <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">Text to Pixel
                         Art</router-link>
-                    <router-link to="/wplace-extensions" class="nav-link" active-class="active">Wplace
+                    <router-link to="/wplace-extension" class="nav-link" active-class="active">Wplace
                         Extensions</router-link>
                 </nav>
             </div>
@@ -43,8 +43,8 @@
                     @click="closeMobileMenu">Image to Pixel Art</router-link>
                 <router-link to="/text-to-pixel-art" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">Text to Pixel Art</router-link>
-                <router-link to="/wplace-extensions" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Wplace Extensions</router-link>
+                <router-link to="/wplace-extension" class="mobile-nav-link" active-class="active"
+                    @click="closeMobileMenu">Wplace Extension</router-link>
             </div>
         </nav>
     </header>

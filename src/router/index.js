@@ -40,7 +40,7 @@ const router = createRouter({
       component: () => import('@/views/PixelArtGeneratorPage.vue'),
       meta: {
         seo: {
-          title: 'Image to Pixel Art Converter - Wplace Tools',
+          title: 'Wplace Image To Pixel Art Generator - Wplace Tools',
           description: 'Convert any image to beautiful pixel art with Wplace Tools. Professional image processing with customizable settings and high-quality output.',
           keywords: 'image to pixel art, pixel art converter, image pixelation, wplace image to pixel art, pixel art generator'
         }
@@ -52,21 +52,21 @@ const router = createRouter({
       component: () => import('@/views/TextToPixelArtPage.vue'),
       meta: {
         seo: {
-          title: 'Text to Pixel Art Converter - Wplace Tools',
+          title: 'Wplace Text To Pixel Art Generator - Wplace Tools',
           description: 'Create stunning pixel art text with Wplace Tools. Customizable fonts, styles, and colors for unique text effects.',
           keywords: 'text to pixel art, pixel art text, text pixelation, wplace text to pixel art, pixel text generator'
         }
       }
     },
     {
-      path: '/wplace-extensions',
+      path: '/wplace-extension',
       name: 'wplaceExtensions',
       component: () => import('@/views/WplacePluginsView.vue'),
       meta: {
         seo: {
-          title: 'Wplace Extensions - Official and Community Extensions',
+          title: 'Wplace Extension - Official and Community Extensions',
           description: 'Discover official and community extensions for Wplace.live. Enhance your creative workflow with powerful extensions.',
-          keywords: 'wplace extensions, wplace plugins, wplace tools, browser extensions, creative tools'
+          keywords: 'Wplace Extension, wplace plugins, wplace tools, browser extensions, creative tools'
         }
       }
     },
