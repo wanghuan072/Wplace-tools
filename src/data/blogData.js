@@ -55,7 +55,7 @@ export const blogData = [
       <ol>
         <li><strong>For Image Conversion:</strong> Visit our <a href="/pixel-art-generator" style="color: #00bcd4; text-decoration: underline;">Image to Pixel Art Converter</a> to transform your photos and artwork</li>
         <li><strong>For Text Creation:</strong> Use our <a href="/text-to-pixel-art" style="color: #00bcd4; text-decoration: underline;">Text to Pixel Art Generator</a> to create stunning typography</li>
-        <li><strong>Explore Plugins:</strong> Check out our <a href="/wplace-plugins" style="color: #00bcd4; text-decoration: underline;">Wplace Plugins</a> section for additional tools and extensions</li>
+                        <li><strong>Explore Extensions:</strong> Check out our <a href="/wplace-extensions" style="color: #00bcd4; text-decoration: underline;">Wplace Extensions</a> section for additional tools and extensions</li>
       </ol>
 
       <h3>Pro Tips for Best Results</h3>

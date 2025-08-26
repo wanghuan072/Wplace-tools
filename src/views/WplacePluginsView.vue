@@ -1,5 +1,5 @@
 <template>
-    <div class="wplace-plugins-view">
+    <div class="wplace-extensions-view">
         <!-- Banner 区域 -->
         <section class="banner-section">
             <div class="container">
@@ -742,7 +742,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.wplace-plugins-view {
+.wplace-extensions-view {
     background: #f8f9fa;
 }
 

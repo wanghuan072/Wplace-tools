@@ -64,9 +64,9 @@ const router = createRouter({
       component: () => import('@/views/WplacePluginsView.vue'),
       meta: {
         seo: {
-          title: 'Wplace Plugins - Official and Community Extensions',
-          description: 'Discover official and community plugins for Wplace.live. Enhance your creative workflow with powerful extensions.',
-          keywords: 'wplace plugins, wplace extensions, wplace tools, browser extensions, creative tools'
+          title: 'Wplace Extensions - Official and Community Extensions',
+          description: 'Discover official and community extensions for Wplace.live. Enhance your creative workflow with powerful extensions.',
+          keywords: 'wplace extensions, wplace plugins, wplace tools, browser extensions, creative tools'
         }
       }
     },
