@@ -59,7 +59,7 @@
 
                         <h2>7. Contact Information</h2>
                         <p>For copyright-related inquiries, please contact us at:</p>
-                        <p><strong>Email:</strong> kadiyamobi89@gmail.com</p>
+                        <p><strong>Email:</strong> jasonzim904@gmail.com</p>
                         <p><strong>Date:</strong> August 22, 2025</p>
                     </div>
                 </div>

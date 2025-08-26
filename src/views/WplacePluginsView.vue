@@ -160,7 +160,7 @@
                                     <span class="tool-tag">Auto Detection</span>
                                 </div>
                                 <div class="step-tip">
-                                    <span class="tip-icon">🔄</span>
+                                    <span class="tip-icon">💡</span>
                                     <span>If overlay doesn't appear, refresh the page to ensure the extension is fully
                                         loaded.</span>
                                 </div>
@@ -180,7 +180,7 @@
                                     <span class="tool-tag">Pixel Precision</span>
                                 </div>
                                 <div class="step-tip">
-                                    <span class="tip-icon">🎯</span>
+                                    <span class="tip-icon">💡</span>
                                     <span>Hold Shift while dragging to move the overlay precisely. Use zoom controls for
                                         detailed alignment.</span>
                                 </div>
@@ -269,10 +269,9 @@
 
                     <div class="tips-grid">
                         <div class="tip-category">
-                            <h3>🔧 Core Plugin Features</h3>
+                            <h3>Core Plugin Features</h3>
                             <div class="tip-items">
                                 <div class="tip-item">
-                                    <div class="tip-icon">🖼️</div>
                                     <div class="tip-content">
                                         <h4>Image Overlay</h4>
                                         <p>Upload your artwork reference image to display as an overlay on Wplace.live
@@ -281,7 +280,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">📏</div>
                                     <div class="tip-content">
                                         <h4>Tracer Size Control</h4>
                                         <p>Adjust overlay dimensions with width/height inputs for perfect pixel grid
@@ -289,7 +287,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">🔵</div>
                                     <div class="tip-content">
                                         <h4>Toggle Switch</h4>
                                         <p>Use the blue toggle to show/hide the reference image overlay as needed</p>
@@ -299,10 +296,9 @@
                         </div>
 
                         <div class="tip-category">
-                            <h3>🎯 Image Positioning & Alignment</h3>
+                            <h3>Image Positioning & Alignment</h3>
                             <div class="tip-items">
                                 <div class="tip-item">
-                                    <div class="tip-icon">⌨️</div>
                                     <div class="tip-content">
                                         <h4>Shift + Drag</h4>
                                         <p>Hold Shift while dragging to reposition the overlay image for precise
@@ -310,7 +306,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">📐</div>
                                     <div class="tip-content">
                                         <h4>Pixel Grid Matching</h4>
                                         <p>Align your reference image's pixel grid with Wplace.live's canvas grid for
@@ -318,7 +313,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">👁️</div>
                                     <div class="tip-content">
                                         <h4>Transparent Background</h4>
                                         <p>Reference images with transparent backgrounds work best for clear overlay
@@ -329,10 +323,9 @@
                         </div>
 
                         <div class="tip-category">
-                            <h3>💡 Workflow Tips</h3>
+                            <h3>Workflow Tips</h3>
                             <div class="tip-items">
                                 <div class="tip-item">
-                                    <div class="tip-icon">📱</div>
                                     <div class="tip-content">
                                         <h4>Optimal Image Size</h4>
                                         <p>Use images with dimensions that match your target canvas size for best
@@ -340,7 +333,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">🔍</div>
                                     <div class="tip-content">
                                         <h4>Browser Zoom</h4>
                                         <p>Use browser zoom controls to get closer alignment for pixel-perfect tracing
@@ -348,7 +340,6 @@
                                     </div>
                                 </div>
                                 <div class="tip-item">
-                                    <div class="tip-icon">⚡</div>
                                     <div class="tip-content">
                                         <h4>Quick Toggle</h4>
                                         <p>Toggle the overlay on/off to compare your work with the reference image using
@@ -930,12 +921,6 @@ html {
     align-items: flex-start;
 }
 
-.tip-icon {
-    font-size: 24px;
-    flex-shrink: 0;
-    margin-top: 3px;
-}
-
 .tip-content h4 {
     color: #1976d2;
     font-size: 16px;
@@ -1034,12 +1019,6 @@ html {
     font-size: 14px;
     margin-top: 10px;
 }
-
-.tip-icon {
-    font-size: 16px;
-}
-
-
 
 .workflow-benefits {
     margin-top: 50px;

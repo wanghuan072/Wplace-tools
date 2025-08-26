@@ -20,7 +20,7 @@ export const seoConfig = {
 
     // 联系信息
     contact: {
-        email: 'kadiyamobi89@gmail.com',
+        email: 'jasonzim904@gmail.com',
         support: 'https://wplacetools.org/about'
     },
 

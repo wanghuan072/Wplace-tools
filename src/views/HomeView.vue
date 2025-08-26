@@ -22,19 +22,15 @@
 
                     <div class="feature-buttons">
                         <router-link to="/pixel-art-generator" class="feature-btn primary">
-                            <span class="btn-icon">🎨</span>
                             Wplace Image to Pixel Art
                         </router-link>
                         <router-link to="/text-to-pixel-art" class="feature-btn primary">
-                            <span class="btn-icon">✍️</span>
                             Wplace Text to Pixel Art
                         </router-link>
                         <router-link to="/blog" class="feature-btn secondary">
-                            <span class="btn-icon">📋</span>
                             Wplace Blog
                         </router-link>
                         <router-link to="/wplace-extension" class="feature-btn secondary">
-                            <span class="btn-icon">🔌</span>
                             Wplace Extension
                         </router-link>
                     </div>
@@ -308,11 +304,9 @@
 
                     <div class="get-started-buttons">
                         <router-link to="/pixel-art-generator" class="get-started-btn primary">
-                            <span class="btn-icon">🎨</span>
                             Start with Wplace Image Converter
                         </router-link>
                         <router-link to="/text-to-pixel-art" class="get-started-btn primary">
-                            <span class="btn-icon">✍️</span>
                             Start with Wplace Text Converter
                         </router-link>
                     </div>
@@ -455,10 +449,6 @@ export default {
     background: white;
     color: #1a1a1a;
     transform: translateY(-2px);
-}
-
-.btn-icon {
-    font-size: 20px;
 }
 
 .bottom-hint {

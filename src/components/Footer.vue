@@ -36,7 +36,6 @@
                         <li><router-link to="/pixel-art-generator">Image to Pixel Art</router-link></li>
                         <li><router-link to="/text-to-pixel-art">Text to Pixel Art</router-link></li>
                         <li><router-link to="/wplace-extension">Wplace Extension</router-link></li>
-                        <li><router-link to="/about">About Us</router-link></li>
                         <li><router-link to="/blog">Blog</router-link></li>
                     </ul>
                 </div>
@@ -49,7 +48,7 @@
                         <li><router-link to="/terms-of-use">Terms of Use</router-link></li>
                         <li><router-link to="/copyright">Copyright</router-link></li>
                         <li><router-link to="/about">About Us</router-link></li>
-                        <li><a href="mailto:kadiyamobi89@gmail.com">Contact Us</a></li>
+                        <li><a href="mailto:jasonzim904@gmail.com">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
