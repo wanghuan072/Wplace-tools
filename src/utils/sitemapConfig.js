@@ -25,6 +25,9 @@ export const sitemapConfig = {
     hostname: 'https://wplacetools.org',
     dynamicRoutes: getAllRoutes(),
     readable: true,
-    exclude: ['/404', '/error'],
-    outDir: 'dist'
+    exclude: ['/404', '/error', '/admin', '/api'],
+    outDir: 'dist',
+    lastmod: new Date().toISOString(),
+    changefreq: 'weekly',
+    priority: 0.8
 }

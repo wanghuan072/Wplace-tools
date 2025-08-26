@@ -1,3 +1,5 @@
+# Wplace Tools - Robots.txt
+# 允许所有搜索引擎爬虫访问
 User-agent: *
 Allow: /
 
@@ -8,12 +10,32 @@ Disallow: /_nuxt/
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /src/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /config/
+
+# 禁止爬取敏感文件
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.log$
+Disallow: /*.sql$
 
 # 允许爬取静态资源
 Allow: /images/
 Allow: /css/
 Allow: /js/
 Allow: /favicon.ico
+Allow: /public/
+Allow: /assets/
+
+# 允许爬取主要页面类型
+Allow: /*.html$
+Allow: /*.htm$
+Allow: /*.php$
+Allow: /*.asp$
+Allow: /*.aspx$
 
 # 站点地图位置
 Sitemap: https://wplacetools.org/sitemap.xml
@@ -23,7 +45,59 @@ Crawl-delay: 1
 
 # 特定搜索引擎配置
 User-agent: Googlebot
+Allow: /
 Crawl-delay: 0
+Disallow: /admin/
+Disallow: /api/
 
 User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+Disallow: /admin/
+Disallow: /api/
+
+# 社交媒体爬虫
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+
+# 禁止恶意爬虫
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: SemrushBot
+Crawl-delay: 10
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: MJ12bot
+Crawl-delay: 10
+Disallow: /admin/
+Disallow: /api/
+
+# 网站信息
+# 最后更新: 2025年
+# 网站: https://wplacetools.org
+# 联系: jasonzim904@gmail.com
