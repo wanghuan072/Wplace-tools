@@ -301,7 +301,7 @@ export default {
             return closestColor
         }
 
-        // 图像采样和缩放算法 - 保持原始宽高比
+        // 图像采样和缩放算法 - 保持原始宽高比，透明区域转为白色
         const sampleImageData = (imageData, sourceWidth, sourceHeight, targetWidth, targetHeight) => {
             const sampledData = []
             const scaleX = sourceWidth / targetWidth
@@ -315,7 +315,7 @@ export default {
                     const blockWidth = Math.ceil(scaleX)
                     const blockHeight = Math.ceil(scaleY)
 
-                    let totalR = 0, totalG = 0, totalB = 0, pixelCount = 0
+                    let totalR = 0, totalG = 0, totalB = 0, totalA = 0, pixelCount = 0
 
                     for (let by = 0; by < blockHeight && sourceY + by < sourceHeight; by++) {
                         for (let bx = 0; bx < blockWidth && sourceX + bx < sourceWidth; bx++) {
@@ -324,6 +324,7 @@ export default {
                                 totalR += imageData.data[pixelIndex]
                                 totalG += imageData.data[pixelIndex + 1]
                                 totalB += imageData.data[pixelIndex + 2]
+                                totalA += imageData.data[pixelIndex + 3] // Alpha通道
                                 pixelCount++
                             }
                         }
@@ -333,10 +334,17 @@ export default {
                         const avgR = Math.round(totalR / pixelCount)
                         const avgG = Math.round(totalG / pixelCount)
                         const avgB = Math.round(totalB / pixelCount)
-                        const mappedColor = findClosestColor(avgR, avgG, avgB)
-                        row.push(mappedColor)
+                        const avgA = Math.round(totalA / pixelCount)
+
+                        // 如果像素是透明的（Alpha < 128），则使用白色
+                        if (avgA < 128) {
+                            row.push('#FFFFFF') // 白色
+                        } else {
+                            const mappedColor = findClosestColor(avgR, avgG, avgB)
+                            row.push(mappedColor)
+                        }
                     } else {
-                        row.push(FIXED_COLORS[0])
+                        row.push('#FFFFFF') // 默认白色
                     }
                 }
                 sampledData.push(row)
@@ -442,6 +450,9 @@ export default {
 
             ctx.imageSmoothingEnabled = false
 
+            // 确保Canvas背景透明
+            ctx.clearRect(0, 0, width, height)
+
             console.log(`Canvas初始化: ${width}x${height}`)
         }
 
@@ -451,7 +462,13 @@ export default {
 
             const width = calculateCanvasWidth()
             const height = calculateCanvasHeight()
+
+            // 清除Canvas并设置透明背景
             ctx.clearRect(0, 0, width, height)
+
+            // 可选：设置默认背景色（如果需要的话）
+            // ctx.fillStyle = 'rgba(255, 255, 255, 0)' // 完全透明
+            // ctx.fillRect(0, 0, width, height)
 
             // 计算图像居中位置
             const imageWidth = state.pixelData[0].length * state.pixelSize
@@ -1381,7 +1398,7 @@ export default {
 
 canvas {
     display: block;
-    background-color: white;
+    background-color: transparent;
 }
 
 .canvas-placeholder {
