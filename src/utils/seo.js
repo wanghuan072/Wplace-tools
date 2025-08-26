@@ -16,8 +16,8 @@ const defaultSocial = {
     image: '/favicon.ico',
     imageAlt: 'Wplace Tools - Professional Pixel Art Conversion Tools',
     twitterCard: 'summary_large_image',
-    twitterSite: '@wplacetools',
-    twitterCreator: '@wplacetools'
+    twitterSite: '@jasonzim163713',
+    twitterCreator: '@jasonzim163713'
 }
 
 /**

@@ -301,7 +301,7 @@ export default {
             return closestColor
         }
 
-        // 图像采样和缩放算法
+        // 图像采样和缩放算法 - 保持原始宽高比
         const sampleImageData = (imageData, sourceWidth, sourceHeight, targetWidth, targetHeight) => {
             const sampledData = []
             const scaleX = sourceWidth / targetWidth
@@ -353,20 +353,34 @@ export default {
                 const tempCanvas = document.createElement('canvas')
                 const tempCtx = tempCanvas.getContext('2d')
 
-                const targetPixelCount = Math.floor(imageSize / pixelSize)
-                tempCanvas.width = targetPixelCount
-                tempCanvas.height = targetPixelCount
+                // 保持图像原始宽高比，避免拉伸变形
+                const maxPixels = Math.floor(imageSize / pixelSize)
+                const aspectRatio = image.width / image.height
 
-                tempCtx.drawImage(image, 0, 0, targetPixelCount, targetPixelCount)
-                const imageData = tempCtx.getImageData(0, 0, targetPixelCount, targetPixelCount)
+                let targetWidth, targetHeight
+                if (aspectRatio >= 1) {
+                    // 横向或正方形图像：以宽度为基准，高度按比例缩放
+                    targetWidth = maxPixels
+                    targetHeight = Math.floor(maxPixels / aspectRatio)
+                } else {
+                    // 纵向图像：以高度为基准，宽度按比例缩放
+                    targetHeight = maxPixels
+                    targetWidth = Math.floor(maxPixels * aspectRatio)
+                }
+
+                tempCanvas.width = targetWidth
+                tempCanvas.height = targetHeight
+
+                tempCtx.drawImage(image, 0, 0, targetWidth, targetHeight)
+                const imageData = tempCtx.getImageData(0, 0, targetWidth, targetHeight)
 
                 requestAnimationFrame(() => {
                     const pixelData = sampleImageData(
                         imageData,
-                        targetPixelCount,
-                        targetPixelCount,
-                        targetPixelCount,
-                        targetPixelCount
+                        targetWidth,
+                        targetHeight,
+                        targetWidth,
+                        targetHeight
                     )
                     resolve(pixelData)
                 })
@@ -439,52 +453,70 @@ export default {
             const height = calculateCanvasHeight()
             ctx.clearRect(0, 0, width, height)
 
-            // 绘制像素
+            // 计算图像居中位置
+            const imageWidth = state.pixelData[0].length * state.pixelSize
+            const imageHeight = state.pixelData.length * state.pixelSize
+            const offsetX = (width - imageWidth) / 2
+            const offsetY = (height - imageHeight) / 2
+
+            // 绘制像素 - 居中显示
             for (let y = 0; y < state.pixelData.length; y++) {
                 for (let x = 0; x < state.pixelData[y].length; x++) {
                     const color = state.pixelData[y][x]
                     if (color) {
                         ctx.fillStyle = color
-                        ctx.fillRect(x * state.pixelSize, y * state.pixelSize, state.pixelSize, state.pixelSize)
+                        ctx.fillRect(
+                            offsetX + x * state.pixelSize,
+                            offsetY + y * state.pixelSize,
+                            state.pixelSize,
+                            state.pixelSize
+                        )
                     }
                 }
             }
 
-            // 绘制网格
+            // 绘制网格 - 铺满整个Canvas背景
             if (state.showGrid) {
                 ctx.save()
                 ctx.strokeStyle = '#cccccc'
                 ctx.lineWidth = 1
                 ctx.globalAlpha = 0.8
 
-                const gridWidth = state.pixelData[0].length * state.pixelSize
-                const gridHeight = state.pixelData.length * state.pixelSize
+                // 计算整个Canvas的网格尺寸
+                const canvasGridWidth = Math.max(state.pixelData[0].length, state.pixelData.length)
+                const canvasGridHeight = Math.max(state.pixelData[0].length, state.pixelData.length)
 
                 ctx.beginPath()
-                for (let x = 0; x <= state.pixelData[0].length; x++) {
+                // 绘制垂直网格线 - 覆盖整个Canvas宽度
+                for (let x = 0; x <= canvasGridWidth; x++) {
                     const xPos = x * state.pixelSize + 0.5
                     ctx.moveTo(xPos, 0)
-                    ctx.lineTo(xPos, gridHeight)
+                    ctx.lineTo(xPos, canvasGridHeight * state.pixelSize)
                 }
-                for (let y = 0; y <= state.pixelData.length; y++) {
+                // 绘制水平网格线 - 覆盖整个Canvas高度
+                for (let y = 0; y <= canvasGridHeight; y++) {
                     const yPos = y * state.pixelSize + 0.5
                     ctx.moveTo(0, yPos)
-                    ctx.lineTo(gridWidth, yPos)
+                    ctx.lineTo(canvasGridWidth * state.pixelSize, yPos)
                 }
                 ctx.stroke()
                 ctx.restore()
             }
         }
 
-        // 计算Canvas尺寸
+        // 计算Canvas尺寸 - 始终为正方形以铺满背景
         const calculateCanvasWidth = () => {
             if (!state.pixelData.length) return 400
-            return state.pixelData[0].length * state.pixelSize
+            // 使用最大的尺寸来确保正方形Canvas
+            const maxDimension = Math.max(state.pixelData[0].length, state.pixelData.length)
+            return maxDimension * state.pixelSize
         }
 
         const calculateCanvasHeight = () => {
             if (!state.pixelData.length) return 400
-            return state.pixelData.length * state.pixelSize
+            // 使用最大的尺寸来确保正方形Canvas
+            const maxDimension = Math.max(state.pixelData[0].length, state.pixelData.length)
+            return maxDimension * state.pixelSize
         }
 
         // 文件上传相关函数
@@ -704,9 +736,17 @@ export default {
 
             console.log(`点击坐标: (${x}, ${y}), Canvas显示尺寸: ${rect.width}x${rect.height}, 像素大小: ${state.pixelSize}`)
 
-            // 直接使用显示坐标计算像素位置
-            const pixelX = Math.floor(x / state.pixelSize)
-            const pixelY = Math.floor(y / state.pixelSize)
+            // 计算图像居中后的偏移量
+            const imageWidth = state.pixelData[0].length * state.pixelSize
+            const imageHeight = state.pixelData.length * state.pixelSize
+            const offsetX = (rect.width - imageWidth) / 2
+            const offsetY = (rect.height - imageHeight) / 2
+
+            // 考虑偏移量计算像素位置
+            const adjustedX = x - offsetX
+            const adjustedY = y - offsetY
+            const pixelX = Math.floor(adjustedX / state.pixelSize)
+            const pixelY = Math.floor(adjustedY / state.pixelSize)
 
             console.log(`计算的像素坐标: (${pixelX}, ${pixelY})`)
             console.log(`像素数据尺寸: ${state.pixelData.length} x ${state.pixelData[0]?.length || 0}`)

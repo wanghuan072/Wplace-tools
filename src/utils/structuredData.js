@@ -9,7 +9,7 @@ const siteInfo = {
     logo: '/favicon.ico',
     description: 'Professional pixel art conversion tools that transform your creative ideas into stunning pixel art masterpieces with unlimited possibilities.',
     sameAs: [
-        'https://twitter.com/wplacetools',
+        'https://x.com/jasonzim163713',
         'https://facebook.com/wplacetools'
     ]
 }

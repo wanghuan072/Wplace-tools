@@ -13,7 +13,7 @@ export const seoConfig = {
 
     // 社交媒体账号
     social: {
-        twitter: '@wplacetools',
+        twitter: '@jasonzim163713',
         facebook: 'wplacetools',
         instagram: 'wplacetools'
     },
