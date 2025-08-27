@@ -531,7 +531,7 @@ export default {
                 await nextTick()
                 render()
             } catch (error) {
-                console.error('文字转换失败:', error)
+
                 state.globalError = `文字转换失败: ${error.message}`
                 state.pixelData = []
                 state.colorStats.clear()
@@ -734,7 +734,7 @@ export default {
                 URL.revokeObjectURL(url)
 
             } catch (error) {
-                console.error('下载失败:', error)
+
                 state.downloadError = `下载失败: ${error.message}`
             }
         }
@@ -822,15 +822,9 @@ export default {
         })
 
         const openReplaceDialogForSource = (sourceColor) => {
-            console.log('打开颜色替换对话框:', sourceColor)
             colorToReplace.value = sourceColor
             replacementTarget.value = null
             replacementDialogVisible.value = true
-            console.log('对话框状态:', {
-                visible: replacementDialogVisible.value,
-                colorToReplace: colorToReplace.value,
-                replacementTarget: replacementTarget.value
-            })
         }
 
         const replaceColorGlobally = (sourceColor, targetColor) => {
@@ -844,7 +838,6 @@ export default {
                 updateColorStats(newPixelData)
                 nextTick(() => { render() })
             } catch (error) {
-                console.error('全局替换颜色失败:', error)
                 state.globalError = `全局替换颜色失败: ${error.message}`
             }
         }

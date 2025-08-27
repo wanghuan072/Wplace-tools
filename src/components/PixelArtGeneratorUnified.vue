@@ -421,7 +421,7 @@ export default {
                 await nextTick()
                 render()
             } catch (error) {
-                console.error('图片转换失败:', error)
+
                 state.globalError = `图片转换失败: ${error.message}`
                 state.pixelData = []
                 state.colorStats.clear()
@@ -453,7 +453,7 @@ export default {
             // 确保Canvas背景透明
             ctx.clearRect(0, 0, width, height)
 
-            console.log(`Canvas初始化: ${width}x${height}`)
+
         }
 
         // Canvas渲染
@@ -576,7 +576,7 @@ export default {
             } catch (error) {
                 uploadState.isLoading = false
                 uploadState.errorMessage = '处理图片时发生错误'
-                console.error('Image processing error:', error)
+
             }
         }
 
@@ -620,7 +620,7 @@ export default {
                 state.downloadError = null
                 convertImageToPixelArt(image)
             } catch (error) {
-                console.error('图片上传处理失败:', error)
+
                 state.globalError = `图片上传处理失败: ${error.message}`
             }
         }
@@ -692,7 +692,6 @@ export default {
                 updateColorStats(newPixelData)
                 nextTick(() => { render() })
             } catch (error) {
-                console.error('全局替换颜色失败:', error)
                 state.globalError = `全局替换颜色失败: ${error.message}`
             }
         }
@@ -702,10 +701,10 @@ export default {
             state.selectedColor = color
 
             if (isColorUsed(color)) {
-                // 点到的是“已有颜色”：弹出框，选择目标颜色进行替换
+                // 点到的是"已有颜色"：弹出框，选择目标颜色进行替换
                 openReplaceDialogForSource(color)
             } else {
-                // 点到的是“未使用颜色”：弹出框，选择要被替换掉的已有颜色
+                // 点到的是"未使用颜色"：弹出框，选择要被替换掉的已有颜色
                 openReplaceDialogForTarget(color)
             }
         }
@@ -728,21 +727,16 @@ export default {
         }
 
         const handleCanvasClick = (event) => {
-            console.log('Canvas被点击了！')
-
             if (!state.pixelData.length) {
-                console.log('没有像素数据')
                 return
             }
 
             if (!state.selectedColor) {
-                console.log('未选择颜色，当前选中:', state.selectedColor)
                 return
             }
 
             const canvas = canvasRef.value
             if (!canvas) {
-                console.log('Canvas元素不存在')
                 return
             }
 
@@ -751,7 +745,7 @@ export default {
             const x = event.clientX - rect.left
             const y = event.clientY - rect.top
 
-            console.log(`点击坐标: (${x}, ${y}), Canvas显示尺寸: ${rect.width}x${rect.height}, 像素大小: ${state.pixelSize}`)
+
 
             // 计算图像居中后的偏移量
             const imageWidth = state.pixelData[0].length * state.pixelSize
@@ -765,8 +759,7 @@ export default {
             const pixelX = Math.floor(adjustedX / state.pixelSize)
             const pixelY = Math.floor(adjustedY / state.pixelSize)
 
-            console.log(`计算的像素坐标: (${pixelX}, ${pixelY})`)
-            console.log(`像素数据尺寸: ${state.pixelData.length} x ${state.pixelData[0]?.length || 0}`)
+
 
             if (pixelX >= 0 && pixelX < state.pixelData[0].length &&
                 pixelY >= 0 && pixelY < state.pixelData.length) {
@@ -778,9 +771,9 @@ export default {
                     // 删除模式：只删除选中的颜色，替换为白色或最接近的背景色
                     if (oldColor === state.selectedColor) {
                         newColor = '#FFFFFF' // 删除时替换为白色
-                        console.log(`删除像素 (${pixelX}, ${pixelY}), 从 ${oldColor} 改为 ${newColor}`)
+                        // 删除像素
                     } else {
-                        console.log('删除模式：只能删除选中的颜色')
+                        // 删除模式：只能删除选中的颜色
                         return
                     }
                 } else {
@@ -789,11 +782,11 @@ export default {
 
                     // 如果颜色相同，不需要更改
                     if (oldColor === newColor) {
-                        console.log('颜色相同，无需更改')
+                        // 颜色相同，无需更改
                         return
                     }
 
-                    console.log(`添加像素 (${pixelX}, ${pixelY}), 从 ${oldColor} 改为 ${newColor}`)
+                    // 添加像素
                 }
 
                 // 更新像素颜色 - 创建新的数组以触发响应式更新
@@ -898,7 +891,6 @@ export default {
                 URL.revokeObjectURL(url)
 
             } catch (error) {
-                console.error('下载失败:', error)
                 state.downloadError = `下载失败: ${error.message}`
             }
         }

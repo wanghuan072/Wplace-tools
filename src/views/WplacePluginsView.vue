@@ -598,14 +598,12 @@
 export default {
     name: 'WplacePluginsView',
     mounted() {
-        console.log('WplacePluginsView mounted');
+        // 组件已挂载
     },
     methods: {
         scrollToSection(sectionId) {
-            console.log('Scrolling to section:', sectionId);
             const element = document.getElementById(sectionId);
             if (element) {
-                console.log('Element found, scrolling...');
                 try {
                     // 动态获取Header高度
                     const header = document.querySelector('.header');
@@ -613,21 +611,17 @@ export default {
                     const elementTop = element.offsetTop;
                     const scrollTop = elementTop - headerHeight - 20; // 额外减去20px作为缓冲
 
-                    console.log('Header height:', headerHeight, 'Element top:', elementTop, 'Scroll to:', scrollTop);
-
                     window.scrollTo({
                         top: scrollTop,
                         behavior: 'smooth'
                     });
                 } catch (error) {
-                    console.log('scrollTo failed, using scrollIntoView as fallback');
+                    // 使用scrollIntoView作为备选方案
                     element.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
                 }
-            } else {
-                console.error('Element not found:', sectionId);
             }
         }
     }

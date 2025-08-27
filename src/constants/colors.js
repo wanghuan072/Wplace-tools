@@ -9,7 +9,7 @@ export const FIXED_COLORS = [
 
 // 验证颜色数组长度
 if (FIXED_COLORS.length !== 64) {
-  console.warn(`Expected 64 colors, but got ${FIXED_COLORS.length}`)
+  // 颜色数量不匹配，但继续执行
 }
 
 // 默认选中颜色

@@ -58,8 +58,9 @@ import {
 
 ### 使用网站配置
 ```javascript
-console.log(siteConfig.name) // "Wplace Tools"
-console.log(siteConfig.url)  // "https://wplacetools.org"
+// 获取网站名称和URL
+const siteName = siteConfig.name // "Wplace Tools"
+const siteUrl = siteConfig.url   // "https://wplacetools.org"
 ```
 
 ### 使用社交媒体配置

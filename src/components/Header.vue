@@ -57,24 +57,28 @@ const isMobileMenuOpen = ref(false)
 
 const toggleMobileMenu = () => {
     isMobileMenuOpen.value = !isMobileMenuOpen.value
-    console.log('Mobile menu toggled:', isMobileMenuOpen.value)
 }
 
 const closeMobileMenu = () => {
     isMobileMenuOpen.value = false
-    console.log('Mobile menu closed')
 }
 
+const updateMobileMenuState = () => {
+    const isMobile = window.innerWidth < 768;
+    isMobileMenuOpen.value = isMobile;
+};
+
 onMounted(() => {
-    console.log('Header component mounted')
-    console.log('Screen width:', window.innerWidth)
-    console.log('Desktop nav element:', document.querySelector('.desktop-nav'))
-    console.log('Mobile menu btn element:', document.querySelector('.mobile-menu-btn'))
+    // 初始化移动端菜单状态
+    updateMobileMenuState()
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', updateMobileMenuState)
 })
 
 onUpdated(() => {
-    console.log('Header component updated')
-    console.log('Screen width:', window.innerWidth)
+    // 组件更新后检查移动端菜单状态
+    updateMobileMenuState()
 })
 </script>
 
