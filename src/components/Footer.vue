@@ -47,6 +47,7 @@
                         <li><router-link to="/">Home</router-link></li>
                         <li><router-link to="/pixel-art-generator">Image to Pixel Art</router-link></li>
                         <li><router-link to="/text-to-pixel-art">Text to Pixel Art</router-link></li>
+                        <li><router-link to="/color-converter">Color</router-link></li>
                         <li><router-link to="/wplace-extension">Wplace Extension</router-link></li>
                         <li><router-link to="/blog">Blog</router-link></li>
                     </ul>

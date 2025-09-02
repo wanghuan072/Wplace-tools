@@ -28,7 +28,16 @@
                                     @change="handleFileSelect" style="display: none" />
 
                                 <div v-if="!uploadState.isLoading && !uploadState.previewImage" class="upload-prompt">
-                                    <div class="upload-icon">📁</div>
+                                    <div class="upload-icon">
+                                        <svg t="1756794617616" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg" p-id="46983" width="200" height="200">
+                                            <path d="M847.488 1008.896H61.504V117.056h491.968l294.016 229.952z"
+                                                fill="#F0A221" p-id="46984"></path>
+                                            <path
+                                                d="M956.48 901.888H170.496V10.048h556.032l230.016 226.176v665.664zM729.984 102.016v144h144l-144-144z m-104.96 81.984H286.016v57.984h339.008v-57.984z m216.96 164.992H284.992v57.984h556.992v-57.984z m0 169.984H284.992v57.984h556.992v-57.984z m0 165.056H284.992v57.984h556.992v-57.984z"
+                                                fill="#F1C84C" p-id="46985"></path>
+                                        </svg>
+                                    </div>
                                     <p>Click or drag image here to upload</p>
                                     <p class="upload-hint">Supports JPG, PNG, GIF, WebP formats</p>
                                 </div>
@@ -40,7 +49,7 @@
 
                                 <div v-if="uploadState.previewImage && !uploadState.isLoading"
                                     class="preview-container">
-                                    <img :src="uploadState.previewImage" alt="预览图片" class="preview-image" />
+                                    <img :src="uploadState.previewImage" alt="Preview Image" class="preview-image" />
                                     <button @click.stop="clearImage" class="clear-button">×</button>
                                 </div>
                             </div>
@@ -81,7 +90,23 @@
                     </div>
                     <div class="download-inline">
                         <button class="download-btn" :disabled="!state.pixelData.length" @click="handleDownload">
-                            <span class="download-icon">⬇</span>
+                            <span class="download-icon">
+                                <svg t="1756794796697" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="49678" width="200" height="200">
+                                    <path
+                                        d="M276.6848 904.1408h475.4432c83.0464 0 150.5792-67.5328 150.5792-150.5792V272.384c0-83.0464-67.5328-150.5792-150.5792-150.5792H276.6848c-83.0464 0-150.5792 67.5328-150.5792 150.5792v481.2288c0 82.9952 67.5328 150.528 150.5792 150.528z m44.1344-542.208a42.98752 42.98752 0 0 1 30.7712-12.9024c10.9056 0 21.76 4.096 30.1568 12.3392l92.7232 90.9312V285.3376a43.0592 43.0592 0 0 1 43.0592-43.0592 43.0592 43.0592 0 0 1 43.0592 43.0592v160.8192l83.0464-82.4832c16.896-16.7424 44.1856-16.6912 60.928 0.2048 16.7936 16.896 16.6912 44.1856-0.2048 60.928l-153.0368 152.064c-19.968 19.8656-52.5824 19.968-72.704 0.2048L321.3824 422.8608c-16.9984-16.64-17.2544-43.9296-0.5632-60.928z m25.856 304.128h331.4688a43.0592 43.0592 0 0 1 43.0592 43.0592 43.0592 43.0592 0 0 1-43.0592 43.0592H346.6752a43.0592 43.0592 0 0 1-43.0592-43.0592c-0.0512-23.7568 19.2512-43.0592 43.0592-43.0592z"
+                                        fill="#6C6CEA" p-id="49679"></path>
+                                    <path
+                                        d="M902.7072 272.384c0-83.0464-67.5328-150.5792-150.5792-150.5792H276.6848c-83.0464 0-150.5792 67.5328-150.5792 150.5792v481.2288c0 83.0464 67.5328 150.5792 150.5792 150.5792h106.9568c276.5824-48.5376 491.2128-276.8896 519.0656-560.0256V272.384zM320.8192 361.9328a42.98752 42.98752 0 0 1 30.7712-12.9024c10.9056 0 21.76 4.096 30.1568 12.3392l92.7232 90.9312V285.3376a43.0592 43.0592 0 1 1 86.1184 0v160.8192l83.0464-82.4832c16.896-16.7424 44.1856-16.6912 60.928 0.2048 16.7936 16.896 16.6912 44.1856-0.2048 60.928l-153.0368 152.064c-19.968 19.8656-52.5824 19.968-72.704 0.2048L321.3824 422.8608c-16.9984-16.64-17.2544-43.9296-0.5632-60.928z m357.3248 390.2976H346.6752a43.0592 43.0592 0 0 1-43.0592-43.0592 43.0592 43.0592 0 0 1 43.0592-43.0592h331.4688a43.0592 43.0592 0 1 1 0 86.1184z"
+                                        fill="#757BF2" p-id="49680"></path>
+                                    <path
+                                        d="M276.6848 121.8048c-83.0464 0-150.5792 67.5328-150.5792 150.5792v416.256c128.512-5.12 247.0912-48.5376 344.7296-119.1936L321.3824 422.8608c-16.9984-16.64-17.2544-43.9296-0.6144-60.928a42.98752 42.98752 0 0 1 30.7712-12.9024c10.9056 0 21.76 4.096 30.1568 12.3392l92.7232 90.9312V285.3376a43.0592 43.0592 0 1 1 86.1184 0v160.8192l83.0464-82.4832c4.4544-4.4032 9.6256-7.5776 15.1552-9.6768a628.6336 628.6336 0 0 0 70.7584-232.192H276.6848z"
+                                        fill="#8486F8" p-id="49681"></path>
+                                    <path
+                                        d="M126.1056 272.384v165.6832c164.608-50.176 300.6976-165.632 378.112-316.2624H276.6848c-83.0464 0-150.5792 67.5328-150.5792 150.5792z"
+                                        fill="#8D92F8" p-id="49682"></path>
+                                </svg>
+                            </span>
                             Download Pixel Art
                         </button>
                         <div v-if="state.downloadError" class="download-error">
@@ -152,7 +177,7 @@
                 <h3 class="palette-title">Color Palette</h3>
                 <div class="palette-instructions">
                     <p class="instruction-text">
-                        💡 <strong>Instructions:</strong>
+                        <strong>Instructions:</strong>
                         The palette is for display only. Click on the color blocks in the "Usage Statistics" on the
                         right to replace colors.
                     </p>
@@ -1151,8 +1176,13 @@ export default {
 }
 
 .upload-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 48px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
 }
 
 .upload-hint {
@@ -1414,16 +1444,6 @@ canvas {
     gap: 8px;
 }
 
-.palette-title::before {
-    content: '🎨';
-    font-size: 18px;
-}
-
-.palette-fullrow .palette-title::before {
-    content: '🎨';
-    font-size: 18px;
-}
-
 /* 移除模式指示相关样式 */
 
 .palette-instructions {
@@ -1646,11 +1666,6 @@ canvas {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-.stats-title::before {
-    content: '📊';
-    font-size: 18px;
 }
 
 .stats-summary {
@@ -1886,6 +1901,11 @@ canvas {
 }
 
 .download-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     font-weight: bold;
 }
@@ -2294,7 +2314,7 @@ canvas {
 
     .upload-icon {
         font-size: 36px;
-        margin-bottom: 12px;
+        margin: 0 auto 12px;
     }
 
     .upload-hint {

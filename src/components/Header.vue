@@ -23,6 +23,7 @@
                         Art</router-link>
                     <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">Text to Pixel
                         Art</router-link>
+                    <router-link to="/color-converter" class="nav-link" active-class="active">Color</router-link>
                     <router-link to="/wplace-extension" class="nav-link" active-class="active">Wplace
                         Extension</router-link>
                 </nav>
@@ -43,6 +44,8 @@
                     @click="closeMobileMenu">Image to Pixel Art</router-link>
                 <router-link to="/text-to-pixel-art" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">Text to Pixel Art</router-link>
+                <router-link to="/color-converter" class="mobile-nav-link" active-class="active"
+                    @click="closeMobileMenu">Color</router-link>
                 <router-link to="/wplace-extension" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">Wplace Extension</router-link>
             </div>
@@ -65,11 +68,15 @@ const closeMobileMenu = () => {
 
 const updateMobileMenuState = () => {
     const isMobile = window.innerWidth < 768;
-    isMobileMenuOpen.value = isMobile;
+    // 仅在离开移动端时强制关闭，避免小屏自动展开
+    if (!isMobile) {
+        isMobileMenuOpen.value = false;
+    }
 };
 
 onMounted(() => {
     // 初始化移动端菜单状态
+    isMobileMenuOpen.value = false
     updateMobileMenuState()
 
     // 监听窗口大小变化

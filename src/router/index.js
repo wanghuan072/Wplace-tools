@@ -35,12 +35,24 @@ const router = createRouter({
       }
     },
     {
+      path: '/color-converter',
+      name: 'colorConverter',
+      component: () => import('@/views/ColorConverterPage.vue'),
+      meta: {
+        seo: {
+          title: 'Wplace Color & 64-Color Palette | Copy HEX',
+          description: 'Explore the complete 64-color palette, copy HEX instantly, and convert images with the unified pixel tool.',
+          keywords: 'wplace color, color palette, copy hex, pixel art colors, 64-color'
+        }
+      }
+    },
+    {
       path: '/pixel-art-generator',
       name: 'pixelArtGenerator',
       component: () => import('@/views/PixelArtGeneratorPage.vue'),
       meta: {
         seo: {
-          title: 'Wplace Image To Pixel Art Generator - Wplace Tools',
+          title: 'Wplace Image To Pixel Art Generator | Wplace Pixel Art Maker',
           description: 'Convert any image to beautiful pixel art with Wplace Tools. Professional image processing with customizable settings and high-quality output.',
           keywords: 'image to pixel art, pixel art converter, image pixelation, wplace image to pixel art, pixel art generator'
         }
@@ -52,7 +64,7 @@ const router = createRouter({
       component: () => import('@/views/TextToPixelArtPage.vue'),
       meta: {
         seo: {
-          title: 'Wplace Text To Pixel Art Generator - Wplace Tools',
+          title: 'Wplace Text To Pixel Art Generator | Wplace Pixel Art Maker',
           description: 'Create stunning pixel art text with Wplace Tools. Customizable fonts, styles, and colors for unique text effects.',
           keywords: 'text to pixel art, pixel art text, text pixelation, wplace text to pixel art, pixel text generator'
         }
@@ -194,6 +206,21 @@ router.beforeEach((to, from, next) => {
         title: 'Text to Pixel Art Converter',
         description: 'Create stunning pixel art text with customizable fonts and styles',
         url: '/text-to-pixel-art',
+        imageUrl: '/favicon.ico'
+      })
+    )
+  }
+
+  if (to.name === 'colorConverter') {
+    schemas.push(
+      generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Color', url: '/color-converter' }
+      ]),
+      generateToolSchema({
+        title: 'Color & Wplace Palette',
+        description: 'Explore 64-color palette, copy HEX, and convert images locally',
+        url: '/color-converter',
         imageUrl: '/favicon.ico'
       })
     )

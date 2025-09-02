@@ -219,6 +219,7 @@ export function getAllRoutes() {
         '/',
         '/pixel-art-generator',
         '/text-to-pixel-art',
+        '/color-converter',
         '/wplace-extension',
         '/about',
         '/blog',
