@@ -1,9 +1,6 @@
 <template>
     <div class="text-to-pixel-art">
         <div class="generator-header">
-            <h2>Wplace Text To Pixel Art Generator</h2>
-            <p>Input text, select font and style, generate pixel art effects</p>
-
             <!-- 全局错误显示 -->
             <div v-if="state.globalError" class="global-error">
                 {{ state.globalError }}
@@ -901,16 +898,6 @@ export default {
     margin-bottom: 30px;
 }
 
-.generator-header h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.generator-header p {
-    color: #666;
-    font-size: 14px;
-}
-
 .global-error {
     background-color: #ffebee;
     color: #c62828;
@@ -1534,15 +1521,6 @@ canvas {
 }
 
 @media (max-width: 768px) {
-    .generator-header h2 {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-
-    .generator-header p {
-        font-size: 12px;
-    }
-
     .generator-header {
         margin-bottom: 10px;
     }

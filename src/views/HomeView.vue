@@ -9,7 +9,9 @@
                     </div>
 
                     <h1 class="main-title">
-                        Complete Guide to <span class="highlight">Wplace Tools</span> - Professional Pixel Art Converter
+                        <!-- Complete Guide to <span class="highlight">Wplace Tools</span> - Professional Pixel Art Converter -->
+                        Converter Wplace Tools #1 <br />
+                        Professional Pixel Art | Pixel Art Converter For Wplace
                     </h1>
 
                     <div class="description-text">

@@ -28,7 +28,7 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue'),
       meta: {
         seo: {
-          title: 'Wplace Tools - Professional Pixel Art Conversion Tools',
+          title: 'Converter Wplace Tools Professional Pixel Art  | Pixel Art Converter For Wplace',
           description: 'Transform your creative ideas into stunning pixel art with Wplace Tools. Professional image and text conversion tools for pixel art creation.',
           keywords: 'wplace tools, pixel art, image conversion, text to pixel art, wplace pixel art, wplace image to pixel art, wplace text to pixel art'
         }

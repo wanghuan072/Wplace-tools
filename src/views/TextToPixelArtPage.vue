@@ -4,6 +4,10 @@
         <div class="main-component-section">
             <div class="container">
                 <div class="component-content">
+                    <div class="generator-header">
+                        <h1>Wplace Text To Pixel Art Generator</h1>
+                        <p>Input text, select font and style, generate pixel art effects</p>
+                    </div>
                     <TextToPixelArt />
                 </div>
             </div>
@@ -231,6 +235,21 @@ export default {
 </script>
 
 <style scoped>
+.generator-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.generator-header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.generator-header p {
+    color: #666;
+    font-size: 14px;
+}
+
 .text-to-pixel-art-page {
     min-height: 100vh;
     background: #f8f9fa;
@@ -553,6 +572,19 @@ export default {
     .tech-section,
     .faq-section {
         padding: 40px 0;
+    }
+
+    .generator-header {
+        margin-bottom: 10px;
+    }
+
+    .generator-header h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .generator-header p {
+        font-size: 12px;
     }
 
     .section-title {

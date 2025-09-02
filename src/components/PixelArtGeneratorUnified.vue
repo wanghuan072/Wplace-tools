@@ -1,8 +1,7 @@
 <template>
     <div class="pixel-art-generator">
         <div class="generator-header">
-            <h2>Wplace Image To Pixel Art Generator</h2>
-            <p>Upload images, convert to pixel art, automatically re-analyze and prioritize filling selected colors</p>
+
 
             <!-- 全局错误显示 -->
             <div v-if="state.globalError" class="global-error">
@@ -1061,16 +1060,6 @@ export default {
     margin-bottom: 30px;
 }
 
-.generator-header h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.generator-header p {
-    color: #666;
-    font-size: 14px;
-}
-
 .global-error {
     background-color: #ffebee;
     color: #c62828;
@@ -2058,14 +2047,6 @@ canvas {
         margin-bottom: 10px;
     }
 
-    .generator-header h2 {
-        font-size: 20px;
-    }
-
-    .generator-header p {
-        font-size: 13px;
-    }
-
     .bottom-section {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -2282,14 +2263,6 @@ canvas {
 }
 
 @media (max-width: 768px) {
-    .generator-header h2 {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-
-    .generator-header p {
-        font-size: 12px;
-    }
 
     .global-error,
     .processing-indicator {

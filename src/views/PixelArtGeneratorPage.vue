@@ -4,6 +4,11 @@
         <div class="main-component-section">
             <div class="container">
                 <div class="component-content">
+                    <div class="generator-header">
+                        <h1>Wplace Image To Pixel Art Generator</h1>
+                        <p>Upload images, convert to pixel art, automatically re-analyze and prioritize filling selected
+                            colors</p>
+                    </div>
                     <PixelArtGeneratorUnified />
                 </div>
             </div>
@@ -181,6 +186,21 @@ export default {
 .pixel-art-generator-page {
     min-height: 100vh;
     background: #f8f9fa;
+}
+
+.generator-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.generator-header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.generator-header p {
+    color: #666;
+    font-size: 14px;
 }
 
 /* 主组件区域样式 */
@@ -400,6 +420,18 @@ export default {
         padding: 60px 0;
     }
 
+    .generator-header {
+        margin-bottom: 10px;
+    }
+
+    .generator-header h1 {
+        font-size: 20px;
+    }
+
+    .generator-header p {
+        font-size: 13px;
+    }
+
     .section-title {
         font-size: 28px;
     }
@@ -444,6 +476,15 @@ export default {
     .tech-section,
     .faq-section {
         padding: 40px 0;
+    }
+
+    .generator-header h1 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .generator-header p {
+        font-size: 12px;
     }
 
     .section-title {
