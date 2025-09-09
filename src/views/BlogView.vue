@@ -3,9 +3,8 @@
         <section class="blog-hero-section">
             <div class="container">
                 <div class="blog-hero-content">
-                    <h1 class="page-title">Wplace Tools Blog</h1>
-                    <p class="page-subtitle">Latest insights, tips, and guides for pixel art creation with Wplace Tools
-                    </p>
+                    <h1 class="page-title">{{ t('wplaceToolsBlog') }}</h1>
+                    <p class="page-subtitle">{{ t('blogSubtitle') }}</p>
                 </div>
             </div>
         </section>
@@ -29,7 +28,7 @@
                                 </h2>
                                 <p class="blog-description">{{ blog.description }}</p>
                                 <router-link :to="`/blog/${blog.addressBar}`" class="read-more-btn">
-                                    Read More
+                                    {{ t('readMore') }}
                                     <span class="arrow">→</span>
                                 </router-link>
                             </div>
@@ -41,26 +40,51 @@
     </div>
 </template>
 
-<script>
-import { blogData } from '@/data/blogData.js'
+<script setup>
+import { getBlogData } from '@/data/blogDataManager.js'
+import { useI18n } from '@/composables/useI18n'
+import { computed, watch, ref, onMounted } from 'vue'
 
-export default {
-    name: 'BlogView',
-    data() {
-        return {
-            blogData: blogData
-        }
-    },
-    methods: {
-        formatDate(dateString) {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-        }
+const { t, currentLocale } = useI18n()
+
+// 使用ref来存储博客数据
+const blogData = ref([])
+
+// 加载博客数据的函数
+const loadBlogData = () => {
+    // 直接从localStorage获取当前语言
+    const savedLocale = localStorage.getItem('locale') || 'en'
+    console.log('Loading blog data for locale:', savedLocale)
+    const data = getBlogData(savedLocale)
+    console.log('Blog data loaded:', data.length, 'items')
+    blogData.value = data
+}
+
+// 组件挂载时加载数据
+onMounted(() => {
+    loadBlogData()
+})
+
+// 监听localStorage变化（语言切换时会更新localStorage）
+const checkLocaleChange = () => {
+    const savedLocale = localStorage.getItem('locale') || 'en'
+    if (savedLocale !== currentLocale.value) {
+        currentLocale.value = savedLocale
+        loadBlogData()
     }
+}
+
+// 定期检查语言变化
+setInterval(checkLocaleChange, 500)
+
+const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const locale = currentLocale.value || 'en'
+    return date.toLocaleDateString(locale, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
 }
 </script>
 

@@ -5,35 +5,30 @@
             <div class="container">
                 <div class="banner-content">
                     <div class="top-hint">
-                        <span>WplaceTools - Pixel Art Converter</span>
+                        <span>{{ t('homeHint') }}</span>
                     </div>
 
                     <h1 class="main-title">
-                        <!-- Complete Guide to <span class="highlight">Wplace Tools</span> - Professional Pixel Art Converter -->
-                        Converter Wplace Tools #1 <br />
-                        Professional Pixel Art | Pixel Art Converter For Wplace
+                        {{ t('homeTitle') }}
                     </h1>
 
                     <div class="description-text">
-                        <p>Discover the ultimate Wplace Tools for creative artwork creation - professional image and
-                            text
-                            conversion tools.</p>
-                        <p>Transform your creative ideas into stunning artwork with Wplace Tools advanced conversion
-                            technology.</p>
+                        <p>{{ t('homeSubtitle') }}</p>
+                        <p>{{ t('homeDescription') }}</p>
                     </div>
 
                     <div class="feature-buttons">
                         <router-link to="/pixel-art-generator" class="feature-btn primary">
-                            Wplace Image to Pixel Art
+                            {{ t('startWithImageConverter') }}
                         </router-link>
                         <router-link to="/text-to-pixel-art" class="feature-btn primary">
-                            Wplace Text to Pixel Art
+                            {{ t('startWithTextConverter') }}
                         </router-link>
                         <router-link to="/blog" class="feature-btn secondary">
-                            Wplace Blog
+                            {{ t('blog') }}
                         </router-link>
                         <router-link to="/wplace-extension" class="feature-btn secondary">
-                            Wplace Extension
+                            {{ t('startWithExtension') }}
                         </router-link>
                     </div>
 
@@ -46,7 +41,7 @@
                                     fill="#5C5C66" p-id="2654"></path>
                             </svg>
                         </span>
-                        Professional Wplace Tools for creative enthusiasts and digital artists
+                        {{ t('homeHint') }}
                     </div>
                 </div>
             </div>
@@ -56,9 +51,8 @@
         <section class="features-section">
             <div class="container">
                 <div class="features-content">
-                    <h2 class="section-title">Why Choose Wplace Tools - Professional Artwork Converter?</h2>
-                    <p class="section-subtitle">Professional Wplace Tools for image and text conversion, providing
-                        unlimited possibilities for your creative projects</p>
+                    <h2 class="section-title">{{ t('whyChooseWplaceTools') }}</h2>
+                    <p class="section-subtitle">{{ t('professionalWplaceToolsSubtitle') }}</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
@@ -85,10 +79,8 @@
                                         fill="#5C2D51" p-id="6404"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Wplace Image to Pixel Art</h3>
-                            <p class="feature-description">Advanced image processing with Wplace Tools, supporting
-                                multiple formats and intelligent algorithms for beautiful artwork conversion using
-                                Wplace Tools.</p>
+                            <h3 class="feature-title">{{ t('wplaceImageToPixelArt') }}</h3>
+                            <p class="feature-description">{{ t('imageToPixelArtDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -112,9 +104,8 @@
                                         fill="#FF9000" p-id="10831"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Wplace Text to Pixel Art</h3>
-                            <p class="feature-description">Create stunning artwork text with Wplace Tools, featuring
-                                customizable fonts and professional typography effects powered by Wplace Tools.</p>
+                            <h3 class="feature-title">{{ t('wplaceTextToPixelArt') }}</h3>
+                            <p class="feature-description">{{ t('textToPixelArtDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -135,9 +126,8 @@
                                         fill="#2E3138" p-id="12728"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Fast & Efficient Processing</h3>
-                            <p class="feature-description">Wplace Tools optimized algorithms deliver instant results
-                                with batch processing support for improved workflow efficiency.</p>
+                            <h3 class="feature-title">{{ t('fastEfficientProcessing') }}</h3>
+                            <p class="feature-description">{{ t('fastProcessingDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -179,9 +169,8 @@
                                         fill="#EBB000" p-id="13853"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Precise Control</h3>
-                            <p class="feature-description">Fine-tune every aspect of your Wplace artwork with advanced
-                                parameter controls and real-time preview capabilities using Wplace Tools.</p>
+                            <h3 class="feature-title">{{ t('preciseControl') }}</h3>
+                            <p class="feature-description">{{ t('preciseControlDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -192,9 +181,8 @@
         <section class="tech-advantages-section">
             <div class="container">
                 <div class="tech-advantages-content">
-                    <h2 class="section-title">Wplace Tools Technical Excellence</h2>
-                    <p class="section-subtitle">Built with cutting-edge technology for the most demanding creative
-                        professionals</p>
+                    <h2 class="section-title">{{ t('techExcellence') }}</h2>
+                    <p class="section-subtitle">{{ t('techSubtitle') }}</p>
 
                     <div class="tech-advantages-grid">
                         <div class="tech-advantage-item">
@@ -209,9 +197,8 @@
                                         fill="#FF584D" p-id="18644"></path>
                                 </svg>
                             </div>
-                            <h3>Complete Privacy Protection</h3>
-                            <p>All Wplace Tools processing happens locally in your browser. Your creative work stays
-                                private and secure on your device.</p>
+                            <h3>{{ t('privacyProtection') }}</h3>
+                            <p>{{ t('privacyDesc') }}</p>
                         </div>
 
                         <div class="tech-advantage-item">
@@ -229,9 +216,8 @@
                                         fill="#00B48A" p-id="20660"></path>
                                 </svg>
                             </div>
-                            <h3>Professional Color System</h3>
-                            <p>Wplace Tools features a curated 64-color palette with premium colors and intelligent
-                                mapping algorithms for optimal artistic results.</p>
+                            <h3>{{ t('professionalColorSystem') }}</h3>
+                            <p>{{ t('professionalColorSystemDesc') }}</p>
                         </div>
 
                         <div class="tech-advantage-item">
@@ -246,9 +232,8 @@
                                         fill="#005CFF" p-id="22836"></path>
                                 </svg>
                             </div>
-                            <h3>Real-time Processing Engine</h3>
-                            <p>Instant preview and processing with Wplace Tools - no waiting time. See your pixel art
-                                results immediately as you work.</p>
+                            <h3>{{ t('realTimeProcessingEngine') }}</h3>
+                            <p>{{ t('realTimeProcessingEngineDesc') }}</p>
                         </div>
 
                         <div class="tech-advantage-item">
@@ -266,9 +251,8 @@
                                         fill="#649EFD" p-id="27524"></path>
                                 </svg>
                             </div>
-                            <h3>Universal Compatibility</h3>
-                            <p>Wplace Tools work seamlessly across all devices and modern browsers. No downloads or
-                                installations required.</p>
+                            <h3>{{ t('universalCompatibility') }}</h3>
+                            <p>{{ t('universalCompatibilityDesc') }}</p>
                         </div>
 
                         <div class="tech-advantage-item">
@@ -282,9 +266,8 @@
                                         fill="#F66F67" p-id="30226"></path>
                                 </svg>
                             </div>
-                            <h3>Advanced Color Mapping</h3>
-                            <p>Wplace Tools intelligent color mapping algorithms automatically find the closest colors
-                                from our 64-color palette for optimal artwork results using Wplace Tools.</p>
+                            <h3>{{ t('advancedColorMapping') }}</h3>
+                            <p>{{ t('advancedColorMappingDesc') }}</p>
                         </div>
 
                         <div class="tech-advantage-item">
@@ -302,9 +285,8 @@
                                         fill="#1B7AFF" p-id="32949"></path>
                                 </svg>
                             </div>
-                            <h3>High-Quality PNG Export</h3>
-                            <p>Export your Wplace artwork in high-quality PNG format with transparency support,
-                                perfect for professional use and further editing with Wplace Tools.</p>
+                            <h3>{{ t('highQualityPNGExport') }}</h3>
+                            <p>{{ t('highQualityPNGExportDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -315,38 +297,32 @@
         <section class="workflow-section">
             <div class="container">
                 <div class="workflow-content">
-                    <h2 class="section-title">How to Use Wplace Tools - Professional Artwork Converter</h2>
-                    <p class="section-subtitle">Simple, intuitive workflow designed for creators of all skill levels
-                        using Wplace Tools</p>
+                    <h2 class="section-title">{{ t('howToUseWplaceTools') }}</h2>
+                    <p class="section-subtitle">{{ t('simpleIntuitiveWorkflow') }}</p>
 
                     <div class="workflow-grid">
                         <div class="workflow-step">
                             <div class="step-number">1</div>
-                            <h3 class="step-title">Choose Your Wplace Tool</h3>
-                            <p class="step-description">Select between Wplace Tools image to pixel art or text to pixel
-                                art
-                                function based on your creative needs using Wplace Tools.</p>
+                            <h3 class="step-title">{{ t('chooseYourWplaceTool') }}</h3>
+                            <p class="step-description">{{ t('chooseYourWplaceToolDesc') }}</p>
                         </div>
 
                         <div class="workflow-step">
                             <div class="step-number">2</div>
-                            <h3 class="step-title">Input Your Content</h3>
-                            <p class="step-description">Upload your images or enter your text. Wplace Tools support
-                                multiple formats and languages.</p>
+                            <h3 class="step-title">{{ t('inputYourContent') }}</h3>
+                            <p class="step-description">{{ t('inputYourContentDesc') }}</p>
                         </div>
 
                         <div class="workflow-step">
                             <div class="step-number">3</div>
-                            <h3 class="step-title">Customize & Refine</h3>
-                            <p class="step-description">Adjust Wplace Tools parameters, colors, and settings to achieve
-                                your desired pixel art aesthetic.</p>
+                            <h3 class="step-title">{{ t('customizeRefine') }}</h3>
+                            <p class="step-description">{{ t('customizeRefineDesc') }}</p>
                         </div>
 
                         <div class="workflow-step">
                             <div class="step-number">4</div>
-                            <h3 class="step-title">Export & Create</h3>
-                            <p class="step-description">Download your Wplace artwork and use it in your creative
-                                projects, games, or digital artwork using Wplace Tools.</p>
+                            <h3 class="step-title">{{ t('exportCreate') }}</h3>
+                            <p class="step-description">{{ t('exportCreateDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -357,8 +333,8 @@
         <section class="use-cases-section">
             <div class="container">
                 <div class="use-cases-content">
-                    <h2 class="section-title">Perfect for Creative Professionals</h2>
-                    <p class="section-subtitle">Wplace Tools serve creators across diverse creative industries</p>
+                    <h2 class="section-title">{{ t('perfectForCreativeProfessionals') }}</h2>
+                    <p class="section-subtitle">{{ t('wplaceToolsServeCreators') }}</p>
 
                     <div class="use-cases-grid">
                         <div class="use-case-item">
@@ -373,9 +349,8 @@
                                         fill="#1C1C1E" p-id="34139"></path>
                                 </svg>
                             </div>
-                            <h3>Game Development</h3>
-                            <p>Create retro-style game assets with Wplace Tools, perfect for indie developers and pixel
-                                art game projects.</p>
+                            <h3>{{ t('gameDevelopment') }}</h3>
+                            <p>{{ t('gameDevelopmentDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -393,9 +368,8 @@
                                         p-id="36549"></path>
                                 </svg>
                             </div>
-                            <h3>Digital Art & Design</h3>
-                            <p>Transform your digital artwork with Wplace Tools effects, creating unique and
-                                nostalgic visual styles using Wplace Tools.</p>
+                            <h3>{{ t('digitalArtDesign') }}</h3>
+                            <p>{{ t('digitalArtDesignDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -416,9 +390,8 @@
                                         p-id="37685"></path>
                                 </svg>
                             </div>
-                            <h3>App & Web Design</h3>
-                            <p>Design distinctive app icons and web elements with Wplace Tools for memorable brand
-                                identity.</p>
+                            <h3>{{ t('appWebDesign') }}</h3>
+                            <p>{{ t('appWebDesignDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -430,9 +403,8 @@
                                         fill="#0197D1" p-id="38790"></path>
                                 </svg>
                             </div>
-                            <h3>Educational Content</h3>
-                            <p>Make learning materials more engaging with Wplace Tools graphics and visual aids using
-                                Wplace Tools.</p>
+                            <h3>{{ t('educationalContent') }}</h3>
+                            <p>{{ t('educationalContentDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -447,9 +419,8 @@
                                         fill="#1265ED" p-id="42402"></path>
                                 </svg>
                             </div>
-                            <h3>Social Media & Marketing</h3>
-                            <p>Create eye-catching social media graphics with Wplace Tools that stand out in crowded
-                                feeds.</p>
+                            <h3>{{ t('socialMediaMarketing') }}</h3>
+                            <p>{{ t('socialMediaMarketingDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -461,9 +432,8 @@
                                         fill="#F1B619" p-id="45049"></path>
                                 </svg>
                             </div>
-                            <h3>Personal & Commercial Projects</h3>
-                            <p>Express your creativity with Wplace Tools for personal projects, gifts, and
-                                commercial applications using Wplace Tools.</p>
+                            <h3>{{ t('personalCommercialProjects') }}</h3>
+                            <p>{{ t('personalCommercialProjectsDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -474,54 +444,38 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-content">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about Wplace Tools - professional artwork
-                        converter</p>
+                    <h2 class="section-title">{{ t('frequentlyAskedQuestions') }}</h2>
+                    <p class="section-subtitle">{{ t('everythingYouNeedToKnow') }}</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">What image formats do Wplace Tools support?</h3>
-                            <p class="faq-answer">Wplace Tools support PNG, JPG, JPEG, GIF and WebP formats. You can
-                                upload images of any size, and the converter will automatically process them into
-                                artwork
-                                using Wplace Tools.</p>
+                            <h3 class="faq-question">{{ t('faqImageFormats') }}</h3>
+                            <p class="faq-answer">{{ t('faqImageFormatsAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Are Wplace Tools free to use?</h3>
-                            <p class="faq-answer">Yes! All Wplace Tools conversion tools are completely free
-                                to use. There are no hidden costs, subscription restrictions or limitations on usage
-                                with Wplace Tools.
-                            </p>
+                            <h3 class="faq-question">{{ t('faqFreeToUse') }}</h3>
+                            <p class="faq-answer">{{ t('faqFreeToUseAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What are the pixel size options available?</h3>
-                            <p class="faq-answer">Wplace Tools pixel size can be freely adjusted between 1-32 pixels.
-                                Smaller values create more detailed artwork, larger values create more abstract artwork
-                                effects using Wplace Tools.</p>
+                            <h3 class="faq-question">{{ t('faqPixelSizeOptions') }}</h3>
+                            <p class="faq-answer">{{ t('faqPixelSizeOptionsAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What export formats are supported?</h3>
-                            <p class="faq-answer">Generated Wplace artwork supports PNG format download, ensuring
-                                image quality and transparency. You can choose between pixel-perfect and scaled
-                                versions using Wplace Tools.</p>
+                            <h3 class="faq-question">{{ t('faqExportFormats') }}</h3>
+                            <p class="faq-answer">{{ t('faqExportFormatsAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">I searched for "wpalce" but your website shows "wplace". Why is
-                                that?</h3>
-                            <p class="faq-answer">Our official brand spelling is "wplace" (W-P-L-A-C-E). "wpalce" is a
-                                common typo that users make when searching. Don't worry - you've arrived at the correct
-                                Wplace Tools website!</p>
+                            <h3 class="faq-question">{{ t('faqBrandSpelling') }}</h3>
+                            <p class="faq-answer">{{ t('faqBrandSpellingAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How does Wplace Tools protect my privacy?</h3>
-                            <p class="faq-answer">All Wplace Tools image and text processing happens locally in your
-                                browser. Your content is never uploaded to our servers, ensuring complete privacy and
-                                security.</p>
+                            <h3 class="faq-question">{{ t('faqPrivacyProtection') }}</h3>
+                            <p class="faq-answer">{{ t('faqPrivacyProtectionAnswer') }}</p>
                         </div>
                     </div>
                 </div>
@@ -532,26 +486,23 @@
         <section class="get-started-section">
             <div class="container">
                 <div class="get-started-content">
-                    <h2 class="section-title">Ready to Create with Wplace Tools?</h2>
-                    <p class="section-subtitle">Start your Wplace Tools journey today with our professional tools
-                    </p>
+                    <h2 class="section-title">{{ t('readyToCreate') }}</h2>
+                    <p class="section-subtitle">{{ t('startYourJourney') }}</p>
 
                     <div class="get-started-buttons">
                         <router-link to="/pixel-art-generator" class="get-started-btn primary">
-                            Start with Wplace Image Converter
+                            {{ t('startWithImageConverter') }}
                         </router-link>
                         <router-link to="/text-to-pixel-art" class="get-started-btn primary">
-                            Start with Wplace Text Converter
+                            {{ t('startWithTextConverter') }}
                         </router-link>
                     </div>
 
-                    <p class="get-started-note">No registration required • Free to use • Instant results • Professional
-                        quality</p>
+                    <p class="get-started-note">{{ t('getStartedNote') }}</p>
 
                     <div class="wplace-info">
-                        <p>Wplace Tools are designed to complement <a href="https://wplace.live/" target="_blank"
-                                rel="noopener">wplace.live</a> - your ultimate creative platform for pixel art and
-                            digital creation.</p>
+                        <p>{{ t('wplaceInfo') }} <a href="https://wplace.live/" target="_blank"
+                                rel="noopener">wplace.live</a> - {{ t('ultimateCreativePlatform') }}</p>
                     </div>
                 </div>
             </div>
@@ -559,18 +510,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'HomeView',
-    data() {
-        return {
-            // 可以在这里添加响应式数据
-        }
-    },
-    methods: {
-        // 可以在这里添加方法
-    }
-}
+<script setup>
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

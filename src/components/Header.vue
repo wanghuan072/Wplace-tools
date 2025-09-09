@@ -9,24 +9,34 @@
                     </router-link>
                 </div>
 
+                <!-- 桌面端导航 -->
+                <nav class="navigation desktop-nav">
+                    <router-link to="/" class="nav-link" active-class="active">{{ t('home') }}</router-link>
+                    <router-link to="/pixel-art-generator" class="nav-link" active-class="active">{{
+                        t('imageToPixelArt') }}</router-link>
+                    <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">{{ t('textToPixelArt')
+                        }}</router-link>
+                    <router-link to="/color-converter" class="nav-link" active-class="active">{{ t('color')
+                        }}</router-link>
+                    <router-link to="/wplace-extension" class="nav-link" active-class="active">{{ t('extension')
+                        }}</router-link>
+
+                    <!-- 语言切换器 -->
+                    <div class="language-selector">
+                        <select v-model="currentLocale" @change="handleLanguageChange" class="language-select">
+                            <option v-for="locale in availableLocales" :key="locale.code" :value="locale.code">
+                                {{ locale.name }} ({{ locale.code.toUpperCase() }})
+                            </option>
+                        </select>
+                    </div>
+                </nav>
+
                 <!-- 移动端菜单按钮 -->
                 <button class="mobile-menu-btn" @click="toggleMobileMenu" :class="{ 'active': isMobileMenuOpen }">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
-
-                <!-- 桌面端导航 -->
-                <nav class="navigation desktop-nav">
-                    <router-link to="/" class="nav-link" active-class="active">Home</router-link>
-                    <router-link to="/pixel-art-generator" class="nav-link" active-class="active">Image to Pixel
-                        Art</router-link>
-                    <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">Text to Pixel
-                        Art</router-link>
-                    <router-link to="/color-converter" class="nav-link" active-class="active">Color</router-link>
-                    <router-link to="/wplace-extension" class="nav-link" active-class="active">Wplace
-                        Extension</router-link>
-                </nav>
             </div>
         </div>
 
@@ -34,29 +44,46 @@
         <div class="mobile-menu-overlay" :class="{ 'active': isMobileMenuOpen }" @click="closeMobileMenu"></div>
         <nav class="mobile-menu" :class="{ 'active': isMobileMenuOpen }">
             <div class="mobile-menu-header">
-                <span>Menu</span>
+                <span>{{ t('menu') }}</span>
                 <button class="close-btn" @click="closeMobileMenu">×</button>
             </div>
             <div class="mobile-menu-links">
-                <router-link to="/" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Home</router-link>
+                <router-link to="/" class="mobile-nav-link" active-class="active" @click="closeMobileMenu">{{ t('home')
+                    }}</router-link>
                 <router-link to="/pixel-art-generator" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Image to Pixel Art</router-link>
+                    @click="closeMobileMenu">{{ t('imageToPixelArt') }}</router-link>
                 <router-link to="/text-to-pixel-art" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Text to Pixel Art</router-link>
+                    @click="closeMobileMenu">{{ t('textToPixelArt') }}</router-link>
                 <router-link to="/color-converter" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Color</router-link>
+                    @click="closeMobileMenu">{{ t('color') }}</router-link>
                 <router-link to="/wplace-extension" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">Wplace Extension</router-link>
+                    @click="closeMobileMenu">{{ t('extension') }}</router-link>
+
+                <!-- 移动端语言切换器 -->
+                <div class="mobile-language-selector">
+                    <label>{{ t('language') }}:</label>
+                    <select v-model="currentLocale" @change="handleLanguageChange" class="mobile-language-select">
+                        <option v-for="locale in availableLocales" :key="locale.code" :value="locale.code">
+                            {{ locale.name }} ({{ locale.code.toUpperCase() }})
+                        </option>
+                    </select>
+                </div>
             </div>
         </nav>
     </header>
 </template>
 
 <script setup>
-import { ref, onMounted, onUpdated } from 'vue'
+import { ref, onMounted, onUpdated, watch } from 'vue'
+import { useI18n } from '@/composables/useI18n'
 
 const isMobileMenuOpen = ref(false)
+const { currentLocale, availableLocales, changeLocale, initLocale, syncLocale, t } = useI18n()
+
+// 监听路由变化，同步语言状态
+watch(() => window.$router?.currentRoute?.value?.path, () => {
+    syncLocale()
+}, { immediate: true })
 
 const toggleMobileMenu = () => {
     isMobileMenuOpen.value = !isMobileMenuOpen.value
@@ -64,6 +91,11 @@ const toggleMobileMenu = () => {
 
 const closeMobileMenu = () => {
     isMobileMenuOpen.value = false
+}
+
+const handleLanguageChange = (event) => {
+    const newLocale = event.target.value
+    changeLocale(newLocale)
 }
 
 const updateMobileMenuState = () => {
@@ -75,6 +107,12 @@ const updateMobileMenuState = () => {
 };
 
 onMounted(() => {
+    // 初始化语言
+    initLocale()
+
+    // 同步语言状态
+    syncLocale()
+
     // 初始化移动端菜单状态
     isMobileMenuOpen.value = false
     updateMobileMenuState()
@@ -338,28 +376,62 @@ onUpdated(() => {
 }
 
 /* 默认样式 - 确保基础布局正确 */
-.desktop-nav {
-    gap: 30px;
-    align-items: center;
+
+
+.language-select {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Color Emoji', sans-serif;
+    min-width: 140px;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
-.nav-link {
-    text-decoration: none;
+.language-select:hover {
+    border-color: #00bcd4;
+    color: #00bcd4;
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: #00bcd4;
+    box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.1);
+}
+
+/* 移动端语言切换器 */
+.mobile-language-selector {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.mobile-language-selector label {
+    display: block;
+    margin-bottom: 10px;
     color: #666;
     font-weight: 500;
     font-size: 16px;
-    padding: 8px 16px;
+}
+
+.mobile-language-select {
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #00bcd4;
-    background: rgba(0, 188, 212, 0.1);
-}
-
-.nav-link.active {
-    color: #00bcd4;
-    background: rgba(0, 188, 212, 0.1);
+    padding: 12px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Color Emoji', sans-serif;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 </style>

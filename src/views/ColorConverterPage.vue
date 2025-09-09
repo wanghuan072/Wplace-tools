@@ -5,8 +5,8 @@
             <div class="container">
                 <div class="component-content">
                     <div class="generator-header">
-                        <h1>Color & Wplace 64-Color Palette</h1>
-                        <p>Explore and copy our 64-color system, plus convert images with the unified tool.</p>
+                        <h1>{{ t('colorConverterTitle') }}</h1>
+                        <p>{{ t('colorConverterDescription') }}</p>
                     </div>
                     <PixelArtGeneratorUnified />
                 </div>
@@ -17,8 +17,8 @@
         <section class="palette-section">
             <div class="container">
                 <div class="palette-content">
-                    <h2 class="section-title">Standard Colors</h2>
-                    <p class="section-subtitle">Instantly copy HEX values from the standard subset of Wplace colors</p>
+                    <h2 class="section-title">{{ t('standardColors') }}</h2>
+                    <p class="section-subtitle">{{ t('standardColorsDescription') }}</p>
 
                     <div class="color-grid">
                         <div v-for="(item, idx) in standardColors" :key="'std-' + idx" class="color-card"
@@ -28,8 +28,8 @@
                                 <span class="hex">{{ item.hex }}</span>
                             </div>
                             <button class="copy-btn" @click.stop="copyHex(item.hex)"
-                                :title="`Copy ${item.hex}`">Copy</button>
-                            <div v-if="copiedHex === item.hex" class="copied" aria-live="polite">Copied</div>
+                                :title="`${t('copy')} ${item.hex}`">{{ t('copy') }}</button>
+                            <div v-if="copiedHex === item.hex" class="copied" aria-live="polite">{{ t('copied') }}</div>
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
         <section class="palette-section">
             <div class="container">
                 <div class="palette-content">
-                    <h2 class="section-title">Premium Wplace.live</h2>
-                    <p class="section-subtitle">Premium colors are marked with a lock and can also be copied</p>
+                    <h2 class="section-title">{{ t('premiumColors') }}</h2>
+                    <p class="section-subtitle">{{ t('premiumColorsDescription') }}</p>
 
                     <div class="color-grid">
                         <div v-for="(item, idx) in premiumColors" :key="'pre-' + idx" class="color-card"
@@ -55,8 +55,8 @@
                                     d="M17 9h-1V7a4 4 0 00-8 0v2H7a2 2 0 00-2 2v7a2 2 0 002 2h10a2 2 0 002-2v-7a2 2 0 00-2-2zm-7-2a2 2 0 014 0v2H10V7zm3 9a2 2 0 11.001-3.999A2 2 0 0113 16z" />
                             </svg>
                             <button class="copy-btn" @click.stop="copyHex(item.hex)"
-                                :title="`Copy ${item.hex}`">Copy</button>
-                            <div v-if="copiedHex === item.hex" class="copied" aria-live="polite">Copied</div>
+                                :title="`${t('copy')} ${item.hex}`">{{ t('copy') }}</button>
+                            <div v-if="copiedHex === item.hex" class="copied" aria-live="polite">{{ t('copied') }}</div>
                         </div>
                     </div>
                 </div>
@@ -67,8 +67,8 @@
         <section class="features-section">
             <div class="container">
                 <div class="features-content">
-                    <h2 class="section-title">Why Choose Wplace Color?</h2>
-                    <p class="section-subtitle">The ultimate color and 64‑color palette companion for pixel art</p>
+                    <h2 class="section-title">{{ t('whyChooseWplaceColor') }}</h2>
+                    <p class="section-subtitle">{{ t('ultimateColorPaletteCompanion') }}</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
@@ -80,9 +80,8 @@
                                         fill="#08c2f9" p-id="87342"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">100% Free</h3>
-                            <p class="feature-description">No logins, no subscriptions, no limits. Convert and copy as
-                                much as you want.</p>
+                            <h3 class="feature-title">{{ t('hundredPercentFree') }}</h3>
+                            <p class="feature-description">{{ t('hundredPercentFreeDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -97,9 +96,8 @@
                                         fill="#F9EFFF" p-id="89220"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Privacy First</h3>
-                            <p class="feature-description">All processing happens locally in your browser. Your images
-                                never leave your device.</p>
+                            <h3 class="feature-title">{{ t('privacyFirst') }}</h3>
+                            <p class="feature-description">{{ t('privacyFirstDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -139,9 +137,8 @@
                                         fill="#DA6749" p-id="90585"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Easy Palette & Matching</h3>
-                            <p class="feature-description">Copy HEX in one click and use the unified tool to map colors
-                                precisely.</p>
+                            <h3 class="feature-title">{{ t('easyPaletteMatching') }}</h3>
+                            <p class="feature-description">{{ t('easyPaletteMatchingDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -153,9 +150,8 @@
                                         fill="#1DA7F5" p-id="91590"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">No Size Limits</h3>
-                            <p class="feature-description">Handle anything from tiny icons to large artwork with
-                                consistent quality.</p>
+                            <h3 class="feature-title">{{ t('noSizeLimits') }}</h3>
+                            <p class="feature-description">{{ t('noSizeLimitsDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -166,29 +162,25 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-content">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about the color converter and palette</p>
+                    <h2 class="section-title">{{ t('frequentlyAskedQuestions') }}</h2>
+                    <p class="section-subtitle">{{ t('everythingAboutColorConverter') }}</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">What’s included in the 64‑color system?</h3>
-                            <p class="faq-answer">A curated selection of base and premium tones designed for pixel art
-                                readability and harmony.</p>
+                            <h3 class="faq-question">{{ t('whatIncludedIn64ColorSystem') }}</h3>
+                            <p class="faq-answer">{{ t('whatIncludedIn64ColorSystemAnswer') }}</p>
                         </div>
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I copy color values?</h3>
-                            <p class="faq-answer">Click a color card or the Copy button to copy its HEX to your
-                                clipboard instantly.</p>
+                            <h3 class="faq-question">{{ t('howToCopyColorValues') }}</h3>
+                            <p class="faq-answer">{{ t('howToCopyColorValuesAnswer') }}</p>
                         </div>
                         <div class="faq-item">
-                            <h3 class="faq-question">What are premium colors and why are they locked?</h3>
-                            <p class="faq-answer">Premium colors are special hues used across Wplace. They are labeled
-                                with a lock and tracked for statistics.</p>
+                            <h3 class="faq-question">{{ t('whatArePremiumColors') }}</h3>
+                            <p class="faq-answer">{{ t('whatArePremiumColorsAnswer') }}</p>
                         </div>
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use these colors commercially?</h3>
-                            <p class="faq-answer">Yes. You can freely use the palette for personal and commercial
-                                projects.</p>
+                            <h3 class="faq-question">{{ t('canUseForCommercial') }}</h3>
+                            <p class="faq-answer">{{ t('canUseForCommercialAnswer') }}</p>
                         </div>
                     </div>
                 </div>
@@ -197,47 +189,38 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import PixelArtGeneratorUnified from '@/components/PixelArtGeneratorUnified.vue'
 import { FIXED_COLOR_ITEMS } from '@/constants/colors.js'
 import { computed, ref } from 'vue'
+import { useI18n } from '@/composables/useI18n'
 
-export default {
-    name: 'ColorConverterPage',
-    components: { PixelArtGeneratorUnified },
-    setup() {
-        const copiedHex = ref(null)
+const { t } = useI18n()
+const copiedHex = ref(null)
 
-        const standardColors = computed(() => FIXED_COLOR_ITEMS.filter(i => !i.requiresPoints))
-        const premiumColors = computed(() => FIXED_COLOR_ITEMS.filter(i => i.requiresPoints))
+const standardColors = computed(() => FIXED_COLOR_ITEMS.filter(i => !i.requiresPoints))
+const premiumColors = computed(() => FIXED_COLOR_ITEMS.filter(i => i.requiresPoints))
 
-        const copyHex = async (hex) => {
-            try {
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    await navigator.clipboard.writeText(hex)
-                } else {
-                    const input = document.createElement('input')
-                    input.value = hex
-                    document.body.appendChild(input)
-                    input.select()
-                    document.execCommand('copy')
-                    document.body.removeChild(input)
-                }
-                copiedHex.value = hex
-                setTimeout(() => { if (copiedHex.value === hex) copiedHex.value = null }, 1500)
-            } catch (e) {
-                // 静默失败，避免打断用户
-            }
+const copyHex = async (hex) => {
+    try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(hex)
+        } else {
+            const input = document.createElement('input')
+            input.value = hex
+            document.body.appendChild(input)
+            input.select()
+            document.execCommand('copy')
+            document.body.removeChild(input)
         }
-
-        return {
-            standardColors,
-            premiumColors,
-            copiedHex,
-            copyHex
-        }
+        copiedHex.value = hex
+        setTimeout(() => { if (copiedHex.value === hex) copiedHex.value = null }, 1500)
+    } catch (e) {
+        // 静默失败，避免打断用户
     }
 }
+
+// 导出变量供模板使用
 </script>
 
 <style scoped>

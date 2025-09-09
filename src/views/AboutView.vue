@@ -3,54 +3,47 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-header">
-                    <h1 class="about-title">About Us</h1>
-                    <p class="about-subtitle">Professional pixel art conversion tool development team</p>
+                    <h1 class="about-title">{{ t('aboutTitle') }}</h1>
+                    <p class="about-subtitle">{{ t('aboutSubtitle') }}</p>
                 </div>
 
                 <div class="about-sections">
                     <div class="about-section">
-                        <h2>Our Mission</h2>
-                        <p>Wplace Tracer is committed to providing pixel art enthusiasts with the most professional and
-                            user-friendly conversion tools. We believe that everyone can create unique pixel art works,
-                            and
-                            our tools are your creative assistants.</p>
+                        <h2>{{ t('aboutOurMission') }}</h2>
+                        <p>{{ t('aboutOurMissionDesc') }}</p>
                     </div>
 
                     <div class="about-section">
-                        <h2>Core Features</h2>
+                        <h2>{{ t('aboutCoreFeatures') }}</h2>
                         <div class="features-list">
                             <div class="feature-item">
-                                <h3>Image to Pixel Art</h3>
-                                <p>Support multiple image formats, intelligent algorithms convert your images into
-                                    beautiful
-                                    pixel art works. Adjustable pixel size to meet different creative needs.</p>
+                                <h3>{{ t('aboutImageToPixelArt') }}</h3>
+                                <p>{{ t('aboutImageToPixelArtDesc') }}</p>
                             </div>
                             <div class="feature-item">
-                                <h3>Text to Pixel Art</h3>
-                                <p>Convert text to pixel art fonts, support multiple font styles and sizes. Create
-                                    unique
-                                    pixel-style text effects.</p>
+                                <h3>{{ t('aboutTextToPixelArt') }}</h3>
+                                <p>{{ t('aboutTextToPixelArtDesc') }}</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="about-section">
-                        <h2>Technical Advantages</h2>
+                        <h2>{{ t('aboutTechnicalAdvantages') }}</h2>
                         <ul class="tech-list">
-                            <li>Advanced image processing algorithms</li>
-                            <li>Local processing, privacy protection</li>
-                            <li>Real-time preview, what you see is what you get</li>
-                            <li>Support multiple formats and parameter adjustments</li>
-                            <li>Fast and efficient processing speed</li>
+                            <li>{{ t('aboutTechAdvantage1') }}</li>
+                            <li>{{ t('aboutTechAdvantage2') }}</li>
+                            <li>{{ t('aboutTechAdvantage3') }}</li>
+                            <li>{{ t('aboutTechAdvantage4') }}</li>
+                            <li>{{ t('aboutTechAdvantage5') }}</li>
                         </ul>
                     </div>
 
                     <div class="about-section">
-                        <h2>Contact Us</h2>
-                        <p>If you have any questions, suggestions or feedback, please feel free to contact us:</p>
+                        <h2>{{ t('aboutContactUs') }}</h2>
+                        <p>{{ t('aboutContactUsDesc') }}</p>
                         <div class="contact-info">
-                            <p>Email: contact@wplace-tracer.com</p>
-                            <p>Working hours: Monday to Friday 9:00-18:00</p>
+                            <p>{{ t('aboutContactEmail') }}contact@wplace-tracer.com</p>
+                            <p>{{ t('aboutContactHours') }}</p>
                         </div>
                     </div>
                 </div>
@@ -59,10 +52,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'AboutView'
-}
+<script setup>
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

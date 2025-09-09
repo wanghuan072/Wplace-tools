@@ -5,8 +5,8 @@
             <div class="container">
                 <div class="component-content">
                     <div class="generator-header">
-                        <h1>Wplace Text To Pixel Art Generator | Wplace Pixel Art Maker</h1>
-                        <p>Input text, select font and style, generate pixel art effects</p>
+                        <h1>{{ t('textToPixelArtTitle') }}</h1>
+                        <p>{{ t('textConverterDescription') }}</p>
                     </div>
                     <TextToPixelArt />
                 </div>
@@ -17,8 +17,8 @@
         <section class="features-section">
             <div class="container">
                 <div class="features-content">
-                    <h2 class="section-title">Text to Pixel Art Converter Features</h2>
-                    <p class="section-subtitle">Create stunning pixel art text with customizable fonts and styles</p>
+                    <h2 class="section-title">{{ t('textConverterFeatures') }}</h2>
+                    <p class="section-subtitle">{{ t('createStunningPixelArtText') }}</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
@@ -30,9 +30,8 @@
                                         fill="#8A969C" p-id="60543"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Text Input & Preview</h3>
-                            <p class="feature-description">Input any text content and see real-time preview. Support for
-                                multiple languages and special characters.</p>
+                            <h3 class="feature-title">{{ t('textInputPreview') }}</h3>
+                            <p class="feature-description">{{ t('textInputPreviewDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -47,9 +46,8 @@
                                         fill="#FFFFFF" p-id="63261"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Font Customization</h3>
-                            <p class="feature-description">Choose from various font families, adjust font size, weight,
-                                and style to create unique text effects.</p>
+                            <h3 class="feature-title">{{ t('fontCustomization') }}</h3>
+                            <p class="feature-description">{{ t('fontCustomizationDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -61,9 +59,8 @@
                                         fill="#707070" p-id="64910"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Pixelation Control</h3>
-                            <p class="feature-description">Fine-tune pixel size (1-32px) and canvas dimensions for
-                                optimal pixel art text appearance.</p>
+                            <h3 class="feature-title">{{ t('pixelationControl') }}</h3>
+                            <p class="feature-description">{{ t('pixelationControlDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -139,9 +136,8 @@
                                         p-id="66141"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Color Management</h3>
-                            <p class="feature-description">Professional 64-color palette system with intelligent color
-                                mapping and replacement capabilities.</p>
+                            <h3 class="feature-title">{{ t('colorManagement') }}</h3>
+                            <p class="feature-description">{{ t('colorManagementDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -152,36 +148,32 @@
         <section class="instructions-section">
             <div class="container">
                 <div class="instructions-content">
-                    <h2 class="section-title">How to Use Text to Pixel Art Converter</h2>
-                    <p class="section-subtitle">Simple steps to transform your text into beautiful pixel art</p>
+                    <h2 class="section-title">{{ t('howToUseTextConverter') }}</h2>
+                    <p class="section-subtitle">{{ t('simpleStepsToTransform') }}</p>
 
                     <div class="instructions-grid">
                         <div class="instruction-step">
                             <div class="step-number">1</div>
-                            <h3 class="step-title">Enter Your Text</h3>
-                            <p class="step-description">Type or paste the text you want to convert into the input field.
-                                You can use any language or special characters.</p>
+                            <h3 class="step-title">{{ t('enterYourText') }}</h3>
+                            <p class="step-description">{{ t('enterYourTextDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">2</div>
-                            <h3 class="step-title">Customize Font Settings</h3>
-                            <p class="step-description">Select your preferred font family, adjust size, weight
-                                (normal/bold), and style (normal/italic) for the perfect look.</p>
+                            <h3 class="step-title">{{ t('customizeFontSettings') }}</h3>
+                            <p class="step-description">{{ t('customizeFontSettingsDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">3</div>
-                            <h3 class="step-title">Adjust Pixel Parameters</h3>
-                            <p class="step-description">Set pixel size (1-32px) and canvas dimensions. Enable grid
-                                display for better pixel visualization.</p>
+                            <h3 class="step-title">{{ t('adjustPixelParameters') }}</h3>
+                            <p class="step-description">{{ t('adjustPixelParametersDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">4</div>
-                            <h3 class="step-title">Generate & Download</h3>
-                            <p class="step-description">Click generate to create your pixel art text. Download in PNG
-                                format for use in your projects.</p>
+                            <h3 class="step-title">{{ t('generateDownload') }}</h3>
+                            <p class="step-description">{{ t('generateDownloadDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -192,8 +184,8 @@
         <section class="use-cases-section">
             <div class="container">
                 <div class="use-cases-content">
-                    <h2 class="section-title">Perfect for Various Use Cases</h2>
-                    <p class="section-subtitle">Discover how pixel art text can enhance your creative projects</p>
+                    <h2 class="section-title">{{ t('perfectForVariousUseCases') }}</h2>
+                    <p class="section-subtitle">{{ t('discoverHowPixelArtText') }}</p>
 
                     <div class="use-cases-grid">
                         <div class="use-case-item">
@@ -219,9 +211,8 @@
                                         fill="" p-id="67488"></path>
                                 </svg>
                             </div>
-                            <h3>Game Development</h3>
-                            <p>Create retro-style game titles, UI elements, and in-game text that perfectly match your
-                                pixel art aesthetic.</p>
+                            <h3>{{ t('gameDevelopment') }}</h3>
+                            <p>{{ t('gameDevelopmentDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -245,9 +236,8 @@
                                         fill="#2C77E5" p-id="71407"></path>
                                 </svg>
                             </div>
-                            <h3>Digital Art</h3>
-                            <p>Add pixel art text to your digital artwork, creating cohesive designs with a nostalgic,
-                                retro feel.</p>
+                            <h3>{{ t('digitalArt') }}</h3>
+                            <p>{{ t('digitalArtDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -262,9 +252,8 @@
                                         fill="#20C997" p-id="73270"></path>
                                 </svg>
                             </div>
-                            <h3>App Design</h3>
-                            <p>Design unique app icons, logos, and interface elements with pixel art text for a
-                                distinctive brand identity.</p>
+                            <h3>{{ t('appDesign') }}</h3>
+                            <p>{{ t('appDesignDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -282,9 +271,8 @@
                                         fill="#11A0F8" p-id="74528"></path>
                                 </svg>
                             </div>
-                            <h3>Web Design</h3>
-                            <p>Create eye-catching website headers, buttons, and decorative elements with custom pixel
-                                art typography.</p>
+                            <h3>{{ t('webDesign') }}</h3>
+                            <p>{{ t('webDesignDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -296,9 +284,8 @@
                                         fill="#0197D1" p-id="75623"></path>
                                 </svg>
                             </div>
-                            <h3>Educational Content</h3>
-                            <p>Make learning materials more engaging with pixel art text for titles, headings, and key
-                                concepts.</p>
+                            <h3>{{ t('educationalContent') }}</h3>
+                            <p>{{ t('educationalContentDesc') }}</p>
                         </div>
 
                         <div class="use-case-item">
@@ -313,9 +300,8 @@
                                         fill="#1265ED" p-id="81880"></path>
                                 </svg>
                             </div>
-                            <h3>Social Media</h3>
-                            <p>Create unique social media graphics, memes, and posts with custom pixel art text that
-                                stands out.</p>
+                            <h3>{{ t('socialMedia') }}</h3>
+                            <p>{{ t('socialMediaDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -326,32 +312,28 @@
         <section class="tech-section">
             <div class="container">
                 <div class="tech-content">
-                    <h2 class="section-title">Technical Features</h2>
-                    <p class="section-subtitle">Advanced text rendering and pixelation algorithms</p>
+                    <h2 class="section-title">{{ t('technicalFeatures') }}</h2>
+                    <p class="section-subtitle">{{ t('advancedTextRendering') }}</p>
 
                     <div class="tech-grid">
                         <div class="tech-item">
-                            <h3>Canvas 2D Rendering</h3>
-                            <p>Uses HTML5 Canvas 2D API for high-quality text rendering and precise pixel-level control
-                                over the output.</p>
+                            <h3>{{ t('canvas2DRendering') }}</h3>
+                            <p>{{ t('canvas2DRenderingDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>Intelligent Word Wrapping</h3>
-                            <p>Advanced text layout algorithm that automatically handles line breaks and text
-                                positioning for optimal readability.</p>
+                            <h3>{{ t('intelligentWordWrapping') }}</h3>
+                            <p>{{ t('intelligentWordWrappingDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>Real-time Processing</h3>
-                            <p>Instant generation and preview of pixel art text as you type, with no waiting time for
-                                results.</p>
+                            <h3>{{ t('realTimeProcessing') }}</h3>
+                            <p>{{ t('realTimeProcessingDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>High-Resolution Output</h3>
-                            <p>Generate pixel art text at various resolutions while maintaining crisp, clear pixel
-                                boundaries.</p>
+                            <h3>{{ t('highResolutionOutput') }}</h3>
+                            <p>{{ t('highResolutionOutputDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -362,34 +344,28 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-content">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about text to pixel art conversion</p>
+                    <h2 class="section-title">{{ t('frequentlyAskedQuestions') }}</h2>
+                    <p class="section-subtitle">{{ t('everythingAboutTextConversion') }}</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">What fonts are supported?</h3>
-                            <p class="faq-answer">Our converter supports all web-safe fonts and system fonts available
-                                on your device. You can also use custom fonts by installing them on your system.</p>
+                            <h3 class="faq-question">{{ t('whatFontsSupported') }}</h3>
+                            <p class="faq-answer">{{ t('whatFontsSupportedAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I choose the right pixel size?</h3>
-                            <p class="faq-answer">Smaller pixel sizes (1-8px) create more detailed text, while larger
-                                sizes (16-32px) create more abstract, retro-style pixel art. Consider your intended use
-                                case.</p>
+                            <h3 class="faq-question">{{ t('howChooseRightPixelSize') }}</h3>
+                            <p class="faq-answer">{{ t('howChooseRightPixelSizeAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use the generated text commercially?</h3>
-                            <p class="faq-answer">Yes! All pixel art text generated with our tool is free for personal
-                                and commercial use. The tool is designed to help creators of all levels.</p>
+                            <h3 class="faq-question">{{ t('canUseGeneratedTextCommercially') }}</h3>
+                            <p class="faq-answer">{{ t('canUseGeneratedTextCommerciallyAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What file formats can I download?</h3>
-                            <p class="faq-answer">Currently, we support PNG format download, which ensures image quality
-                                and transparency. PNG is ideal for pixel art and works well in most design applications.
-                            </p>
+                            <h3 class="faq-question">{{ t('whatFileFormatsCanDownload') }}</h3>
+                            <p class="faq-answer">{{ t('whatFileFormatsCanDownloadAnswer') }}</p>
                         </div>
                     </div>
                 </div>
@@ -398,15 +374,11 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import TextToPixelArt from '@/components/TextToPixelArt.vue'
+import { useI18n } from '@/composables/useI18n'
 
-export default {
-    name: 'TextToPixelArtPage',
-    components: {
-        TextToPixelArt
-    }
-}
+const { t } = useI18n()
 </script>
 
 <style scoped>

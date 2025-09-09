@@ -5,18 +5,20 @@
             <div class="container">
                 <div class="banner-content">
                     <div class="top-hint">
-                        <span>WplaceTools - Browser Extensions</span>
+                        <span>{{ t('wplaceToolsExtensions') }}</span>
                     </div>
 
                     <h1 class="main-title">
-                        Enhance Your <span class="highlight">Wplace.live</span> Experience with Wplace Extension
+                        {{ t('enhanceWplaceExperience') }} <span class="highlight">Wplace.live</span> {{
+                            t('withWplaceExtension') }}
                     </h1>
 
                     <div class="description-text">
-                        <p>Discover official and community Wplace Extension that extend <a href="/"
-                                style="color: #e0f7fa; text-decoration: underline;">Wplace Tools</a> functionality.</p>
-                        <p>Transform your creative workflow with professional Wplace Extension and <a href="/"
-                                style="color: #e0f7fa; text-decoration: underline;">creative tools</a>.</p>
+                        <p>{{ t('discoverOfficialExtensions') }} <a href="/"
+                                style="color: #e0f7fa; text-decoration: underline;">{{ t('wplaceTools') }}</a> {{
+                                    t('functionality') }}.</p>
+                        <p>{{ t('transformCreativeWorkflow') }} <a href="/"
+                                style="color: #e0f7fa; text-decoration: underline;">{{ t('creativeTools') }}</a>.</p>
                     </div>
 
                     <div class="feature-buttons">
@@ -30,7 +32,7 @@
                                         fill="#57AFF8" p-id="92605"></path>
                                 </svg>
                             </span>
-                            Download Plugins
+                            {{ t('downloadPlugins') }}
                         </a>
                         <a href="#" @click.prevent="scrollToSection('workflow')" class="feature-btn secondary"
                             style="cursor: pointer;">
@@ -42,13 +44,13 @@
                                         fill="#ffffff" p-id="95736"></path>
                                 </svg>
                             </span>
-                            Workflow
+                            {{ t('workflow') }}
                         </a>
                     </div>
 
                     <div class="bottom-hint">
                         <span class="hint-icon">⚡</span>
-                        Free plugins • Official support • Community driven • Easy installation
+                        {{ t('freePluginsOfficialSupport') }}
                     </div>
                 </div>
             </div>
@@ -58,9 +60,8 @@
         <section class="tracer-intro-section">
             <div class="container">
                 <div class="tracer-intro-content">
-                    <h2 class="section-title">Wplace Tracer Extension - Your Bridge to Creative Freedom</h2>
-                    <p class="section-subtitle">Transform Wplace Tools generated artwork into stunning Wplace.live
-                        creations with powerful Wplace Extension</p>
+                    <h2 class="section-title">{{ t('wplaceTracerExtensionTitle') }}</h2>
+                    <p class="section-subtitle">{{ t('wplaceTracerExtensionSubtitle') }}</p>
 
                     <div class="tracer-overview">
                         <div class="tracer-main-info">
@@ -76,7 +77,7 @@
                                 </svg>
                             </div>
                             <div class="tracer-details">
-                                <h3>Wplace Tracer Extension</h3>
+                                <h3>{{ t('wplaceTracerExtension') }}</h3>
                                 <div class="tracer-stats">
                                     <span class="stat-item">
                                         <span class="stat-icon">
@@ -88,7 +89,7 @@
                                                     fill="#f4ea2a" p-id="100984"></path>
                                             </svg>
                                         </span>
-                                        <span class="stat-value">4.2/5.0</span>
+                                        <span class="stat-value">{{ t('rating') }}</span>
                                     </span>
                                     <span class="stat-item">
                                         <span class="stat-icon">
@@ -100,7 +101,7 @@
                                                     fill="#57AFF8" p-id="102042"></path>
                                             </svg>
                                         </span>
-                                        <span class="stat-value">10K+ downloads</span>
+                                        <span class="stat-value">{{ t('downloads') }}</span>
                                     </span>
                                     <span class="stat-item">
                                         <span class="stat-icon">
@@ -118,31 +119,24 @@
                                                     p-id="103065" fill="#8a8a8a"></path>
                                             </svg>
                                         </span>
-                                        <span class="stat-value">v2.1.0</span>
+                                        <span class="stat-value">{{ t('version') }}</span>
                                     </span>
                                 </div>
                                 <p class="tracer-description">
-                                    Wplace Tracer Extension is the essential Wplace Extension that bridges the gap
-                                    between Wplace
-                                    Tools and Wplace.live.
-                                    This powerful Wplace Extension allows you to overlay your generated artwork
-                                    directly onto
-                                    your Wplace.live canvas,
-                                    enabling you to trace, reference, and create with precision using advanced Wplace
-                                    Extensions.
+                                    {{ t('wplaceTracerDescription') }}
                                 </p>
                             </div>
                         </div>
 
                         <div class="tracer-features">
-                            <h4>Key Capabilities:</h4>
+                            <h4>{{ t('keyCapabilities') }}:</h4>
                             <ul>
-                                <li>Overlay artwork from Wplace Tools onto Wplace.live using Wplace Extension</li>
-                                <li>Adjustable transparency and positioning</li>
-                                <li>Multiple reference image support</li>
-                                <li>Quick toggle on/off functionality</li>
-                                <li>Zoom and pan controls for precise tracing</li>
-                                <li>Seamless integration with Wplace.live workflow</li>
+                                <li>{{ t('overlayArtworkFromWplaceTools') }}</li>
+                                <li>{{ t('adjustableTransparencyAndPositioning') }}</li>
+                                <li>{{ t('multipleReferenceImageSupport') }}</li>
+                                <li>{{ t('quickToggleOnOffFunctionality') }}</li>
+                                <li>{{ t('zoomAndPanControlsForPreciseTracing') }}</li>
+                                <li>{{ t('seamlessIntegrationWithWplaceLiveWorkflow') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -154,22 +148,22 @@
         <section id="workflow" class="workflow-section">
             <div class="container">
                 <div class="workflow-content">
-                    <h2 class="section-title">Complete Creative Workflow with Wplace Extension</h2>
-                    <p class="section-subtitle">From artwork generation to Wplace.live masterpiece using powerful Wplace
-                        Extensions</p>
+                    <h2 class="section-title">{{ t('completeCreativeWorkflowWithWplaceExtension') }}</h2>
+                    <p class="section-subtitle">{{ t('fromArtworkGenerationToWplaceLiveMasterpiece') }}</p>
 
                     <div class="workflow-steps">
                         <div class="workflow-step">
                             <div class="step-number">1</div>
                             <div class="step-content">
-                                <h3>Create Artwork with Wplace Tools</h3>
-                                <p>Use our <a href="/pixel-art-generator" target="_blank">Image to Pixel Art</a> or <a
-                                        href="/text-to-pixel-art" target="_blank">Text to Pixel Art</a> tools to
-                                    generate your artwork. Adjust settings, colors, and styles to match your creative
-                                    vision with Wplace Extension.</p>
+                                <h3>{{ t('createArtworkWithWplaceTools') }}</h3>
+                                <p>{{ t('useOurImageToPixelArtOrTextToPixelArtTools') }} <a href="/pixel-art-generator"
+                                        target="_blank">{{ t('imageToPixelArt') }}</a> {{ t('or') }} <a
+                                        href="/text-to-pixel-art" target="_blank">{{ t('textToPixelArt') }}</a> {{
+                                            t('toolsToGenerateYourArtwork') }} {{
+                                        t('adjustSettingsColorsAndStylesToMatchYourCreativeVision') }}.</p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">Image to Pixel Art</span>
-                                    <span class="tool-tag">Text to Pixel Art</span>
+                                    <span class="tool-tag">{{ t('imageToPixelArt') }}</span>
+                                    <span class="tool-tag">{{ t('textToPixelArt') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -177,13 +171,13 @@
                         <div class="workflow-step">
                             <div class="step-number">2</div>
                             <div class="step-content">
-                                <h3>Download Your Artwork</h3>
-                                <p>Export your generated artwork in high-quality PNG format. Choose between
-                                    pixel-perfect or scaled versions depending on your Wplace.live project requirements.
+                                <h3>{{ t('downloadYourArtwork') }}</h3>
+                                <p>{{ t('exportYourGeneratedArtworkInHighQualityPNGFormat') }} {{
+                                    t('chooseBetweenPixelPerfectOrScaledVersions') }}.
                                 </p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">PNG Export</span>
-                                    <span class="tool-tag">Multiple Sizes</span>
+                                    <span class="tool-tag">{{ t('pngExport') }}</span>
+                                    <span class="tool-tag">{{ t('multipleSizes') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -191,12 +185,12 @@
                         <div class="workflow-step">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <h3>Install Wplace Tracer Extension</h3>
-                                <p>Download and install the Wplace Tracer Extension from the Chrome Web Store.
-                                    This Wplace Extension will automatically integrate with Wplace.live.</p>
+                                <h3>{{ t('installWplaceTracerExtension') }}</h3>
+                                <p>{{ t('downloadAndInstallTheWplaceTracerExtensionFromChromeWebStore') }} {{
+                                    t('thisWplaceExtensionWillAutomaticallyIntegrateWithWplaceLive') }}.</p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">Chrome Extension</span>
-                                    <span class="tool-tag">Auto Integration</span>
+                                    <span class="tool-tag">{{ t('chromeExtension') }}</span>
+                                    <span class="tool-tag">{{ t('autoIntegration') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -204,14 +198,13 @@
                         <div class="workflow-step">
                             <div class="step-number">4</div>
                             <div class="step-content">
-                                <h3>Upload & Activate Overlay</h3>
-                                <p>Open Wplace.live, upload your artwork as a reference image. The Wplace Tracer
-                                    Extension
-                                    will automatically detect and activate the overlay feature using Wplace Extension.
+                                <h3>{{ t('uploadActivateOverlay') }}</h3>
+                                <p>{{ t('openWplaceLiveUploadYourArtworkAsReferenceImage') }} {{
+                                    t('theWplaceTracerExtensionWillAutomaticallyDetectAndActivateTheOverlayFeature') }}.
                                 </p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">Image Upload</span>
-                                    <span class="tool-tag">Auto Detection</span>
+                                    <span class="tool-tag">{{ t('imageUpload') }}</span>
+                                    <span class="tool-tag">{{ t('autoDetection') }}</span>
                                 </div>
                                 <div class="step-tip">
                                     <span class="tip-icon">
@@ -231,8 +224,8 @@
                                                 fill="#FFFFFF" p-id="108555"></path>
                                         </svg>
                                     </span>
-                                    <span>If overlay doesn't appear, refresh the page to ensure the extension is fully
-                                        loaded.</span>
+                                    <span>{{ t('ifOverlayDoesntAppearRefreshThePageToEnsureTheExtensionIsFullyLoaded')
+                                    }}</span>
                                 </div>
                             </div>
                         </div>
@@ -240,14 +233,13 @@
                         <div class="workflow-step">
                             <div class="step-number">5</div>
                             <div class="step-content">
-                                <h3>Align Pixel Grids</h3>
-                                <p>Carefully align your artwork reference with Wplace.live's pixel grid. Use the
-                                    overlay controls to ensure perfect pixel-to-pixel alignment for accurate tracing
-                                    with Wplace Extension.
+                                <h3>{{ t('alignPixelGrids') }}</h3>
+                                <p>{{ t('carefullyAlignYourArtworkReferenceWithWplaceLivePixelGrid') }} {{
+                                    t('useTheOverlayControlsToEnsurePerfectPixelToPixelAlignment') }}.
                                 </p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">Grid Alignment</span>
-                                    <span class="tool-tag">Pixel Precision</span>
+                                    <span class="tool-tag">{{ t('gridAlignment') }}</span>
+                                    <span class="tool-tag">{{ t('pixelPrecision') }}</span>
                                 </div>
                                 <div class="step-tip">
                                     <span class="tip-icon">
@@ -267,8 +259,8 @@
                                                 fill="#FFFFFF" p-id="108555"></path>
                                         </svg>
                                     </span>
-                                    <span>Hold Shift while dragging to move the overlay precisely. Use zoom controls for
-                                        detailed alignment.</span>
+                                    <span>{{ t('holdShiftWhileDraggingToMoveTheOverlayPrecisely') }} {{
+                                        t('useZoomControlsForDetailedAlignment') }}.</span>
                                 </div>
                             </div>
                         </div>
@@ -276,13 +268,12 @@
                         <div class="workflow-step">
                             <div class="step-number">6</div>
                             <div class="step-content">
-                                <h3>Trace & Create Your Artwork</h3>
-                                <p>With your reference perfectly aligned, start tracing pixel by pixel. The overlay
-                                    feature makes it easy to see exactly where each pixel should go on your canvas using
-                                    Wplace Extension.</p>
+                                <h3>{{ t('traceCreateYourArtwork') }}</h3>
+                                <p>{{ t('withYourReferencePerfectlyAlignedStartTracingPixelByPixel') }} {{
+                                    t('theOverlayFeatureMakesItEasyToSeeExactlyWhereEachPixelShouldGo') }}.</p>
                                 <div class="step-tools">
-                                    <span class="tool-tag">Pixel Tracing</span>
-                                    <span class="tool-tag">Color Matching</span>
+                                    <span class="tool-tag">{{ t('pixelTracing') }}</span>
+                                    <span class="tool-tag">{{ t('colorMatching') }}</span>
                                 </div>
                                 <div class="step-tip">
                                     <span class="tip-icon">
@@ -302,15 +293,16 @@
                                                 fill="#FFFFFF" p-id="108555"></path>
                                         </svg>
                                     </span>
-                                    <span>Adjust overlay transparency to see both your reference and canvas clearly
-                                        while working.</span>
+                                    <span>{{
+                                        t('adjustOverlayTransparencyToSeeBothYourReferenceAndCanvasClearlyWhileWorking')
+                                        }}.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="workflow-benefits">
-                        <h3>Why This Workflow Works:</h3>
+                        <h3>{{ t('whyThisWorkflowWorks') }}:</h3>
                         <div class="benefits-grid">
                             <div class="benefit-item">
                                 <div class="benefit-icon">
@@ -321,10 +313,11 @@
                                             fill="#E6A23C" p-id="110453"></path>
                                     </svg>
                                 </div>
-                                <h4>Seamless Integration</h4>
-                                <p>The Wplace Tracer Extension seamlessly integrates with both Wplace Tools and
-                                    Wplace.live, creating a unified creative ecosystem that eliminates workflow gaps and
-                                    enhances productivity.</p>
+                                <h4>{{ t('seamlessIntegration') }}</h4>
+                                <p>{{ t('theWplaceTracerExtensionSeamlesslyIntegratesWithBothWplaceToolsAndWplaceLive')
+                                    }} {{
+                                        t('creatingAUnifiedCreativeEcosystemThatEliminatesWorkflowGapsAndEnhancesProductivity')
+                                    }}.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">
@@ -344,10 +337,11 @@
                                             fill="#FF6600" p-id="113420"></path>
                                     </svg>
                                 </div>
-                                <h4>Professional Precision</h4>
-                                <p>Transform your creative process from manual sketching to precise pixel-perfect
-                                    tracing, achieving professional-quality results that would typically require hours
-                                    of meticulous work.</p>
+                                <h4>{{ t('professionalPrecision') }}</h4>
+                                <p>{{ t('transformYourCreativeProcessFromManualSketchingToPrecisePixelPerfectTracing')
+                                }} {{
+                                        t('achievingProfessionalQualityResultsThatWouldTypicallyRequireHoursOfMeticulousWork')
+                                    }}.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">
@@ -364,9 +358,10 @@
                                             fill="#000000" p-id="114535"></path>
                                     </svg>
                                 </div>
-                                <h4>Creative Freedom</h4>
-                                <p>Focus on artistic expression rather than technical execution. The extension handles
-                                    the technical precision while you focus on creative decisions and artistic vision.
+                                <h4>{{ t('creativeFreedom') }}</h4>
+                                <p>{{ t('focusOnArtisticExpressionRatherThanTechnicalExecution') }} {{
+                                    t('theExtensionHandlesTheTechnicalPrecisionWhileYouFocusOnCreativeDecisionsAndArtisticVision')
+                                    }}.
                                 </p>
                             </div>
                             <div class="benefit-item">
@@ -381,10 +376,10 @@
                                             fill="#ffffff" p-id="115715"></path>
                                     </svg>
                                 </div>
-                                <h4>Time Efficiency</h4>
-                                <p>Reduce creation time by up to 70% through automated pixel grid alignment, reference
-                                    overlays, and precision tools that eliminate the need for manual measurement and
-                                    positioning.</p>
+                                <h4>{{ t('timeEfficiency') }}</h4>
+                                <p>{{ t('reduceCreationTimeByUpTo70PercentThroughAutomatedPixelGridAlignment') }} {{
+                                    t('referenceOverlaysAndPrecisionToolsThatEliminateTheNeedForManualMeasurementAndPositioning')
+                                }}.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">
@@ -400,10 +395,11 @@
                                             fill="#FFFFFF" p-id="116868"></path>
                                     </svg>
                                 </div>
-                                <h4>Technical Excellence</h4>
-                                <p>Leverage advanced browser extension technology to enhance web-based creative tools,
-                                    demonstrating how modern web development can revolutionize traditional creative
-                                    workflows.</p>
+                                <h4>{{ t('technicalExcellence') }}</h4>
+                                <p>{{ t('leverageAdvancedBrowserExtensionTechnologyToEnhanceWebBasedCreativeTools') }}
+                                    {{
+                                        t('demonstratingHowModernWebDevelopmentCanRevolutionizeTraditionalCreativeWorkflows')
+                                    }}.</p>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">
@@ -414,10 +410,10 @@
                                             fill="#F1B619" p-id="118001"></path>
                                     </svg>
                                 </div>
-                                <h4>Innovative Approach</h4>
-                                <p>This workflow represents a new paradigm in digital art creation, combining the power
-                                    of AI-generated references with human creativity and precision tools for
-                                    unprecedented results.</p>
+                                <h4>{{ t('innovativeApproach') }}</h4>
+                                <p>{{ t('thisWorkflowRepresentsANewParadigmInDigitalArtCreation') }} {{
+                                    t('combiningThePowerOfAIGeneratedReferencesWithHumanCreativityAndPrecisionToolsForUnprecedentedResults')
+                                }}.</p>
                             </div>
                         </div>
                     </div>
@@ -429,88 +425,95 @@
         <section class="tips-section">
             <div class="container">
                 <div class="tips-content">
-                    <h2 class="section-title">Wplace Extension Features & Usage Tips</h2>
-                    <p class="section-subtitle">Master the Wplace Tracer Extension with these essential Wplace Extension
-                        features and tips
+                    <h2 class="section-title">{{ t('wplaceExtensionFeaturesUsageTips') }}</h2>
+                    <p class="section-subtitle">{{
+                        t('masterTheWplaceTracerExtensionWithTheseEssentialWplaceExtensionFeaturesAndTips') }}
                     </p>
 
                     <div class="tips-grid">
                         <div class="tip-category">
-                            <h3>Core Plugin Features</h3>
+                            <h3>{{ t('corePluginFeatures') }}</h3>
                             <div class="tip-items">
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Image Overlay</h4>
-                                        <p>Upload your artwork reference image to display as an overlay on Wplace.live
-                                            using Wplace Extension
+                                        <h4>{{ t('imageOverlay') }}</h4>
+                                        <p>{{
+                                            t('uploadYourArtworkReferenceImageToDisplayAsAnOverlayOnWplaceLiveUsingWplaceExtension')
+                                            }}
                                         </p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Tracer Size Control</h4>
-                                        <p>Adjust overlay dimensions with width/height inputs for perfect pixel grid
-                                            alignment</p>
+                                        <h4>{{ t('tracerSizeControl') }}</h4>
+                                        <p>{{
+                                            t('adjustOverlayDimensionsWithWidthHeightInputsForPerfectPixelGridAlignment')
+                                            }}</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Toggle Switch</h4>
-                                        <p>Use the blue toggle to show/hide the reference image overlay as needed</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tip-category">
-                            <h3>Image Positioning & Alignment</h3>
-                            <div class="tip-items">
-                                <div class="tip-item">
-                                    <div class="tip-content">
-                                        <h4>Shift + Drag</h4>
-                                        <p>Hold Shift while dragging to reposition the overlay image for precise
-                                            alignment</p>
-                                    </div>
-                                </div>
-                                <div class="tip-item">
-                                    <div class="tip-content">
-                                        <h4>Pixel Grid Matching</h4>
-                                        <p>Align your reference image's pixel grid with Wplace.live's canvas grid for
-                                            accurate tracing with Wplace Extension</p>
-                                    </div>
-                                </div>
-                                <div class="tip-item">
-                                    <div class="tip-content">
-                                        <h4>Transparent Background</h4>
-                                        <p>Reference images with transparent backgrounds work best for clear overlay
-                                            visibility when using Wplace Extension</p>
+                                        <h4>{{ t('toggleSwitch') }}</h4>
+                                        <p>{{ t('useTheBlueToggleToShowHideTheReferenceImageOverlayAsNeeded') }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="tip-category">
-                            <h3>Workflow Tips</h3>
+                            <h3>{{ t('imagePositioningAlignment') }}</h3>
                             <div class="tip-items">
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Optimal Image Size</h4>
-                                        <p>Use images with dimensions that match your target canvas size for best
-                                            results with Wplace Extension</p>
+                                        <h4>{{ t('shiftDrag') }}</h4>
+                                        <p>{{ t('holdShiftWhileDraggingToRepositionTheOverlayImageForPreciseAlignment')
+                                            }}</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Browser Zoom</h4>
-                                        <p>Use browser zoom controls to get closer alignment for pixel-perfect tracing
-                                            with Wplace Extension</p>
+                                        <h4>{{ t('pixelGridMatching') }}</h4>
+                                        <p>{{
+                                            t('alignYourReferenceImagesPixelGridWithWplaceLiveCanvasGridForAccurateTracingWithWplaceExtension')
+                                            }}</p>
                                     </div>
                                 </div>
                                 <div class="tip-item">
                                     <div class="tip-content">
-                                        <h4>Quick Toggle</h4>
-                                        <p>Toggle the overlay on/off to compare your work with the reference image using
-                                            Wplace Extension</p>
+                                        <h4>{{ t('transparentBackground') }}</h4>
+                                        <p>{{
+                                            t('referenceImagesWithTransparentBackgroundsWorkBestForClearOverlayVisibilityWhenUsingWplaceExtension')
+                                            }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tip-category">
+                            <h3>{{ t('workflowTips') }}</h3>
+                            <div class="tip-items">
+                                <div class="tip-item">
+                                    <div class="tip-content">
+                                        <h4>{{ t('optimalImageSize') }}</h4>
+                                        <p>{{
+                                            t('useImagesWithDimensionsThatMatchYourTargetCanvasSizeForBestResultsWithWplaceExtension')
+                                            }}</p>
+                                    </div>
+                                </div>
+                                <div class="tip-item">
+                                    <div class="tip-content">
+                                        <h4>{{ t('browserZoom') }}</h4>
+                                        <p>{{
+                                            t('useBrowserZoomControlsToGetCloserAlignmentForPixelPerfectTracingWithWplaceExtension')
+                                            }}</p>
+                                    </div>
+                                </div>
+                                <div class="tip-item">
+                                    <div class="tip-content">
+                                        <h4>{{ t('quickToggle') }}</h4>
+                                        <p>{{
+                                            t('toggleTheOverlayOnOffToCompareYourWorkWithTheReferenceImageUsingWplaceExtension')
+                                            }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -524,67 +527,71 @@
         <section class="installation-section">
             <div class="container">
                 <div class="installation-content">
-                    <h2 class="section-title">How to Install Wplace Extension</h2>
-                    <p class="section-subtitle">Simple step-by-step guide to get your Wplace Extension up and running
+                    <h2 class="section-title">{{ t('howToInstallWplaceExtension') }}</h2>
+                    <p class="section-subtitle">{{ t('simpleStepByStepGuideToGetYourWplaceExtensionUpAndRunning') }}
                     </p>
 
                     <div class="installation-steps">
                         <div class="step-item">
                             <div class="step-number">1</div>
                             <div class="step-content">
-                                <h3>Download Wplace Tracer Extension</h3>
-                                <p>Download the Wplace Tracer Extension from the <a
+                                <h3>{{ t('downloadWplaceTracerExtension') }}</h3>
+                                <p>{{ t('downloadTheWplaceTracerExtensionFromThe') }} <a
                                         href="https://chromewebstore.google.com/detail/wplace-tracer/efkjkoigpkglbkknnfcbdmfipbcdopao"
                                         target="_blank" rel="noopener"
-                                        style="color: #00bcd4; text-decoration: underline;">Chrome Web Store</a>. The
-                                    extension is completely free and safe to install with just one click.</p>
+                                        style="color: #00bcd4; text-decoration: underline;">{{ t('chromeWebStore')
+                                        }}</a>. {{ t('theExtensionIsCompletelyFreeAndSafeToInstallWithJustOneClick') }}.
+                                </p>
                             </div>
                         </div>
 
                         <div class="step-item">
                             <div class="step-number">2</div>
                             <div class="step-content">
-                                <h3>Enable & Configure Extension</h3>
-                                <p>After installation, the extension will automatically activate. Make sure the
-                                    extension is enabled in your browser's extension management page. Refresh
-                                    Wplace.live after installation to ensure the extension is fully loaded and you can
-                                    see the new overlay features.</p>
+                                <h3>{{ t('enableConfigureExtension') }}</h3>
+                                <p>{{ t('afterInstallationTheExtensionWillAutomaticallyActivate') }} {{
+                                    t('makeSureTheExtensionIsEnabledInYourBrowsersExtensionManagementPage') }} {{
+                                        t('refreshWplaceLiveAfterInstallationToEnsureTheExtensionIsFullyLoadedAndYouCanSeeTheNewOverlayFeatures')
+                                    }}.</p>
                             </div>
                         </div>
 
                         <div class="step-item">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <h3>Prepare Your Artwork</h3>
-                                <p>Create your artwork using our <a href="/pixel-art-generator"
-                                        style="color: #00bcd4; text-decoration: underline;">Image to Pixel Art</a>
-                                    converter or <a href="/text-to-pixel-art"
-                                        style="color: #00bcd4; text-decoration: underline;">Text to Pixel Art</a>
-                                    generator from <a href="/"
-                                        style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>, then
-                                    download it as a PNG file. The higher quality your reference image,
-                                    the better your final result will be with Wplace Extension.</p>
+                                <h3>{{ t('prepareYourArtwork') }}</h3>
+                                <p>{{ t('createYourArtworkUsingOur') }} <a href="/pixel-art-generator"
+                                        style="color: #00bcd4; text-decoration: underline;">{{ t('imageToPixelArt')
+                                        }}</a>
+                                    {{ t('converterOr') }} <a href="/text-to-pixel-art"
+                                        style="color: #00bcd4; text-decoration: underline;">{{ t('textToPixelArt')
+                                        }}</a>
+                                    {{ t('generatorFrom') }} <a href="/"
+                                        style="color: #00bcd4; text-decoration: underline;">{{ t('wplaceTools') }}</a>,
+                                    {{ t('thenDownloadItAsAPNGFile') }} {{
+                                        t('theHigherQualityYourReferenceImageTheBetterYourFinalResultWillBeWithWplaceExtension')
+                                    }}.</p>
                             </div>
                         </div>
 
                         <div class="step-item">
                             <div class="step-number">4</div>
                             <div class="step-content">
-                                <h3>Start Creating on Wplace.live</h3>
-                                <p>Visit <a href="/" target="_blank" rel="noopener"
-                                        style="color: #00bcd4; text-decoration: underline;">Wplace.live</a>, upload your
-                                    artwork reference, and use the overlay feature to trace and create your
-                                    masterpiece with perfect precision using Wplace Extension.</p>
+                                <h3>{{ t('startCreatingOnWplaceLive') }}</h3>
+                                <p>{{ t('visit') }} <a href="/" target="_blank" rel="noopener"
+                                        style="color: #00bcd4; text-decoration: underline;">Wplace.live</a>, {{
+                                            t('uploadYourArtworkReferenceAndUseTheOverlayFeatureToTraceAndCreateYourMasterpieceWithPerfectPrecisionUsingWplaceExtension')
+                                        }}.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="installation-note">
                         <div class="note-content">
-                            <h4>Ready to Transform Your Workflow?</h4>
-                            <p>Wplace Tracer Extension is the missing link between Wplace Tools and Wplace.live. Start
-                                creating
-                                professional artwork today with this powerful Wplace Extension combination!</p>
+                            <h4>{{ t('readyToTransformYourWorkflow') }}</h4>
+                            <p>{{ t('wplaceTracerExtensionIsTheMissingLinkBetweenWplaceToolsAndWplaceLive') }} {{
+                                t('startCreatingProfessionalArtworkTodayWithThisPowerfulWplaceExtensionCombination') }}!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -595,70 +602,42 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-content">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about Wplace Extension</p>
+                    <h2 class="section-title">{{ t('frequentlyAskedQuestions') }}</h2>
+                    <p class="section-subtitle">{{ t('everythingYouNeedToKnowAboutWplaceExtension') }}</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">What is the Wplace Tracer Extension?</h3>
-                            <p class="faq-answer">The Wplace Tracer Extension is a powerful Chrome browser extension
-                                designed to enhance your artwork drawing experience on wplace.live. This Wplace Tracer
-                                Extension provides drawing assistance overlays, pixel grid alignment, and reference
-                                guides that help you create more precise and accurate artwork. The Wplace Tracer
-                                Extension integrates seamlessly with wplace.live to improve your drawing workflow and
-                                productivity using Wplace Extension.</p>
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title1') }}</h3>
+                            <p class="faq-answer">{{ t('WplacePluginsView_faq_content1') }}.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title2') }}</h3>
+                            <p class="faq-answer">{{ t('WplacePluginsView_faq_content2') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How does the Wplace Tracer Extension work with wplace.live?</h3>
-                            <p class="faq-answer">The Wplace Tracer Extension works by adding helpful overlay layers
-                                directly on the wplace.live website. When you install the Wplace Tracer Extension, it
-                                automatically detects when you're on wplace.live and provides additional drawing
-                                assistance features. The Wplace Tracer Extension includes pixel grid overlays, reference
-                                image overlays, and drawing aids that help you create more accurate artwork without
-                                leaving the wplace.live platform using Wplace Extension.</p>
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title3') }}</h3>
+                            <p class="faq-answer">{{ t('WplacePluginsView_faq_content3') }}.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Is the Wplace Tracer Extension free to use?</h3>
-                            <p class="faq-answer">Yes, the Wplace Tracer Extension is completely free to download and
-                                use. There are no hidden fees, subscriptions, or premium features. The Wplace Tracer
-                                Extension is designed to enhance the wplace.live experience for all users without any
-                                cost. Simply download the Wplace Tracer Extension from the Chrome Web Store and start
-                                using it immediately with your wplace.live artwork projects using Wplace Extension.</p>
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title4') }}</h3>
+                            <p class="faq-answer">{{ t('WplacePluginsView_faq_content4') }}.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What drawing assistance features does the Wplace Tracer Extension
-                                provide?</h3>
-                            <p class="faq-answer">The Wplace Tracer Extension offers several drawing assistance features
-                                including customizable pixel grid overlays, reference image overlays with transparency
-                                controls, tracer size adjustment, and precision drawing aids. The Wplace Tracer
-                                Extension helps you maintain consistent pixel placement, align your artwork with
-                                wplace.live's pixel grid, and achieve better accuracy in your artwork. These Wplace
-                                Tracer Extension features are specifically designed to work seamlessly with
-                                wplace.live's existing drawing tools using Wplace Extension.</p>
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title5') }}</h3>
+                            <p class="faq-answer">{{ t('WplacePluginsView_faq_content5') }}.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I install the Wplace Tracer Extension?</h3>
-                            <p class="faq-answer">Installing the Wplace Tracer Extension is simple. You can download the
-                                Wplace Tracer Extension directly from the Chrome Web Store. Once downloaded, the Wplace
-                                Tracer Extension will automatically integrate with wplace.live when you visit the site.
-                                The Wplace Tracer Extension requires no additional setup or configuration - it works
-                                immediately to enhance your drawing experience on wplace.live with pixel-perfect tracing
-                                capabilities using Wplace Extension.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3 class="faq-question">What image formats work best with the Wplace Tracer Extension?</h3>
-                            <p class="faq-answer">PNG format works best for artwork overlays with the Wplace Tracer
-                                Extension. You can use images generated from <a href="/"
-                                    style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a> (Image to Pixel
-                                Art or Text to
-                                Pixel Art) or any other artwork you've created. The Wplace Tracer Extension
-                                automatically detects and optimizes these images for the best overlay experience using
-                                Wplace Extension.</p>
+                            <h3 class="faq-question">{{ t('WplacePluginsView_faq_title6') }}
+                            </h3>
+                            <p class="faq-answer">{{
+                                t('WplacePluginsView_faq_content6') }} <a href="/"
+                                    style="color: #00bcd4; text-decoration: underline;">{{ t('wplaceTools') }}</a> ({{
+                                        t('imageToPixelArt') }} {{ t('or') }} {{ t('textToPixelArt') }}) {{
+                                    t('WplacePluginsView_faq_content6_1') }}.</p>
                         </div>
                     </div>
                 </div>
@@ -669,17 +648,17 @@
         <section id="download-plugins" class="recommendations-section">
             <div class="container">
                 <div class="recommendations-content">
-                    <h2 class="section-title">More Recommended Wplace Extension</h2>
-                    <p class="section-subtitle">Discover additional powerful Wplace Extension for your creative
-                        workflow</p>
+                    <h2 class="section-title">{{ t('moreRecommendedWplaceExtension') }}</h2>
+                    <p class="section-subtitle">{{ t('discoverAdditionalPowerfulWplaceExtensionForYourCreativeWorkflow')
+                    }}</p>
 
                     <div class="recommendations-grid">
                         <div class="plugin-card">
-                            <h3 class="plugin-title">Wplace Paint Tool</h3>
-                            <p class="plugin-description">Advanced artwork painting with custom brushes, layers, and
-                                professional-grade drawing tools for creating stunning artwork using
-                                Wplace Extension and <a href="/"
-                                    style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>.</p>
+                            <h3 class="plugin-title">{{ t('wplacePaintTool') }}</h3>
+                            <p class="plugin-description">{{
+                                t('advancedArtworkPaintingWithCustomBrushesLayersAndProfessionalGradeDrawingToolsForCreatingStunningArtworkUsingWplaceExtensionAnd')
+                            }} <a href="/" style="color: #00bcd4; text-decoration: underline;">{{ t('wplaceTools')
+                                }}</a>.</p>
                             <div class="plugin-meta">
                                 <span class="plugin-rating"><i class="icon">
                                         <svg t="1756796589653" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -689,19 +668,18 @@
                                                 fill="#F2CB51" p-id="119011"></path>
                                         </svg>
                                     </i> 4.5/5.0</span>
-                                <span class="plugin-downloads">8K+ downloads</span>
+                                <span class="plugin-downloads">{{ t('wplacePlugins_downloads1') }}</span>
                             </div>
                             <a href="https://chromewebstore.google.com/detail/wplace-paint-tool/dmiblgcnghfieomegbgllkjbkjkmkkcb?utm_source=item-share-cb"
                                 target="_blank" rel="noopener" class="plugin-download-btn">
-                                Download for Chrome
+                                {{ t('wplacePlugins_downloadChrome') }}
                             </a>
                         </div>
 
                         <div class="plugin-card">
-                            <h3 class="plugin-title">Wplace Tracer Pro</h3>
-                            <p class="plugin-description">Professional tracing and reference tools with advanced overlay
-                                controls, multiple image support, and precision alignment features. Perfect companion to
-                                <a href="/" style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>.
+                            <h3 class="plugin-title">{{ t('wplacePlugins_tracerPro') }}</h3>
+                            <p class="plugin-description">{{ t('wplacePlugins_tracerProDesc') }} <a href="/"
+                                    style="color: #00bcd4; text-decoration: underline;">{{ t('wplaceTools') }}</a>.
                             </p>
                             <div class="plugin-meta">
                                 <span class="plugin-rating"><i class="icon">
@@ -712,21 +690,20 @@
                                                 fill="#F2CB51" p-id="119011"></path>
                                         </svg>
                                     </i> 4.7/5.0</span>
-                                <span class="plugin-downloads">12K+ downloads</span>
-                                <span class="plugin-users">358 users</span>
+                                <span class="plugin-downloads">{{ t('wplacePlugins_downloads2') }}</span>
+                                <span class="plugin-users">{{ t('wplacePlugins_users1') }}</span>
                             </div>
                             <a href="https://chromewebstore.google.com/detail/wplace-tracer-pro/eackhkbccjoheobjnkcnomknknnpihjl"
                                 target="_blank" rel="noopener" class="plugin-download-btn">
-                                Download for Chrome
+                                {{ t('wplacePlugins_downloadChrome') }}
                             </a>
                         </div>
 
                         <div class="plugin-card">
-                            <h3 class="plugin-title">Wplace BlueMarble</h3>
-                            <p class="plugin-description">Specialized tool for creating and editing blue marble effects,
-                                textures, and patterns with advanced color manipulation capabilities. Enhanced by <a
-                                    href="/" style="color: #00bcd4; text-decoration: underline;">Wplace Tools</a>
-                                integration.</p>
+                            <h3 class="plugin-title">{{ t('wplacePlugins_blueMarble') }}</h3>
+                            <p class="plugin-description">{{ t('wplacePlugins_blueMarbleDesc') }} <a href="/"
+                                    style="color: #00bcd4; text-decoration: underline;">{{ t('wplaceTools') }}</a>
+                                {{ t('wplacePlugins_integration') }}.</p>
                             <div class="plugin-meta">
                                 <span class="plugin-rating">
                                     <i class="icon">
@@ -737,11 +714,11 @@
                                                 fill="#F2CB51" p-id="119011"></path>
                                         </svg>
                                     </i> 4.2/5.0</span>
-                                <span class="plugin-downloads">5K+ downloads</span>
+                                <span class="plugin-downloads">{{ t('wplacePlugins_downloads3') }}</span>
                             </div>
                             <a href="https://chromewebstore.google.com/detail/wplace-bluemarble/banfnmfalhefdfacjnglllpjnjgkandn"
                                 target="_blank" rel="noopener" class="plugin-download-btn">
-                                Download for Chrome
+                                {{ t('wplacePlugins_downloadChrome') }}
                             </a>
                         </div>
                     </div>
@@ -753,8 +730,8 @@
         <section id="get-started" class="get-started-section">
             <div class="container">
                 <div class="get-started-content">
-                    <h2 class="section-title">Ready to Enhance Your Wplace.live Experience?</h2>
-                    <p class="section-subtitle">Download Wplace Extension and start creating with enhanced tools</p>
+                    <h2 class="section-title">{{ t('wplacePlugins_readyToEnhance') }}</h2>
+                    <p class="section-subtitle">{{ t('wplacePlugins_downloadAndStart') }}</p>
 
                     <div class="get-started-buttons">
                         <a href="https://wplace.live/" target="_blank" rel="noopener" class="get-started-btn primary">
@@ -766,7 +743,7 @@
                                         p-id="121901" fill="#707070"></path>
                                 </svg>
                             </span>
-                            Visit Wplace.live
+                            {{ t('wplacePlugins_visitWplaceLive') }}
                         </a>
                         <a href="#" @click.prevent="scrollToSection('download-plugins')"
                             class="get-started-btn secondary" style="cursor: pointer;">
@@ -778,17 +755,18 @@
                                         p-id="123337" fill="#8a8a8a"></path>
                                 </svg>
                             </span>
-                            Browse All Wplace Extension
+                            {{ t('wplacePlugins_browseAll') }}
                         </a>
                     </div>
 
                     <div class="get-started-note">
-                        Free Wplace Extension • Official support • Community driven • Easy installation
+                        {{ t('wplacePlugins_freeExtension') }} • {{ t('wplacePlugins_officialSupport') }} • {{
+                            t('wplacePlugins_communityDriven') }} • {{ t('wplacePlugins_easyInstallation') }}
                     </div>
 
                     <div class="wplace-info">
-                        <p>All Wplace Extension are designed to work seamlessly with <a href="/" target="_blank"
-                                rel="noopener">Wplace Tools</a> - your ultimate creative platform.</p>
+                        <p>{{ t('wplacePlugins_allExtensionsDesigned') }} <a href="/" target="_blank" rel="noopener">{{
+                            t('wplaceTools') }}</a> - {{ t('wplacePlugins_ultimateCreativePlatform') }}.</p>
                     </div>
                 </div>
             </div>
@@ -796,35 +774,32 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'WplacePluginsView',
-    mounted() {
-        // 组件已挂载
-    },
-    methods: {
-        scrollToSection(sectionId) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                try {
-                    // 动态获取Header高度
-                    const header = document.querySelector('.header');
-                    const headerHeight = header ? header.offsetHeight : 70; // 默认70px
-                    const elementTop = element.offsetTop;
-                    const scrollTop = elementTop - headerHeight - 20; // 额外减去20px作为缓冲
+<script setup>
+import { useI18n } from '@/composables/useI18n'
 
-                    window.scrollTo({
-                        top: scrollTop,
-                        behavior: 'smooth'
-                    });
-                } catch (error) {
-                    // 使用scrollIntoView作为备选方案
-                    element.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
+const { t } = useI18n()
+
+// 组件已挂载
+const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        try {
+            // 动态获取Header高度
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 70; // 默认70px
+            const elementTop = element.offsetTop;
+            const scrollTop = elementTop - headerHeight - 20; // 额外减去20px作为缓冲
+
+            window.scrollTo({
+                top: scrollTop,
+                behavior: 'smooth'
+            });
+        } catch (error) {
+            // 使用scrollIntoView作为备选方案
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
     }
 }

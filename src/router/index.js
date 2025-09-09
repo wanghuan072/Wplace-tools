@@ -10,6 +10,168 @@ import {
   generateToolListSchema
 } from '../config/structuredData.js'
 import { blogData } from '../data/blogData.js'
+import { supportedLocales, defaultLocale, i18n } from '../locales/index.js'
+import { nextTick } from 'vue'
+
+// Helper function to get translated meta tags
+const getMeta = (titleKey, descriptionKey, keywordsKey = 'meta.defaultKeywords') => {
+  return {
+    title: () => i18n.global.t(titleKey),
+    description: () => i18n.global.t(descriptionKey),
+    keywords: () => i18n.global.t(keywordsKey),
+  }
+}
+
+const nonDefaultLangs = supportedLocales.filter((lang) => lang.code !== defaultLocale)
+const langParamRegex = nonDefaultLangs.map(lang => lang.code).join('|')
+
+// 基础路由配置
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: () => import('@/views/HomeView.vue'),
+    meta: getMeta('meta.home.title', 'meta.home.description', 'meta.home.keywords')
+  },
+  {
+    path: '/color-converter',
+    name: 'colorConverter',
+    component: () => import('@/views/ColorConverterPage.vue'),
+    meta: getMeta('meta.colorConverter.title', 'meta.colorConverter.description', 'meta.colorConverter.keywords')
+  },
+  {
+    path: '/pixel-art-generator',
+    name: 'pixelArtGenerator',
+    component: () => import('@/views/PixelArtGeneratorPage.vue'),
+    meta: getMeta('meta.pixelArtGenerator.title', 'meta.pixelArtGenerator.description', 'meta.pixelArtGenerator.keywords')
+  },
+  {
+    path: '/text-to-pixel-art',
+    name: 'textToPixelArt',
+    component: () => import('@/views/TextToPixelArtPage.vue'),
+    meta: getMeta('meta.textToPixelArt.title', 'meta.textToPixelArt.description', 'meta.textToPixelArt.keywords')
+  },
+  {
+    path: '/wplace-extension',
+    name: 'wplaceExtensions',
+    component: () => import('@/views/WplacePluginsView.vue'),
+    meta: getMeta('meta.wplaceExtension.title', 'meta.wplaceExtension.description', 'meta.wplaceExtension.keywords')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/views/AboutView.vue'),
+    meta: getMeta('meta.about.title', 'meta.about.description', 'meta.about.keywords')
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: () => import('@/views/BlogView.vue'),
+    meta: getMeta('meta.blog.title', 'meta.blog.description', 'meta.blog.keywords')
+  },
+  {
+    path: '/blog/:addressBar',
+    name: 'blogDetail',
+    component: () => import('@/views/BlogDetailView.vue'),
+    meta: getMeta('meta.blog.title', 'meta.blog.description')
+  },
+  {
+    path: '/privacy-policy',
+    name: 'privacyPolicy',
+    component: () => import('@/views/PrivacyPolicyView.vue'),
+    meta: getMeta('meta.privacyPolicy.title', 'meta.privacyPolicy.description', 'meta.privacyPolicy.keywords')
+  },
+  {
+    path: '/terms-of-use',
+    name: 'termsOfUse',
+    component: () => import('@/views/TermsOfUseView.vue'),
+    meta: getMeta('meta.termsOfUse.title', 'meta.termsOfUse.description', 'meta.termsOfUse.keywords')
+  },
+  {
+    path: '/copyright',
+    name: 'copyright',
+    component: () => import('@/views/CopyrightView.vue'),
+    meta: getMeta('meta.copyright.title', 'meta.copyright.description', 'meta.copyright.keywords')
+  },
+  // 多语言路由（带语言前缀）
+  {
+    path: `/:lang(${langParamRegex})/`,
+    name: 'home-lang',
+    component: () => import('@/views/HomeView.vue'),
+    props: true,
+    meta: getMeta('meta.home.title', 'meta.home.description', 'meta.home.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/color-converter`,
+    name: 'colorConverter-lang',
+    component: () => import('@/views/ColorConverterPage.vue'),
+    props: true,
+    meta: getMeta('meta.colorConverter.title', 'meta.colorConverter.description', 'meta.colorConverter.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/pixel-art-generator`,
+    name: 'pixelArtGenerator-lang',
+    component: () => import('@/views/PixelArtGeneratorPage.vue'),
+    props: true,
+    meta: getMeta('meta.pixelArtGenerator.title', 'meta.pixelArtGenerator.description', 'meta.pixelArtGenerator.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/text-to-pixel-art`,
+    name: 'textToPixelArt-lang',
+    component: () => import('@/views/TextToPixelArtPage.vue'),
+    props: true,
+    meta: getMeta('meta.textToPixelArt.title', 'meta.textToPixelArt.description', 'meta.textToPixelArt.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/wplace-extension`,
+    name: 'wplaceExtensions-lang',
+    component: () => import('@/views/WplacePluginsView.vue'),
+    props: true,
+    meta: getMeta('meta.wplaceExtension.title', 'meta.wplaceExtension.description', 'meta.wplaceExtension.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/about`,
+    name: 'about-lang',
+    component: () => import('@/views/AboutView.vue'),
+    props: true,
+    meta: getMeta('meta.about.title', 'meta.about.description', 'meta.about.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/blog`,
+    name: 'blog-lang',
+    component: () => import('@/views/BlogView.vue'),
+    props: true,
+    meta: getMeta('meta.blog.title', 'meta.blog.description', 'meta.blog.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/blog/:addressBar`,
+    name: 'blogDetail-lang',
+    component: () => import('@/views/BlogDetailView.vue'),
+    props: true,
+    meta: getMeta('meta.blog.title', 'meta.blog.description')
+  },
+  {
+    path: `/:lang(${langParamRegex})/privacy-policy`,
+    name: 'privacyPolicy-lang',
+    component: () => import('@/views/PrivacyPolicyView.vue'),
+    props: true,
+    meta: getMeta('meta.privacyPolicy.title', 'meta.privacyPolicy.description', 'meta.privacyPolicy.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/terms-of-use`,
+    name: 'termsOfUse-lang',
+    component: () => import('@/views/TermsOfUseView.vue'),
+    props: true,
+    meta: getMeta('meta.termsOfUse.title', 'meta.termsOfUse.description', 'meta.termsOfUse.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/copyright`,
+    name: 'copyright-lang',
+    component: () => import('@/views/CopyrightView.vue'),
+    props: true,
+    meta: getMeta('meta.copyright.title', 'meta.copyright.description', 'meta.copyright.keywords')
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,230 +183,89 @@ const router = createRouter({
     // 否则滚动到顶部
     return { top: 0 }
   },
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: () => import('@/views/HomeView.vue'),
-      meta: {
-        seo: {
-          title: 'Converter Wplace Tools Professional Pixel Art  | Pixel Art Converter For Wplace',
-          description: 'Transform your creative ideas into stunning pixel art with Wplace Tools. Professional image and text conversion tools for pixel art creation.',
-          keywords: 'wplace tools, pixel art, image conversion, text to pixel art, wplace pixel art, wplace image to pixel art, wplace text to pixel art'
-        }
-      }
-    },
-    {
-      path: '/color-converter',
-      name: 'colorConverter',
-      component: () => import('@/views/ColorConverterPage.vue'),
-      meta: {
-        seo: {
-          title: 'Wplace Color & 64-Color Palette | Copy HEX',
-          description: 'Explore the complete 64-color palette, copy HEX instantly, and convert images with the unified pixel tool.',
-          keywords: 'wplace color, color palette, copy hex, pixel art colors, 64-color'
-        }
-      }
-    },
-    {
-      path: '/pixel-art-generator',
-      name: 'pixelArtGenerator',
-      component: () => import('@/views/PixelArtGeneratorPage.vue'),
-      meta: {
-        seo: {
-          title: 'Wplace Image To Pixel Art Generator | Wplace Pixel Art Maker',
-          description: 'Convert any image to beautiful pixel art with Wplace Tools. Professional image processing with customizable settings and high-quality output.',
-          keywords: 'image to pixel art, pixel art converter, image pixelation, wplace image to pixel art, pixel art generator'
-        }
-      }
-    },
-    {
-      path: '/text-to-pixel-art',
-      name: 'textToPixelArt',
-      component: () => import('@/views/TextToPixelArtPage.vue'),
-      meta: {
-        seo: {
-          title: 'Wplace Text To Pixel Art Generator | Wplace Pixel Art Maker',
-          description: 'Create stunning pixel art text with Wplace Tools. Customizable fonts, styles, and colors for unique text effects.',
-          keywords: 'text to pixel art, pixel art text, text pixelation, wplace text to pixel art, pixel text generator'
-        }
-      }
-    },
-    {
-      path: '/wplace-extension',
-      name: 'wplaceExtensions',
-      component: () => import('@/views/WplacePluginsView.vue'),
-      meta: {
-        seo: {
-          title: 'Wplace Extension - Official and Community Extensions',
-          description: 'Discover official and community extensions for Wplace.live. Enhance your creative workflow with powerful extensions.',
-          keywords: 'Wplace Extension, wplace plugins, wplace tools, browser extensions, creative tools'
-        }
-      }
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('@/views/AboutView.vue'),
-      meta: {
-        seo: {
-          title: 'About Us - Wplace Tools',
-          description: 'Learn about Wplace Tools - our mission to provide professional pixel art conversion tools and creative solutions.',
-          keywords: 'about wplace tools, pixel art tools, creative software, about us'
-        }
-      }
-    },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('@/views/BlogView.vue'),
-      meta: {
-        seo: {
-          title: 'Wplace Tools Blog - Pixel Art Tips & Guides',
-          description: 'Discover expert tips, guides, and insights for pixel art creation with Wplace Tools. Learn from professionals.',
-          keywords: 'wplace tools blog, pixel art blog, creative guides, pixel art tips, wplace blog'
-        }
-      }
-    },
-    {
-      path: '/blog/:addressBar',
-      name: 'blogDetail',
-      component: () => import('@/views/BlogDetailView.vue'),
-    },
-    {
-      path: '/privacy-policy',
-      name: 'privacyPolicy',
-      component: () => import('@/views/PrivacyPolicyView.vue'),
-      meta: {
-        seo: {
-          title: 'Privacy Policy - Wplace Tools',
-          description: 'Privacy Policy for Wplace Tools. Learn how we collect, use, and protect your personal information.',
-          keywords: 'privacy policy, data protection, wplace tools, user privacy'
-        }
-      }
-    },
-    {
-      path: '/terms-of-use',
-      name: 'termsOfUse',
-      component: () => import('@/views/TermsOfUseView.vue'),
-      meta: {
-        seo: {
-          title: 'Terms of Use - Wplace Tools',
-          description: 'Terms of Use for Wplace Tools. Learn about the rules and guidelines for using our creative platform.',
-          keywords: 'terms of use, terms of service, wplace tools, user agreement'
-        }
-      }
-    },
-    {
-      path: '/copyright',
-      name: 'copyright',
-      component: () => import('@/views/CopyrightView.vue'),
-      meta: {
-        seo: {
-          title: 'Copyright Information - Wplace Tools',
-          description: 'Copyright information for Wplace Tools. Learn about intellectual property rights and usage guidelines.',
-          keywords: 'copyright, intellectual property, wplace tools, trademark, fair use'
-        }
-      }
-    },
-  ],
+  routes: routes,
 })
 
-// 全局路由守卫 - 处理基础SEO
+// 全局路由守卫 - 处理多语言和SEO
 router.beforeEach((to, from, next) => {
-  // 设置canonical URL
-  const canonicalUrl = `https://wplacetools.org${to.path}`
-  setCanonicalUrl(canonicalUrl)
+  const paramsLang = to.params.lang
+  const pathFirstPart = to.path.split('/')[1]
+  const storedLang = localStorage.getItem('locale')
+  let targetLang = defaultLocale
 
-  // 先准备要应用的 SEO（只在最后统一 setPageSEO 一次）
-  let seoToApply = null
+  // 1. Check URL parameter
+  if (paramsLang && supportedLocales.find(l => l.code === paramsLang)) {
+    targetLang = paramsLang
+  }
+  // 2. Check first path segment
+  else if (supportedLocales.find(l => l.code === pathFirstPart) && pathFirstPart !== defaultLocale) {
+    targetLang = pathFirstPart
+  }
+  // 3. Check localStorage
+  else if (storedLang && supportedLocales.find(l => l.code === storedLang)) {
+    targetLang = storedLang
+  }
+  // 4. Fallback to default
 
-  // 生成基础结构化数据
-  const schemas = [generateOrganizationSchema(), generateWebsiteSchema()]
-
-  // 博客详情页 - 生成面包屑与实体 Schema，并应用博客 SEO
-  if (to.name === 'blogDetail' && to.params?.addressBar) {
-    const blog = blogData.find(b => b.addressBar === to.params.addressBar)
-    if (blog) {
-      schemas.push(
-        generateBreadcrumbSchema([
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: blog.title, url: `/blog/${blog.addressBar}` }
-        ]),
-        generateArticleSchema(blog)
-      )
-      if (blog.seo) {
-        seoToApply = blog.seo
-      }
-    }
+  // Update i18n locale if needed
+  if (i18n.global.locale.value !== targetLang) {
+    i18n.global.locale.value = targetLang
+    localStorage.setItem('locale', targetLang)
   }
 
-  // 工具页面 - 生成面包屑与工具 Schema
-  if (to.name === 'pixelArtGenerator') {
-    schemas.push(
-      generateBreadcrumbSchema([
-        { name: 'Home', url: '/' },
-        { name: 'Image to Pixel Art', url: '/pixel-art-generator' }
-      ]),
-      generateToolSchema({
-        title: 'Image to Pixel Art Converter',
-        description: 'Convert any image to beautiful pixel art with customizable settings',
-        url: '/pixel-art-generator',
-        imageUrl: '/favicon.ico'
-      })
-    )
-  }
+  // --- URL Prefix Handling ---
+  const requiresPrefix = targetLang !== defaultLocale
+  const pathStartsWithCorrectLang = pathFirstPart === targetLang
+  const pathHasAnyLangPrefix = supportedLocales.find(l => l.code === pathFirstPart)
 
-  if (to.name === 'textToPixelArt') {
-    schemas.push(
-      generateBreadcrumbSchema([
-        { name: 'Home', url: '/' },
-        { name: 'Text to Pixel Art', url: '/text-to-pixel-art' }
-      ]),
-      generateToolSchema({
-        title: 'Text to Pixel Art Converter',
-        description: 'Create stunning pixel art text with customizable fonts and styles',
-        url: '/text-to-pixel-art',
-        imageUrl: '/favicon.ico'
-      })
-    )
-  }
-
-  if (to.name === 'colorConverter') {
-    schemas.push(
-      generateBreadcrumbSchema([
-        { name: 'Home', url: '/' },
-        { name: 'Color', url: '/color-converter' }
-      ]),
-      generateToolSchema({
-        title: 'Color & Wplace Palette',
-        description: 'Explore 64-color palette, copy HEX, and convert images locally',
-        url: '/color-converter',
-        imageUrl: '/favicon.ico'
-      })
-    )
-  }
-
-  // 兜底：若以上未设置，则使用路由 meta.seo 或默认
-  if (!seoToApply) {
-    if (to.meta?.seo) {
-      seoToApply = to.meta.seo
+  // Scenario 1: Add prefix redirect
+  if (requiresPrefix && !pathStartsWithCorrectLang) {
+    let newPath = ''
+    if (pathHasAnyLangPrefix) {
+      newPath = to.path.substring(('/' + pathFirstPart).length) || '/'
     } else {
-      // 使用默认 SEO
-      seoToApply = null
+      newPath = to.path
+    }
+    newPath = '/' + targetLang + newPath
+    const query = to.query ? '?' + new URLSearchParams(to.query).toString() : ''
+    const hash = to.hash || ''
+    const fullRedirectPath = newPath + query + hash
+    return next(fullRedirectPath)
+  }
+
+  // Scenario 2: Remove prefix redirect
+  if (!requiresPrefix && pathHasAnyLangPrefix) {
+    const toPathWithoutLang = to.path.substring(('/' + pathFirstPart).length) || '/'
+    const query = to.query ? '?' + new URLSearchParams(to.query).toString() : ''
+    const hash = to.hash || ''
+    const fullRedirectPath = toPathWithoutLang + query + hash
+    if (to.fullPath !== fullRedirectPath) {
+      return next(fullRedirectPath)
     }
   }
 
-  if (seoToApply) {
-    setPageSEO(seoToApply, canonicalUrl)
-  } else {
-    resetToDefaultSEO()
-    setCanonicalUrl(canonicalUrl)
-  }
+  // --- Update Meta Tags and SEO ---
+  nextTick(() => {
+    const routeWithMeta = to.matched
+      .slice()
+      .reverse()
+      .find((r) => r.meta && r.meta.title)
 
-  // 插入结构化数据（会清空既有 JSON-LD 后再插入）
-  insertMultipleStructuredData(schemas)
+    if (routeWithMeta) {
+      const meta = routeWithMeta.meta
+      const pageTitle = meta.title ? meta.title() : 'Wplace Tools'
+      const pageDescription = meta.description ? meta.description() : i18n.global.t('meta.defaultDescription')
+      const pageKeywords = meta.keywords ? meta.keywords() : i18n.global.t('meta.defaultKeywords')
+
+      // Update document title and meta tags
+      document.title = pageTitle
+      setPageSEO({
+        title: pageTitle,
+        description: pageDescription,
+        keywords: pageKeywords
+      }, `https://wplacetools.org${to.path}`)
+    }
+  })
 
   next()
 })

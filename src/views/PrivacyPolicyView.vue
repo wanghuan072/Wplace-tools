@@ -3,56 +3,49 @@
         <section class="policy-section">
             <div class="container">
                 <div class="policy-content">
-                    <h1 class="page-title">Privacy Policy</h1>
-                    <p class="last-updated">Last updated: August 22, 2025</p>
+                    <h1 class="page-title">{{ t('privacyPolicyTitle') }}</h1>
+                    <p class="last-updated">{{ t('privacyPolicyLastUpdated') }}</p>
 
                     <div class="policy-content-text">
-                        <h2>1. Information We Collect</h2>
-                        <p>Wplace Tools collects information you provide directly to us when you use our pixel art
-                            conversion services. This may include:</p>
+                        <h2>{{ t('privacyPolicySection1Title') }}</h2>
+                        <p>{{ t('privacyPolicySection1Desc') }}</p>
                         <ul>
-                            <li>Images and text content you upload for conversion</li>
-                            <li>Usage data and preferences</li>
-                            <li>Technical information about your device and browser</li>
+                            <li>{{ t('privacyPolicySection1Item1') }}</li>
+                            <li>{{ t('privacyPolicySection1Item2') }}</li>
+                            <li>{{ t('privacyPolicySection1Item3') }}</li>
                         </ul>
 
-                        <h2>2. How We Use Your Information</h2>
-                        <p>We use the collected information to:</p>
+                        <h2>{{ t('privacyPolicySection2Title') }}</h2>
+                        <p>{{ t('privacyPolicySection2Desc') }}</p>
                         <ul>
-                            <li>Provide and improve our pixel art conversion services</li>
-                            <li>Process your image and text conversions</li>
-                            <li>Maintain and enhance website functionality</li>
-                            <li>Communicate with you about our services</li>
+                            <li>{{ t('privacyPolicySection2Item1') }}</li>
+                            <li>{{ t('privacyPolicySection2Item2') }}</li>
+                            <li>{{ t('privacyPolicySection2Item3') }}</li>
+                            <li>{{ t('privacyPolicySection2Item4') }}</li>
                         </ul>
 
-                        <h2>3. Information Sharing</h2>
-                        <p>We do not sell, trade, or otherwise transfer your personal information to third parties. Your
-                            uploaded content is processed locally and is not stored permanently on our servers.</p>
+                        <h2>{{ t('privacyPolicySection3Title') }}</h2>
+                        <p>{{ t('privacyPolicySection3Desc') }}</p>
 
-                        <h2>4. Data Security</h2>
-                        <p>We implement appropriate security measures to protect your information. However, no method of
-                            transmission over the internet is 100% secure.</p>
+                        <h2>{{ t('privacyPolicySection4Title') }}</h2>
+                        <p>{{ t('privacyPolicySection4Desc') }}</p>
 
-                        <h2>5. Cookies and Tracking</h2>
-                        <p>We use cookies to improve your browsing experience and analyze website traffic. You can
-                            control cookie settings through your browser preferences.</p>
+                        <h2>{{ t('privacyPolicySection5Title') }}</h2>
+                        <p>{{ t('privacyPolicySection5Desc') }}</p>
 
-                        <h2>6. Third-Party Services</h2>
-                        <p>Our services may integrate with third-party platforms like wplace.live. Please review their
-                            respective privacy policies.</p>
+                        <h2>{{ t('privacyPolicySection6Title') }}</h2>
+                        <p>{{ t('privacyPolicySection6Desc') }}</p>
 
-                        <h2>7. Children's Privacy</h2>
-                        <p>Our services are not intended for children under 13. We do not knowingly collect personal
-                            information from children under 13.</p>
+                        <h2>{{ t('privacyPolicySection7Title') }}</h2>
+                        <p>{{ t('privacyPolicySection7Desc') }}</p>
 
-                        <h2>8. Changes to This Policy</h2>
-                        <p>We may update this privacy policy from time to time. We will notify you of any changes by
-                            posting the new policy on this page.</p>
+                        <h2>{{ t('privacyPolicySection8Title') }}</h2>
+                        <p>{{ t('privacyPolicySection8Desc') }}</p>
 
-                        <h2>9. Contact Us</h2>
-                        <p>If you have any questions about this privacy policy, please contact us at:</p>
-                        <p><strong>Email:</strong> jasonzim904@gmail.com</p>
-                        <p><strong>Date:</strong> August 22, 2025</p>
+                        <h2>{{ t('privacyPolicySection9Title') }}</h2>
+                        <p>{{ t('privacyPolicySection9Desc') }}</p>
+                        <p><strong>{{ t('privacyPolicySection9Email') }}</strong> jasonzim904@gmail.com</p>
+                        <p><strong>{{ t('privacyPolicySection9Date') }}</strong> August 22, 2025</p>
                     </div>
                 </div>
             </div>
@@ -60,10 +53,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'PrivacyPolicyView'
-}
+<script setup>
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

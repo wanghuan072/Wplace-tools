@@ -30,7 +30,7 @@
                         <div class="blog-actions">
                             <router-link to="/blog" class="back-to-blog-btn">
                                 <span class="arrow">←</span>
-                                Back to Blog
+                                {{ t('backToBlog') }}
                             </router-link>
                         </div>
                     </div>
@@ -42,10 +42,10 @@
         <div v-else class="blog-not-found">
             <div class="container">
                 <div class="not-found-content">
-                    <h1>Blog Post Not Found</h1>
-                    <p>The blog post you're looking for doesn't exist.</p>
+                    <h1>{{ t('blogPostNotFound') }}</h1>
+                    <p>{{ t('blogPostNotFoundDesc') }}</p>
                     <router-link to="/blog" class="back-to-blog-btn">
-                        Back to Blog
+                        {{ t('backToBlog') }}
                     </router-link>
                 </div>
             </div>
@@ -54,10 +54,15 @@
 </template>
 
 <script>
-import { blogData } from '@/data/blogData.js'
+import { getBlogByAddressBar } from '@/data/blogDataManager.js'
+import { useI18n } from '@/composables/useI18n'
 
 export default {
     name: 'BlogDetailView',
+    setup() {
+        const { currentLocale, t } = useI18n()
+        return { currentLocale, t }
+    },
     data() {
         return {
             blog: null
@@ -65,6 +70,13 @@ export default {
     },
     mounted() {
         this.loadBlog()
+        // 定期检查语言变化
+        this.localeCheckInterval = setInterval(this.checkLocaleChange, 500)
+    },
+    beforeUnmount() {
+        if (this.localeCheckInterval) {
+            clearInterval(this.localeCheckInterval)
+        }
     },
     watch: {
         '$route'(to, from) {
@@ -76,11 +88,23 @@ export default {
     methods: {
         loadBlog() {
             const addressBar = this.$route.params.addressBar
-            this.blog = blogData.find(blog => blog.addressBar === addressBar)
+            const locale = localStorage.getItem('locale') || 'en'
+            console.log('Loading blog for locale:', locale, 'addressBar:', addressBar)
+            const blog = getBlogByAddressBar(addressBar, locale)
+            console.log('Blog loaded:', blog ? blog.title : 'Not found')
+            this.blog = blog
+        },
+        checkLocaleChange() {
+            const savedLocale = localStorage.getItem('locale') || 'en'
+            if (savedLocale !== this.currentLocale) {
+                this.currentLocale = savedLocale
+                this.loadBlog()
+            }
         },
         formatDate(dateString) {
             const date = new Date(dateString)
-            return date.toLocaleDateString('en-US', {
+            const locale = this.currentLocale || 'en'
+            return date.toLocaleDateString(locale, {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'

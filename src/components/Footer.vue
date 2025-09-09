@@ -9,8 +9,7 @@
                             <img src="/images/logo.png" alt="Wplace Tools" class="logo-icon">
                             <span class="brand-title">Wplace Tools</span>
                         </div>
-                        <p class="brand-description">Professional pixel art conversion tools that transform your
-                            creative ideas into stunning pixel art masterpieces with unlimited possibilities.</p>
+                        <p class="brand-description">{{ t('aboutDescription') }}</p>
                         <div class="social-links">
                             <a v-for="(platform, key) in socialPlatforms" :key="key" :href="platform.url"
                                 target="_blank" rel="noopener" class="social-btn" :title="platform.name"
@@ -42,48 +41,43 @@
 
                 <!-- 快速链接 -->
                 <div class="footer-section">
-                    <h4 class="footer-subtitle">QUICK LINKS</h4>
+                    <h4 class="footer-subtitle">{{ t('quickLinks') }}</h4>
                     <ul class="footer-links">
-                        <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/pixel-art-generator">Image to Pixel Art</router-link></li>
-                        <li><router-link to="/text-to-pixel-art">Text to Pixel Art</router-link></li>
-                        <li><router-link to="/color-converter">Color</router-link></li>
-                        <li><router-link to="/wplace-extension">Wplace Extension</router-link></li>
-                        <li><router-link to="/blog">Blog</router-link></li>
+                        <li><router-link to="/">{{ t('home') }}</router-link></li>
+                        <li><router-link to="/pixel-art-generator">{{ t('imageToPixelArt') }}</router-link></li>
+                        <li><router-link to="/text-to-pixel-art">{{ t('textToPixelArt') }}</router-link></li>
+                        <li><router-link to="/color-converter">{{ t('color') }}</router-link></li>
+                        <li><router-link to="/wplace-extension">{{ t('extension') }}</router-link></li>
+                        <li><router-link to="/blog">{{ t('blog') }}</router-link></li>
                     </ul>
                 </div>
 
                 <!-- 法律信息 -->
                 <div class="footer-section">
-                    <h4 class="footer-subtitle">LEGAL</h4>
+                    <h4 class="footer-subtitle">{{ t('legal') }}</h4>
                     <ul class="footer-links">
-                        <li><router-link to="/privacy-policy">Privacy Policy</router-link></li>
-                        <li><router-link to="/terms-of-use">Terms of Use</router-link></li>
-                        <li><router-link to="/copyright">Copyright</router-link></li>
-                        <li><router-link to="/about">About Us</router-link></li>
-                        <li><a href="mailto:jasonzim904@gmail.com">Contact Us</a></li>
+                        <li><router-link to="/privacy-policy">{{ t('privacyPolicy') }}</router-link></li>
+                        <li><router-link to="/terms-of-use">{{ t('termsOfUse') }}</router-link></li>
+                        <li><router-link to="/copyright">{{ t('copyright') }}</router-link></li>
+                        <li><router-link to="/about">{{ t('about') }}</router-link></li>
+                        <li><a href="mailto:jasonzim904@gmail.com">{{ t('contactUs') }}</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p class="copyright">© 2025 wplacetools.org. All rights reserved.</p>
+                <p class="copyright">© 2025 wplacetools.org. {{ t('allRightsReserved') }}</p>
             </div>
         </div>
     </footer>
 </template>
 
-<script>
+<script setup>
 import { socialMediaConfig } from '../config/seo.js'
+import { useI18n } from '@/composables/useI18n'
 
-export default {
-    name: 'Footer',
-    data() {
-        return {
-            socialPlatforms: socialMediaConfig.getActivePlatforms()
-        }
-    }
-}
+const { t } = useI18n()
+const socialPlatforms = socialMediaConfig.getActivePlatforms()
 </script>
 
 <style scoped>

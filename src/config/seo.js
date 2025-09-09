@@ -211,7 +211,7 @@ export const allowedPageTypes = [
     '*.aspx$'
 ]
 
-import { blogData } from '../data/blogData.js'
+import { getBlogData } from '../data/blogDataManager.js'
 
 // 获取所有路由列表（用于vite插件配置）
 export function getAllRoutes() {
@@ -228,10 +228,15 @@ export function getAllRoutes() {
         '/copyright'
     ]
 
-    // 生成博客详情页路由
-    const blogRoutes = blogData.map(blog => `/blog/${blog.addressBar}`)
+    // 生成博客详情页路由（默认语言）
+    const enBlogData = getBlogData('en')
+    const blogRoutes = enBlogData.map(blog => `/blog/${blog.addressBar}`)
 
-    return [...staticRoutes, ...blogRoutes]
+    // 生成多语言博客路由
+    const zhBlogData = getBlogData('zh')
+    const zhBlogRoutes = zhBlogData.map(blog => `/zh/blog/${blog.addressBar}`)
+
+    return [...staticRoutes, ...blogRoutes, ...zhBlogRoutes]
 }
 
 // Sitemap配置

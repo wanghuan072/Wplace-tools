@@ -3,64 +3,58 @@
         <section class="copyright-section">
             <div class="container">
                 <div class="copyright-content">
-                    <h1 class="page-title">Copyright Information</h1>
-                    <p class="last-updated">Last updated: August 22, 2025</p>
+                    <h1 class="page-title">{{ t('copyrightTitle') }}</h1>
+                    <p class="last-updated">{{ t('copyrightLastUpdated') }}</p>
 
                     <div class="copyright-content-text">
-                        <h2>Copyright Notice</h2>
-                        <p>© 2024-2025 Wplace Tools. All rights reserved.</p>
+                        <h2>{{ t('copyrightNoticeTitle') }}</h2>
+                        <p>{{ t('copyrightNoticeDesc') }}</p>
 
-                        <h2>1. Copyright Ownership</h2>
-                        <p>All content on this website, including but not limited to text, graphics, logos, images,
-                            software, and design elements, is the property of Wplace Tools and is protected by
-                            international copyright laws.</p>
+                        <h2>{{ t('copyrightSection1Title') }}</h2>
+                        <p>{{ t('copyrightSection1Desc') }}</p>
 
-                        <h2>2. Permitted Use</h2>
-                        <p>You may use our pixel art conversion services for personal and commercial purposes, subject
-                            to the following conditions:</p>
+                        <h2>{{ t('copyrightSection2Title') }}</h2>
+                        <p>{{ t('copyrightSection2Desc') }}</p>
                         <ul>
-                            <li>Generated pixel art belongs to you and may be used freely</li>
-                            <li>Our tools and interface design remain our intellectual property</li>
-                            <li>You may not reverse engineer or copy our software</li>
-                            <li>Attribution is appreciated but not required</li>
+                            <li>{{ t('copyrightSection2Item1') }}</li>
+                            <li>{{ t('copyrightSection2Item2') }}</li>
+                            <li>{{ t('copyrightSection2Item3') }}</li>
+                            <li>{{ t('copyrightSection2Item4') }}</li>
                         </ul>
 
-                        <h2>3. User-Generated Content</h2>
-                        <p>When you upload images or text for conversion:</p>
+                        <h2>{{ t('copyrightSection3Title') }}</h2>
+                        <p>{{ t('copyrightSection3Desc') }}</p>
                         <ul>
-                            <li>You retain all rights to your original content</li>
-                            <li>You must have the right to use the content you upload</li>
-                            <li>We do not claim ownership of your uploaded materials</li>
-                            <li>Generated pixel art is your creative work</li>
+                            <li>{{ t('copyrightSection3Item1') }}</li>
+                            <li>{{ t('copyrightSection3Item2') }}</li>
+                            <li>{{ t('copyrightSection3Item3') }}</li>
+                            <li>{{ t('copyrightSection3Item4') }}</li>
                         </ul>
 
-                        <h2>4. Third-Party Content</h2>
-                        <p>Our service may reference or integrate with third-party platforms like wplace.live. Please
-                            respect their respective copyright and intellectual property rights.</p>
+                        <h2>{{ t('copyrightSection4Title') }}</h2>
+                        <p>{{ t('copyrightSection4Desc') }}</p>
 
-                        <h2>5. DMCA Compliance</h2>
-                        <p>If you believe your copyrighted work has been used inappropriately, please contact us with:
-                        </p>
+                        <h2>{{ t('copyrightSection5Title') }}</h2>
+                        <p>{{ t('copyrightSection5Desc') }}</p>
                         <ul>
-                            <li>Description of the copyrighted work</li>
-                            <li>Location of the material on our site</li>
-                            <li>Your contact information</li>
-                            <li>Statement of good faith belief</li>
+                            <li>{{ t('copyrightSection5Item1') }}</li>
+                            <li>{{ t('copyrightSection5Item2') }}</li>
+                            <li>{{ t('copyrightSection5Item3') }}</li>
+                            <li>{{ t('copyrightSection5Item4') }}</li>
                         </ul>
 
-                        <h2>6. License Terms</h2>
-                        <p>Wplace Tools grants you a limited, non-exclusive, non-transferable license to use our
-                            services for their intended purpose. This license does not include:</p>
+                        <h2>{{ t('copyrightSection6Title') }}</h2>
+                        <p>{{ t('copyrightSection6Desc') }}</p>
                         <ul>
-                            <li>Reselling or redistributing our tools</li>
-                            <li>Modifying or creating derivative works</li>
-                            <li>Using our brand assets without permission</li>
+                            <li>{{ t('copyrightSection6Item1') }}</li>
+                            <li>{{ t('copyrightSection6Item2') }}</li>
+                            <li>{{ t('copyrightSection6Item3') }}</li>
                         </ul>
 
-                        <h2>7. Contact Information</h2>
-                        <p>For copyright-related inquiries, please contact us at:</p>
-                        <p><strong>Email:</strong> jasonzim904@gmail.com</p>
-                        <p><strong>Date:</strong> August 22, 2025</p>
+                        <h2>{{ t('copyrightSection7Title') }}</h2>
+                        <p>{{ t('copyrightSection7Desc') }}</p>
+                        <p><strong>{{ t('copyrightSection7Email') }}</strong> jasonzim904@gmail.com</p>
+                        <p><strong>{{ t('copyrightSection7Date') }}</strong> August 22, 2025</p>
                     </div>
                 </div>
             </div>
@@ -68,10 +62,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'CopyrightView'
-}
+<script setup>
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

@@ -5,9 +5,8 @@
             <div class="container">
                 <div class="component-content">
                     <div class="generator-header">
-                        <h1>Wplace Image To Pixel Art Generator | Wplace Pixel Art Maker</h1>
-                        <p>Upload images, convert to pixel art, automatically re-analyze and prioritize filling selected
-                            colors</p>
+                        <h1>{{ t('pixelArtGenerator') }}</h1>
+                        <p>{{ t('imageConverterDescription') }}</p>
                     </div>
                     <PixelArtGeneratorUnified />
                 </div>
@@ -18,9 +17,8 @@
         <section class="features-section">
             <div class="container">
                 <div class="features-content">
-                    <h2 class="section-title">Image to Pixel Art Converter Features</h2>
-                    <p class="section-subtitle">Professional image processing tools with advanced pixel art conversion
-                        capabilities</p>
+                    <h2 class="section-title">{{ t('imageConverterFeatures') }}</h2>
+                    <p class="section-subtitle">{{ t('professionalImageProcessing') }}</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
@@ -38,9 +36,8 @@
                                         fill="#FFFFFF" p-id="53559"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Multi-Format Support</h3>
-                            <p class="feature-description">Support PNG, JPG, JPEG, GIF, WebP and other popular image
-                                formats. Upload images of any size and resolution.</p>
+                            <h3 class="feature-title">{{ t('multiFormatSupport') }}</h3>
+                            <p class="feature-description">{{ t('multiFormatSupportDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -52,9 +49,8 @@
                                         fill="#389BFF" p-id="55509"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Adjustable Parameters</h3>
-                            <p class="feature-description">Fine-tune pixel size (1-32px), image dimensions, and enable
-                                grid display for precise control over the final result.</p>
+                            <h3 class="feature-title">{{ t('adjustableParameters') }}</h3>
+                            <p class="feature-description">{{ t('adjustableParametersDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -78,9 +74,8 @@
                                         fill="#48EF7E" p-id="56673"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">64-Color Palette</h3>
-                            <p class="feature-description">Professional 64-color palette system with premium colors
-                                requiring points. Intelligent color mapping and replacement.</p>
+                            <h3 class="feature-title">{{ t('colorPalette') }}</h3>
+                            <p class="feature-description">{{ t('colorPaletteDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
@@ -95,9 +90,8 @@
                                         fill="#4DA1FF" p-id="59373"></path>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Usage Statistics</h3>
-                            <p class="feature-description">Real-time color usage statistics, pixel count tracking, and
-                                points calculation for premium color usage.</p>
+                            <h3 class="feature-title">{{ t('usageStatistics') }}</h3>
+                            <p class="feature-description">{{ t('usageStatisticsDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -108,36 +102,32 @@
         <section class="instructions-section">
             <div class="container">
                 <div class="instructions-content">
-                    <h2 class="section-title">How to Use Image to Pixel Art Converter</h2>
-                    <p class="section-subtitle">Step-by-step guide to create beautiful pixel art from your images</p>
+                    <h2 class="section-title">{{ t('howToUseImageConverter') }}</h2>
+                    <p class="section-subtitle">{{ t('stepByStepGuide') }}</p>
 
                     <div class="instructions-grid">
                         <div class="instruction-step">
                             <div class="step-number">1</div>
-                            <h3 class="step-title">Upload Your Image</h3>
-                            <p class="step-description">Click the upload area or drag and drop your image file.
-                                Supported formats include PNG, JPG, JPEG, GIF, and WebP.</p>
+                            <h3 class="step-title">{{ t('uploadYourImage') }}</h3>
+                            <p class="step-description">{{ t('uploadYourImageDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">2</div>
-                            <h3 class="step-title">Adjust Settings</h3>
-                            <p class="step-description">Set your desired pixel size (1-32px), choose image dimensions,
-                                and toggle grid display for better visualization.</p>
+                            <h3 class="step-title">{{ t('adjustSettings') }}</h3>
+                            <p class="step-description">{{ t('adjustSettingsDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">3</div>
-                            <h3 class="step-title">Review & Customize</h3>
-                            <p class="step-description">Examine the color usage statistics, replace colors as needed,
-                                and fine-tune the pixel art appearance.</p>
+                            <h3 class="step-title">{{ t('reviewCustomize') }}</h3>
+                            <p class="step-description">{{ t('reviewCustomizeDesc') }}</p>
                         </div>
 
                         <div class="instruction-step">
                             <div class="step-number">4</div>
-                            <h3 class="step-title">Download Result</h3>
-                            <p class="step-description">Download your pixel art in PNG format. Choose between small size
-                                (pixel perfect) or large size (scaled) versions.</p>
+                            <h3 class="step-title">{{ t('downloadResult') }}</h3>
+                            <p class="step-description">{{ t('downloadResultDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -148,31 +138,28 @@
         <section class="tech-section">
             <div class="container">
                 <div class="tech-content">
-                    <h2 class="section-title">Technical Features</h2>
-                    <p class="section-subtitle">Advanced algorithms and processing capabilities</p>
+                    <h2 class="section-title">{{ t('technicalFeatures') }}</h2>
+                    <p class="section-subtitle">{{ t('advancedAlgorithms') }}</p>
 
                     <div class="tech-grid">
                         <div class="tech-item">
-                            <h3>Local Processing</h3>
-                            <p>All image processing happens in your browser, ensuring privacy and security. Your images
-                                are never uploaded to our servers.</p>
+                            <h3>{{ t('localProcessing') }}</h3>
+                            <p>{{ t('localProcessingDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>Color Distance Algorithm</h3>
-                            <p>Advanced color mapping algorithm that finds the closest match from our 64-color palette
-                                for optimal pixel art results.</p>
+                            <h3>{{ t('colorDistanceAlgorithm') }}</h3>
+                            <p>{{ t('colorDistanceAlgorithmDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>Real-time Preview</h3>
-                            <p>Instant preview of pixel art results as you adjust parameters. What you see is exactly
-                                what you'll get.</p>
+                            <h3>{{ t('realTimePreview') }}</h3>
+                            <p>{{ t('realTimePreviewDesc') }}</p>
                         </div>
 
                         <div class="tech-item">
-                            <h3>Batch Processing Ready</h3>
-                            <p>Process multiple images efficiently with consistent settings and parameters.</p>
+                            <h3>{{ t('batchProcessingReady') }}</h3>
+                            <p>{{ t('batchProcessingReadyDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -183,35 +170,28 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-content">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about image to pixel art conversion</p>
+                    <h2 class="section-title">{{ t('frequentlyAskedQuestions') }}</h2>
+                    <p class="section-subtitle">{{ t('everythingAboutImageConversion') }}</p>
 
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3 class="faq-question">What's the best pixel size for my image?</h3>
-                            <p class="faq-answer">Smaller pixel sizes (1-8px) create more detailed pixel art, while
-                                larger sizes (16-32px) create more abstract, retro-style effects. Choose based on your
-                                desired aesthetic.</p>
+                            <h3 class="faq-question">{{ t('bestPixelSize') }}</h3>
+                            <p class="faq-answer">{{ t('bestPixelSizeAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How does the color replacement work?</h3>
-                            <p class="faq-answer">Click on any color in the usage statistics to open the replacement
-                                dialog. Select a new color from the palette to replace all instances of that color in
-                                your pixel art.</p>
+                            <h3 class="faq-question">{{ t('howColorReplacementWorks') }}</h3>
+                            <p class="faq-answer">{{ t('howColorReplacementWorksAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What are premium colors and points?</h3>
-                            <p class="faq-answer">Premium colors are special colors in our palette that require points
-                                to use. Points are earned through usage and can be spent to access these exclusive
-                                colors.</p>
+                            <h3 class="faq-question">{{ t('whatArePremiumColors') }}</h3>
+                            <p class="faq-answer">{{ t('whatArePremiumColorsAnswer') }}</p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use the converter for commercial projects?</h3>
-                            <p class="faq-answer">Yes! All pixel art generated with our tool is free for personal and
-                                commercial use. The tool is designed to help creators of all levels.</p>
+                            <h3 class="faq-question">{{ t('canUseForCommercial') }}</h3>
+                            <p class="faq-answer">{{ t('canUseForCommercialAnswer') }}</p>
                         </div>
                     </div>
                 </div>
@@ -220,15 +200,11 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import PixelArtGeneratorUnified from '@/components/PixelArtGeneratorUnified.vue'
+import { useI18n } from '@/composables/useI18n'
 
-export default {
-    name: 'PixelArtGeneratorPage',
-    components: {
-        PixelArtGeneratorUnified
-    }
-}
+const { t } = useI18n()
 </script>
 
 <style scoped>
