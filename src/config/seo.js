@@ -228,15 +228,39 @@ export function getAllRoutes() {
         '/copyright'
     ]
 
+    // 支持的语言列表（排除默认语言en）
+    const supportedLanguages = ['zh', 'ja', 'pt', 'fr', 'de', 'es', 'he', 'mi', 'tr', 'gn']
+
+    // 生成所有语言的多语言路由
+    const multiLangRoutes = []
+    supportedLanguages.forEach(lang => {
+        multiLangRoutes.push(
+            `/${lang}/`,
+            `/${lang}/pixel-art-generator`,
+            `/${lang}/text-to-pixel-art`,
+            `/${lang}/color-converter`,
+            `/${lang}/wplace-extension`,
+            `/${lang}/about`,
+            `/${lang}/blog`,
+            `/${lang}/privacy-policy`,
+            `/${lang}/terms-of-use`,
+            `/${lang}/copyright`
+        )
+    })
+
     // 生成博客详情页路由（默认语言）
     const enBlogData = getBlogData('en')
     const blogRoutes = enBlogData.map(blog => `/blog/${blog.addressBar}`)
 
-    // 生成多语言博客路由
-    const zhBlogData = getBlogData('zh')
-    const zhBlogRoutes = zhBlogData.map(blog => `/zh/blog/${blog.addressBar}`)
+    // 生成所有语言的博客详情页路由
+    const multiLangBlogRoutes = []
+    supportedLanguages.forEach(lang => {
+        const langBlogData = getBlogData(lang)
+        const langBlogRoutes = langBlogData.map(blog => `/${lang}/blog/${blog.addressBar}`)
+        multiLangBlogRoutes.push(...langBlogRoutes)
+    })
 
-    return [...staticRoutes, ...blogRoutes, ...zhBlogRoutes]
+    return [...staticRoutes, ...multiLangRoutes, ...blogRoutes, ...multiLangBlogRoutes]
 }
 
 // Sitemap配置
