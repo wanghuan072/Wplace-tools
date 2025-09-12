@@ -211,7 +211,7 @@ export const allowedPageTypes = [
     '*.aspx$'
 ]
 
-import { getBlogData } from '../data/blogDataManager.js'
+import { blogData as enBlogData } from '../data/blogData.js'
 
 // 获取所有路由列表（用于vite插件配置）
 export function getAllRoutes() {
@@ -249,14 +249,12 @@ export function getAllRoutes() {
     })
 
     // 生成博客详情页路由（默认语言）
-    const enBlogData = getBlogData('en')
     const blogRoutes = enBlogData.map(blog => `/blog/${blog.addressBar}`)
 
-    // 生成所有语言的博客详情页路由
+    // 生成所有语言的博客详情页路由（仅使用英文博客数据，其他语言按需加载）
     const multiLangBlogRoutes = []
     supportedLanguages.forEach(lang => {
-        const langBlogData = getBlogData(lang)
-        const langBlogRoutes = langBlogData.map(blog => `/${lang}/blog/${blog.addressBar}`)
+        const langBlogRoutes = enBlogData.map(blog => `/${lang}/blog/${blog.addressBar}`)
         multiLangBlogRoutes.push(...langBlogRoutes)
     })
 

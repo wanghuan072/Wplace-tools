@@ -42,11 +42,29 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: (id) => {
           // 将Vue相关库分离
-          'vue-vendor': ['vue', 'vue-router', 'pinia'],
+          if (id.includes('node_modules/vue') || id.includes('node_modules/vue-router') || id.includes('node_modules/pinia')) {
+            return 'vue-vendor'
+          }
           // 将i18n分离
-          'i18n': ['vue-i18n']
+          if (id.includes('node_modules/vue-i18n')) {
+            return 'i18n'
+          }
+          // 将大型组件分离
+          if (id.includes('PixelArtGeneratorUnified')) {
+            return 'pixel-generator'
+          }
+          if (id.includes('TextToPixelArt')) {
+            return 'text-to-pixel'
+          }
+          if (id.includes('WplacePluginsView')) {
+            return 'plugins-view'
+          }
+          // 将博客相关组件分离
+          if (id.includes('Blog') || id.includes('blog')) {
+            return 'blog'
+          }
         },
         // 优化chunk大小
         chunkFileNames: 'assets/[name]-[hash].js',
