@@ -46,6 +46,10 @@
     <link rel="preconnect" href="https://picsum.photos">
     <link rel="dns-prefetch" href="https://picsum.photos">
     
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="/assets/vue-vendor-DJ6fnBrG.js" as="script" crossorigin>
+    <link rel="preload" href="/assets/i18n-D9pLzMUM.js" as="script" crossorigin>
+    
 
 
     <!-- Preload critical resources -->
@@ -55,19 +59,37 @@
     <link rel="preload" href="/assets/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/assets/index.css"></noscript>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBF8V4PEBR"></script>
+    <!-- 延迟加载第三方脚本 - 优化性能 -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      // 延迟加载 Google Analytics
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          // 加载 Google Analytics
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MBF8V4PEBR';
+          document.head.appendChild(script);
+          
+          // 初始化 Google Analytics
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MBF8V4PEBR');
+          window.gtag = gtag;
+        }, 2000); // 延迟2秒加载
+      });
 
-      gtag('config', 'G-MBF8V4PEBR');
+      // 延迟加载 Google AdSense
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4224010041977181';
+          script.crossOrigin = 'anonymous';
+          document.head.appendChild(script);
+        }, 2000); // 延迟2秒加载
+      });
     </script>
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4224010041977181"
-     crossorigin="anonymous"></script>
     
   </head>
   <body>

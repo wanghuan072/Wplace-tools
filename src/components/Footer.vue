@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content" :class="{ 'loading': isLoading }">
                 <!-- 品牌信息区域 -->
                 <div class="footer-section brand-section">
                     <div class="brand-info">
@@ -73,11 +73,20 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import { socialMediaConfig } from '../config/seo.js'
 import { useI18n } from '@/composables/useI18n'
 
 const { t } = useI18n()
 const socialPlatforms = socialMediaConfig.getActivePlatforms()
+const isLoading = ref(true)
+
+onMounted(() => {
+    // 模拟内容加载完成，减少布局偏移
+    setTimeout(() => {
+        isLoading.value = false
+    }, 100)
+})
 </script>
 
 <style scoped>
@@ -86,13 +95,17 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
     color: white;
     padding: 60px 0 20px;
     border-top: 1px solid #333;
+    min-height: 300px;
+    /* 预设最小高度，防止布局偏移 */
+    box-sizing: border-box;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    min-height: 200px;
+    min-height: 220px;
+    /* 增加最小高度，确保稳定布局 */
     /* 预设最小高度，防止内容加载时布局偏移 */
 }
 
@@ -143,7 +156,8 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
     line-height: 1.6;
     font-size: 14px;
     margin: 0;
-    min-height: 2.24em;
+    min-height: 3em;
+    /* 增加最小高度，防止文本加载时布局偏移 */
     /* 预设最小高度，防止内容加载时布局偏移 */
 }
 
@@ -151,7 +165,8 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
     display: flex;
     gap: 12px;
     margin-top: 10px;
-    min-height: 40px;
+    min-height: 50px;
+    /* 增加最小高度，确保社交媒体图标区域稳定 */
     /* 预设高度，防止图标加载时布局偏移 */
 }
 
@@ -250,6 +265,28 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
 
     .footer-bottom {
         padding-top: 10px;
+    }
+}
+
+/* 加载状态样式，减少布局偏移 */
+.footer-content.loading {
+    opacity: 0.8;
+}
+
+.footer-content.loading .brand-description,
+.footer-content.loading .social-links {
+    background: linear-gradient(90deg, #333 25%, #444 50%, #333 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
     }
 }
 </style>
