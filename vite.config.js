@@ -25,5 +25,18 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
+  },
+  build: {
+    cssCodeSplit: true, // 启用CSS代码分割，按需加载
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // 将Vue相关库分离
+          'vue-vendor': ['vue', 'vue-router', 'pinia'],
+          // 将i18n分离
+          'i18n': ['vue-i18n']
+        }
+      }
+    }
   }
 })
