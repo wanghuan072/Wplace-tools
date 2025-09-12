@@ -35,9 +35,18 @@ export default defineConfig({
         drop_console: true, // 生产环境移除console
         drop_debugger: true, // 移除debugger
         pure_funcs: ['console.log', 'console.info'], // 移除特定函数调用
+        // 更激进的压缩选项
+        passes: 2, // 多次压缩
+        unsafe: true, // 启用不安全的优化
+        unsafe_comps: true, // 优化比较操作
+        unsafe_math: true, // 优化数学运算
+        unsafe_proto: true, // 优化原型访问
       },
       mangle: {
         safari10: true, // 兼容Safari 10
+        properties: {
+          regex: /^_/ // 混淆以下划线开头的属性
+        }
       }
     },
     rollupOptions: {
