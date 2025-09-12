@@ -4,6 +4,8 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import i18nPlugin from './plugins/i18n.js'
+// 导入全局样式 - 按需加载，不阻塞渲染
+import './styles/global.css'
 
 const app = createApp(App)
 

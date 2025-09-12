@@ -7,26 +7,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import sitemap from 'vite-plugin-sitemap'
 import { getAllRoutes } from './src/config/seo.js'
 
-// 插件：移除index.css的HTML引用，让它按需加载
-function removeIndexCSSPlugin() {
-  return {
-    name: 'remove-index-css',
-    generateBundle(options, bundle) {
-      // 查找HTML文件
-      const htmlFiles = Object.keys(bundle).filter(fileName => fileName.endsWith('.html'))
-
-      htmlFiles.forEach(htmlFile => {
-        const htmlAsset = bundle[htmlFile]
-        let html = htmlAsset.source
-
-        // 移除index.css的link标签（更精确的匹配）
-        html = html.replace(/<link rel="stylesheet" crossorigin href="\/assets\/index-[^"]*\.css"[^>]*>/g, '')
-
-        htmlAsset.source = html
-      })
-    }
-  }
-}
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -34,7 +14,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
-    removeIndexCSSPlugin(),
     sitemap({
       hostname: 'https://wplacetools.org', // 使用临时有效域名，后期替换
       dynamicRoutes: getAllRoutes(),
@@ -60,5 +39,10 @@ export default defineConfig({
         }
       }
     }
+  },
+  // 优雅的CSS优化方案
+  css: {
+    // 启用CSS代码分割
+    devSourcemap: false
   }
 })
