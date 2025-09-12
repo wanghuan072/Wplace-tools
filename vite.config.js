@@ -29,86 +29,20 @@ export default defineConfig({
   },
   build: {
     cssCodeSplit: true, // 启用CSS代码分割，按需加载
-    minify: 'terser', // 使用terser进行更激进的压缩
-    terserOptions: {
-      compress: {
-        drop_console: true, // 生产环境移除console
-        drop_debugger: true, // 移除debugger
-        pure_funcs: ['console.log', 'console.info'], // 移除特定函数调用
-        // 更激进的压缩选项
-        passes: 2, // 多次压缩
-        unsafe: true, // 启用不安全的优化
-        unsafe_comps: true, // 优化比较操作
-        unsafe_math: true, // 优化数学运算
-        unsafe_proto: true, // 优化原型访问
-      },
-      mangle: {
-        safari10: true, // 兼容Safari 10
-        properties: {
-          regex: /^_/ // 混淆以下划线开头的属性
-        }
-      }
-    },
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
+        manualChunks: {
           // 将Vue相关库分离
-          if (id.includes('node_modules/vue') || id.includes('node_modules/vue-router') || id.includes('node_modules/pinia')) {
-            return 'vue-vendor'
-          }
+          'vue-vendor': ['vue', 'vue-router', 'pinia'],
           // 将i18n分离
-          if (id.includes('node_modules/vue-i18n')) {
-            return 'i18n'
-          }
-          // 将大型组件分离
-          if (id.includes('PixelArtGeneratorUnified')) {
-            return 'pixel-generator'
-          }
-          if (id.includes('TextToPixelArt')) {
-            return 'text-to-pixel'
-          }
-          if (id.includes('WplacePluginsView')) {
-            return 'plugins-view'
-          }
-          // 将博客相关组件分离
-          if (id.includes('Blog') || id.includes('blog')) {
-            return 'blog'
-          }
-        },
-        // 优化chunk大小
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
+          'i18n': ['vue-i18n']
+        }
       }
-    },
-    // 设置chunk大小警告限制
-    chunkSizeWarningLimit: 1000
+    }
   },
   // 优雅的CSS优化方案
   css: {
     // 启用CSS代码分割
     devSourcemap: false
-  },
-  // 性能优化配置
-  optimizeDeps: {
-    include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
-    exclude: ['vue-demi']
-  },
-  // Vue I18n 构建优化
-  define: {
-    __INTLIFY_JIT_COMPILATION__: false,
-    __VUE_I18N_FULL_INSTALL__: true,
-    __VUE_I18N_LEGACY_API__: false,
-    __INTLIFY_PROD_DEVTOOLS__: false
-  },
-  // 预构建优化
-  esbuild: {
-    drop: ['console', 'debugger']
-  },
-  // 减少强制重排的优化
-  server: {
-    hmr: {
-      overlay: false // 禁用HMR覆盖层，减少重排
-    }
   }
 })

@@ -46,10 +46,6 @@
     <link rel="preconnect" href="https://picsum.photos">
     <link rel="dns-prefetch" href="https://picsum.photos">
     
-    <!-- 预加载关键资源 -->
-    <link rel="preload" href="/assets/vue-vendor-DJ6fnBrG.js" as="script" crossorigin>
-    <link rel="preload" href="/assets/i18n-D9pLzMUM.js" as="script" crossorigin>
-    
 
 
     <!-- Preload critical resources -->
@@ -68,21 +64,15 @@
           var script = document.createElement('script');
           script.async = true;
           script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MBF8V4PEBR';
-          // 添加缓存策略
-          script.setAttribute('data-cache', 'max-age=31536000');
           document.head.appendChild(script);
           
           // 初始化 Google Analytics
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-MBF8V4PEBR', {
-            // 优化配置，减少重排
-            send_page_view: false,
-            custom_map: {}
-          });
+          gtag('config', 'G-MBF8V4PEBR');
           window.gtag = gtag;
-        }, 3000); // 延迟3秒加载，进一步减少对关键路径的影响
+        }, 1000); // 延迟1秒加载
       });
 
       // 延迟加载 Google AdSense
@@ -92,10 +82,8 @@
           script.async = true;
           script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4224010041977181';
           script.crossOrigin = 'anonymous';
-          // 添加缓存策略
-          script.setAttribute('data-cache', 'max-age=31536000');
           document.head.appendChild(script);
-        }, 4000); // 延迟4秒加载
+        }, 2000); // 延迟2秒加载
       });
     </script>
     
