@@ -94,6 +94,13 @@ export default defineConfig({
     include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
     exclude: ['vue-demi']
   },
+  // Vue I18n 构建优化
+  define: {
+    __INTLIFY_JIT_COMPILATION__: false,
+    __VUE_I18N_FULL_INSTALL__: true,
+    __VUE_I18N_LEGACY_API__: false,
+    __INTLIFY_PROD_DEVTOOLS__: false
+  },
   // 预构建优化
   esbuild: {
     drop: ['console', 'debugger']

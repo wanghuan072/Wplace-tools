@@ -55,7 +55,12 @@ export const i18n = createI18n({
     messages,
     globalInjection: true, // 全局注入 $t 函数
     silentTranslationWarn: true, // 静默翻译警告
-    silentFallbackWarn: true // 静默回退警告
+    silentFallbackWarn: true, // 静默回退警告
+    // 禁用JIT编译，避免构建时错误
+    jit: false,
+    // 优化配置
+    allowComposition: true,
+    inheritLocale: true
 })
 
 // 获取浏览器语言
