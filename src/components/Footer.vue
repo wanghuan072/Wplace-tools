@@ -6,7 +6,7 @@
                 <div class="footer-section brand-section">
                     <div class="brand-info">
                         <div class="brand-logo">
-                            <img src="/images/logo.png" alt="Wplace Tools" class="logo-icon">
+                            <img src="/images/logo.png" alt="Wplace Tools" class="logo-icon" width="30" height="30">
                             <span class="brand-title">Wplace Tools</span>
                         </div>
                         <p class="brand-description">{{ t('aboutDescription') }}</p>
@@ -92,6 +92,8 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    min-height: 200px;
+    /* 预设最小高度，防止内容加载时布局偏移 */
 }
 
 .footer-section h4 {
@@ -141,12 +143,16 @@ const socialPlatforms = socialMediaConfig.getActivePlatforms()
     line-height: 1.6;
     font-size: 14px;
     margin: 0;
+    min-height: 2.24em;
+    /* 预设最小高度，防止内容加载时布局偏移 */
 }
 
 .social-links {
     display: flex;
     gap: 12px;
     margin-top: 10px;
+    min-height: 40px;
+    /* 预设高度，防止图标加载时布局偏移 */
 }
 
 .social-btn {
