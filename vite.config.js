@@ -88,5 +88,11 @@ export default defineConfig({
   // 预构建优化
   esbuild: {
     drop: ['console', 'debugger']
+  },
+  // 减少强制重排的优化
+  server: {
+    hmr: {
+      overlay: false // 禁用HMR覆盖层，减少重排
+    }
   }
 })

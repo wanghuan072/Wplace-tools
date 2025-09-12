@@ -95,18 +95,24 @@ onMounted(() => {
     color: white;
     padding: 60px 0 20px;
     border-top: 1px solid #333;
-    min-height: 300px;
-    /* 预设最小高度，防止布局偏移 */
+    height: 400px;
+    /* 使用固定高度而不是最小高度 */
     box-sizing: border-box;
+    /* 防止布局偏移的额外措施 */
+    contain: layout style;
+    will-change: auto;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    min-height: 220px;
-    /* 增加最小高度，确保稳定布局 */
-    /* 预设最小高度，防止内容加载时布局偏移 */
+    height: 280px;
+    /* 使用固定高度 */
+    /* 防止布局偏移的优化 */
+    contain: layout;
+    transform: translateZ(0);
+    /* 启用硬件加速 */
 }
 
 .footer-section h4 {

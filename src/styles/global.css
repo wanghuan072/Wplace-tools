@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+/* 减少强制重排的优化 */
+html {
+  /* 启用硬件加速 */
+  transform: translateZ(0);
+  /* 优化渲染 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* 防止布局偏移 */
+  contain: layout style;
+  /* 优化滚动性能 */
+  -webkit-overflow-scrolling: touch;
+}
+
 #app {
   min-height: 100vh;
   display: flex;
