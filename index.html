@@ -46,9 +46,14 @@
     <link rel="preconnect" href="https://picsum.photos">
     <link rel="dns-prefetch" href="https://picsum.photos">
     
+
+    <!-- Critical CSS - Global styles that are required for first render -->
+    <style>
+*{padding:0;margin:0;box-sizing:border-box}#app{min-height:100vh;display:flex;flex-direction:column}.main-content{flex:1}.container{max-width:1200px;margin:0 auto;padding:0 10px}
+    </style>
+
     <!-- Preload critical resources -->
     <link rel="preload" href="/images/logo.png" as="image">
-    <link rel="preload" href="/images/logo.png" as="image" media="(min-width: 769px)">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBF8V4PEBR"></script>
