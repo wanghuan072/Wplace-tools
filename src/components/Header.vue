@@ -12,13 +12,30 @@
                 <!-- 桌面端导航 -->
                 <nav class="navigation desktop-nav">
                     <router-link to="/" class="nav-link" active-class="active">{{ t('home') }}</router-link>
-                    <router-link to="/pixel-art-generator" class="nav-link" active-class="active">{{
-                        t('imageToPixelArt') }}</router-link>
-                    <router-link to="/text-to-pixel-art" class="nav-link" active-class="active">{{ t('textToPixelArt')
-                        }}</router-link>
+
+                    <!-- Wplace Image Converter 下拉菜单 -->
+                    <div class="dropdown" @mouseenter="showDropdown" @mouseleave="hideDropdown">
+                        <button class="dropdown-toggle nav-link">{{ t('wplaceImageConverter') }}
+                            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" :class="{ 'show': isDropdownOpen }">
+                            <router-link to="/pixel-art-generator" class="dropdown-item" @click="hideDropdown">{{
+                                t('imageToPixelArt') }}</router-link>
+                            <router-link to="/text-to-pixel-art" class="dropdown-item" @click="hideDropdown">{{
+                                t('textToPixelArt') }}</router-link>
+                        </div>
+                    </div>
+
                     <router-link to="/color-converter" class="nav-link" active-class="active">{{ t('color')
-                        }}</router-link>
+                    }}</router-link>
                     <router-link to="/wplace-extension" class="nav-link" active-class="active">{{ t('extension')
+                    }}</router-link>
+                    <router-link to="/wplace-bot" class="nav-link" active-class="active">{{ t('wplaceBot')
+                        }}</router-link>
+                    <router-link to="/wplace-live" class="nav-link" active-class="active">{{ t('wplaceLive')
                         }}</router-link>
 
                     <!-- 语言切换器 -->
@@ -49,15 +66,33 @@
             </div>
             <div class="mobile-menu-links">
                 <router-link to="/" class="mobile-nav-link" active-class="active" @click="closeMobileMenu">{{ t('home')
-                    }}</router-link>
-                <router-link to="/pixel-art-generator" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">{{ t('imageToPixelArt') }}</router-link>
-                <router-link to="/text-to-pixel-art" class="mobile-nav-link" active-class="active"
-                    @click="closeMobileMenu">{{ t('textToPixelArt') }}</router-link>
+                }}</router-link>
+
+                <!-- 移动端 Wplace Image Converter 子菜单 -->
+                <div class="mobile-submenu">
+                    <div class="mobile-submenu-title" @click="toggleMobileSubmenu">{{ t('wplaceImageConverter') }}
+                        <svg class="mobile-submenu-arrow" :class="{ 'open': isMobileSubmenuOpen }" width="12"
+                            height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="mobile-submenu-items" :class="{ 'show': isMobileSubmenuOpen }">
+                        <router-link to="/pixel-art-generator" class="mobile-submenu-link" active-class="active"
+                            @click="closeMobileMenu">{{ t('imageToPixelArt') }}</router-link>
+                        <router-link to="/text-to-pixel-art" class="mobile-submenu-link" active-class="active"
+                            @click="closeMobileMenu">{{ t('textToPixelArt') }}</router-link>
+                    </div>
+                </div>
+
                 <router-link to="/color-converter" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">{{ t('color') }}</router-link>
                 <router-link to="/wplace-extension" class="mobile-nav-link" active-class="active"
                     @click="closeMobileMenu">{{ t('extension') }}</router-link>
+                <router-link to="/wplace-bot" class="mobile-nav-link" active-class="active" @click="closeMobileMenu">{{
+                    t('wplaceBot') }}</router-link>
+                <router-link to="/wplace-live" class="mobile-nav-link" active-class="active" @click="closeMobileMenu">{{
+                    t('wplaceLive') }}</router-link>
 
                 <!-- 移动端语言切换器 -->
                 <div class="mobile-language-selector">
@@ -78,6 +113,8 @@ import { ref, onMounted, onUpdated, watch } from 'vue'
 import { useI18n } from '@/composables/useI18n'
 
 const isMobileMenuOpen = ref(false)
+const isDropdownOpen = ref(false)
+const isMobileSubmenuOpen = ref(false)
 const { currentLocale, availableLocales, changeLocale, initLocale, syncLocale, t } = useI18n()
 
 // 监听路由变化，同步语言状态
@@ -91,6 +128,19 @@ const toggleMobileMenu = () => {
 
 const closeMobileMenu = () => {
     isMobileMenuOpen.value = false
+    isMobileSubmenuOpen.value = false
+}
+
+const showDropdown = () => {
+    isDropdownOpen.value = true
+}
+
+const hideDropdown = () => {
+    isDropdownOpen.value = false
+}
+
+const toggleMobileSubmenu = () => {
+    isMobileSubmenuOpen.value = !isMobileSubmenuOpen.value
 }
 
 const handleLanguageChange = (event) => {
@@ -136,7 +186,6 @@ onUpdated(() => {
     z-index: 9999;
     width: 100%;
     min-height: 70px;
-    overflow: hidden;
     /* 防止横向滚动 */
 }
 
@@ -403,6 +452,143 @@ onUpdated(() => {
     outline: none;
     border-color: #00bcd4;
     box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.1);
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 8px 0;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 188, 212, 0.1);
+    color: #00bcd4;
+}
+
+/* 移动端子菜单样式 */
+.mobile-submenu {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-submenu-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #666;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mobile-submenu-title:hover {
+    color: #00bcd4;
+}
+
+.mobile-submenu-arrow {
+    transition: transform 0.3s ease;
+}
+
+.mobile-submenu-arrow.open {
+    transform: rotate(180deg);
+}
+
+.mobile-submenu-items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f8f9fa;
+    margin: 0 -20px;
+    padding: 0 20px;
+}
+
+.mobile-submenu-items.show {
+    max-height: 200px;
+    padding: 10px 20px 20px 20px;
+}
+
+.mobile-submenu-link {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.mobile-submenu-link:last-child {
+    border-bottom: none;
+}
+
+.mobile-submenu-link:hover {
+    color: #00bcd4;
+}
+
+.mobile-submenu-link.active {
+    color: #00bcd4;
 }
 
 /* 移动端语言切换器 */

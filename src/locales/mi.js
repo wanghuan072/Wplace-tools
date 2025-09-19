@@ -16,21 +16,13 @@ export default {
 
     // Wāhanga whakatere
     home: 'Kāinga',
+    wplaceImageConverter: 'Wplace Whakaahua Huringa',
     imageToPixelArt: 'Whakaahua ki te Toi Pikitia',
     textToPixelArt: 'Kuputuhi ki te Toi Pikitia',
     color: 'Tae',
     extension: 'Toronga Wplace',
     blog: 'Rangitaki',
     about: 'Mō',
-
-    // Blog related
-    wplaceToolsBlog: 'Wplace Tools Blog',
-    blogSubtitle: 'Tirohia ngā tohutohu, akoranga, me te whakaaweawe mō te hanga toi pika',
-    readMore: 'Pānuihia atu',
-    backToBlog: 'Hoki ki te Blog',
-    blogPostNotFound: 'Kāore i kitea te pouaka blog',
-    blogPostNotFoundDesc: 'Kāore te pouaka blog e rapu ana koe i reira.',
-
 
     // Upoko whārangi me ngā whakamārama
     textToPixelArtTitle: 'Kaihanga Kuputuhi ki te Toi Pikitia',
@@ -752,6 +744,7 @@ export default {
     blogSubtitle: 'Tirohia ngā tohutohu mātanga, ngā aratohu, me ngā mōhiotanga mō te hanga toi pika me Wplace Tools. Ako mai i ngā ngaio.',
     readMore: 'Pānuihia Anō',
     publishedOn: 'I whakaputaina i',
+    backToBlog: 'Hoki ki te Blog',
 
     // 法律页面
     termsOfUse: 'Ngā Kaupapa Whakamahi',

@@ -15,21 +15,13 @@ export default {
 
     // Navegação
     home: 'Início',
+    wplaceImageConverter: 'Conversor de Imagens Wplace',
     imageToPixelArt: 'Imagem para Pixel Art',
     textToPixelArt: 'Texto para Pixel Art',
     color: 'Cor',
     extension: 'Extensão Wplace',
     blog: 'Blog',
     about: 'Sobre',
-
-    // Blog related
-    wplaceToolsBlog: 'Blog do Wplace Tools',
-    blogSubtitle: 'Explore dicas, tutoriais e inspiração para criar arte em pixel',
-    readMore: 'Leia mais',
-    backToBlog: 'Voltar ao blog',
-    blogPostNotFound: 'Postagem do blog não encontrada',
-    blogPostNotFoundDesc: 'A postagem do blog que você procura não existe.',
-
 
     // Títulos e descrições de páginas
     textToPixelArtTitle: 'Gerador de Texto para Pixel Art',
@@ -751,6 +743,7 @@ export default {
     blogSubtitle: 'Descubra dicas, guias e insights de especialistas para criação de pixel art com Wplace Tools. Aprenda com profissionais.',
     readMore: 'Leia Mais',
     publishedOn: 'Publicado em',
+    backToBlog: 'Voltar ao blog',
 
     // Página Legal
     termsOfUse: 'Termos de Uso',

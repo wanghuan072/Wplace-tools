@@ -22,15 +22,7 @@ export default {
     extension: 'Wplace 拡張機能',
     blog: 'ブログ',
     about: '会社情報',
-
-    // Blog related
-    wplaceToolsBlog: 'Wplace Toolsブログ',
-    blogSubtitle: 'ピクセルアート作成のヒント、チュートリアル、インスピレーションを探る',
-    readMore: '続きを読む',
-    backToBlog: 'ブログに戻る',
-    blogPostNotFound: 'ブログ記事が見つかりません',
-    blogPostNotFoundDesc: 'お探しのブログ記事は存在しません。',
-
+    wplaceImageConverter: 'Wplace画像コンバーター',
 
     // 页面标题和描述 - 日本語
     textToPixelArtTitle: 'テキスト→ピクセルアートジェネレーター',
@@ -897,6 +889,7 @@ export default {
     blogSubtitle: 'Wplace Toolsを使用したピクセルアート作成の専門的なヒント、ガイド、洞察を発見。プロから学びましょう。',
     readMore: '続きを読む',
     publishedOn: '公開日',
+    backToBlog: 'ブログに戻る',
 
     // 法律ページ
     termsOfUse: '利用規約',

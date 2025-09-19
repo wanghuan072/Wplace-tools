@@ -13,21 +13,13 @@ export default {
 
     // Navigasyon
     home: 'Ana Sayfa',
+    wplaceImageConverter: 'Wplace Resim Dönüştürücü',
     imageToPixelArt: 'Resmi Pixel Art\'a Dönüştür',
     textToPixelArt: 'Metni Pixel Art\'a Dönüştür',
     color: 'Renk',
     extension: 'Wplace Uzantısı',
     blog: 'Blog',
     about: 'Hakkında',
-
-    // Blog related
-    wplaceToolsBlog: 'Wplace Tools Blog',
-    blogSubtitle: 'Piksel sanat oluşturma ipuçları, eğitimler ve ilham keşfedin',
-    readMore: 'Devamını Oku',
-    backToBlog: 'Bloga Geri Dön',
-    blogPostNotFound: 'Blog Yazısı Bulunamadı',
-    blogPostNotFoundDesc: 'Aradığınız blog yazısı mevcut değil.',
-
 
     // Sayfa Başlıkları ve Açıklamalar
     textToPixelArtTitle: 'Metni Pixel Art\'a Dönüştürme Aracı',
@@ -747,6 +739,7 @@ export default {
     blogSubtitle: 'Wplace Tools ile piksel sanatı oluşturma konusunda uzman ipuçları, rehberler ve bilgiler keşfedin. Profesyonellerden öğrenin.',
     readMore: 'Devamını Oku',
     publishedOn: 'Yayınlanma Tarihi',
+    backToBlog: 'Bloga Geri Dön',
 
     // Hukuk Sayfası
     termsOfUse: 'Kullanım Şartları',

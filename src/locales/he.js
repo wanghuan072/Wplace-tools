@@ -16,21 +16,13 @@ export default {
 
     // ניווט
     home: 'בית',
+    wplaceImageConverter: 'ממיר תמונות Wplace',
     imageToPixelArt: 'תמונה לפיקסל ארט',
     textToPixelArt: 'טקסט לפיקסל ארט',
     color: 'צבע',
     extension: 'תוסף Wplace',
     blog: 'בלוג',
     about: 'אודות',
-
-    // Blog related
-    wplaceToolsBlog: 'בלוג Wplace Tools',
-    blogSubtitle: 'גלה טיפים, מדריכים והשראה ליצירת פיקסל ארט',
-    readMore: 'קרא עוד',
-    backToBlog: 'חזרה לבלוג',
-    blogPostNotFound: 'פוסט בבלוג לא נמצא',
-    blogPostNotFoundDesc: 'פוסט הבלוג שחיפשת אינו קיים.',
-
 
     // כותרות ותיאורים לדפים
     textToPixelArtTitle: 'מחולל טקסט לפיקסל ארט',
@@ -752,6 +744,7 @@ export default {
     blogSubtitle: 'גלה טיפים מקצועיים, מדריכים ותובנות ליצירת פיקסל ארט עם Wplace Tools. למד מהמקצוענים.',
     readMore: 'קרא עוד',
     publishedOn: 'פורסם ב',
+    backToBlog: 'חזרה לבלוג',
 
     // 法律页面 - 希伯来语
     termsOfUse: 'תנאי שימוש',

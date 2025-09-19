@@ -15,20 +15,13 @@ export default {
 
     // 导航
     home: '首页',
+    wplaceImageConverter: 'Wplace图像转换器',
     imageToPixelArt: '图像转像素艺术',
     textToPixelArt: '文本转像素艺术',
     color: '颜色',
     extension: 'Wplace扩展',
     blog: '博客',
     about: '关于',
-
-    // 博客相关
-    wplaceToolsBlog: 'Wplace 工具博客',
-    blogSubtitle: '探索像素艺术创作技巧、教程和灵感',
-    readMore: '阅读更多',
-    backToBlog: '返回博客',
-    blogPostNotFound: '博客文章未找到',
-    blogPostNotFoundDesc: '您查找的博客文章不存在。',
 
     // 页面标题和描述
     textToPixelArtTitle: '文本转像素艺术生成器',
@@ -655,6 +648,7 @@ export default {
     readMore: '阅读更多',
     publishedOn: '发布于',
     author: '作者',
+    backToBlog: '返回博客',
 
     // 关于页面
     aboutTitle: '关于我们',

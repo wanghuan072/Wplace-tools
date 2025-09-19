@@ -93,6 +93,18 @@ const routes = [
     component: () => import('@/views/CopyrightView.vue'),
     meta: getMeta('meta.copyright.title', 'meta.copyright.description', 'meta.copyright.keywords')
   },
+  {
+    path: '/wplace-bot',
+    name: 'wplaceBot',
+    component: () => import('@/views/WplaceBotView.vue'),
+    meta: getMeta('meta.wplaceBot.title', 'meta.wplaceBot.description', 'meta.wplaceBot.keywords')
+  },
+  {
+    path: '/wplace-live',
+    name: 'wplaceLive',
+    component: () => import('@/views/WplaceLiveView.vue'),
+    meta: getMeta('meta.wplaceLive.title', 'meta.wplaceLive.description', 'meta.wplaceLive.keywords')
+  },
   // 多语言路由（带语言前缀）
   {
     path: `/:lang(${langParamRegex})/`,
@@ -170,6 +182,20 @@ const routes = [
     component: () => import('@/views/CopyrightView.vue'),
     props: true,
     meta: getMeta('meta.copyright.title', 'meta.copyright.description', 'meta.copyright.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/wplace-bot`,
+    name: 'wplaceBot-lang',
+    component: () => import('@/views/WplaceBotView.vue'),
+    props: true,
+    meta: getMeta('meta.wplaceBot.title', 'meta.wplaceBot.description', 'meta.wplaceBot.keywords')
+  },
+  {
+    path: `/:lang(${langParamRegex})/wplace-live`,
+    name: 'wplaceLive-lang',
+    component: () => import('@/views/WplaceLiveView.vue'),
+    props: true,
+    meta: getMeta('meta.wplaceLive.title', 'meta.wplaceLive.description', 'meta.wplaceLive.keywords')
   }
 ]
 

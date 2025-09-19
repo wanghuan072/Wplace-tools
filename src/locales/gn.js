@@ -16,21 +16,13 @@ export default {
 
     // Navegación
     home: 'Oga',
+    wplaceImageConverter: 'Wplace Ta\'anga Ñemoambue',
     imageToPixelArt: 'Imagem guive Pixel Arte',
     textToPixelArt: 'Texto guive Pixel Arte',
     color: 'Mboyve',
     extension: 'Wplace Extensión',
     blog: 'Blog',
     about: 'Mba\'éichapa',
-
-    // Blog related
-    wplaceToolsBlog: 'Wplace Tools Blog',
-    blogSubtitle: 'Ehecha mba\'eve, tutorial ha inspiración rehegua pixel art rembiporã hag̃ua',
-    readMore: 'Ehecha avei',
-    backToBlog: 'Jahu blog-pe',
-    blogPostNotFound: 'Blog post ndohupytymo\'ãi',
-    blogPostNotFoundDesc: 'Pe blog post nde ha\'eha ndohupytymo\'ãi.',
-
 
     // Título ha descripción de la página
     textToPixelArtTitle: 'Generador de Texto guive Pixel Arte',
@@ -750,6 +742,7 @@ export default {
     blogSubtitle: 'Descubre consejos, guías y conocimientos expertos para la creación de pixel art con Wplace Tools. Aprende de profesionales.',
     readMore: 'Leer Más',
     publishedOn: 'Publicado el',
+    backToBlog: 'Jahu blog-pe',
 
     // Página Legal
     termsOfUse: 'Términos de Uso',
