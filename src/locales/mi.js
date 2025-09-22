@@ -794,6 +794,333 @@ export default {
     // 首页按钮
     startWithExtension: 'Tīmata mā Wplace Extension',
 
+    // WPlace Bot 页面内容
+    wplaceBotPage: {
+        officialGuide: 'Aratohu Tino Mana',
+        title: 'WPlace Bot Tuhinga & Akoranga',
+        description: 'Te aratohu whānui mō wplace-automation - He taputapu kaha i hangaia mō wplace.live e whakangawari ana i te hanga toi pika mā te aunoatanga. Akohia te tāutanga, te whirihoranga, me te whakamahinga matatau mā tō mātou tuhinga taipitopito.',
+        bottomHint: 'He taputapu kaha i hangaia mō wplace.live e whakangawari ana i te hanga toi pika mā te aunoatanga.',
+        quickStart: 'Tīmata Tere',
+        creationMethods: 'Ngā Tikanga Hanga',
+        consoleCommands: 'Ngā Tohutohu Rorohiko',
+        advancedUsage: 'Te Whakamahi Matatau',
+        apiReference: 'Tohutohu API',
+        troubleshooting: 'Rapua me Te Whakatika Hē',
+
+        // Quick Start Tab Content
+        quickStartTitle: 'Aratohu Tīmata Tere WPlace Bot',
+        quickStartIntro: 'Tīmata ki te aunoatanga WPlace Bot mō wplace.live. Ka ārahi koe tēnei akoranga WPlace Bot i te tukanga tāutanga me te whakatū i te taputapu aunoatanga WPlace Bot.',
+        step1Preparation: 'Hipanga 1: Whakaritea',
+        step1Description: 'Tuwhera wplace.live, ā, whakaritea te pouaka kaiwhakawhanake. Ka mahi te taputapu aunoatanga WPlace Bot tika i roto i tō kaitirotiro mā te whakakotahi JavaScript, e whakarato ana i te whakaurunga māmā ki te kanvas wplace.live.',
+
+        // Step content for Quick Start
+        openWplaceLiveStep: 'Tuwhera wplace.live i roto i tō kaitirotiro.',
+        pressF12Step: 'Pāwhiritia F12 (ranei Ctrl+Shift+I) kia tuwhera ai ngā Taputapu Kaihanga.',
+        clickConsoleStep: 'Pāwhiritia te ripa "Console".',
+        step2LoadBot: 'Hipanga 2: Tukuake WPlace Bot (Me Tuku)',
+        step2Description: 'Tukuake te paatene WPlace Bot tika i GitHub. Ko tēnei whakahau kotahi-raina ka tiki i te putanga hou o WPlace Bot me te tīmata i ngā āhuatanga aunoatanga katoa. E tiakina ana te taputapu WPlace Bot me ngā whakahoutanga auau mō te mahi pai rawa.',
+        successMessage: 'Kia angitu!',
+        waitForBotLoadedMessage: 'Tūtohu kia tatari mō te karere "🎨 WPlace Bot Carregado!" me te whakaaturanga o te paewhiri mana WPlace Bot i te kokonga runga-matau.',
+        step3StartDrawing: 'Hipanga 3: Tīmata te Tā Pika me WPlace Bot!',
+        step3Description: 'Kōwhiria tētahi o ngā tikanga WPlace Bot hei tīmata i te hanga toi. He maha ngā huarahi a WPlace Bot hei whakatutuki i ngā hiahia me ngā pukenga rerekē o ngā kaiwhakamahi.',
+        step3Details: 'Ka taea e koe te whakamahi i te paewhiri mata WPlace Bot, ranei ngā whakahau rorohiko WPlace Bot ki te tuhi. Ka whakahaere aunoa te WPlace Bot i te wā whakanoho pika, te kite raruraru, me te whakaora hapa. Tirohia te ripa "Ngā Tikanga Hanga" mō ētahi taipitopito WPlace Bot.',
+
+        quickTest: 'Whakamātautau Tere:',
+
+        // Creation Methods Tab Content
+        creationMethodsTitle: 'Ngā Tikanga Hanga WPlace Bot',
+        creationMethodsIntro: 'Tirohia ngā huarahi rerekē hei whakamahi i WPlace Bot mō te hanga toi pika i runga wplace.live. He painga motuhake ia tikanga WPlace Bot mō ngā momo kaupapa rerekē.',
+        optionATitle: 'Kōwhiringa A: Tukunga Tika',
+        optionAEasiest: '(Te māmā)',
+        optionAStep1: 'Pāwhiritia te pātene "📁 Carregar Imagem" i runga i te paewhiri WPlace Bot.',
+        optionAStep2: 'Kōwhiria tō kōnae whakaahua (PNG, JPG, etc.) mō te tukatuka a WPlace Bot.',
+        optionAStep3: 'Tautuhia te tūranga X me Y i runga i te paewhiri WPlace Bot.',
+        optionAStep4: 'Pāwhiritia te pātene "▶️ Iniciar" kia tīmata ai te aunoatanga WPlace Bot.',
+        optionBTitle: 'Kōwhiringa B: Kaiwhakawhiti Matatau',
+        optionBStep1: 'Pāwhiritia te pātene "🔧 Conversor" i runga i te paewhiri WPlace Bot.',
+        optionBStep2: 'Toia tō whakaahua ki te ripa hou o WPlace Bot.',
+        optionBStep3: 'Whirihorahia ngā kōwhiringa WPlace Bot pērā i te rahi me te aratau tae.',
+        optionBStep4: 'Pāwhiritia "📝 Gerar Script" ka kape te waehere WPlace Bot.',
+        optionBStep5: 'Whakapiri te waehere WPlace Bot kua kape ki te pouaka rorohiko wplace.live.',
+        optionCTitle: 'Kōwhiringa C: Etita Toi Pika',
+        optionCStep1: 'Pāwhiritia te pātene "🎨 Editor" i runga i te paewhiri WPlace Bot.',
+        optionCStep2: 'Tuhia tō toi tika i te etita WPlace Bot.',
+        optionCStep3: 'Ka hanga aunoa te waehere WPlace Bot i a koe e tuhi ana.',
+        optionCStep4: 'Kopea te waehere WPlace Bot.',
+        optionCStep5: 'Whakapiri ki te pouaka rorohiko wplace.live kia whakahaere ai te WPlace Bot.',
+
+        // Console Commands Tab Content
+        consoleCommandsTitle: 'Ngā Tohutohu Rorohiko WPlace Bot',
+        consoleCommandsIntro: 'Whakahaerehia ngā whakahau rorohiko WPlace Bot mō te mana matatau. Whakamahia ēnei whakahau hei whakahaere hōtaka aunoatanga WPlace Bot.',
+
+        basicControlsHeader: 'Ngā Mana Taketake WPlace Bot',
+        imageLoadingHeader: 'Te Utaina Whakaahua WPlace Bot',
+        troubleshootingHeader: 'Te Rapu Hē WPlace Bot',
+        canvasNotFoundError: '"Canvas kāore i kitea": Tuarua te whārangi, me tatari kia kī katoa te whārangi i mua i te whakahaere WPlace Bot.',
+        wplaceBotNotFoundError: '"WPlace Bot kāore i kitea": Tuarua te whakahau `fetch` hei tuku WPlace Bot anō.',
+        botNotWorkingError: 'Kāore te WPlace Bot e mahi: Tirohia mēnā kei te aukatia ngā tohutohu rorohiko, mēnā he hapa i te pouaka rorohiko. Ngana ki te whakahaere `wplaceBot.init();` kia whakahou anō te WPlace Bot.',
+
+        // Advanced Usage Tab Content
+        advancedUsageTitle: 'Te Whakamahi Matatau WPlace Bot',
+        advancedUsageIntro: 'Whakatuwhera i te kaha katoa o WPlace Bot mā ngā āhuatanga matatau. Akohia me pēhea te whakarite i ngā whanonga WPlace Bot, te hanga waehere ritenga, me te whakapai i te mahi WPlace Bot mō ngā kaupapa uaua.',
+
+        // Advanced Usage detailed content
+        customScriptTitle: 'Te Hanga Waehere Ritenga',
+        customScriptSubtitle: 'Hangaia ō ake waehere aunoatanga WPlace Bot mā te anga WPlace Bot',
+        customScriptFeature1: 'Tīmata ngā hōtaka tuhi ritenga mā te wplaceBot.customDraw(algorithm)',
+        customScriptFeature2: 'Whakatinana i ngā āhuatanga callback mō te aroturuki ahunga me te whakahaere hapa',
+        customScriptFeature3: 'Hangaia ngā waahanga WPlace Bot ka taea te whakamahi anō mō ngā tauira me ngā āhua tuhi noa',
+        customScriptFeature4: 'Whakauru WPlace Bot ki ngā API o waho mō te hanga ihirangi hihiri',
+        customScriptDesc: 'Ka whakarato te taputapu WPlace Bot he API JavaScript ngawari e taea ai e ngā kaiwhakawhanake te hanga waehere aunoatanga ritenga. Ka taea e koe te whakawhānui i ngā āhuatanga matua o WPlace Bot hei whakahaere tauira tuhi uaua, te whakamahi i ngā hōtaka ritenga, me te whakauru ki ngā pūtake raraunga o waho. Ko te hanganga modulā o WPlace Bot ka tautoko i te whanaketanga pātaki me ngā tukatuka whakaahua ritenga.',
+
+        // Performance Optimization
+        batchProcessing: 'Raupapa Tukatuka & Aunoatanga',
+        batchProcessingDescription: 'Whakahaere i ngā whakaahua maha me ngā kaupapa uaua mā te tukatuka raupapa matatau',
+        useBatchProcess: 'Whakamahia wplaceBot.batchProcess([images]) mō te tukatuka whakaahua maha',
+        implementQueueManagement: 'Whakatinana whakahaere rārangi me ngā taumata matua me ngā whakawhirinaki',
+        setupConflictDetection: 'Whakaritea ngā rautaki kitea raruraru me te whakatau aunoatanga',
+        configureRetryMechanisms: 'Whirihorahia ngā rautaki whakamātautau anō mā te arataki whakahau exponential',
+        featureDescription: 'Mō ngā kaupapa nui, ka tautoko te taputapu i ngā āheinga tukatuka raupapa hōhonu. Ka taea e koe te whakarārangi i ngā whakaahua maha, te tautuhi i ngā taumata tukatuka, me te whakamahi i te aronga ture āhuatanga rānei i runga i te āhua o te kanvas. Ko te pūnaha he rautaki whakatau raruraru me te rautaki whakamātautau aunoa mō ngā whakanoho pika kāore i angitu.',
+
+        // Performance Optimization
+        performanceOptimization: 'Whakapai Mahi',
+        performanceOptimizationDescription: 'Ngā tikanga matatau hei whakapai i te mahi tuhi me te whakamahinga rauemi',
+        configureAdaptiveDelay: 'Whirihorahia ngā arataki wā urutau: wplaceBot.setAdaptiveDelay(true)',
+        implementMemoryEfficient: 'Whakatinana tukatuka whakaahua whai pūtea-mahi mā ngā rautaki wāhanga',
+        useCanvasStateCaching: 'Whakamahia te penapena āhua kanvas hei whakaiti i ngā mahi whakahoki',
+        optimizeDrawingPaths: 'Whakapai ngā ara tuhi mā ngā arataki rapu ara',
+        featureDescription2: 'Whakapaihia tō aunoatanga mā te whakamahi i ngā kōwhiringa whirihoranga matatau. Kei roto i te taputapu ngā āhuatanga whakahaere pūtea, pūnaha penapena mohio, me ngā arataki wā urutau e urutau ana ki ngā taumahatanga tūmau. Akohia me pēhea te whakamahi i ngā tauira tuhi whai hua me te whakaiti i te whakamahinga rauemi.',
+
+        // API Reference Tab Content
+        apiReferenceTitle: 'Tohutohu API WPlace Bot',
+        apiReferenceIntro: 'Tuhinga taipitopito katoa mō te API WPlace Bot mō ngā kaiwhakawhanake. Akohia ngā tikanga me ngā mahi katoa hei hanga hōtaka aunoatanga kaha mō te hanga toi pika matatau.',
+
+        // API Reference detailed content
+        coreAPITitle: 'Ngā Tikanga Matua API',
+        coreAPISubtitle: 'Tohutohu whānui mō ngā tikanga aunoatanga matua WPlace Bot',
+        coreAPIDesc: 'Ka whakarato te API WPlace Bot i tētahi kohinga ātaahua o ngā tikanga hei whakahaere aunoatanga toi pika mā te hōtaka. Ka taea te here i ngā tikanga katoa, ā, ka tautoko i ngā aronga mahi sync me async. Kei roto te whakahaere hapa me ngā pūrongo hapa taipitopito i ia tikanga.',
+
+        // Image Processing API
+        imageProcessingAPITitle: 'API Tukatuka Whakaahua',
+        imageProcessingAPISubtitle: 'Ngā mahi matatau mō te whakatika me te whakawhitiwhiti whakaahua',
+        imageProcessingAPIDesc: 'Ka whakahaere te API tukatuka whakaahua i te whakawhitinga hōputu, te whakapai i te pae tae, me te whakarahi rahi. Ka tautoko i ngā momo whakaahua maha me te whakarato i te whakahaere pai mō ngā algorithm quantization tae. Kei roto hoki ngā kōwhiringa dithering me te whakahaere mārama.',
+
+        // Event System & Callbacks
+        eventSystemTitle: 'Pūnaha Takahanga & Callbacks',
+        eventSystemSubtitle: 'Aroturuki i te ahunga aunoatanga me te whakahaere takahanga mā te hōtaka',
+        eventSystemFeature1: 'Rēhita kaiwhakarongo takahanga: wplaceBot.on(\'pixelPlaced\', callback)',
+        eventSystemFeature2: 'Aroturuki ahunga: wplaceBot.on(\'progress\', (percent) => {})',
+        eventSystemFeature3: 'Whakahaere hapa: wplaceBot.on(\'error\', (error) => {})',
+        eventSystemFeature4: 'Aroturuki oti: wplaceBot.on(\'complete\', () => {})',
+        eventSystemDesc: 'Ka whakarato te pūnaha takahanga i ngā urupare wa-tonu mō te ahunga aunoatanga, ngā hapa, me ngā pāhekoheko kaiwhakamahi. Ka taea e koe te rēhita kaiwhakarongo ritenga mō ngā takahanga whakanoho pika, ngā whakamātautau whakaora hapa, me ngā pānui oti. Ka tautoko te pūnaha i te whakahaere takahanga whānui me te whai wāhi.',
+
+        // Configuration Options
+        configOptionsTitle: 'Ngā Kōwhiringa Whirihoranga',
+        configOptionsSubtitle: 'Pūnaha whirihoranga whānui hei whakatika i ngā whanonga aunoatanga',
+        configOptionsFeature1: 'Whirihoranga whānui: wplaceBot.config.set(\'key\', value)',
+        configOptionsFeature2: 'Tuku ake kōtaha: wplaceBot.loadConfig(\'profileName\')',
+        configOptionsFeature3: 'Ngā here haumaru: wplaceBot.config.safety.maxPixelsPerSecond = 2',
+        configOptionsFeature4: 'Kaweake tautuhinga: wplaceBot.exportConfig()',
+        configOptionsDesc: 'Ka āhei te pūnaha whirihoranga ki te whakarite taipitopito i ngā whanonga aunoatanga, ngā tawhā wā, me ngā pūnaha haumaru. Ka taea e koe te penapena me te tuku i ngā kōtaha whirihoranga, te tautuhi i ngā tawhā āhua-ā-taiao, me te whakatinana i ngā ture whakatutukitanga ritenga mō ngā mahi tuhi.',
+
+        // Troubleshooting detailed content
+        commonErrorTitle: 'Whakatau Hē Auau',
+        commonErrorSubtitle: 'Ngā rongoā hipanga-mā-hipanga mō ngā raruraru auau',
+        canvasLoadingTitle: 'Ngā Raru Utaina Kanvas:',
+        canvasLoadingDesc: 'Mēnā kāore te kanvas e utaina, whakamātauria te mārama pūkete kaitirotiro me te tuarua i te whārangi. Kia tino kī katoa a wplace.live i mua i te whakahaere i te waehere bot.',
+        rateLimitingTitle: 'Ngā Hapa Whakamutunga Reiti:',
+        rateLimitingDesc: 'Mēnā ka pāngia e te here reiti, whakakikihia te tautuhinga wā mā te wplaceBot.setDelay(2000) rānei teitei ake. Me nui rawa te taunoa ki te iti rawa 1000ms.',
+        memoryConsumptionTitle: 'Kaiwhakamahi Pūtea:',
+        memoryConsumptionDesc: 'Mō ngā whakaahua nui, whakamahia wplaceBot.config.memoryOptimized = true hei whakahohe tukatuka wāhanga me te whakaiti i te whakamahinga pūtea.',
+        browserCompatibilityTitle: 'Tautokenga Kaitirotiro:',
+        browserCompatibilityDesc: 'Mēnā kāore te bot e utaina, kia mohio kei te whakahohehia te JavaScript, ā, whakamātauria te Chrome rānei Firefox. Ka taea e ētahi toronga kaitirotiro te aukati i te mahi.',
+
+        // Ngā Take Mahi
+        performanceIssuesTitle: 'Ngā Take Mahi',
+        performanceIssuesSubtitle: 'Whakapai i te mahi me te whakatika i ngā whakaroa',
+        slowPixelTitle: 'Te Whakauru Pika Āta: ',
+        slowPixelDesc: 'Tirohia tō hononga ipurangi me te whakawhānui i te wā urutau mēnā ka pā ki ngā wā kati. Whakamahia wplaceBot.diagnostics.networkTest() hei tiro i te kounga hononga.',
+        highCPUTitle: 'Te Whakamahi CPU Teitei: ',
+        highCPUDesc: 'Whakahohe te wā urutau me wplaceBot.setAdaptiveDelay(true) kia whakarite aunoa i te tere tukatuka i runga i te whakaritenga pūnaha.',
+        memoryLeaksTitle: 'Ngā Rere Pūtēea: ',
+        memoryLeaksDesc: 'Whakahaere anō i te bot i ngā wā katoa mō ngā wā roa mā te wplaceBot.restart(). Muku te kāpeka whakaahua me wplaceBot.clearCache() mēnā ka piki te whakamahinga pūtēea.',
+        browserFreezingTitle: 'Te Mārō o te Paetukutuku: ',
+        browserFreezingDesc: 'Whakaitihia te rahi whakaahua, ka taea hoki te whakahohe i te aratau tukatuka papamuri me wplaceBot.config.backgroundMode = true mō te pai ake o te urupare.',
+
+        // Ngā Take Hononga
+        integrationProblemsTitle: 'Ngā Take Hononga',
+        integrationProblemsSubtitle: 'Whakatau i ngā raruraru me ngā taputapu me ngā hononga o waho',
+        imageUploadFailuresTitle: 'Ngā Hapa Tukunga Whakaahua: ',
+        imageUploadFailuresDesc: 'Tirohia te hototahi hōputu whakaahua (PNG, JPG, GIF e tautokohia ana). Whakamahia wplaceBot.validateImage(file) hei tiro i te hōputu i mua i te tukatuka.',
+        scriptLoadingErrorsTitle: 'Ngā Hapa Utaina Waehere: ',
+        scriptLoadingErrorsDesc: 'Mēnā ka hapa te whakahau fetch, tirohia tō hononga ipurangi, ā, whakamātauria te utaina mai i tētahi CDN rerekē mā te URL fetch kē.',
+        crossOriginTitle: 'Ngā Take Cross-Origin: ',
+        crossOriginDesc: 'Ka raru pea ētahi whakaahua nā ngā here CORS. Whakamahia te kaitahuri whakaahua kei roto rānei tukuna ngā whakaahua ki tētahi ratonga tāpui e hototahi ana.',
+
+        // Rapu Hē Matatau
+        advancedDebuggingTitle: 'Rapu Hē Matatau',
+        advancedDebuggingSubtitle: 'Rapu i ngā raruraru uaua, ā, tuku āwhina ki te whakawhanaketanga',
+        debugModeTitle: 'Aratau Rapu Hē: ',
+        debugModeDesc: 'Whakahohe te rārangi taipitopito me wplaceBot.config.debug = true hei kite i ngā mahi o roto, me te tautuhi i ngā raruraru mā te tika ake.',
+        networkMonitoringTitle: 'Aroturuki Whatunga: ',
+        networkMonitoringDesc: 'Whakamahia wplaceBot.diagnostics.networkMonitor() hei whai i ngā tauira tono, ā, tautuhi i ngā raruraru e pā ana ki te whatunga.',
+        stateInspectionTitle: 'Tirohanga Āhua: ',
+        stateInspectionDesc: 'Tirohia te āhua o roto o te bot me wplaceBot.getState() hei rapu i ngā whanonga tūturu me te whakapumau i ngā tautuhinga.',
+        errorReportingTitle: 'Pūrongo Hapa: ',
+        errorReportingDesc: 'Hangaia he pūrongo hapa taipitopito me wplaceBot.generateErrorReport() ka tuku ki ngā take GitHub mō te tautoko hapori me ngā whakatikanga hapa.',
+
+        // Mō te Taputapu
+        aboutToolTitle: 'Mō te WPlace-Automation Tool',
+        toolOverview: 'Whakakitenga Taputapu',
+        toolOverviewDesc1: 'Ko te taputapu aunoatanga WPlace Bot he rongoā JavaScript katoa i hangaia mō te papa toi pika mahi tahi wplace.live. Ka taea e tēnei anga aunoatanga WPlace Bot i te kaitirotiro te hanga toi pika matatau mā te whakahaere hōtaka, e tuku ana i ngā atanga māmā mō ngā tīmata me ngā āheinga waehere WPlace Bot matatau.',
+        toolOverviewDesc2: 'I hangaia me ngā hangarau tukutuku hou, ka whakahaere katoa te WPlace Bot i roto i te kaitirotiro, kāore he tāutanga rorohiko atu e hiahiatia ana. Ko te hanga a WPlace Bot he whaihua, he mahi pai, he ngawari ki te whakamahi, kia taea ai e ngā kaiwhakamahi o ngā taumata hangarau katoa te whakamahi i te aunoatanga WPlace Bot.',
+        keyFeatures: 'Ngā Āhuatanga Matua',
+        keyFeaturesDesc1: 'Ko te anga aunoatanga WPlace Bot e whakauru ana i ngā tikanga whakauru maha mō te hanga toi, tae atu ki te tuku whakaahua tika, ngā taputapu huri whakaahua matatau, me tētahi etita toi pika kei roto. Ka whakahaere a WPlace Bot i te whirihoranga tae, te whakawhiti hōputu, me te whakarahi rahi aunoa, kia pai ai te hototahi ki te papa wplace.live.',
+        keyFeaturesDesc2: 'Ko ngā āhuatanga matatau a WPlace Bot e whakauru ana i te tukatuka raupapa, te tautoko whakawhanake waehere ritenga, me ngā tikanga whakahaere hapa katoa. Kei roto i te WPlace Bot ngā aratau wā urutau e urutau ana ki ngā taumahatanga tūmau, me ngā tikanga kitea raruraru atamai hei mahi ngātahi me ērā atu kaiwhakamahi i te kanvas.',
+        technicalImplementation: 'Te Whakatinanatanga Hangarau',
+        technicalImplementationDesc1: 'Ko te anga aunoatanga WPlace Bot i hangaia mā te whakamahi i ngā āhuatanga JavaScript ES6+ hou, me te whakamahi i ngā tauira hōtaka async mō te mahi pai rawa. Ka whai a WPlace Bot i ngā mātāpono hoahoa modulā, kia ngawari ai te whakawhānui me te whakarite mā ngā kaiwhakawhanake e hiahia ana ki te whakamahi i ngā rautaki aunoatanga WPlace Bot motuhake.',
+        technicalImplementationDesc2: 'Ka whakapaihia te whakahaere pūtea mā ngā pūnaha penapena atamai me te tukatuka wāhanga mō ngā whakaahua nui. Kei roto hoki ngā āheinga rapu hē me ngā pūrongo hapa taipitopito hei āwhina i te rapu hē me ngā mahi whakawhanaketanga.',
+        communityAndSupport: 'Hapori me te Tautoko',
+        communityAndSupportDesc1: 'He kaupapa hapori, tuwhera hoki te WPlace Bot, e whakahoutia ana ā-wā, ā, e whai wāhi ana te hapori ki te whakawhanake. Ka taea e ngā kaiwhakamahi te whai wāhi ki te kaupapa WPlace Bot mā GitHub, te tuku take, te tono āhuatanga, me te tiri waehere ritenga ki te hapori. Kei te whakahou tonu te tuhinga WPlace Bot hei whakaatu i ngā āhuatanga hou me ngā tikanga pai.',
+        communityAndSupportDesc2: 'Ka whai te WPlace Bot i ngā tikanga aunoatanga kawenga, me ngā pūnaha haumaru hei pupuri i ngā paerewa hapori wplace.live. Ko te here reiti, te mana wā, me ngā tauira whakamahi tika ngā mātāpono matua o te hoahoa aunoatanga WPlace Bot.',
+
+        // Ngā Āhuatanga
+        featuresTitle: 'He Āhuatanga mō Ia Mahi',
+        featuresSubtitle: 'Mai i te tuku kotahi pāwhiri ki te waehere matatau, kei a WPlace Bot koe.',
+        instantConsoleLoading: 'Utaina Console Tere',
+        instantConsoleLoadingDesc: 'Kāore he tāunga e hiahiatia ana. Tukua te WPlace Bot katoa mā te whakapiri i tētahi rārangi waehere ki te console o tō kaitirotiro.',
+        onScreenControlPanel: 'Paewhiri Mana i te Mata',
+        onScreenControlPanelDesc: 'Ka puta tētahi paewhiri atamai ki wplace.live, e tuku ana i te whakahaere katoa mō te tūranga, te wā, me te utaina whakaahua.',
+        directImageUpload: 'Tuku Whakaahua Tika',
+        directImageUploadDesc: 'Koinei te huarahi māmā ki te tīmata. Tukua ngā whakaahua katoa (PNG, JPG, GIF) mā te paewhiri, ā, ka whakahaere a WPlace Bot i te toenga.',
+        advancedImageConverter: 'Kaitahuri Whakaahua Matatau',
+        advancedImageConverterDesc: 'Whakamahia tō taputapu tukutuku kaha ki te huri whakaahua me te whakahaere pai i te rahi, ngā pae tae, me ērā atu whakapainga.',
+        livePixelArtEditor: 'Etita Toi Pika Ora',
+        livePixelArtEditorDesc: 'He wairua auaha? Tuhia tō toi pika mai i te tīmatanga i roto i te etita, ka waihanga aunoa i te waehere WPlace Bot.',
+        fullConsoleControl: 'Whakahaere Katoa i te Console',
+        fullConsoleControlDesc: 'Mō ngā kaiwhakamahi kaha, ka taea ngā āhuatanga katoa mā ngā whakahau JavaScript i te console mō te waehere matatau.',
+
+        // FAQ
+        faqTitle: 'Pātai Auau',
+        faqSubtitle: 'Ngā mea katoa e hiahia ana koe ki te mōhio mō te whakamahi WPlace Bot',
+        faqDownloadInstall: 'Me tāuta, me tiki rānei i tētahi mea hei whakamahi i WPlace Bot?',
+        faqDownloadInstallAnswer: 'Kāore! He katoa i roto i te kaitirotiro te WPlace Bot. Whakapiri noa i tētahi rārangi waehere ki tō console, ā, ka utaina tonu te taputapu aunoatanga. Kāore he tāutanga, kāore he toronga, ka whakahaere katoa te WPlace Bot i roto i te kaitirotiro mā JavaScript.',
+        faqAllowed: 'Ka whakaaetia te whakamahi WPlace Bot i runga i wplace.live?',
+        faqAllowedAnswer: 'I hangaia te WPlace Bot me te whai whakaaro ki te hapori wplace.live. Kei roto ngā here reiti, te whakahaere wā, me ngā tikanga aunoatanga kawenga. Ka whakarite te WPlace Bot kia kaua e whakamahia mō te kino, ā, ka pupuri i ngā paerewa papa. Me tiro tonu ki ngā ture o wplace.live, ā, whakamahia WPlace Bot me te whakaute.',
+        faqHowToLoad: 'Me pēhea te utaina te taputapu aunoatanga WPlace Bot?',
+        faqHowToLoadAnswer1: 'He māmā te utaina: Tuwhera wplace.live, pāwhiritia F12 ki te whakatuwhera i ngā Taputapu Kaihanga, pāwhiritia te ripa Console, ā, whakapiri tēnei whakahau WPlace Bot:',
+        faqHowToLoadAnswer2: 'Ka utaina aunoa te WPlace Bot, ka puta te karere angitu. Ka puta te paewhiri mana WPlace Bot i te kokonga runga-matau o tō mata.',
+        faqEasiestWay: 'Ko te huarahi māmā ki te tuhi whakaahua mā WPlace Bot?',
+        faqEasiestWayAnswer: 'Whakamahia Kōwhiringa A: Tuku Tika. I muri i te utaina, pāwhiritia te pātene "📁 Carregar Imagem" i runga i te paewhiri WPlace Bot, kōwhiria tō whakaahua, tautuhia te tūranga, ka pāwhiri "▶️ Iniciar" kia tīmata. Koinei te huarahi māmā mō ngā tīmata kāore he mōhio hangarau e hiahiatia ana.',
+        faqConverterEditor: 'He aha ngā taputapu WPlace Bot "Converter" me "Editor"?',
+        faqConverterEditorAnswer: 'Ko te Converter he taputapu tukutuku matatau hei huri whakaahua me ngā tautuhinga ritenga pērā i te whirihoranga pae tae me te rahi. Ko te Editor he taputapu toi pika kei roto hei tuhi tika, ā, ka waihanga aunoa i ngā waehere WPlace Bot. Ka honoa ngā taputapu e rua ki te anga matua hei whakahaere toi auaha.',
+        faqBrowser: 'Ka taea te whakamahi WPlace Bot i runga i ngā kaitirotiro katoa?',
+        faqBrowserAnswer: 'Ka pai te WPlace Bot i ngā kaitirotiro hou pērā i Chrome, Firefox, Edge. Whakamahia JavaScript, ā, whakakore i ngā aukati waehere. Kei te pai te whakahaere i runga i ngā kaitirotiro nui katoa. Ka taea e ngā kaitirotiro pūkoro te whai wāhanga here iti.',
+        faqSpeed: 'E tere ana te whakauru pika a WPlace Bot?',
+        faqSpeedAnswer: 'Kei roto i te WPlace Bot ngā mana wā atamai me te urutau i te 1000ms te taunoa i waenganui i ngā pika hei tiaki i ngā here tūmau. Ka taea te whakarite te tere mā wplaceBot.setDelay(). Kei roto hoki ngā here reiti hei tiaki i te pumau.',
+        faqLargeImages: 'Ka taea e WPlace Bot te whakahaere whakaahua nui?',
+        faqLargeImagesAnswer: 'Āe! Kei roto i te WPlace Bot te whakahaere pūtea matatau me te tukatuka wāhanga mō ngā whakaahua nui. Whakahohe te whakapai pūtea mā wplaceBot.config.memoryOptimized = true mō ngā kaupapa nui. Ka whakarahi me te whakapai aunoa ngā whakaahua mō te kanvas wplace.live.',
+        faqImageFormats: 'He aha ngā hōputu whakaahua e tautokohia ana e WPlace Bot?',
+        faqImageFormatsAnswer: 'Tautoko ana a WPlace Bot i ngā hōputu whakaahua matua pērā i PNG, JPG, JPEG, GIF, WebP. Ka huri me te whakapai aunoa i ngā whakaahua mō te toi pika. Ka taea hoki te whakamahi URL rānei ngā raraunga ritenga mā te API WPlace Bot.',
+        faqStop: 'Me pēhea te whakamutu WPlace Bot mēnā he raruraru?',
+        faqStopAnswer: 'Ka taea te whakamutu tonu mā te wplaceBot.stop() i te console, rānei mā te pāwhiri i te pātene stop i te paewhiri WPlace Bot. Kei roto hoki ngā mana whakamutunga ohorere me ngā tikanga whakaora hapa aunoa.',
+        faqCustomize: 'Ka taea te whakarite i te whanonga me ngā tautuhinga WPlace Bot?',
+        faqCustomizeAnswer: 'Āe! Ka tukuna e WPlace Bot ngā kōwhiringa whānui mā te API whirihoranga. Ka taea te whakarite i te wā, te whakamahi pūtea, ngā here haumaru, me te hanga kōtaha ritenga. Ka taea hoki e ngā kaiwhakamahi matatau te whakawhanake waehere ritenga me te hono ki ngā API o waho.',
+        faqSafe: 'He haumaru te whakamahi WPlace Bot me ētahi atu kaiwhakamahi i te kanvas?',
+        faqSafeAnswer: 'Āe, i hangaia te WPlace Bot mō te mahi ngātahi. Kei roto ngā tikanga kitea raruraru atamai, e whakaute ana i ngā toi a ētahi atu, ā, ka whakamahi wā urutau hei mahi ngātahi ki te hapori wplace.live. Ka whai i ngā tikanga aunoatanga kawenga me ngā paerewa hapori kia pai ai te wheako mō ngā kaiwhakamahi katoa.'
+    },
+
+    // WPlace Live 页面内容
+    wplaceLivePage: {
+        officialPlatform: 'Pāpātanga Whaimana',
+        title: 'WPlace Live - Kānawe Toi Pika Tahi',
+        description: 'Wheako te papa toi pika tahi mutunga kore, e hono ai te auahatanga me te hapori. Ka kawea mai e WPlace Live ngā kaitoi o te ao katoa ki te hanga i ngā tino toi pika ataahua i runga i tētahi kānawe tiritiri.',
+        subtitle: 'Hono atu ki te tini miriona o ngā kaitoi i WPlace Live ā, tuku mai ki te kaupapa toi pika tahi nui rawa atu o te ao. Ko ia pika i WPlace Live he kōrero mō te auahatanga me te mahi tahi.',
+        visitWplaceLive: 'Toro ki WPlace Live',
+        watchDemo: 'Mātaki Whakaaturanga',
+        exploreFeatures: 'Torotoro Āhuatanga',
+        bottomHint: 'Ko te papa toi pika tahi nui rawa atu o te ao e whakakaha ana e te auahatanga hapori.',
+
+        // Video Section
+        videoTitle: 'Tirohia a WPlace Live e Mahi Ana',
+        videoSubtitle: 'Mātakitaki pēhea te huri a WPlace Live i te auahatanga takitahi hei tino toi mahi tahi mā te waihanga toi pika wā-tūturu.',
+        videoDescription: 'E whakaatu ana tēnei whakaaturanga i ngā āhuatanga matua o WPlace Live, tae atu ki te mahi tahi wā-tūturu, te kōpaki tae whānui, me te wheako kaiwhakamahi māmā e hanga ana i a WPlace Live hei ūnga matua mō te waihanga toi pika mahi tahi.',
+
+        // Features Section
+        featuresTitle: 'He Aha te Take Me Kōwhiri i a WPlace Live?',
+        featuresSubtitle: 'Tirohia ngā mea e noho ai a WPlace Live hei papa toi pika mahi tahi rongonui o te ao.',
+        collaborativeCanvas: 'Kānawe Tahi',
+        collaborativeCanvasDesc: 'He kānawe nui rawa tō WPlace Live, e mahi tahi ai ngā tini mano kaitoi i te wā kotahi. Ko ia pika i whakanohoia ki runga i WPlace Live he wāhanga ki te tino toi e huri tonu ana, e tohu ana i te auahatanga tahi o te hapori ao.',
+        realTimeCollaboration: 'Mahi Tahi Wā-Tūturu',
+        realTimeCollaborationDesc: 'Wheako i te mahi tahi tonu i WPlace Live me ngā whakahōu wā-tūturu me te whakanoho pika ora. Mātakitaki pēhea te huri tonu a WPlace Live i mua i ō kanohi i ngā takoha a ngā kaitoi o te ao.',
+        colorPalette: 'Kōpaki Tae Whakarau',
+        colorPaletteDesc: 'E whakarato ana a WPlace Live i tētahi kōpaki tae 64 kua āta kōwhiria, kua pai mō te waihanga toi pika. Kua tohua ia tae kia taea ai te whakapuaki toi nui rawa atu me te pupuri i te taurite tirohanga puta noa i te kānawe tahi.',
+        communityDriven: 'Kawea e te Hapori',
+        communityDrivenDesc: 'E ora ana a WPlace Live i runga i te whai wāhi hapori me te whakatau mā te manapori. Ko te hapori o WPlace Live e ārahi ana i te whanaketanga o te papa mā ngā urupare, ngā tūtohunga, me te whakahaere mahi tahi kia noho tonu a WPlace Live hei mea arotahi ki te kaitoi.',
+        toolIntegration: 'Whakaurunga Utauta',
+        toolIntegrationDesc: 'Ka whakauru ngāwari a WPlace Live ki tā mātou huinga taputapu auaha, tae atu ki ngā kaihanga toi pika, ngā huri tae, me ngā hōtaka aunoa. Ka whakakaha ēnei whakaurunga i tō rerenga mahi auaha me te whakawhānui i ō āheinga toi.',
+        crossPlatform: 'Urunga Rorohiko Maha',
+        crossPlatformDesc: 'Whakauru atu ki WPlace Live mai i tētahi taputapu me tētahi pūtirotiro paetukutuku hou. Ahakoa kei runga koe i te rorohiko, te papa, te pūkoro rānei, ka whakarato a WPlace Live i te wheako ōrite, kua arotau mō ngā papa katoa.',
+        artisticFreedom: 'Herekore Toi',
+        artisticFreedomDesc: 'Ka whakakaha a WPlace Live i te whakapuaki auaha mutunga kore i roto i tētahi anga mahi tahi. Whakapuakina tō tirohanga toi ahurei i runga i WPlace Live ā, tuku atu hoki ki te tino toi mahi tahi e tohu ana i te wheako WPlace Live.',
+        globalCanvas: 'Kānawe Ao',
+        globalCanvasDesc: 'E hono ana a WPlace Live i ngā kaitoi mai i ngā pito katoa o te ao ki runga i tētahi kānawe tiritiri kotahi. Wheako i te makutu o WPlace Live i te hanumi o ngā ahurea, ngā momo, me ngā tirohanga auaha hei mahi tahi toi e whiti atu ana i ngā rohe ā-tinana.',
+        instantUpdates: 'Whakahōu Tere',
+        instantUpdatesDesc: 'Ka tuku a WPlace Live i te tukutahi wā-tūturu me ngā whakahōu pika tonu puta noa i ngā kaiwhakamahi hono katoa. Mātakitaki i te whanaketanga tonu o WPlace Live i te wā kotahi i te takoha mai a ngā mano kaitoi.',
+
+        // Community Section
+        communityTitle: 'Hapori WPlace Live',
+        communitySubtitle: 'Hono atu ki tētahi hapori ao ora tonu o ngā kaitoi me ngā kaihanga i runga i WPlace Live.',
+
+        activeUsers: '50K+',
+        activeUsersLabel: 'Ngā Kaiwhakamahi WPlace Live Hohe',
+        pixelsPlaced: '100M+',
+        pixelsPlacedLabel: 'Ngā Pika kua Whakanohoia ki WPlace Live',
+        artworksCreated: '10K+',
+        artworksCreatedLabel: 'Ngā Toi Mahi Tahi i WPlace Live',
+        countriesJoined: '150+',
+        countriesJoinedLabel: 'Ngā Whenua kua Hono ki WPlace Live',
+        dailyContributions: '500K+',
+        dailyContributionsLabel: 'Ngā Takoha o Ia Rā ki WPlace Live',
+        totalSessions: '2M+',
+        totalSessionsLabel: 'Ngā Wātū Katoa o WPlace Live',
+        communityDescription: 'Ko te hapori o WPlace Live tētahi o ngā kaupapa toi mahi tahi nui rawa i te hītori o te ipurangi. Kei te takoha mai ngā kaitoi o ia whenua o te ao ki WPlace Live, e hanga ana i tētahi kānawe ao e whakanui ana i te kanorau, te auahatanga, me te mana o te whakapuaki toi tahi. Neke atu i te papa noa, kua riro a WPlace Live hei kaupapa e whakaatu ana i te āheinga o te hangarau ki te whakakotahi i te tangata mā ngā wheako auaha tiritiri.',
+
+        // About Section
+        aboutTitle: 'Mō WPlace Live',
+        platformOverview: 'Tirohanga Papa',
+        platformOverviewDesc: 'He papa toi pika mahi tahi whakahihiri a WPlace Live e āhei ai te mahi tahi auaha wā-tūturu i te rahi nui. I hangaia i runga i ngā hangarau paetukutuku hou, e tautoko ana a WPlace Live i ngā mano tini kaiwhakamahi e mahi tahi ana i runga i tētahi kānawe tiritiri. Ka whakakotahi te papa WPlace Live i te ātaahua o te toi pika me te hangarau hou ki te waihanga i tētahi wheako auaha mahi tahi kāore anō kia kitea.',
+        technologyStack: 'Hangarau & Auahatanga',
+        technologyStackDesc: 'Ka whakamahi a WPlace Live i te hangarau tukutahi wā-tūturu matatau kia noho māmā ai te mahi tahi a ngā kaiwhakamahi puta noa i te ao. Kua hoahoatia te hanganga o WPlace Live mō te rahi, te pono, me te mahinga, e tautoko ana i te miriona whakanoho pika i te wā kotahi me te pupuri i te wheako māmā. Ko te hanganga hangarau o WPlace Live he pakarutanga hou i ngā taupānga paetukutuku mahi tahi.',
+        communityGuidelines: 'Hapori & Aratohu',
+        communityGuidelinesDesc: 'E pupuri ana a WPlace Live i tētahi taiao pai, whakakotahi mā te ārahi hapori me ngā aratohu mārama. Ka whakahaere te hapori o WPlace Live i a ia anō mā ngā tukanga manapori me te whakaute tahi. Ko te huarahi whakahaere hapori o WPlace Live e whakarite ana kia puāwai te whakapuaki toi i roto i tētahi wāhi whakatau mai mō ngā kaihanga katoa.',
+        futureVision: 'Tirohanga Anamata',
+        futureVisionDesc: 'E whanake tonu ana a WPlace Live me ngā āhuatanga hou, ngā rahi kānawe whānui ake, me ngā taputapu mahi tahi pai ake. Kei roto i te anamata o WPlace Live ngā taputapu toi matatau, ngā wheako pūkoro pai ake, me ngā ara hou hei whakaatu i ngā toi mahi tahi. Kei te ū tonu a WPlace Live ki te akiaki i ngā pae o te mea ka taea i te waihanga toi mamati mahi tahi.',
+
+        // FAQ Section
+        faqTitle: 'Ngā Pātai Auau mō WPlace Live',
+        faqSubtitle: 'Ngā mea katoa me mōhio koe mō te whakamahi i WPlace Live me te hono ki te hapori toi pika mahi tahi.',
+        faqWhatIs: 'He aha a WPlace Live?',
+        faqWhatIsAnswer: 'He papa toi pika mahi tahi a WPlace Live, e mahi tahi ai ngā kaiwhakamahi o te ao katoa i runga i tētahi kānawe tiritiri. Ka āhei a WPlace Live i te tangata ki te whakanoho pika, ki te tuku mai hoki ki te tino toi e huri tonu ana. Ka whakakotahi a WPlace Live i te mahi tahi wā-tūturu me te waihanga toi pika, ā, koia te kaupapa toi mahi tahi nui rawa atu i runga ipurangi.',
+        faqHowToJoin: 'Me pēhea taku hono atu ki WPlace Live?',
+        faqHowToJoinAnswer: 'Me toro noa ki WPlace Live i tō pūtirotiro paetukutuku – kāore he rēhita e hiahiatia! He tino kore utu a WPlace Live, ka taea hoki e te katoa. Kia tae atu koe ki WPlace Live, ka taea tonu e koe te whakanoho pika me te tuku atu ki te kānawe mahi tahi. Ka mahi a WPlace Live i ngā pūtirotiro hou katoa me ngā taputapu katoa.',
+        faqCanvasSize: 'He pēhea te nui o te kānawe a WPlace Live?',
+        faqCanvasSizeAnswer: 'He nui rawa te kānawe o WPlace Live, he miriona pika kei reira ka taea te whakanoho, te whakarerekē takitahi hoki. Ka āhei te rahi kānawe o WPlace Live ki ngā taipitopito whakamīharo, ā, e tautoko ana i ngā kaupapa toi mahi tahi rahi. Ka whakawhānui tonu te kānawe a WPlace Live i te tipu o te hapori me te waihanga kaupapa whakahirahira ake.',
+        faqPixelCooldown: 'He wā tatari kei waenganui i te whakanoho pika i WPlace Live?',
+        faqPixelCooldownAnswer: 'Āe, kei te whakatinana a WPlace Live i tētahi pūnaha wā tatari hei whakarite i te whai wāhi tika me te aukati i te para. E rerekē ana te wā tatari i runga i te taumahatanga tūmau me te mahi hapori. Mā tēnei pūnaha e whakarite kia noho wātea tonu a WPlace Live ki te katoa me te pupuri i te kounga o te toi mahi tahi.',
+        faqMobileSupport: 'Ka taea e au te whakamahi i WPlace Live i runga pūkoro?',
+        faqMobileSupportAnswer: 'Āe rawa atu! Kua tino arotau a WPlace Live mō ngā pūkoro me ngā papa. Kei roto i te wheako pūkoro o WPlace Live ngā mana whakahaere hāngai-ā-pā me te hoahoa urupare hei hanga i te waihanga toi pika kia māmā, kia mārama. Ka pai ake ngā kaiwhakamahi pūkoro o WPlace Live i ngā āhuatanga me ngā āheinga ōrite ki ngā kaiwhakamahi rorohiko.',
+        faqToolsIntegration: 'Me pēhea te mahi tahi o WPlace Live me WPlace Tools?',
+        faqToolsIntegrationAnswer: 'Ka whakauru ngāwari a WPlace Live me tā mātou huinga WPlace Tools tae atu ki ngā kaihanga toi pika, ngā huri tae, me ngā hōtaka aunoa. Ka taea e koe te waihanga toi mā WPlace Tools, ā, ka kawea mai ki WPlace Live hei whakarei tahi. Ka tautoko hoki a WPlace Live i ngā toronga pūtirotiro me ngā taputapu hei whakakaha ake i te wheako auaha.',
+        faqCommunityRules: 'He aha ngā ture hapori mō WPlace Live?',
+        faqCommunityRulesAnswer: 'E pupuri ana a WPlace Live i tētahi taiao pai mā ngā aratohu hapori e whakatairanga ana i te whakaute, te auahatanga, me te mahi tahi. E hiahiatia ana ngā kaiwhakamahi o WPlace Live ki te tuku mai i runga i te whakaaro pai, ki te whakaute i ngā toi a ētahi atu, me te whai i te kawa papa. Ka whakahaere a WPlace Live i a ia anō, ka mahi tahi hoki ki te pupuri i tētahi wāhi whakatau mai mō ngā kaitoi katoa.',
+        faqDataPersistence: 'E hia te roa o te noho o ngā toi i runga i WPlace Live?',
+        faqDataPersistenceAnswer: 'He pūmau ngā toi i runga i WPlace Live, ka noho hei wāhanga o te kānawe mahi tahi pūmau. Ka pupuri a WPlace Live i ngā rēkoata hītori o ngā whakanoho pika katoa, ā, ka āhei ngā kaiwhakamahi ki te kite pēhea te whanaketanga o ngā toi i te wā. Ka whakarite te papa WPlace Live kia noho tonu ō takoha toi hei wāhanga o te tino toi tahi ake tonu atu.',
+        faqCollaborationTips: 'Me pēhea au e mahi tahi ai i runga i WPlace Live?',
+        faqCollaborationTipsAnswer: 'Ko te mahi tahi whai hua i runga i WPlace Live ko te whakaute i ngā toi o nāianei, te whakawhiti kōrero ki ētahi atu kaiwhakamahi, me te tuku pai ki ngā kaupapa tiritiri. Ka ora te hapori WPlace Live i runga i te mahi tahi pai me te whakaute tahi a ngā kaiwhakamahi katoa.'
+
+    },
+
     // SEO Meta数据
     meta: {
         defaultDescription: 'Ngā taputapu huringa toi pika ngaio e huri ana i ō whakaaro auaha ki ngā toi pika whakamīharo me ngā āheinga mutunga kore.',

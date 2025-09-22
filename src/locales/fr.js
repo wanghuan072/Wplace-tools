@@ -793,6 +793,332 @@ export default {
     // 首页按钮
     startWithExtension: 'Commencer avec l’Extension Wplace',
 
+    // WPlace Bot 页面内容
+    wplaceBotPage: {
+        officialGuide: 'Guide Officiel',
+        title: 'WPlace Bot Documentation & Tutoriel',
+        description: 'Le guide complet de wplace-automation - Un outil puissant conçu pour wplace.live qui simplifie la création d’art en pixels grâce à l’automatisation. Découvrez l’installation, la configuration et l’utilisation avancée avec notre documentation détaillée.',
+        bottomHint: 'Un outil puissant conçu pour wplace.live qui simplifie la création d’art en pixels grâce à l’automatisation.',
+        quickStart: 'Démarrage Rapide',
+        creationMethods: 'Méthodes de Création',
+        consoleCommands: 'Commandes Console',
+        advancedUsage: 'Utilisation Avancée',
+        apiReference: 'Référence API',
+        troubleshooting: 'Dépannage',
+
+        // Quick Start Tab Content
+        quickStartTitle: 'Guide de Démarrage Rapide WPlace Bot',
+        quickStartIntro: 'Commencez avec l’automatisation WPlace Bot pour wplace.live. Ce tutoriel complet WPlace Bot vous guidera dans l’installation et la configuration de l’outil d’automatisation WPlace Bot.',
+        step1Preparation: 'Étape 1 : Préparation',
+        step1Description: 'Ouvrez wplace.live et préparez la console développeur. L’outil d’automatisation WPlace Bot fonctionne directement dans votre navigateur via une injection JavaScript, offrant une intégration transparente avec la toile de wplace.live.',
+
+        // Step content for Quick Start
+        openWplaceLiveStep: 'Ouvrez wplace.live dans votre navigateur.',
+        pressF12Step: 'Appuyez sur F12 (ou Ctrl+Maj+I) pour ouvrir les Outils de Développement.',
+        clickConsoleStep: 'Cliquez sur l’onglet « Console ».',
+        step2LoadBot: 'Étape 2 : Charger WPlace Bot (Requis)',
+        step2Description: 'Chargez le script d’automatisation WPlace Bot directement depuis GitHub. Cette commande en une ligne récupère la dernière version de WPlace Bot et initialise toutes les fonctionnalités d’automatisation. L’outil WPlace Bot est activement maintenu avec des mises à jour régulières pour des performances optimales.',
+        successMessage: 'Succès !',
+        waitForBotLoadedMessage: 'Attendez le message « 🎨 WPlace Bot Carregado ! » et l’apparition du panneau de contrôle WPlace Bot en haut à droite.',
+        step3StartDrawing: 'Étape 3 : Commencez à Dessiner avec WPlace Bot !',
+        step3Description: 'Choisissez l’une des méthodes WPlace Bot pour commencer à créer de l’art. L’outil WPlace Bot propose plusieurs approches adaptées à différents préférences et niveaux de compétence.',
+        step3Details: 'Vous pouvez maintenant utiliser le panneau WPlace Bot à l’écran ou les commandes console pour dessiner. L’automatisation WPlace Bot gère automatiquement le timing de placement des pixels, la détection de collisions et la récupération d’erreurs. Voir l’onglet « Méthodes de Création » pour plus de détails.',
+        quickTest: 'Test Rapide :',
+
+        // Creation Methods Tab Content
+        creationMethodsTitle: 'Méthodes de Création WPlace Bot',
+        creationMethodsIntro: 'Découvrez différentes façons d’utiliser WPlace Bot pour créer de l’art en pixels sur wplace.live. Chaque méthode WPlace Bot offre des avantages uniques selon les projets.',
+        optionATitle: 'Option A : Téléversement Direct',
+        optionAEasiest: '(La plus simple)',
+        optionAStep1: 'Cliquez sur le bouton « 📁 Carregar Imagem » dans le panneau WPlace Bot.',
+        optionAStep2: 'Sélectionnez votre fichier image (PNG, JPG, etc.) pour traitement par WPlace Bot.',
+        optionAStep3: 'Définissez la position X et Y dans le panneau WPlace Bot.',
+        optionAStep4: 'Cliquez sur le bouton « ▶️ Iniciar » pour démarrer l’automatisation.',
+        optionBTitle: 'Option B : Convertisseur Avancé',
+        optionBStep1: 'Cliquez sur le bouton « 🔧 Conversor » dans le panneau WPlace Bot.',
+        optionBStep2: 'Glissez votre image dans le nouvel onglet WPlace Bot.',
+        optionBStep3: 'Configurez les options WPlace Bot comme la taille et le mode couleur.',
+        optionBStep4: 'Cliquez sur « 📝 Gerar Script » et copiez le code généré.',
+        optionBStep5: 'Collez le script copié dans la console de wplace.live.',
+        optionCTitle: 'Option C : Éditeur Pixel Art',
+        optionCStep1: 'Cliquez sur le bouton « 🎨 Editor » dans le panneau WPlace Bot.',
+        optionCStep2: 'Dessinez directement dans l’éditeur WPlace Bot.',
+        optionCStep3: 'Le script WPlace Bot est généré automatiquement pendant que vous dessinez.',
+        optionCStep4: 'Copiez le script généré.',
+        optionCStep5: 'Collez-le dans la console wplace.live pour exécuter WPlace Bot.',
+
+        // Console Commands Tab Content
+        consoleCommandsTitle: 'Commandes Console WPlace Bot',
+        consoleCommandsIntro: 'Maîtrisez les commandes console WPlace Bot pour un contrôle avancé. Utilisez ces commandes pour contrôler vos sessions d’automatisation WPlace Bot de manière programmatique.',
+
+        basicControlsHeader: 'Contrôles de Base WPlace Bot',
+        imageLoadingHeader: 'Chargement d’Image WPlace Bot',
+        troubleshootingHeader: 'Dépannage WPlace Bot',
+        canvasNotFoundError: '« Canvas non trouvé » : Rechargez la page et attendez qu’elle se charge complètement avant de lancer WPlace Bot.',
+        wplaceBotNotFoundError: '« WPlace Bot non trouvé » : Relancez la commande `fetch` pour charger à nouveau WPlace Bot.',
+        botNotWorkingError: 'WPlace Bot ne fonctionne pas : Vérifiez les bloqueurs de script ou les erreurs dans la console. Essayez d’exécuter `wplaceBot.init();` pour réinitialiser.',
+
+        // Advanced Usage Tab Content
+        advancedUsageTitle: 'Utilisation Avancée WPlace Bot',
+        advancedUsageIntro: 'Débloquez tout le potentiel de WPlace Bot avec des fonctionnalités avancées. Découvrez comment personnaliser son comportement, créer des scripts personnalisés et optimiser ses performances pour des projets complexes.',
+
+        // Advanced Usage detailed content
+        customScriptTitle: 'Développement de Scripts Personnalisés',
+        customScriptSubtitle: 'Créez vos propres scripts d’automatisation avec le framework WPlace Bot',
+        customScriptFeature1: 'Initialisez des algorithmes de dessin personnalisés avec wplaceBot.customDraw(algorithm)',
+        customScriptFeature2: 'Implémentez des fonctions de rappel pour surveiller la progression et gérer les erreurs',
+        customScriptFeature3: 'Créez des modules réutilisables pour des motifs et formes fréquents',
+        customScriptFeature4: 'Intégrez WPlace Bot avec des API externes pour générer du contenu dynamique',
+        customScriptDesc: 'L’outil d’automatisation WPlace Bot fournit une API JavaScript flexible permettant aux développeurs de créer des scripts personnalisés. Vous pouvez étendre la fonctionnalité de base pour gérer des motifs complexes, implémenter vos propres algorithmes ou intégrer des sources de données externes. L’architecture modulaire prend en charge le développement de plugins et des pipelines personnalisés de traitement d’images.',
+
+        // Performance Optimization
+        batchProcessing: 'Traitement par Lots & Automatisation',
+        batchProcessingDescription: 'Gérez plusieurs images et projets complexes avec le traitement par lots avancé',
+        useBatchProcess: 'Utilisez wplaceBot.batchProcess([images]) pour traiter plusieurs images',
+        implementQueueManagement: 'Mettez en place une gestion de file d’attente avec priorités et dépendances',
+        setupConflictDetection: 'Configurez la détection et la résolution automatique des conflits',
+        configureRetryMechanisms: 'Configurez des mécanismes de reprise avec backoff exponentiel',
+        featureDescription: 'Pour les projets à grande échelle, l’outil prend en charge des capacités sophistiquées de traitement par lots. Vous pouvez mettre en file plusieurs images, définir des priorités et appliquer une logique conditionnelle basée sur l’état de la toile. Le système inclut des mécanismes de résolution de conflits et une logique de reprise automatique pour les pixels échoués.',
+
+        performanceOptimization: 'Optimisation des Performances',
+        performanceOptimizationDescription: 'Techniques avancées pour optimiser la performance de dessin et l’utilisation des ressources',
+        configureAdaptiveDelay: 'Configurez des délais adaptatifs : wplaceBot.setAdaptiveDelay(true)',
+        implementMemoryEfficient: 'Implémentez un traitement d’image efficace en mémoire grâce au découpage en blocs',
+        useCanvasStateCaching: 'Utilisez la mise en cache de l’état de la toile pour réduire les opérations redondantes',
+        optimizeDrawingPaths: 'Optimisez les chemins de dessin avec des algorithmes de recherche de chemin',
+        featureDescription2: 'Optimisez vos performances d’automatisation avec des options de configuration avancées. L’outil inclut des fonctions de gestion mémoire, des systèmes de cache intelligents et des algorithmes de temporisation adaptatifs selon la charge du serveur. Découvrez comment implémenter des schémas de dessin efficaces et minimiser la consommation de ressources.',
+
+        // API Reference Tab Content
+        apiReferenceTitle: 'Référence API WPlace Bot',
+        apiReferenceIntro: 'Documentation complète de l’API WPlace Bot pour développeurs. Maîtrisez toutes les méthodes et fonctions pour créer des scripts puissants d’automatisation de pixel art.',
+
+        // API Reference detailed content
+        coreAPITitle: 'Méthodes API de Base',
+        coreAPISubtitle: 'Référence complète des méthodes essentielles d’automatisation',
+        coreAPIDesc: 'L’API WPlace Bot offre un ensemble complet de méthodes pour contrôler la création de pixel art par programmation. Toutes les méthodes sont conçues pour être chaînables et prennent en charge les modes synchrone et asynchrone. La gestion des erreurs est intégrée avec des rapports détaillés.',
+
+        // Image Processing API
+        imageProcessingAPITitle: 'API de Traitement d’Image',
+        imageProcessingAPISubtitle: 'Fonctions avancées de manipulation et conversion d’images',
+        imageProcessingAPIDesc: 'L’API de traitement d’image gère la conversion de format, l’optimisation de palette de couleurs et le redimensionnement. Elle prend en charge plusieurs formats et offre un contrôle précis sur la quantification des couleurs. L’API inclut des options intégrées de tramage et la gestion de la transparence.',
+
+        // Event System & Callbacks
+        eventSystemTitle: 'Système d’Événements & Callbacks',
+        eventSystemSubtitle: 'Surveillez la progression et gérez les événements par programmation',
+        eventSystemFeature1: 'Enregistrez des écouteurs : wplaceBot.on(\'pixelPlaced\', callback)',
+        eventSystemFeature2: 'Surveillez la progression : wplaceBot.on(\'progress\', (percent) => {})',
+        eventSystemFeature3: 'Gérez les erreurs : wplaceBot.on(\'error\', (error) => {})',
+        eventSystemFeature4: 'Suivez la fin : wplaceBot.on(\'complete\', () => {})',
+        eventSystemDesc: 'Le système d’événements fournit un retour en temps réel sur la progression de l’automatisation, les erreurs et les interactions utilisateur. Vous pouvez enregistrer des écouteurs personnalisés pour les placements de pixels, les tentatives de récupération et les notifications de fin. Le système prend en charge la gestion des événements globale et locale.',
+
+        // Configuration Options
+        configOptionsTitle: 'Options de Configuration',
+        configOptionsSubtitle: 'Système de configuration complet pour affiner le comportement de l’automatisation',
+        configOptionsFeature1: 'Configuration globale : wplaceBot.config.set(\'key\', value)',
+        configOptionsFeature2: 'Charger des profils : wplaceBot.loadConfig(\'profileName\')',
+        configOptionsFeature3: 'Limites de sécurité : wplaceBot.config.safety.maxPixelsPerSecond = 2',
+        configOptionsFeature4: 'Exporter les paramètres : wplaceBot.exportConfig()',
+        configOptionsDesc: 'Le système de configuration permet une personnalisation détaillée du comportement de l’automatisation, des paramètres temporels et des mécanismes de sécurité. Vous pouvez sauvegarder et charger des profils de configuration, définir des paramètres spécifiques à l’environnement et implémenter des règles de validation personnalisées pour les opérations de dessin.',
+
+        // Troubleshooting detailed content
+        commonErrorTitle: 'Résolution des Erreurs Courantes',
+        commonErrorSubtitle: 'Solutions étape par étape pour les problèmes fréquemment rencontrés',
+        canvasLoadingTitle: 'Problèmes de Chargement du Canvas :',
+        canvasLoadingDesc: 'Si le canvas ne se charge pas, videz le cache du navigateur et rechargez la page. Assurez-vous que wplace.live est entièrement chargé avant d’exécuter le script du bot.',
+        rateLimitingTitle: 'Erreurs de Limitation du Taux :',
+        rateLimitingDesc: 'Lorsque vous rencontrez une limitation du taux, augmentez le délai avec wplaceBot.setDelay(2000) ou plus. La valeur par défaut doit être d’au moins 1000ms.',
+        memoryConsumptionTitle: 'Consommation Mémoire :',
+        memoryConsumptionDesc: 'Pour les grandes images, utilisez wplaceBot.config.memoryOptimized = true pour activer le traitement par segments et réduire l’utilisation de la mémoire.',
+        browserCompatibilityTitle: 'Compatibilité Navigateur :',
+        browserCompatibilityDesc: 'Si le bot ne se charge pas, assurez-vous que JavaScript est activé et essayez d’utiliser Chrome ou Firefox. Certaines extensions de navigateur peuvent interférer avec le fonctionnement.',
+
+        // Performance Issues
+        performanceIssuesTitle: 'Problèmes de Performance',
+        performanceIssuesSubtitle: 'Optimiser la performance et résoudre les ralentissements',
+        slowPixelTitle: 'Placement Lent des Pixels :',
+        slowPixelDesc: 'Vérifiez votre connexion Internet et augmentez le délai si vous rencontrez des timeouts. Utilisez wplaceBot.diagnostics.networkTest() pour tester la qualité de la connexion.',
+        highCPUTitle: 'Utilisation Élevée du CPU :',
+        highCPUDesc: 'Activez le timing adaptatif avec wplaceBot.setAdaptiveDelay(true) pour ajuster automatiquement la vitesse de traitement en fonction des performances du système.',
+        memoryLeaksTitle: 'Fuites de Mémoire :',
+        memoryLeaksDesc: 'Redémarrez le bot périodiquement pour les sessions longues avec wplaceBot.restart(). Videz le cache d’images avec wplaceBot.clearCache() si l’utilisation mémoire augmente.',
+        browserFreezingTitle: 'Blocage du Navigateur :',
+        browserFreezingDesc: 'Réduisez la taille de l’image ou activez le mode traitement en arrière-plan avec wplaceBot.config.backgroundMode = true pour une meilleure réactivité.',
+
+        // Integration Problems
+        integrationProblemsTitle: 'Problèmes d’Intégration',
+        integrationProblemsSubtitle: 'Résoudre les problèmes avec les outils externes et les intégrations',
+        imageUploadFailuresTitle: 'Échec du Téléversement d’Images :',
+        imageUploadFailuresDesc: 'Vérifiez la compatibilité du format d’image (PNG, JPG, GIF pris en charge). Utilisez wplaceBot.validateImage(file) pour vérifier le format avant le traitement.',
+        scriptLoadingErrorsTitle: 'Erreurs de Chargement du Script :',
+        scriptLoadingErrorsDesc: 'Si la commande fetch échoue, vérifiez votre connexion Internet et essayez de charger depuis un autre miroir CDN en utilisant une URL fetch alternative.',
+        crossOriginTitle: 'Problèmes Cross-Origin :',
+        crossOriginDesc: 'Certaines images peuvent échouer à cause des restrictions CORS. Utilisez le convertisseur d’images intégré ou téléversez les images sur un service d’hébergement compatible.',
+
+        // Advanced Debugging
+        advancedDebuggingTitle: 'Débogage Avancé',
+        advancedDebuggingSubtitle: 'Déboguez des problèmes complexes et contribuez au développement',
+        debugModeTitle: 'Mode Débogage :',
+        debugModeDesc: 'Activez la journalisation détaillée avec wplaceBot.config.debug = true pour voir les opérations internes et identifier les problèmes plus précisément.',
+        networkMonitoringTitle: 'Surveillance du Réseau :',
+        networkMonitoringDesc: 'Utilisez wplaceBot.diagnostics.networkMonitor() pour suivre les modèles de requêtes et identifier les problèmes liés au réseau.',
+        stateInspectionTitle: 'Inspection de l’État :',
+        stateInspectionDesc: 'Vérifiez l’état interne du bot avec wplaceBot.getState() pour diagnostiquer un comportement inattendu et valider les paramètres de configuration.',
+        errorReportingTitle: 'Rapport d’Erreur :',
+        errorReportingDesc: 'Générez des rapports d’erreurs détaillés avec wplaceBot.generateErrorReport() et soumettez-les sur GitHub pour le support communautaire et la correction des bugs.',
+
+        // About Tool Section
+        aboutToolTitle: 'À Propos de l’Outil WPlace-Automation',
+        toolOverview: 'Présentation de l’Outil',
+        toolOverviewDesc1: 'L’outil d’automatisation WPlace Bot est une solution complète basée sur JavaScript, conçue spécifiquement pour la plateforme collaborative de pixel art wplace.live. Ce framework d’automatisation dans le navigateur permet aux utilisateurs de créer des œuvres pixel art sophistiquées via le contrôle programmatique, offrant à la fois une interface conviviale pour les débutants et des capacités avancées de scripting.',
+        toolOverviewDesc2: 'Construit avec des technologies web modernes, l’outil WPlace Bot fonctionne entièrement dans le navigateur, sans installation de logiciel ni configuration système supplémentaire. L’architecture de WPlace Bot est conçue pour la fiabilité, la performance et la facilité d’utilisation, rendant l’automatisation accessible à tous les utilisateurs, quel que soit leur niveau technique.',
+        keyFeatures: 'Fonctionnalités Clés',
+        keyFeaturesDesc1: 'Le framework WPlace Bot inclut plusieurs méthodes d’entrée pour la création d’œuvres, y compris le téléversement direct d’images, des outils avancés de conversion d’images et un éditeur de pixel art intégré. Le système gère automatiquement l’optimisation de la palette de couleurs, la conversion de format et le redimensionnement, garantissant une compatibilité optimale avec wplace.live.',
+        keyFeaturesDesc2: 'Les fonctionnalités avancées incluent le traitement par lots, le support pour le développement de scripts personnalisés et des mécanismes complets de gestion d’erreurs. WPlace Bot inclut des algorithmes de timing adaptatif qui s’ajustent selon la charge du serveur et détecte intelligemment les conflits pour collaborer harmonieusement avec d’autres utilisateurs sur le canvas.',
+        technicalImplementation: 'Implémentation Technique',
+        technicalImplementationDesc1: 'Le framework WPlace Bot est construit avec les fonctionnalités modernes de JavaScript ES6+ et utilise des patterns de programmation asynchrones pour une performance optimale. La base de code suit des principes de conception modulaire, permettant aux développeurs d’étendre et de personnaliser facilement le framework pour des stratégies d’automatisation spécifiques.',
+        technicalImplementationDesc2: 'La gestion de la mémoire est optimisée grâce à des systèmes de cache intelligents et un traitement par segments pour les grandes images. L’outil inclut des capacités de débogage complètes et des rapports d’erreurs détaillés pour faciliter le dépannage et le développement.',
+        communityAndSupport: 'Communauté et Support',
+        communityAndSupportDesc1: 'Le projet WPlace Bot est open-source et dirigé par la communauté, avec un développement actif et des mises à jour régulières. Les utilisateurs peuvent contribuer via GitHub, signaler des problèmes, demander des fonctionnalités et partager des scripts personnalisés avec la communauté. La documentation est continuellement mise à jour pour refléter les nouvelles fonctionnalités et bonnes pratiques.',
+        communityAndSupportDesc2: 'L’outil suit des pratiques d’automatisation responsables et inclut des mécanismes de sécurité intégrés pour assurer le respect des directives de wplace.live. Les limites de taux, le contrôle des délais et l’utilisation respectueuse sont des principes fondamentaux de la conception de WPlace Bot.',
+
+        // Features Section
+        featuresTitle: 'Une Fonction pour Chaque Flux de Travail',
+        featuresSubtitle: 'Du téléversement en un clic au scripting avancé, notre WPlace Bot vous couvre.',
+        instantConsoleLoading: 'Chargement Instantané dans la Console',
+        instantConsoleLoadingDesc: 'Aucun téléchargement nécessaire. Chargez l’ensemble de WPlace Bot en collant une seule ligne de code dans la console de votre navigateur.',
+        onScreenControlPanel: 'Panneau de Contrôle à l’Écran',
+        onScreenControlPanelDesc: 'Un panneau intuitif apparaît directement sur wplace.live, vous donnant un contrôle total sur la position, le délai et le chargement des images.',
+        directImageUpload: 'Téléversement Direct d’Images',
+        directImageUploadDesc: 'La méthode la plus simple pour commencer. Téléversez n’importe quelle image (PNG, JPG, GIF) directement via le panneau et WPlace Bot s’occupe du reste.',
+        advancedImageConverter: 'Convertisseur d’Images Avancé',
+        advancedImageConverterDesc: 'Utilisez notre puissant outil web pour convertir les images avec un contrôle précis sur la taille, les palettes de couleurs et autres optimisations.',
+        livePixelArtEditor: 'Éditeur de Pixel Art en Direct',
+        livePixelArtEditorDesc: 'Envie de créativité ? Dessinez votre pixel art depuis zéro dans notre éditeur complet et générez instantanément le script WPlace Bot.',
+        fullConsoleControl: 'Contrôle Complet depuis la Console',
+        fullConsoleControlDesc: 'Pour les utilisateurs avancés, chaque fonctionnalité est accessible via de simples commandes JavaScript directement dans la console pour un scripting avancé.',
+
+        // FAQ Section
+        faqTitle: 'Questions Fréquemment Posées',
+        faqSubtitle: 'Tout ce que vous devez savoir pour utiliser notre WPlace Bot',
+        faqDownloadInstall: 'Dois-je télécharger ou installer quelque chose pour WPlace Bot ?',
+        faqDownloadInstallAnswer: 'Non ! WPlace Bot fonctionne entièrement dans le navigateur. Il suffit de coller une ligne de code dans la console et l’outil se charge instantanément. Pas de téléchargement, pas d’installation, aucune extension nécessaire. WPlace Bot fonctionne sur tout appareil avec un navigateur moderne.',
+        faqAllowed: 'L’utilisation de WPlace Bot est-elle autorisée sur wplace.live ?',
+        faqAllowedAnswer: 'L’outil est conçu dans le respect de la communauté wplace.live. Il inclut des limites de taux, des contrôles de délai et suit des pratiques d’automatisation responsables. WPlace Bot applique des mécanismes de sécurité pour prévenir les abus et rester conforme aux directives de la plateforme. Vérifiez toujours les conditions d’utilisation actuelles et utilisez WPlace Bot de manière respectueuse.',
+        faqHowToLoad: 'Comment charger l’outil d’automatisation WPlace Bot ?',
+        faqHowToLoadAnswer1: 'Charger WPlace Bot est simple : ouvrez wplace.live, appuyez sur F12 pour ouvrir les outils de développement, cliquez sur l’onglet Console et collez cette commande WPlace Bot :',
+        faqHowToLoadAnswer2: 'WPlace Bot se charge automatiquement et affiche un message de succès lorsqu’il est prêt. Le panneau de contrôle apparaîtra dans le coin supérieur droit de l’écran.',
+        faqEasiestWay: 'Quelle est la manière la plus simple de dessiner une image avec WPlace Bot ?',
+        faqEasiestWayAnswer: 'Utilisez l’Option A : Téléversement Direct. Après avoir chargé WPlace Bot, cliquez sur le bouton "📁 Carregar Imagem" dans le panneau de contrôle, sélectionnez votre image, définissez la position, puis cliquez sur "▶️ Iniciar" pour démarrer l’automatisation. C’est la méthode la plus conviviale pour les débutants, sans connaissance technique nécessaire.',
+        faqConverterEditor: 'Quels sont les outils "Converter" et "Editor" de WPlace Bot ?',
+        faqConverterEditorAnswer: 'Le Convertisseur WPlace Bot est un outil web avancé pour affiner la conversion d’images avec des paramètres personnalisés comme l’optimisation des palettes et le redimensionnement. L’Editor est un outil intégré pour créer du pixel art directement et générer automatiquement les scripts WPlace Bot. Les deux s’intègrent parfaitement au système principal pour un contrôle créatif maximal.',
+        faqBrowser: 'Puis-je utiliser WPlace Bot sur n’importe quel navigateur ?',
+        faqBrowserAnswer: 'WPlace Bot fonctionne mieux sur les navigateurs modernes comme Chrome, Firefox et Edge. Assurez-vous que JavaScript est activé et désactivez tout bloqueur de scripts qui pourrait interférer. WPlace Bot est optimisé pour les navigateurs basés sur Chromium mais fonctionne sur toutes les plateformes majeures. Les navigateurs mobiles peuvent avoir des fonctionnalités limitées.',
+        faqSpeed: 'À quelle vitesse WPlace Bot place-t-il les pixels ?',
+        faqSpeedAnswer: 'WPlace Bot inclut des contrôles de timing intelligents avec un délai par défaut de 1000ms entre chaque pixel pour respecter les limites du serveur. Vous pouvez ajuster la vitesse avec wplaceBot.setDelay(). Le bot s’adapte automatiquement aux conditions du serveur et inclut une protection contre les limitations de taux pour garantir la stabilité.',
+        faqLargeImages: 'WPlace Bot peut-il gérer de grandes images ?',
+        faqLargeImagesAnswer: 'Oui ! WPlace Bot inclut la gestion avancée de la mémoire et le traitement par segments pour les grandes images. Activez l’optimisation mémoire avec wplaceBot.config.memoryOptimized = true pour de meilleures performances. Le bot redimensionne et optimise automatiquement les images pour le canvas wplace.live tout en maintenant la qualité.',
+        faqImageFormats: 'Quels formats d’image WPlace Bot supporte-t-il ?',
+        faqImageFormatsAnswer: 'WPlace Bot supporte tous les formats majeurs : PNG, JPG, JPEG, GIF et WebP. Il convertit et optimise automatiquement les images pour le pixel art. Vous pouvez aussi charger des images depuis des URLs ou des tableaux de données personnalisés via l’API WPlace Bot pour plus de flexibilité.',
+        faqStop: 'Comment arrêter WPlace Bot si quelque chose tourne mal ?',
+        faqStopAnswer: 'Vous pouvez arrêter immédiatement le bot avec wplaceBot.stop() dans la console ou en cliquant sur le bouton stop du panneau. WPlace Bot inclut des fonctions d’arrêt d’urgence et de récupération des erreurs pour gérer les situations imprévues. Il dispose également d’une protection automatique contre les timeouts.',
+        faqCustomize: 'Puis-je personnaliser le comportement et les paramètres de WPlace Bot ?',
+        faqCustomizeAnswer: 'Absolument ! WPlace Bot offre de nombreuses options via l’API de configuration. Vous pouvez ajuster le timing, l’utilisation mémoire, les limites de sécurité et créer des profils personnalisés. Les utilisateurs avancés peuvent développer des scripts personnalisés et intégrer des APIs externes pour des fonctionnalités étendues. WPlace Bot supporte la personnalisation pour débutants et experts.',
+        faqSafe: 'WPlace Bot est-il sûr à utiliser avec d’autres utilisateurs sur le canvas ?',
+        faqSafeAnswer: 'Oui, WPlace Bot est conçu pour un usage collaboratif. Il inclut une détection intelligente des conflits, respecte l’art des autres utilisateurs et ajuste le timing pour collaborer harmonieusement avec la communauté wplace.live. Il suit des pratiques responsables pour garantir une expérience positive pour tous.'
+
+    },
+
+    // WPlace Live 页面内容
+    wplaceLivePage: {
+        officialPlatform: 'Plateforme Officielle',
+        title: 'WPlace Live - Canvas Collaboratif de Pixel Art',
+        description: 'Découvrez la plateforme ultime de pixel art collaboratif où créativité rime avec communauté. WPlace Live réunit des artistes du monde entier pour créer des chefs-d’œuvre en pixel art sur une toile partagée.',
+        subtitle: 'Rejoignez des millions d’artistes sur WPlace Live et contribuez au plus grand projet collaboratif de pixel art au monde. Chaque pixel sur WPlace Live raconte une histoire de créativité et de collaboration.',
+        visitWplaceLive: 'Visiter WPlace Live',
+        watchDemo: 'Voir la Démo',
+        exploreFeatures: 'Découvrir les Fonctionnalités',
+        bottomHint: 'La plus grande plateforme collaborative de pixel art au monde, animée par la créativité de la communauté.',
+
+        // Video Section
+        videoTitle: 'Découvrez WPlace Live en Action',
+        videoSubtitle: 'Regardez comment WPlace Live transforme la créativité individuelle en chefs-d’œuvre collaboratifs grâce à la création de pixel art en temps réel.',
+        videoDescription: 'Cette démonstration présente les fonctionnalités principales de WPlace Live, notamment la collaboration en temps réel, la palette de couleurs étendue et l’expérience utilisateur fluide qui font de WPlace Live la destination incontournable pour le pixel art collaboratif.',
+
+        // Features Section
+        featuresTitle: 'Pourquoi Choisir WPlace Live ?',
+        featuresSubtitle: 'Découvrez ce qui fait de WPlace Live la plateforme collaborative de pixel art la plus populaire au monde.',
+        collaborativeCanvas: 'Canvas Collaboratif',
+        collaborativeCanvasDesc: 'WPlace Live propose une immense toile partagée où des milliers d’artistes travaillent simultanément. Chaque pixel placé sur WPlace Live contribue à un chef-d’œuvre en constante évolution représentant la créativité collective de la communauté mondiale.',
+        realTimeCollaboration: 'Collaboration en Temps Réel',
+        realTimeCollaborationDesc: 'Expérimentez la collaboration instantanée sur WPlace Live avec des mises à jour en direct et le placement de pixels en temps réel. Observez WPlace Live se transformer sous vos yeux grâce aux contributions d’artistes du monde entier, créant un canvas dynamique et en perpétuel changement.',
+        colorPalette: 'Palette de Couleurs Riche',
+        colorPaletteDesc: 'WPlace Live fournit une palette soigneusement sélectionnée de 64 couleurs optimisées pour la création de pixel art. Chaque couleur a été choisie pour maximiser l’expression artistique tout en garantissant l’harmonie visuelle sur la toile collaborative.',
+        communityDriven: 'Axé sur la Communauté',
+        communityDrivenDesc: 'WPlace Live prospère grâce à la participation de la communauté et à une gouvernance démocratique. La communauté WPlace Live influence l’évolution de la plateforme par des retours, des suggestions et une gouvernance collaborative, garantissant que WPlace Live reste centrée sur les artistes.',
+        toolIntegration: 'Intégration d’Outils',
+        toolIntegrationDesc: 'WPlace Live s’intègre parfaitement à notre suite d’outils créatifs, y compris générateurs de pixel art, convertisseurs de couleurs et scripts d’automatisation. Ces intégrations WPlace Live améliorent votre flux créatif et élargissent vos possibilités artistiques.',
+        crossPlatform: 'Accès Multi-Plateformes',
+        crossPlatformDesc: 'Accédez à WPlace Live depuis n’importe quel appareil doté d’un navigateur moderne. Que vous soyez sur ordinateur, tablette ou mobile, WPlace Live offre une expérience cohérente et optimisée pour une expression créative fluide.',
+        artisticFreedom: 'Liberté Artistique',
+        artisticFreedomDesc: 'WPlace Live permet une expression créative illimitée dans un cadre collaboratif. Exprimez votre vision artistique unique sur WPlace Live tout en contribuant au chef-d’œuvre collectif qui définit l’expérience WPlace Live.',
+        globalCanvas: 'Canvas Global',
+        globalCanvasDesc: 'WPlace Live connecte des artistes de chaque coin du monde sur une seule toile partagée. Découvrez la magie de WPlace Live où les cultures, styles et perspectives créatives fusionnent en œuvres collaboratives transcendant les frontières géographiques.',
+        instantUpdates: 'Mises à Jour Instantanées',
+        instantUpdatesDesc: 'WPlace Live offre une synchronisation en temps réel avec des mises à jour instantanées des pixels pour tous les utilisateurs connectés. Observez WPlace Live évoluer en temps réel grâce aux contributions simultanées de milliers d’artistes.',
+
+        // Community Section
+        communityTitle: 'Communauté WPlace Live',
+        communitySubtitle: 'Rejoignez une communauté mondiale dynamique d’artistes et de créateurs sur WPlace Live.',
+
+        activeUsers: '50K+',
+        activeUsersLabel: 'Utilisateurs Actifs WPlace Live',
+        pixelsPlaced: '100M+',
+        pixelsPlacedLabel: 'Pixels Placés sur WPlace Live',
+        artworksCreated: '10K+',
+        artworksCreatedLabel: 'Œuvres Collaboratives sur WPlace Live',
+        countriesJoined: '150+',
+        countriesJoinedLabel: 'Pays Représentés sur WPlace Live',
+        dailyContributions: '500K+',
+        dailyContributionsLabel: 'Contributions Quotidiennes sur WPlace Live',
+        totalSessions: '2M+',
+        totalSessionsLabel: 'Sessions Totales WPlace Live',
+        communityDescription: 'La communauté WPlace Live représente l’un des plus grands projets d’art collaboratif de l’histoire d’internet. Des artistes de chaque continent contribuent à WPlace Live, créant une toile véritablement mondiale qui célèbre la diversité, la créativité et le pouvoir de l’expression artistique collective. WPlace Live est plus qu’une plateforme : c’est un mouvement qui démontre comment la technologie peut unir les personnes à travers la créativité partagée.',
+
+        // About Section
+        aboutTitle: 'À Propos de WPlace Live',
+        platformOverview: 'Présentation de la Plateforme',
+        platformOverviewDesc: 'WPlace Live est une plateforme révolutionnaire de pixel art collaboratif qui permet la collaboration créative en temps réel à grande échelle. Construit sur des technologies web modernes, WPlace Live prend en charge des milliers d’utilisateurs simultanés travaillant ensemble sur une toile partagée. La plateforme WPlace Live combine l’attrait nostalgique du pixel art avec une technologie de pointe pour offrir une expérience collaborative sans précédent.',
+        technologyStack: 'Technologie et Innovation',
+        technologyStackDesc: 'WPlace Live utilise une technologie avancée de synchronisation en temps réel pour assurer une collaboration fluide entre les utilisateurs du monde entier. L’infrastructure WPlace Live est conçue pour la scalabilité, la fiabilité et la performance, supportant des millions de placements de pixels tout en maintenant une expérience utilisateur fluide. L’architecture technique de WPlace Live représente une avancée majeure dans les applications web collaboratives.',
+        communityGuidelines: 'Communauté et Règles',
+        communityGuidelinesDesc: 'WPlace Live maintient un environnement positif et inclusif grâce à une modération communautaire et des règles claires. La communauté WPlace Live s’autorégule par des processus démocratiques et le respect mutuel. Cette approche garantit que l’expression artistique prospère tout en offrant un espace accueillant pour les créateurs de tous niveaux.',
+        futureVision: 'Vision Future',
+        futureVisionDesc: 'WPlace Live continue d’évoluer avec de nouvelles fonctionnalités, des toiles de plus grande taille et des outils de collaboration améliorés. L’avenir de WPlace Live inclut des outils artistiques avancés, une meilleure expérience mobile et des moyens innovants de présenter les œuvres collaboratives. WPlace Live reste déterminé à repousser les limites de la création artistique numérique collaborative.',
+
+        // FAQ Section
+        faqTitle: 'Questions Fréquemment Posées sur WPlace Live',
+        faqSubtitle: 'Tout ce que vous devez savoir pour utiliser WPlace Live et rejoindre la communauté de pixel art collaboratif.',
+        faqWhatIs: 'Qu’est-ce que WPlace Live ?',
+        faqWhatIsAnswer: 'WPlace Live est une plateforme de pixel art collaboratif où des utilisateurs du monde entier travaillent ensemble sur une toile partagée. WPlace Live permet à quiconque de placer des pixels et de contribuer à un chef-d’œuvre en constante évolution. La plateforme combine collaboration en temps réel et création de pixel art, faisant de WPlace Live le plus grand projet d’art collaboratif sur Internet.',
+        faqHowToJoin: 'Comment rejoindre WPlace Live ?',
+        faqHowToJoinAnswer: 'Il suffit de visiter WPlace Live dans votre navigateur web - aucune inscription n’est nécessaire ! WPlace Live est entièrement gratuit et accessible à tous. Une fois sur WPlace Live, vous pouvez immédiatement commencer à placer des pixels et contribuer à la toile collaborative. WPlace Live fonctionne sur tous les navigateurs et appareils modernes.',
+        faqCanvasSize: 'Quelle est la taille du canvas WPlace Live ?',
+        faqCanvasSizeAnswer: 'Le canvas WPlace Live est immense, avec des millions de pixels pouvant être placés et modifiés individuellement. La taille du canvas permet un niveau de détail incroyable et supporte des œuvres collaboratives à grande échelle. Le canvas WPlace Live continue de s’étendre au fur et à mesure que la communauté crée des projets plus ambitieux.',
+        faqPixelCooldown: 'Y a-t-il un délai entre les placements de pixels sur WPlace Live ?',
+        faqPixelCooldownAnswer: 'Oui, WPlace Live met en place un système de cooldown pour garantir une participation équitable et prévenir le spam. La durée du cooldown varie selon la charge du serveur et l’activité de la communauté. Ce système assure que WPlace Live reste accessible à tous tout en maintenant la qualité de l’œuvre collaborative.',
+        faqMobileSupport: 'Puis-je utiliser WPlace Live sur mobile ?',
+        faqMobileSupportAnswer: 'Absolument ! WPlace Live est entièrement optimisé pour les appareils mobiles et tablettes. L’expérience mobile inclut des commandes tactiles et un design réactif, rendant la création de pixel art fluide et intuitive. Les utilisateurs mobiles disposent des mêmes fonctionnalités que sur ordinateur.',
+        faqToolsIntegration: 'Comment WPlace Live et Wplace Tools fonctionnent-ils ensemble ?',
+        faqToolsIntegrationAnswer: 'WPlace Live s’intègre parfaitement à notre suite Wplace Tools, incluant générateurs de pixel art, convertisseurs de couleurs et scripts d’automatisation. Vous pouvez créer des œuvres avec Wplace Tools puis les apporter sur WPlace Live pour un enrichissement collaboratif. WPlace Live prend également en charge diverses extensions et outils de navigateur pour améliorer l’expérience créative.',
+        faqCommunityRules: 'Quelles sont les règles de la communauté WPlace Live ?',
+        faqCommunityRulesAnswer: 'WPlace Live maintient un environnement positif grâce à des directives promouvant le respect, la créativité et la collaboration. Les utilisateurs doivent contribuer de manière constructive, respecter les œuvres des autres et suivre l’étiquette de la plateforme. La communauté WPlace Live s’auto-modère pour maintenir un espace accueillant pour tous les artistes.',
+        faqDataPersistence: 'Combien de temps les œuvres durent-elles sur WPlace Live ?',
+        faqDataPersistenceAnswer: 'Les œuvres sur WPlace Live sont persistantes et font partie intégrante de la toile collaborative permanente. WPlace Live conserve l’historique des placements de pixels, permettant aux utilisateurs de voir l’évolution des œuvres au fil du temps. La plateforme garantit que vos contributions créatives demeurent dans le chef-d’œuvre collaboratif indéfiniment.',
+        faqCollaborationTips: 'Comment collaborer efficacement sur WPlace Live ?',
+        faqCollaborationTipsAnswer: 'Pour collaborer efficacement sur WPlace Live, respectez les œuvres existantes, communiquez avec les autres utilisateurs et contribuez de manière constructive aux projets partagés. La communauté WPlace Live prospère grâce à la collaboration positive et au respect mutuel entre tous les participants.'
+
+    },
+
     // SEO Meta数据
     meta: {
         defaultDescription: 'Outils professionnels de conversion en pixel art qui transforment vos idées créatives en chefs-d’œuvre pixel art avec des possibilités illimitées.',

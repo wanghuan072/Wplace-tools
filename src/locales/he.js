@@ -794,6 +794,333 @@ export default {
     // 首页按钮 - 希伯来语
     startWithExtension: 'התחל עם תוסף Wplace',
 
+    // WPlace Bot 页面内容
+    wplaceBotPage: {
+        officialGuide: 'מדריך רשמי',
+        title: 'תיעוד ומדריך WPlace Bot',
+        description: 'המדריך המלא ל-wplace-automation - כלי חזק שנועד עבור wplace.live ומפשט יצירת פיקסל ארט באמצעות אוטומציה. למדו התקנה, קונפיגורציה ושימוש מתקדם עם התיעוד המפורט שלנו.',
+        bottomHint: 'כלי חזק שנועד עבור wplace.live ומפשט יצירת פיקסל ארט באמצעות אוטומציה.',
+        quickStart: 'התחלה מהירה',
+        creationMethods: 'שיטות יצירה',
+        consoleCommands: 'פקודות קונסולה',
+        advancedUsage: 'שימוש מתקדם',
+        apiReference: 'תיעוד API',
+        troubleshooting: 'פתרון בעיות',
+
+        // Quick Start Tab Content
+        quickStartTitle: 'מדריך התחלה מהירה ל-WPlace Bot',
+        quickStartIntro: 'התחילו עם אוטומציית WPlace Bot עבור wplace.live. מדריך WPlace Bot זה ינחה אתכם בתהליך ההתקנה וההגדרה של כלי האוטומציה.',
+        step1Preparation: 'שלב 1: הכנה',
+        step1Description: 'פתחו את wplace.live והכינו את קונסולת המפתח. כלי האוטומציה WPlace Bot פועל ישירות בדפדפן שלכם באמצעות הזרקת JavaScript, ומספק אינטגרציה חלקה עם קנבס WPlace Live.',
+
+        // Step content for Quick Start
+        openWplaceLiveStep: 'פתחו את wplace.live בדפדפן שלכם.',
+        pressF12Step: 'לחצו F12 (או Ctrl+Shift+I) כדי לפתוח את כלי המפתחים.',
+        clickConsoleStep: 'לחצו על לשונית "Console".',
+        step2LoadBot: 'שלב 2: טעינת WPlace Bot (נדרש)',
+        step2Description: 'טענו את סקריפט האוטומציה של WPlace Bot ישירות מ-GitHub. פקודה אחת זו מושכת את הגרסה העדכנית ביותר של WPlace Bot ומפעילה את כל תכונות האוטומציה. הכלי מתוחזק באופן פעיל עם עדכונים שוטפים לביצועים מיטביים.',
+        successMessage: 'הצלחה!',
+        waitForBotLoadedMessage: 'המתינו להודעת "🎨 WPlace Bot נטען!" ולמופע לוח הבקרה של WPlace Bot בפינה הימנית העליונה.',
+        step3StartDrawing: 'שלב 3: התחילו לצייר עם WPlace Bot!',
+        step3Description: 'בחרו אחת משיטות WPlace Bot כדי להתחיל ליצור אמנות. הכלי מספק מספר גישות להתאמה להעדפות המשתמש ולרמות המיומנות השונות.',
+        step3Details: 'כעת ניתן להשתמש בלוח הבקרה על המסך או בפקודות קונסולה של WPlace Bot לציור. האוטומציה מטפלת בזמן הצבת פיקסלים, גילוי התנגשויות ושחזור שגיאות באופן אוטומטי. ראו את לשונית "שיטות יצירה" לפרטים נוספים.',
+
+        quickTest: 'בדיקה מהירה:',
+
+        // Creation Methods Tab Content
+        creationMethodsTitle: 'שיטות יצירה של WPlace Bot',
+        creationMethodsIntro: 'גילו דרכים שונות להשתמש ב-WPlace Bot ליצירת פיקסל ארט ב-wplace.live. כל שיטה מציעה יתרונות ייחודיים לפרויקטים שונים.',
+        optionATitle: 'אפשרות A: העלאה ישירה',
+        optionAEasiest: '(הקל ביותר)',
+        optionAStep1: 'לחצו על כפתור "📁 Carregar Imagem" בלוח הבקרה של WPlace Bot.',
+        optionAStep2: 'בחרו את קובץ התמונה שלכם (PNG, JPG וכו\') לעיבוד על ידי WPlace Bot.',
+        optionAStep3: 'קבעו את מיקום X ו-Y בלוח הבקרה של WPlace Bot.',
+        optionAStep4: 'לחצו על כפתור "▶️ Iniciar" כדי להתחיל אוטומציה.',
+        optionBTitle: 'אפשרות B: ממיר מתקדם',
+        optionBStep1: 'לחצו על כפתור "🔧 Conversor" בלוח הבקרה של WPlace Bot.',
+        optionBStep2: 'גררו את התמונה שלכם ללשונית החדשה של WPlace Bot.',
+        optionBStep3: 'הגדירו אפשרויות כמו גודל ומצב צבע.',
+        optionBStep4: 'לחצו "📝 Gerar Script" והעתיקו את קוד WPlace Bot.',
+        optionBStep5: 'הדביקו את הסקריפט בקונסולה של wplace.live.',
+        optionCTitle: 'אפשרות C: עורך פיקסל ארט',
+        optionCStep1: 'לחצו על כפתור "🎨 Editor" בלוח הבקרה של WPlace Bot.',
+        optionCStep2: 'ציירו ישירות בעורך של WPlace Bot.',
+        optionCStep3: 'הסקריפט נוצר אוטומטית בזמן הציור.',
+        optionCStep4: 'העתיקו את הסקריפט.',
+        optionCStep5: 'הדביקו בקונסולה של wplace.live כדי להריץ.',
+
+        // Console Commands Tab Content
+        consoleCommandsTitle: 'פקודות קונסולה של WPlace Bot',
+        consoleCommandsIntro: 'למדו לשלוט בפקודות קונסולה של WPlace Bot לשליטה מתקדמת. השתמשו בפקודות אלה לשליטה תכנותית במפגשי האוטומציה שלכם.',
+
+        basicControlsHeader: 'פקודות בסיסיות של WPlace Bot',
+        imageLoadingHeader: 'טעינת תמונה ב-WPlace Bot',
+        troubleshootingHeader: 'פתרון בעיות WPlace Bot',
+        canvasNotFoundError: '"Canvas לא נמצא": טענו מחדש את הדף והמתינו לטעינה מלאה לפני הפעלת WPlace Bot.',
+        wplaceBotNotFoundError: '"WPlace Bot לא נמצא": הריצו שוב את הפקודה `fetch` כדי לטעון את WPlace Bot.',
+        botNotWorkingError: 'WPlace Bot לא עובד: בדקו חסימת סקריפטים או שגיאות בקונסולה. נסו להריץ `wplaceBot.init();` לאתחול מחדש.',
+
+        // Advanced Usage Tab Content
+        advancedUsageTitle: 'שימוש מתקדם ב-WPlace Bot',
+        advancedUsageIntro: 'פתחו את מלוא הפוטנציאל של WPlace Bot עם תכונות מתקדמות. למדו כיצד להתאים את התנהגות הכלי, ליצור סקריפטים מותאמים אישית ולמטב ביצועים לפרויקטים מורכבים.',
+
+        // Advanced Usage detailed content
+        customScriptTitle: 'פיתוח סקריפטים מותאמים',
+        customScriptSubtitle: 'צרו סקריפטים מותאמים אישית באמצעות מסגרת WPlace Bot',
+        customScriptFeature1: 'אתחול אלגוריתמים מותאמים לציור עם wplaceBot.customDraw(algorithm)',
+        customScriptFeature2: 'הטמעת פונקציות callback למעקב אחר התקדמות ושגיאות',
+        customScriptFeature3: 'יצירת מודולים לשימוש חוזר בדפוסי ציור וצורות נפוצות',
+        customScriptFeature4: 'אינטגרציה עם API חיצוניים ליצירת תוכן דינמי',
+        customScriptDesc: 'כלי האוטומציה מספק API גמיש ב-JavaScript המאפשר ליצור סקריפטים מותאמים אישית, להרחיב פונקציונליות בסיסית ולשלב מקורות חיצוניים. הארכיטקטורה המודולרית תומכת בפיתוח תוספים וצנרת עיבוד תמונה מותאמת.',
+
+        // Performance Optimization
+        batchProcessing: 'עיבוד אצווה ואוטומציה',
+        batchProcessingDescription: 'טיפול במספר תמונות ופרויקטים מורכבים עם עיבוד אצווה מתקדם',
+        useBatchProcess: 'השתמשו ב-wplaceBot.batchProcess([images]) לעיבוד תמונות מרובות',
+        implementQueueManagement: 'ניהול תורים עם רמות עדיפות ותלות',
+        setupConflictDetection: 'הגדרת זיהוי קונפליקטים ופתרונם אוטומטית',
+        configureRetryMechanisms: 'הגדרת מנגנוני ניסיון מחדש עם אלגוריתם exponential backoff',
+        featureDescription: 'לפרויקטים גדולים, הכלי תומך בעיבוד אצווה מורכב, ניהול תורים, ותכנון לוגיקה מותנית. כולל מנגנוני פתרון קונפליקטים ולוגיקה לניסיון מחדש של פיקסלים נכשלו.',
+
+        performanceOptimization: 'אופטימיזציה של ביצועים',
+        performanceOptimizationDescription: 'טכניקות מתקדמות לשיפור ביצועים ושימוש במשאבים',
+        configureAdaptiveDelay: 'קבעו אלגוריתם עיכוב אדפטיבי: wplaceBot.setAdaptiveDelay(true)',
+        implementMemoryEfficient: 'עיבוד תמונה יעיל בזיכרון עם חלוקה לחלקים',
+        useCanvasStateCaching: 'שימוש במטמון מצב הקנבס להפחתת פעולות מיותרות',
+        optimizeDrawingPaths: 'אופטימיזציה של מסלולי ציור עם אלגוריתמי pathfinding',
+        featureDescription2: 'מטב ביצועים עם אפשרויות קונפיגורציה מתקדמות. כולל ניהול זיכרון, מערכות caching חכמות, ואלגוריתמים אדפטיביים שמתאימים לעומס השרת. למדו ליישם דפוסי ציור יעילים ולהפחית צריכת משאבים.',
+
+        // API Reference Tab Content
+        apiReferenceTitle: 'תיעוד API של WPlace Bot',
+        apiReferenceIntro: 'תיעוד API מלא למפתחים. למדו את כל השיטות והפונקציות ליצירת סקריפטים מתקדמים של פיקסל ארט.',
+
+        // API Reference detailed content
+        coreAPITitle: 'שיטות API מרכזיות',
+        coreAPISubtitle: 'תיעוד מלא לשיטות אוטומציה חיוניות',
+        coreAPIDesc: 'API של WPlace Bot מספק סט שיטות מלא לשליטה תכנותית ביצירת פיקסלים. כל השיטות תומכות בשרשור, פעולה סינכרונית וא-סינכרונית, וכוללות טיפול שגיאות מפורט.',
+
+        // Image Processing API
+        imageProcessingAPITitle: 'API עיבוד תמונה',
+        imageProcessingAPISubtitle: 'פונקציות מתקדמות למניפולציה והמרת תמונות',
+        imageProcessingAPIDesc: 'API זה מטפל בהמרת פורמטים, אופטימיזציה של פלטת צבעים ושינוי גודל. תומך בפורמטים מרובים ובקרת אלגוריתמים מדויקת, כולל דיתור ושקיפות.',
+
+        // Event System & Callbacks
+        eventSystemTitle: 'מערכת אירועים ו-callbacks',
+        eventSystemSubtitle: 'מעקב אחר התקדמות ותגובות לאירועים תכנותית',
+        eventSystemFeature1: 'רישום מאזינים לאירועים: wplaceBot.on(\'pixelPlaced\', callback)',
+        eventSystemFeature2: 'מעקב אחר התקדמות: wplaceBot.on(\'progress\', (percent) => {})',
+        eventSystemFeature3: 'טיפול בשגיאות: wplaceBot.on(\'error\', (error) => {})',
+        eventSystemFeature4: 'מעקב אחר השלמה: wplaceBot.on(\'complete\', () => {})',
+        eventSystemDesc: 'מערכת האירועים מספקת משוב בזמן אמת על התקדמות, שגיאות ואינטראקציות. ניתן לרשום מאזינים מותאמים אישית לכל אירוע, כולל הצבת פיקסלים ושחזור שגיאות.',
+
+        // Configuration Options
+        configOptionsTitle: 'אפשרויות קונפיגורציה',
+        configOptionsSubtitle: 'מערכת קונפיגורציה מלאה לכוונון התנהגות האוטומציה',
+        configOptionsFeature1: 'קונפיגורציה גלובלית: wplaceBot.config.set(\'key\', value)',
+        configOptionsFeature2: 'טעינת פרופילים: wplaceBot.loadConfig(\'profileName\')',
+        configOptionsFeature3: 'מגבלות בטיחות: wplaceBot.config.safety.maxPixelsPerSecond = 2',
+        configOptionsFeature4: 'ייצוא הגדרות: wplaceBot.exportConfig()',
+        configOptionsDesc: 'מערכת הקונפיגורציה מאפשרת התאמה מפורטת של התנהגות האוטומציה, פרמטרי זמן ומנגנוני בטיחות. ניתן לשמור ולטעון פרופילים, להגדיר פרמטרים סביבתיים וליישם כללים מותאמים לציורים.',
+
+        // Troubleshooting detailed content
+        commonErrorTitle: 'פתרון שגיאות נפוצות',
+        commonErrorSubtitle: 'פתרונות שלב-אחר-שלב לבעיות הנפוצות',
+        canvasLoadingTitle: 'בעיות טעינת קנבס:',
+        canvasLoadingDesc: 'אם הקנבס לא נטען, נקה את מטמון הדפדפן וטעון מחדש את הדף. ודא ש-wplace.live נטען לחלוטין לפני הפעלת סקריפט הבוט.',
+        rateLimitingTitle: 'שגיאות הגבלת קצב:',
+        rateLimitingDesc: 'כאשר מופיעה הגבלת קצב, הגדל את הגדרת העיכוב באמצעות wplaceBot.setDelay(2000) או יותר. הערך המוגדר כברירת מחדל צריך להיות לפחות 1000ms.',
+        memoryConsumptionTitle: 'צריכת זיכרון:',
+        memoryConsumptionDesc: 'לתמונות גדולות, השתמש ב-wplaceBot.config.memoryOptimized = true כדי לאפשר עיבוד בחלקים ולהפחית שימוש בזיכרון.',
+        browserCompatibilityTitle: 'תאימות לדפדפן:',
+        browserCompatibilityDesc: 'אם הבוט לא נטען, ודא ש-JavaScript מופעל ונסה להשתמש ב-Chrome או Firefox. חלק מהתוספים עשויים להפריע לפונקציונליות.',
+
+        // Performance Issues
+        performanceIssuesTitle: 'בעיות ביצועים',
+        performanceIssuesSubtitle: 'מטב ביצועים ופתור האטות',
+        slowPixelTitle: 'הצבת פיקסלים איטית:',
+        slowPixelDesc: 'בדוק את חיבור האינטרנט שלך והגדל את העיכוב אם חווים תקלות. השתמש ב-wplaceBot.diagnostics.networkTest() לבדוק את איכות החיבור.',
+        highCPUTitle: 'שימוש גבוה ב-CPU:',
+        highCPUDesc: 'אפשר עיכוב אדפטיבי עם wplaceBot.setAdaptiveDelay(true) כדי להתאים אוטומטית את מהירות העיבוד לפי ביצועי המערכת.',
+        memoryLeaksTitle: 'דליפות זיכרון:',
+        memoryLeaksDesc: 'אתחל מחדש את הבוט באופן תקופתי עבור מפגשים ארוכים באמצעות wplaceBot.restart(). נקה את מטמון התמונות עם wplaceBot.clearCache() אם צריכת הזיכרון גדלה.',
+        browserFreezingTitle: 'קפיאת דפדפן:',
+        browserFreezingDesc: 'הקטן את גודל התמונה או אפשר מצב עיבוד ברקע עם wplaceBot.config.backgroundMode = true לשיפור התגובה.',
+
+        // Integration Problems
+        integrationProblemsTitle: 'בעיות אינטגרציה',
+        integrationProblemsSubtitle: 'פתור בעיות עם כלים חיצוניים ואינטגרציות',
+        imageUploadFailuresTitle: 'כישלונות בהעלאת תמונה:',
+        imageUploadFailuresDesc: 'וודא תאימות פורמט תמונה (PNG, JPG, GIF נתמכים). השתמש ב-wplaceBot.validateImage(file) לבדוק את הפורמט לפני עיבוד.',
+        scriptLoadingErrorsTitle: 'שגיאות טעינת סקריפט:',
+        scriptLoadingErrorsDesc: 'אם פקודת fetch נכשלה, בדוק את חיבור האינטרנט ונסה לטעון מ-CDN חלופי באמצעות כתובת fetch אחרת.',
+        crossOriginTitle: 'בעיות Cross-Origin:',
+        crossOriginDesc: 'חלק מהתמונות עשויות להיכשל עקב הגבלות CORS. השתמש בממיר התמונות המובנה או העלה תמונות לשירות אחסון תואם.',
+
+        // Advanced Debugging
+        advancedDebuggingTitle: 'ניפוי מתקדם',
+        advancedDebuggingSubtitle: 'נפה בעיות מורכבות ותרום לפיתוח',
+        debugModeTitle: 'מצב Debug:',
+        debugModeDesc: 'אפשר רישום מפורט עם wplaceBot.config.debug = true כדי לראות פעולות פנימיות ולזהות בעיות בדיוק רב יותר.',
+        networkMonitoringTitle: 'מעקב רשת:',
+        networkMonitoringDesc: 'השתמש ב-wplaceBot.diagnostics.networkMonitor() למעקב אחרי דפוסי בקשות וזיהוי בעיות רשת.',
+        stateInspectionTitle: 'בדיקת מצב:',
+        stateInspectionDesc: 'בדוק את מצב הבוט הפנימי עם wplaceBot.getState() כדי לאבחן התנהגות לא צפויה ולאמת הגדרות קונפיגורציה.',
+        errorReportingTitle: 'דיווח שגיאות:',
+        errorReportingDesc: 'צור דוחות שגיאות מפורטים עם wplaceBot.generateErrorReport() ושלח ל-GitHub כדי לקבל תמיכה מהקהילה ולתיקון באגים.',
+
+        // About Tool Section
+        aboutToolTitle: 'אודות כלי WPlace-Automation',
+        toolOverview: 'סקירת הכלי',
+        toolOverviewDesc1: 'כלי האוטומציה WPlace Bot הוא פתרון JavaScript מלא שנועד במיוחד לפלטפורמת הפיקסל ארט השיתופית wplace.live. מסגרת האוטומציה מבוססת דפדפן זו מאפשרת יצירת פיקסל ארט מתקדם באמצעות שליטה תכנותית, ומספקת ממשקים ידידותיים למתחילים יחד עם יכולות סקריפט מתקדמות.',
+        toolOverviewDesc2: 'הכלי בנוי בטכנולוגיות ווב מודרניות ופועל לחלוטין בסביבת הדפדפן, ללא צורך בהתקנת תוכנה נוספת או קונפיגורציה מערכתית. הארכיטקטורה של WPlace Bot מתוכננת לאמינות, ביצועים ונוחות שימוש, מה שהופך את האוטומציה לנגישה לכל המשתמשים.',
+        keyFeatures: 'תכונות עיקריות',
+        keyFeaturesDesc1: 'המסגרת כוללת שיטות קלט מרובות ליצירת אמנות, כולל העלאת תמונה ישירה, כלים מתקדמים להמרת תמונה ועורך פיקסל ארט מובנה. המערכת מטפלת אוטומטית באופטימיזציה של פלטת צבעים, המרת פורמטים ושינוי גודל, ומבטיחה תאימות מיטבית לפלטפורמת wplace.live.',
+        keyFeaturesDesc2: 'תכונות מתקדמות כוללות עיבוד אצווה, תמיכה בפיתוח סקריפטים מותאמים אישית ומנגנוני טיפול בשגיאות מקיפים. הכלי כולל אלגוריתמי עיכוב אדפטיביים המסתגלים לעומס השרת ומטמיע זיהוי קונפליקטים חכם לעבודה הרמונית עם משתמשים אחרים על הקנבס.',
+        technicalImplementation: 'מימוש טכני',
+        technicalImplementationDesc1: 'המסגרת בנויה באמצעות JavaScript מודרני (ES6+) ומשתמשת בתבניות תכנות א-סינכרוני לביצועים מיטביים. קוד הבוט מודולרי ומאפשר הרחבה והתאמה קלה על ידי מפתחים המעוניינים ליישם אסטרטגיות אוטומציה מותאמות.',
+        technicalImplementationDesc2: 'ניהול הזיכרון מותאם באמצעות מערכות caching חכמות ועיבוד בתפזורת עבור תמונות גדולות. הכלי כולל יכולות ניפוי ו-debugging מקיפות ודיווח שגיאות מפורט להקלת פתרון בעיות ופיתוח.',
+        communityAndSupport: 'קהילה ותמיכה',
+        communityAndSupportDesc1: 'פרויקט האוטומציה הוא בקוד פתוח ומנוהל על ידי הקהילה, עם פיתוח פעיל ועדכונים שוטפים. משתמשים יכולים לתרום, לדווח על בעיות, לבקש תכונות ולשתף סקריפטים מותאמים אישית ב-GitHub.',
+        communityAndSupportDesc2: 'הכלי פועל לפי עקרונות אוטומציה אחראית וכולל מנגנוני בטיחות מובנים לציות לכללי הקהילה של wplace.live. מגבלות קצב, שליטה בעיכוב ודפוסי שימוש אחראיים הם עקרונות ליבה בעיצוב המסגרת.',
+
+        // Features Section
+        featuresTitle: 'תכונה לכל זרימת עבודה',
+        featuresSubtitle: 'מהעלאות בלחיצה אחת ועד סקריפטים מתקדמים, WPlace Bot כאן בשבילכם.',
+        instantConsoleLoading: 'טעינת קונסולה מיידית',
+        instantConsoleLoadingDesc: 'אין צורך בהורדות. טען את WPlace Bot כולו על ידי הדבקת שורה אחת של קוד בקונסולת המפתח.',
+        onScreenControlPanel: 'לוח בקרה על המסך',
+        onScreenControlPanelDesc: 'לוח אינטואיטיבי שמופיע ישירות ב-wplace.live ומעניק שליטה מלאה על מיקום, עיכוב וטעינת תמונה.',
+        directImageUpload: 'העלאת תמונה ישירה',
+        directImageUploadDesc: 'הדרך הקלה ביותר להתחיל. העלה כל תמונה (PNG, JPG, GIF) והבוט שלנו מטפל בשאר.',
+        advancedImageConverter: 'ממיר תמונות מתקדם',
+        advancedImageConverterDesc: 'השתמש בכלי האינטרנט שלנו להמרת תמונות עם שליטה מדויקת על גודל, פלטות צבעים ואופטימיזציות נוספות.',
+        livePixelArtEditor: 'עורך פיקסל ארט חי',
+        livePixelArtEditorDesc: 'מרגיש יצירתי? צייר פיקסל ארט משולב בכלי שלנו והפק מיידית את סקריפט WPlace Bot.',
+        fullConsoleControl: 'שליטה מלאה בקונסולה',
+        fullConsoleControlDesc: 'למשתמשי כוח, כל התכונות זמינות באמצעות פקודות JavaScript פשוטות ישירות בקונסולה.',
+
+        // FAQ Section
+        faqTitle: 'שאלות נפוצות',
+        faqSubtitle: 'כל מה שצריך לדעת על השימוש ב-WPlace Bot',
+        faqDownloadInstall: 'האם צריך להוריד או להתקין משהו עבור WPlace Bot?',
+        faqDownloadInstallAnswer: 'לא! WPlace Bot מבוסס לחלוטין על הדפדפן. פשוט הדבק שורה אחת של קוד בקונסולה והכלי נטען מיד. אין צורך בהורדות, התקנות או תוספים.',
+        faqAllowed: 'האם מותר להשתמש ב-WPlace Bot ב-wplace.live?',
+        faqAllowedAnswer: 'הכלי בנוי בכבוד לקהילה וכולל מגבלות קצב, שליטה בעיכוב ועקרונות אוטומציה אחראית. תמיד בדוק את תנאי השירות הנוכחיים ושמור על שימוש אתי.',
+        faqHowToLoad: 'איך טוענים את כלי האוטומציה של WPlace Bot?',
+        faqHowToLoadAnswer1: 'טען את WPlace Bot כך: פתח wplace.live, לחץ F12 לפתיחת כלי המפתחים, לחץ על לשונית Console והדבק את הפקודה הבאה:',
+        faqHowToLoadAnswer2: 'הבוט ייטען אוטומטית ויציג הודעת הצלחה כשהוא מוכן. לוח הבקרה יופיע בפינה הימנית העליונה.',
+        faqEasiestWay: 'מה הדרך הקלה ביותר לצייר תמונה עם WPlace Bot?',
+        faqEasiestWayAnswer: 'השתמש באפשרות A: העלאה ישירה. לאחר טעינת הבוט, לחץ על כפתור "📁 Carregar Imagem" בלוח הבקרה, בחר את קובץ התמונה, הגדר מיקום ולחץ "▶️ Iniciar".',
+        faqConverterEditor: 'מהם הכלים "Converter" ו-"Editor" של WPlace Bot?',
+        faqConverterEditorAnswer: 'ה-Converter הוא כלי מתקדם להמרת תמונות עם הגדרות מותאמות. ה-Editor הוא עורך פיקסל ארט מובנה שמאפשר ציור ישיר ויצירת סקריפטים באופן אוטומטי. שניהם משתלבים עם מערכת האוטומציה הראשית.',
+        faqBrowser: 'האם אפשר להשתמש ב-WPlace Bot בכל דפדפן?',
+        faqBrowserAnswer: 'הבוט עובד בצורה מיטבית בדפדפנים מודרניים כמו Chrome, Firefox ו-Edge. ודא ש-JavaScript מופעל והשבת חוסמי סקריפטים. דפדפנים ניידים עשויים לתמוך במידה מוגבלת.',
+        faqSpeed: 'כמה מהר WPlace Bot מציב פיקסלים?',
+        faqSpeedAnswer: 'הבוט כולל בקרת זמן חכמה עם עיכוב ברירת מחדל של 1000ms בין פיקסלים, ניתן להתאים עם wplaceBot.setDelay(). הבוט מתאים את עצמו למצב השרת ומגן מפני הגבלת קצב.',
+        faqLargeImages: 'האם WPlace Bot יכול להתמודד עם תמונות גדולות?',
+        faqLargeImagesAnswer: 'כן! הכלי כולל ניהול זיכרון מתקדם ועיבוד בתפזורת עבור תמונות גדולות. אפשר זיכרון מותאם עם wplaceBot.config.memoryOptimized = true.',
+        faqImageFormats: 'איזה פורמטים של תמונות נתמכים?',
+        faqImageFormatsAnswer: 'נתמך PNG, JPG, JPEG, GIF ו-WebP. הבוט ממיר ומאופטם תמונות ליצירת פיקסל ארט. ניתן גם לטעון תמונות מ-URLs או מערכי נתונים מותאמים.',
+        faqStop: 'איך עוצרים את WPlace Bot במקרה חירום?',
+        faqStopAnswer: 'הפעל wplaceBot.stop() בקונסולה או לחץ על כפתור העצירה בלוח הבקרה. הבוט כולל פונקציות עצירה חירום ומנגנוני שחזור שגיאות.',
+        faqCustomize: 'האם אפשר להתאים את ההתנהגות וההגדרות של WPlace Bot?',
+        faqCustomizeAnswer: 'כן! הכלי מאפשר התאמה מלאה דרך API הקונפיגורציה: זמן, שימוש בזיכרון, מגבלות בטיחות, פרופילים מותאמים ואינטגרציה עם APIs חיצוניים.',
+        faqSafe: 'האם WPlace Bot בטוח לשימוש עם משתמשים אחרים על הקנבס?',
+        faqSafeAnswer: 'כן, הבוט כולל זיהוי קונפליקטים חכם, מכבד את יצירות אחרים ומיישם עיכוב אדפטיבי לעבודה הרמונית עם הקהילה. הכלי פועל לפי עקרונות אוטומציה אחראית.'
+
+    },
+
+    // WPlace Live 页面内容
+    wplaceLivePage: {
+        officialPlatform: 'פלטפורמה רשמית',
+        title: 'WPlace Live - קנבס פיקסל ארט שיתופי',
+        description: 'חווה את פלטפורמת הפיקסל ארט השיתופית האולטימטיבית שבה יצירתיות פוגשת קהילה. WPlace Live מאחדת אמנים מכל רחבי העולם ליצירת יצירות פיקסל מדהימות על קנבס משותף.',
+        subtitle: 'הצטרף למיליוני אמנים ב-WPlace Live ותרום לפרויקט הפיקסל ארט השיתופי הגדול ביותר בעולם. כל פיקסל ב-WPlace Live מספר סיפור של יצירתיות ושיתוף פעולה.',
+        visitWplaceLive: 'בקר ב-WPlace Live',
+        watchDemo: 'צפה בדמו',
+        exploreFeatures: 'גלו תכונות',
+        bottomHint: 'פלטפורמת הפיקסל ארט השיתופית הגדולה בעולם, המונעת על ידי יצירתיות קהילתית.',
+
+        // Video Section
+        videoTitle: 'ראו את WPlace Live בפעולה',
+        videoSubtitle: 'צפו כיצד WPlace Live משנה יצירתיות אישית ליצירות משותפות בזמן אמת.',
+        videoDescription: 'בדמו זה מוצגות התכונות המרכזיות של WPlace Live, כולל שיתוף פעולה בזמן אמת, פלטת צבעים רחבה וחוויית משתמש חלקה שהופכת את WPlace Live ליעד המוביל ליצירת פיקסל ארט שיתופי.',
+
+        // Features Section
+        featuresTitle: 'למה לבחור ב-WPlace Live?',
+        featuresSubtitle: 'גלו מה עושה את WPlace Live לפלטפורמת הפיקסל ארט השיתופית הפופולרית ביותר בעולם.',
+        collaborativeCanvas: 'קנבס שיתופי',
+        collaborativeCanvasDesc: 'WPlace Live מציעה קנבס משותף עצום שבו אלפי אמנים עובדים יחד במקביל. כל פיקסל שמוצב תורם ליצירת יצירה מתפתחת המייצגת את היצירתיות הקולקטיבית של הקהילה העולמית.',
+        realTimeCollaboration: 'שיתוף פעולה בזמן אמת',
+        realTimeCollaborationDesc: 'חווה שיתוף פעולה מיידי עם עדכונים בזמן אמת והצבת פיקסלים חיה. צפה ב-WPlace Live משתנה מול עיניך עם תרומות מאמנים מכל רחבי העולם, ויוצרת קנבס דינמי ומשתנה.',
+        colorPalette: 'פלטת צבעים עשירה',
+        colorPaletteDesc: 'WPlace Live מספקת פלטת 64 צבעים שנבחרה בקפידה עבור יצירת פיקסל ארט. כל צבע נבחר להבטיח ביטוי אמנותי מרבי ושמירה על הרמוניה ויזואלית על הקנבס השיתופי.',
+        communityDriven: 'מונע קהילה',
+        communityDrivenDesc: 'WPlace Live פורחת בזכות השתתפות הקהילה וקבלת החלטות דמוקרטית. הקהילה משפיעה על התפתחות הפלטפורמה באמצעות משוב, הצעות וניהול שיתופי שמבטיחים כי WPlace Live נשארת ממוקדת באמנים.',
+        toolIntegration: 'אינטגרציית כלים',
+        toolIntegrationDesc: 'WPlace Live משתלבת בצורה חלקה עם מערך הכלים שלנו, כולל מחוללי פיקסל ארט, ממירי צבעים וסקריפטי אוטומציה. אינטגרציות אלו משפרות את זרימת העבודה היצירתית ומרחיבות את אפשרויות האמנות שלך.',
+        crossPlatform: 'גישה בין פלטפורמות',
+        crossPlatformDesc: 'גש ל-WPlace Live מכל מכשיר עם דפדפן מודרני. בין אם במחשב, טאבלט או מובייל, WPlace Live מספקת חוויה עקבית ומותאמת לכל הפלטפורמות.',
+        artisticFreedom: 'חופש אמנותי',
+        artisticFreedomDesc: 'WPlace Live מאפשרת ביטוי יצירתי בלתי מוגבל במסגרת שיתופית. הבע את החזון האמנותי הייחודי שלך תוך תרומה ליצירה הקולקטיבית שמגדירה את חוויית WPlace Live.',
+        globalCanvas: 'קנבס גלובלי',
+        globalCanvasDesc: 'WPlace Live מחברת אמנים מכל פינה בעולם על קנבס משותף אחד. חווה את הקסם של WPlace Live כאשר תרבויות, סגנונות ופרספקטיבות יצירתיות משתלבים ליצירת אמנות שיתופית שמעבר לגבולות גיאוגרפיים.',
+        instantUpdates: 'עדכונים מיידיים',
+        instantUpdatesDesc: 'WPlace Live מספקת סינכרון בזמן אמת עם עדכוני פיקסלים מיידיים לכל המשתמשים המחוברים. צפה ביצירת הקנבס המתפתחת בזמן אמת עם אלפי אמנים התורמים בו זמנית.',
+
+        // Community Section
+        communityTitle: 'קהילת WPlace Live',
+        communitySubtitle: 'הצטרפו לקהילה גלובלית תוססת של אמנים ויוצרים ב-WPlace Live.',
+
+        activeUsers: '50K+',
+        activeUsersLabel: 'משתמשי WPlace Live פעילים',
+        pixelsPlaced: '100M+',
+        pixelsPlacedLabel: 'פיקסלים שהוצבו ב-WPlace Live',
+        artworksCreated: '10K+',
+        artworksCreatedLabel: 'יצירות שיתופיות ב-WPlace Live',
+        countriesJoined: '150+',
+        countriesJoinedLabel: 'מדינות שמיוצגות ב-WPlace Live',
+        dailyContributions: '500K+',
+        dailyContributionsLabel: 'תרומות יומיות ל-WPlace Live',
+        totalSessions: '2M+',
+        totalSessionsLabel: 'סה"כ מפגשי WPlace Live',
+        communityDescription: 'קהילת WPlace Live היא אחת הפרויקטים האמנותיים השיתופיים הגדולים בהיסטוריה של האינטרנט. אמנים מכל היבשות תורמים ליצירת קנבס גלובלי שמחגג מגוון, יצירתיות וכוח הביטוי האמנותי הקולקטיבי. WPlace Live הפכה למעבר לפלטפורמה – היא תנועה שמדגימה כיצד טכנולוגיה יכולה לאחד אנשים דרך חוויות יצירתיות משותפות.',
+
+        // About Section
+        aboutTitle: 'אודות WPlace Live',
+        platformOverview: 'סקירת הפלטפורמה',
+        platformOverviewDesc: 'WPlace Live היא פלטפורמה פורצת דרך ליצירת פיקסל ארט שיתופי בזמן אמת בקנה מידה עצום. מבוססת על טכנולוגיות ווב מודרניות, WPlace Live תומכת באלפי משתמשים בו-זמנית על קנבס משותף ומציעה חוויית יצירה שאין כמותה.',
+        technologyStack: 'טכנולוגיה וחדשנות',
+        technologyStackDesc: 'WPlace Live משתמשת בטכנולוגיות סינכרון בזמן אמת מתקדמות להבטחת שיתוף פעולה חלק בין המשתמשים בעולם. התשתית תוכננה להרחבה, אמינות וביצועים, ותומכת במיליאוני הצבת פיקסלים תוך שמירה על חוויית משתמש חלקה.',
+        communityGuidelines: 'קהילה וכללים',
+        communityGuidelinesDesc: 'WPlace Live שומרת על סביבה חיובית ומכילה באמצעות פיקוח קהילתי והנחיות ברורות. הקהילה מנהלת את עצמה בתהליכים דמוקרטיים וכבוד הדדי, מה שמבטיח שהביטוי האמנותי יפרח תוך שמירה על מקום מזמין לכל הרמות.',
+        futureVision: 'חזון לעתיד',
+        futureVisionDesc: 'WPlace Live ממשיכה להתפתח עם תכונות חדשות, גדלי קנבס מורחבים וכלי שיתוף פעולה משופרים. בעתיד יתווספו כלים אמנותיים מתקדמים, חוויית מובייל משופרת ודרכים חדשניות להציג יצירות שיתופיות. WPlace Live שואפת לדחוף את גבולות האפשר ביצירת אמנות דיגיטלית שיתופית.',
+
+        // FAQ Section
+        faqTitle: 'שאלות נפוצות על WPlace Live',
+        faqSubtitle: 'כל מה שצריך לדעת על שימוש ב-WPlace Live והצטרפות לקהילת הפיקסל ארט השיתופית.',
+        faqWhatIs: 'מהו WPlace Live?',
+        faqWhatIsAnswer: 'WPlace Live היא פלטפורמת פיקסל ארט שיתופית שבה משתמשים מכל העולם עובדים יחד על קנבס משותף. ניתן להציב פיקסלים ולתרום ליצירה המתפתחת ללא הפסקה. הפלטפורמה משלבת שיתוף פעולה בזמן אמת עם יצירת פיקסל ארט, והופכת לפרויקט האמנות השיתופי הגדול ביותר באינטרנט.',
+        faqHowToJoin: 'איך מצטרפים ל-WPlace Live?',
+        faqHowToJoinAnswer: 'פשוט בקרו ב-WPlace Live בדפדפן שלכם – אין צורך ברישום! הפלטפורמה חינמית ומונגשת לכולם. תוכלו מיד להתחיל להציב פיקסלים ולתרום לקנבס השיתופי. WPlace Live פועלת בכל הדפדפנים והמכשירים המודרניים.',
+        faqCanvasSize: 'מה גודל הקנבס של WPlace Live?',
+        faqCanvasSizeAnswer: 'הקנבס של WPlace Live עצום ומכיל מיליוני פיקסלים שניתן להציב ולשנות. הקנבס מאפשר יצירת פרטים מדויקים ותמיכה ביצירות שיתופיות רחבות היקף, וממשיך להתרחב ככל שהקהילה יוצרת פרויקטים מורכבים יותר.',
+        faqPixelCooldown: 'האם יש זמן המתנה בין הצבת פיקסלים?',
+        faqPixelCooldownAnswer: 'כן, WPlace Live מיישמת מערכת cooldown כדי להבטיח השתתפות הוגנת ולמנוע ספאם. משך זמן ההמתנה משתנה בהתאם לעומס השרת ולפעילות הקהילה, ומאפשר חוויית שימוש איכותית לכל המשתמשים.',
+        faqMobileSupport: 'האם אפשר להשתמש ב-WPlace Live במכשירים ניידים?',
+        faqMobileSupportAnswer: 'בוודאי! הפלטפורמה מותאמת לחלוטין למכשירים ניידים וטאבלטים, עם ממשק נוח למגע ועיצוב רספונסיבי שמקל על יצירת פיקסל ארט בצורה חלקה ואינטואיטיבית.',
+        faqToolsIntegration: 'איך WPlace Live משתלבת עם כלי WPlace?',
+        faqToolsIntegrationAnswer: 'WPlace Live משתלבת בצורה חלקה עם כלי WPlace כולל מחוללי פיקסל ארט, ממירי צבעים וסקריפטי אוטומציה. ניתן ליצור יצירות בכלים אלו ולהעבירן ל-WPlace Live לשיפור שיתופי. הפלטפורמה תומכת גם בתוספים וכלים נוספים להעצמת חוויית היצירה.',
+        faqCommunityRules: 'מהם כללי הקהילה של WPlace Live?',
+        faqCommunityRulesAnswer: 'WPlace Live שומרת על סביבה חיובית באמצעות הנחיות קהילתיות המעודדות כבוד, יצירתיות ושיתוף פעולה. המשתמשים נדרשים לתרום בצורה בונה, לכבד יצירות אחרים ולעקוב אחר נימוסים בפלטפורמה. הקהילה מנהלת עצמה ושומרת על מקום מזמין לכל האמנים.',
+        faqDataPersistence: 'כמה זמן נשמרות יצירות ב-WPlace Live?',
+        faqDataPersistenceAnswer: 'היצירות נשמרות בצורה מתמשכת והופכות לחלק מהקנבס השיתופי הקבוע. WPlace Live שומרת היסטוריה של כל הצבת פיקסלים, כך שניתן לראות כיצד יצירות התפתחו לאורך הזמן. התרומות האמנותיות נשארות כחלק מהיצירה הקולקטיבית לנצח.',
+        faqCollaborationTips: 'איך משתפים פעולה ביעילות ב-WPlace Live?',
+        faqCollaborationTipsAnswer: 'שיתוף פעולה יעיל כולל כיבוד יצירות קיימות, תקשורת עם משתמשים אחרים ותרומה בונה לפרויקטים משותפים. הקהילה פורחת בזכות שיתוף פעולה חיובי וכבוד הדדי בין כל המשתתפים.'
+
+    },
+
     // SEO Meta数据 - 希伯来语
     meta: {
         defaultDescription: 'כלי המרת פיקסל ארט מקצועיים שממירים את הרעיונות היצירתיים שלך ליצירות פיקסל מרהיבות עם אפשרויות בלתי מוגבלות.',

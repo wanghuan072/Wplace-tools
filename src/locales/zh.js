@@ -713,6 +713,333 @@ export default {
     // 首页按钮
     startWithExtension: '开始使用Wplace扩展',
 
+    // WPlace Bot 页面内容
+    wplaceBotPage: {
+officialGuide: '官方指南',
+title: 'WPlace Bot 文档与教程',
+description: 'wplace-automation 全面指南 —— 一个为 wplace.live 设计的强大工具，通过自动化简化像素艺术创作。学习安装、配置和高级用法，查阅我们的详细文档。',
+bottomHint: '一个为 wplace.live 设计的强大工具，通过自动化简化像素艺术创作。',
+quickStart: '快速开始',
+creationMethods: '创作方法',
+consoleCommands: '控制台命令',
+advancedUsage: '高级用法',
+apiReference: 'API 参考',
+troubleshooting: '故障排除',
+
+// 快速开始标签内容
+quickStartTitle: 'WPlace Bot 快速开始指南',
+quickStartIntro: '开始使用 WPlace Bot 在 wplace.live 上进行自动化。本教程将指导你完成 WPlace Bot 自动化工具的安装和设置。',
+step1Preparation: '步骤 1：准备',
+step1Description: '打开 wplace.live 并准备开发者控制台。WPlace Bot 自动化工具通过 JavaScript 注入直接在浏览器中运行，与 wplace.live 画布无缝集成。',
+
+// 快速开始步骤
+openWplaceLiveStep: '在浏览器中打开 wplace.live。',
+pressF12Step: '按下 F12（或 Ctrl+Shift+I）打开开发者工具。',
+clickConsoleStep: '点击 “Console” 标签页。',
+step2LoadBot: '步骤 2：加载 WPlace Bot（必需）',
+step2Description: '直接从 GitHub 加载 WPlace Bot 自动化脚本。这一行命令会获取最新的 WPlace Bot 版本并初始化所有自动化功能。WPlace Bot 工具由开发者积极维护并定期更新以保证最佳性能。',
+successMessage: '成功！',
+waitForBotLoadedMessage: '等待出现 "🎨 WPlace Bot Carregado!" 提示，并在右上角显示 WPlace Bot 控制面板。',
+step3StartDrawing: '步骤 3：开始用 WPlace Bot 绘制！',
+step3Description: '选择一种 WPlace Bot 方法开始创作。该工具提供多种方式以满足不同用户的偏好与技能水平。',
+step3Details: '你现在可以使用 WPlace Bot 的屏幕面板或控制台命令来绘图。自动化会自动处理像素放置的时间、碰撞检测和错误恢复。更多详情请参见 “创作方法” 标签页。',
+quickTest: '快速测试：',
+
+// 创作方法标签内容
+creationMethodsTitle: 'WPlace Bot 创作方法',
+creationMethodsIntro: '探索在 wplace.live 上使用 WPlace Bot 创作像素艺术的不同方式。每种方法都适用于不同类型的项目。',
+optionATitle: '选项 A：直接上传',
+optionAEasiest: '（最简单）',
+optionAStep1: '点击 WPlace Bot 面板上的 "📁 Carregar Imagem" 按钮。',
+optionAStep2: '选择要处理的图片文件（PNG、JPG 等）。',
+optionAStep3: '在面板上设置 X 和 Y 位置。',
+optionAStep4: '点击 "▶️ Iniciar" 按钮启动自动化。',
+optionBTitle: '选项 B：高级转换器',
+optionBStep1: '点击 WPlace Bot 面板上的 "🔧 Conversor" 按钮。',
+optionBStep2: '将图片拖入新打开的 WPlace Bot 标签页。',
+optionBStep3: '配置大小、颜色模式等选项。',
+optionBStep4: '点击 "📝 Gerar Script" 并复制生成的代码。',
+optionBStep5: '将代码粘贴到 wplace.live 控制台运行。',
+optionCTitle: '选项 C：像素画编辑器',
+optionCStep1: '点击 WPlace Bot 面板上的 "🎨 Editor" 按钮。',
+optionCStep2: '在 WPlace Bot 编辑器中直接绘制。',
+optionCStep3: '绘制时脚本会自动生成。',
+optionCStep4: '复制生成的代码。',
+optionCStep5: '粘贴到 wplace.live 控制台运行。',
+
+// 控制台命令标签内容
+consoleCommandsTitle: 'WPlace Bot 控制台命令',
+consoleCommandsIntro: '掌握 WPlace Bot 控制台命令以实现高级控制。使用这些命令可以编程式地管理自动化会话。',
+
+basicControlsHeader: '基础控制',
+imageLoadingHeader: '图片加载',
+troubleshootingHeader: '故障排除',
+canvasNotFoundError: '“未找到画布”：刷新页面并确保完全加载后再运行 Bot。',
+wplaceBotNotFoundError: '“未找到 WPlace Bot”：重新运行 `fetch` 命令加载 Bot。',
+botNotWorkingError: 'WPlace Bot 不工作：检查是否有脚本拦截或控制台报错。尝试运行 `wplaceBot.init();` 重新初始化。',
+
+// 高级用法标签内容
+advancedUsageTitle: 'WPlace Bot 高级用法',
+advancedUsageIntro: '解锁 WPlace Bot 的全部潜能。学习如何自定义行为、创建自定义脚本，并优化复杂项目的性能。',
+
+// 高级用法详细内容
+customScriptTitle: '自定义脚本开发',
+customScriptSubtitle: '使用 WPlace Bot 框架编写你自己的自动化脚本',
+customScriptFeature1: '通过 wplaceBot.customDraw(algorithm) 初始化自定义绘制算法',
+customScriptFeature2: '实现进度监控与错误处理回调函数',
+customScriptFeature3: '创建可复用的模块以生成常见图案和形状',
+customScriptFeature4: '与外部 API 集成以动态生成内容',
+customScriptDesc: 'WPlace Bot 提供灵活的 JavaScript API，可用于开发自定义自动化脚本。你可以扩展基础功能来处理复杂图案、实现特定算法，甚至与外部数据源结合。模块化架构支持插件开发和自定义图像处理流程。',
+
+// 性能优化
+batchProcessing: '批量处理与自动化',
+batchProcessingDescription: '处理多张图片和复杂项目的高级批量处理功能',
+useBatchProcess: '使用 wplaceBot.batchProcess([images]) 批量处理多图',
+implementQueueManagement: '实现带优先级和依赖关系的队列管理',
+setupConflictDetection: '建立自动冲突检测和解决机制',
+configureRetryMechanisms: '配置带指数退避的重试机制',
+featureDescription: '该工具支持复杂的批量处理功能。你可以队列多个图片，设定优先级，并基于画布状态执行条件逻辑。系统包含冲突解决机制和失败像素自动重试逻辑。',
+
+performanceOptimization: '性能优化',
+performanceOptimizationDescription: '优化绘制性能和资源使用的高级技巧',
+configureAdaptiveDelay: '启用自适应延迟算法：wplaceBot.setAdaptiveDelay(true)',
+implementMemoryEfficient: '使用分块处理实现内存高效图像处理',
+useCanvasStateCaching: '利用画布状态缓存减少重复操作',
+optimizeDrawingPaths: '使用路径算法优化绘制路径',
+featureDescription2: '通过高级配置提升自动化性能。该工具包含内存管理、智能缓存、自适应定时算法，可根据服务器负载自动调整。学习如何实现高效绘制模式并减少资源消耗。',
+
+// API 参考标签内容
+apiReferenceTitle: 'WPlace Bot API 参考',
+apiReferenceIntro: '完整的 WPlace Bot API 文档，帮助开发者掌握所有方法与功能，用于编写强大的自动化脚本。',
+
+// API 参考详细内容
+coreAPITitle: '核心 API 方法',
+coreAPISubtitle: '自动化的关键方法完整参考',
+coreAPIDesc: 'WPlace Bot API 提供一套全面的方法来控制像素绘制。所有方法均支持链式调用，支持同步与异步模式，并内置详细的错误处理与报告。',
+
+// 图像处理 API
+imageProcessingAPITitle: '图像处理 API',
+imageProcessingAPISubtitle: '高级图像处理与转换功能',
+imageProcessingAPIDesc: '支持格式转换、调色板优化、缩放等功能。支持多种图像格式并提供精细的颜色量化控制，内置抖动与透明度处理。',
+
+// 事件系统与回调
+eventSystemTitle: '事件系统与回调',
+eventSystemSubtitle: '监控进度并以编程方式处理事件',
+eventSystemFeature1: '注册事件监听：wplaceBot.on(\'pixelPlaced\', callback)',
+eventSystemFeature2: '监控进度：wplaceBot.on(\'progress\', (percent) => {})',
+eventSystemFeature3: '处理错误：wplaceBot.on(\'error\', (error) => {})',
+eventSystemFeature4: '追踪完成：wplaceBot.on(\'complete\', () => {})',
+eventSystemDesc: '事件系统提供实时反馈，包括自动化进度、错误状态和用户交互。可注册自定义监听器来追踪像素放置、错误恢复和完成通知。支持全局和局部事件处理。',
+
+// 配置选项
+configOptionsTitle: '配置选项',
+configOptionsSubtitle: '用于精细调整自动化行为的全面配置系统',
+configOptionsFeature1: '全局配置：wplaceBot.config.set(\'key\', value)',
+configOptionsFeature2: '加载配置：wplaceBot.loadConfig(\'profileName\')',
+configOptionsFeature3: '安全限制：wplaceBot.config.safety.maxPixelsPerSecond = 2',
+configOptionsFeature4: '导出设置：wplaceBot.exportConfig()',
+configOptionsDesc: '配置系统允许用户精细化调整自动化行为、时序参数和安全机制。支持保存与加载配置文件、设置环境变量，并实现自定义校验规则。',
+
+// 故障排除详细内容
+commonErrorTitle: '常见错误解决',
+commonErrorSubtitle: '逐步解决常见问题的方法',
+canvasLoadingTitle: '画布加载问题：',
+canvasLoadingDesc: '如果画布无法加载，清除浏览器缓存并刷新页面。确保 wplace.live 完全加载后再运行 Bot 脚本。',
+rateLimitingTitle: '速率限制错误：',
+rateLimitingDesc: '遇到速率限制时，将延迟设置提高，例如使用 wplaceBot.setDelay(2000) 或更高值。默认至少为 1000ms。',
+memoryConsumptionTitle: '内存占用：',
+memoryConsumptionDesc: '对于大图像，使用 wplaceBot.config.memoryOptimized = true 启用分块处理以降低内存消耗。',
+browserCompatibilityTitle: '浏览器兼容性：',
+browserCompatibilityDesc: '如果 Bot 无法加载，请确认已启用 JavaScript，并尝试使用 Chrome 或 Firefox。部分扩展可能会干扰运行。',
+
+// Performance Issues
+performanceIssuesTitle: '性能问题',
+performanceIssuesSubtitle: '优化性能并解决运行缓慢',
+slowPixelTitle: '像素放置缓慢：',
+slowPixelDesc: '检查你的网络连接，如果遇到超时，请增加延迟。使用 wplaceBot.diagnostics.networkTest() 检查连接质量。',
+highCPUTitle: 'CPU 占用率过高：',
+highCPUDesc: '启用自适应计时：wplaceBot.setAdaptiveDelay(true)，根据系统性能自动调整处理速度。',
+memoryLeaksTitle: '内存泄漏：',
+memoryLeaksDesc: '长时间运行时请定期重启 bot（wplaceBot.restart()）。如内存占用增长，请使用 wplaceBot.clearCache() 清理图像缓存。',
+browserFreezingTitle: '浏览器卡死：',
+browserFreezingDesc: '缩小图像大小，或启用后台处理模式 wplaceBot.config.backgroundMode = true，以提升响应速度。',
+
+// Integration Problems
+integrationProblemsTitle: '集成问题',
+integrationProblemsSubtitle: '解决与外部工具和集成相关的问题',
+imageUploadFailuresTitle: '图像上传失败：',
+imageUploadFailuresDesc: '请确认图像格式兼容（支持 PNG、JPG、GIF）。使用 wplaceBot.validateImage(file) 在处理前检查格式。',
+scriptLoadingErrorsTitle: '脚本加载错误：',
+scriptLoadingErrorsDesc: '如果 fetch 命令失败，请检查网络连接，并尝试使用备用的 CDN 地址加载。',
+crossOriginTitle: '跨域问题：',
+crossOriginDesc: '部分图像可能因 CORS 限制而加载失败。请使用内置图像转换器，或上传到兼容的图像托管服务。',
+
+// Advanced Debugging
+advancedDebuggingTitle: '高级调试',
+advancedDebuggingSubtitle: '调试复杂问题并参与开发',
+debugModeTitle: '调试模式：',
+debugModeDesc: '启用详细日志：wplaceBot.config.debug = true，可以查看内部操作并更精确地定位问题。',
+networkMonitoringTitle: '网络监控：',
+networkMonitoringDesc: '使用 wplaceBot.diagnostics.networkMonitor() 跟踪请求模式，识别与网络相关的问题。',
+stateInspectionTitle: '状态检查：',
+stateInspectionDesc: '使用 wplaceBot.getState() 检查 bot 内部状态，以诊断异常行为并验证配置。',
+errorReportingTitle: '错误报告：',
+errorReportingDesc: '使用 wplaceBot.generateErrorReport() 生成详细的错误报告，并提交到 GitHub Issues 以获取社区支持和修复。',
+
+// About Tool Section
+aboutToolTitle: '关于 WPlace 自动化工具',
+toolOverview: '工具概览',
+toolOverviewDesc1: 'WPlace Bot 自动化工具是一个基于 JavaScript 的综合解决方案，专为 wplace.live 协作像素画平台设计。该浏览器端框架支持用户通过编程控制来创作复杂的像素艺术，同时提供新手友好的界面和高级脚本功能。',
+toolOverviewDesc2: '该工具基于现代 Web 技术构建，完全在浏览器环境中运行，无需额外安装软件或系统配置。其架构注重可靠性、性能和易用性，让各类技术水平的用户都能使用 WPlace Bot 进行自动化。',
+keyFeatures: '核心功能',
+keyFeaturesDesc1: 'WPlace Bot 提供多种创作方式，包括直接上传图像、高级图像转换工具以及内置像素画编辑器。系统会自动处理色彩优化、格式转换和尺寸缩放，确保与 wplace.live 平台的兼容性。',
+keyFeaturesDesc2: '高级功能包括批量处理、自定义脚本开发和完善的错误处理机制。WPlace Bot 内置自适应延迟算法，可根据服务器负载自动调整，并实现智能冲突检测，确保在画布上与其他用户和谐共存。',
+technicalImplementation: '技术实现',
+technicalImplementationDesc1: 'WPlace Bot 基于现代 JavaScript ES6+ 特性开发，采用异步编程模式以获得最佳性能。代码库遵循模块化设计原则，方便开发者扩展与自定义，实现特定的自动化策略。',
+technicalImplementationDesc2: '通过智能缓存系统和分块处理机制优化内存管理，尤其适用于大图像。工具还提供全面的调试功能与详细的错误报告，方便排查和二次开发。',
+communityAndSupport: '社区与支持',
+communityAndSupportDesc1: 'WPlace Bot 是一个社区驱动的开源项目，持续进行开发与更新。用户可以通过 GitHub 参与贡献、提交问题、请求新功能或分享自定义脚本。文档也会不断更新，涵盖新功能与最佳实践。',
+communityAndSupportDesc2: '该工具遵循负责任的自动化原则，内置安全机制以确保符合 wplace.live 社区规范。速率限制、延迟控制和合规使用是其核心设计理念。',
+
+// Features Section
+featuresTitle: '适配各种工作流的功能',
+featuresSubtitle: '从一键上传到高级脚本，我们的 WPlace Bot 全面覆盖。',
+instantConsoleLoading: '即时控制台加载',
+instantConsoleLoadingDesc: '无需下载。只需将一行代码粘贴到浏览器开发者控制台，即可加载完整的 WPlace Bot。',
+onScreenControlPanel: '屏幕控制面板',
+onScreenControlPanelDesc: '直观的控制面板会直接出现在 wplace.live 上，你可以控制位置、延迟和图像加载。',
+directImageUpload: '直接上传图像',
+directImageUploadDesc: '最简单的开始方式。上传任何图像（PNG、JPG、GIF），WPlace Bot 会自动处理其余步骤。',
+advancedImageConverter: '高级图像转换器',
+advancedImageConverterDesc: '使用强大的 Web 工具转换图像，可精细控制尺寸、色彩调色板及其他优化选项。',
+livePixelArtEditor: '实时像素画编辑器',
+livePixelArtEditorDesc: '发挥创造力！在功能齐全的编辑器中从零绘制像素画，并即时生成 WPlace Bot 脚本。',
+fullConsoleControl: '完整控制台控制',
+fullConsoleControlDesc: '为进阶用户设计，所有功能都可以通过控制台中的 JavaScript 命令实现高级脚本编写。',
+
+// FAQ Section
+faqTitle: '常见问题',
+faqSubtitle: '关于 WPlace Bot 使用的一切你需要知道的',
+faqDownloadInstall: '我需要下载或安装 WPlace Bot 吗？',
+faqDownloadInstallAnswer: '不需要！WPlace Bot 完全基于浏览器运行。只需在控制台粘贴一行代码，整个自动化工具即可立即加载。无需下载、无需安装、无需扩展插件。它完全运行在浏览器中，任何支持现代浏览器的设备都能使用。',
+faqAllowed: '在 wplace.live 上使用 WPlace Bot 合法吗？',
+faqAllowedAnswer: 'WPlace Bot 的设计尊重 wplace.live 社区，内置速率限制与延迟控制，并遵循负责任的自动化实践。它包含防滥用的安全机制，并确保符合平台规定。请随时查看 wplace.live 当前的服务条款，并在使用时保持尊重。WPlace Bot 社区倡导道德使用。',
+faqHowToLoad: '如何加载 WPlace Bot？',
+faqHowToLoadAnswer1: '很简单：打开 wplace.live，按 F12 打开开发者工具，点击 Console 标签页，然后粘贴以下命令：',
+faqHowToLoadAnswer2: 'WPlace Bot 会自动加载并在准备好时显示成功提示。控制面板将出现在屏幕右上角。',
+faqEasiestWay: '使用 WPlace Bot 绘制图像最简单的方法是什么？',
+faqEasiestWayAnswer: '推荐使用选项 A：直接上传。在加载 WPlace Bot 后，点击控制面板上的“📁 Carregar Imagem”按钮，选择图像文件，设置位置，然后点击“▶️ Iniciar”开始自动化。这是最适合新手的方法，无需技术背景。',
+faqConverterEditor: 'WPlace Bot 的“转换器”和“编辑器”工具是什么？',
+faqConverterEditorAnswer: '转换器是一款高级 Web 工具，可自定义色彩优化和缩放参数。编辑器是内置的像素画创作工具，允许你直接绘制并自动生成脚本。这两者均与 WPlace Bot 主系统无缝集成，增强了创作自由度。',
+faqBrowser: 'WPlace Bot 可以在任何浏览器上使用吗？',
+faqBrowserAnswer: 'WPlace Bot 在 Chrome、Firefox 和 Edge 等现代浏览器上运行最佳。请确保启用 JavaScript，并禁用可能阻碍其功能的脚本拦截插件。该工具针对 Chromium 内核浏览器进行了优化，但在主流浏览器上都能正常使用。移动端浏览器功能可能有限。',
+faqSpeed: 'WPlace Bot 放置像素的速度有多快？',
+faqSpeedAnswer: 'WPlace Bot 内置智能计时控制，默认每 1000 毫秒放置一个像素，以符合服务器限制。你可以通过 wplaceBot.setDelay() 调整速度。该工具会自动适应服务器情况，并内置速率限制保护，确保稳定运行。',
+faqLargeImages: 'WPlace Bot 能处理大图像吗？',
+faqLargeImagesAnswer: '可以！WPlace Bot 提供高级内存管理和分块处理，支持大图像项目。启用 wplaceBot.config.memoryOptimized = true 可以提升性能。工具会自动缩放和优化图像，确保在 wplace.live 画布上保持质量。',
+faqImageFormats: 'WPlace Bot 支持哪些图像格式？',
+faqImageFormatsAnswer: '它支持所有常见图像格式，包括 PNG、JPG、JPEG、GIF 和 WebP。工具会自动转换并优化图像以适应像素画。你也可以通过 URL 或数据数组加载图像，灵活性极高。',
+faqStop: '如果出问题，我该如何停止 WPlace Bot？',
+faqStopAnswer: '可以立即停止：在控制台运行 wplaceBot.stop()，或点击控制面板的停止按钮。工具内置紧急停止功能与错误恢复机制，还支持自动超时保护。',
+faqCustomize: '我可以自定义 WPlace Bot 的行为与设置吗？',
+faqCustomizeAnswer: '当然！WPlace Bot 提供丰富的配置 API。你可以调整计时、内存使用、安全限制，甚至创建自定义配置文件。高级用户还可开发脚本并集成外部 API。它支持从入门到专家的不同定制需求。',
+faqSafe: 'WPlace Bot 在与其他用户共同使用时安全吗？',
+faqSafeAnswer: '是的。它内置智能冲突检测，尊重其他用户的作品，并通过自适应计时与 wplace.live 社区和谐共存。该工具遵循负责任的自动化实践和社区规范，确保所有用户都能获得良好的体验。'
+
+
+    },
+
+     // WPlace Live 页面内容
+    wplaceLivePage: {
+        officialPlatform: '官方平台',
+title: 'WPlace Live - 协作像素画画布',
+description: '体验终极协作像素艺术平台，在这里创造力与社区相遇。WPlace Live 将来自世界各地的艺术家聚集在一起，在共享画布上创作令人惊叹的像素艺术杰作。',
+subtitle: '加入数百万艺术家在 WPlace Live 上，贡献世界上最大的协作像素艺术项目。WPlace Live 上的每一个像素都讲述着创造力和合作的故事。',
+visitWplaceLive: '访问 WPlace Live',
+watchDemo: '观看演示',
+exploreFeatures: '探索功能',
+bottomHint: '由社区创造力驱动的全球最大协作像素艺术平台。',
+
+// 视频部分
+videoTitle: '观看 WPlace Live 实际运行',
+videoSubtitle: '看看 WPlace Live 如何通过实时像素创作将个人创造力转化为协作杰作。',
+videoDescription: '此演示展示了 WPlace Live 的核心功能，包括实时协作、丰富的调色板以及无缝的用户体验，使 WPlace Live 成为协作像素艺术创作的首选平台。',
+
+// 功能部分
+featuresTitle: '为什么选择 WPlace Live？',
+featuresSubtitle: '探索 WPlace Live 成为全球最受欢迎协作像素艺术平台的原因。',
+collaborativeCanvas: '协作画布',
+collaborativeCanvasDesc: 'WPlace Live 拥有一个庞大的共享画布，成千上万的艺术家可以同时在上面创作。每一个在 WPlace Live 上放置的像素，都为一个不断发展的杰作做出贡献，代表着全球社区的集体创造力。',
+realTimeCollaboration: '实时协作',
+realTimeCollaborationDesc: '在 WPlace Live 上体验即时协作，享受实时更新和像素放置。观看 WPlace Live 随着全球艺术家的贡献而不断变化，形成一个动态而充满活力的画布。',
+colorPalette: '丰富的调色板',
+colorPaletteDesc: 'WPlace Live 提供精心挑选的 64 色调色板，专为像素艺术创作优化。每种颜色都经过选择，确保最大化的艺术表现力，同时在协作画布中保持视觉和谐。',
+communityDriven: '社区驱动',
+communityDrivenDesc: 'WPlace Live 依靠社区参与和民主决策蓬勃发展。WPlace Live 社区通过反馈、建议和协作治理推动平台的演进，确保平台始终以艺术家为中心。',
+toolIntegration: '工具集成',
+toolIntegrationDesc: 'WPlace Live 与我们的一系列创作工具无缝集成，包括像素画生成器、颜色转换器和自动化脚本。这些集成扩展了您的创作工作流程和艺术可能性。',
+crossPlatform: '跨平台访问',
+crossPlatformDesc: '从任何带有现代浏览器的设备访问 WPlace Live。无论您是在桌面、平板还是移动设备上，WPlace Live 都能提供一致且优化的体验，实现无缝的创意表达。',
+artisticFreedom: '艺术自由',
+artisticFreedomDesc: 'WPlace Live 在协作框架下赋予无限的创造自由。在 WPlace Live 上表达您独特的艺术愿景，同时为集体杰作贡献力量。',
+globalCanvas: '全球画布',
+globalCanvasDesc: 'WPlace Live 将来自世界各地的艺术家连接在一个共享画布上。体验 WPlace Live 的魅力，在这里不同文化、风格和创意视角融合为超越地理界限的协作艺术品。',
+instantUpdates: '即时更新',
+instantUpdatesDesc: 'WPlace Live 提供实时同步，所有用户都能立即看到像素更新。观看 WPlace Live 随着数千名艺术家同时创作而不断演变。',
+
+// 社区部分
+communityTitle: 'WPlace Live 社区',
+communitySubtitle: '加入充满活力的全球艺术家与创作者社区。',
+
+activeUsers: '50K+',
+activeUsersLabel: '活跃用户数',
+pixelsPlaced: '100M+',
+pixelsPlacedLabel: '已放置像素数',
+artworksCreated: '10K+',
+artworksCreatedLabel: '协作艺术作品数',
+countriesJoined: '150+',
+countriesJoinedLabel: '参与国家数',
+dailyContributions: '500K+',
+dailyContributionsLabel: '每日贡献像素数',
+totalSessions: '2M+',
+totalSessionsLabel: '总会话数',
+communityDescription: 'WPlace Live 社区代表了互联网历史上最大的协作艺术项目之一。来自各大洲的艺术家为 WPlace Live 做出贡献，创造了真正的全球画布，庆祝多样性、创造力和集体艺术表达的力量。WPlace Live 不仅仅是一个平台，它是一场运动，展示了技术如何通过共享的创意体验将人们团结在一起。',
+
+// 关于部分
+aboutTitle: '关于 WPlace Live',
+platformOverview: '平台概览',
+platformOverviewDesc: 'WPlace Live 是一款革命性的协作像素艺术平台，使大规模实时创作协作成为可能。基于现代 Web 技术，WPlace Live 支持数千名用户同时在共享画布上进行创作。它结合了像素艺术的怀旧魅力与尖端技术，创造出前所未有的协作创意体验。',
+technologyStack: '技术与创新',
+technologyStackDesc: 'WPlace Live 采用先进的实时同步技术，确保全球用户之间的无缝协作。其基础设施专为可扩展性、可靠性和高性能而设计，支持数百万像素的放置，同时保持流畅的用户体验。WPlace Live 的技术架构代表了协作型 Web 应用的一大突破。',
+communityGuidelines: '社区与指南',
+communityGuidelinesDesc: 'WPlace Live 通过社区驱动的管理和清晰的指南，保持积极和包容的环境。社区通过民主过程和相互尊重进行自我管理，确保艺术表达蓬勃发展的同时，也为各个水平的创作者提供一个友好的空间。',
+futureVision: '未来愿景',
+futureVisionDesc: 'WPlace Live 将持续发展，带来新功能、更大的画布以及增强的协作工具。未来的 WPlace Live 包括先进的艺术工具、改进的移动体验和展示协作艺术品的创新方式。它始终致力于推动协作数字艺术创作的边界。',
+
+// 常见问题部分
+faqTitle: '关于 WPlace Live 的常见问题',
+faqSubtitle: '您需要了解的关于使用 WPlace Live 和加入协作像素艺术社区的一切。',
+faqWhatIs: '什么是 WPlace Live？',
+faqWhatIsAnswer: 'WPlace Live 是一个协作像素艺术平台，全球用户可以在共享画布上一同创作。任何人都可以放置像素并为不断演变的杰作贡献力量。它结合了实时协作与像素艺术创作，是互联网上最大的协作艺术项目。',
+faqHowToJoin: '如何加入 WPlace Live？',
+faqHowToJoinAnswer: '只需在浏览器中访问 WPlace Live，无需注册！它完全免费并对所有人开放。进入 WPlace Live 后，您可以立即开始放置像素并为共享画布贡献。它支持所有现代浏览器和设备。',
+faqCanvasSize: 'WPlace Live 的画布有多大？',
+faqCanvasSizeAnswer: 'WPlace Live 的画布非常庞大，包含数百万个像素，每个像素都可以单独放置和修改。画布大小支持极高的细节，适合大型协作艺术作品，并会随着社区发展不断扩展。',
+faqPixelCooldown: '在 WPlace Live 上放置像素有冷却时间吗？',
+faqPixelCooldownAnswer: '是的，WPlace Live 采用冷却系统以确保公平参与并防止垃圾操作。冷却时间会根据服务器负载和社区活动而变化。该系统保证了所有用户都能公平访问，同时维持协作艺术的质量。',
+faqMobileSupport: '我可以在移动设备上使用 WPlace Live 吗？',
+faqMobileSupportAnswer: '当然可以！WPlace Live 对移动设备和平板进行了全面优化。移动端体验包括触控友好的操作和响应式设计，让像素创作顺畅直观。移动用户可享受与桌面用户相同的功能。',
+faqToolsIntegration: 'WPlace Live 和 Wplace Tools 如何协作？',
+faqToolsIntegrationAnswer: 'WPlace Live 与我们的 Wplace Tools 工具套件无缝集成，包括像素画生成器、颜色转换器和自动化脚本。您可以使用这些工具创作作品，再带到 WPlace Live 进行协作完善。它还支持各种增强创作体验的浏览器扩展与工具。',
+faqCommunityRules: 'WPlace Live 的社区规则是什么？',
+faqCommunityRulesAnswer: 'WPlace Live 通过社区指南保持积极的环境，鼓励尊重、创造力和合作。用户应建设性地贡献，尊重他人的艺术作品，并遵守平台礼仪。社区自我监管，共同维护一个欢迎所有艺术家的空间。',
+faqDataPersistence: '在 WPlace Live 上的作品能保存多久？',
+faqDataPersistenceAnswer: 'WPlace Live 上的作品是持久保存的，并成为共享画布的一部分。它还保留了所有像素放置的历史记录，让用户能够回顾艺术作品的演变过程。平台确保您的创作贡献将无限期地成为协作杰作的一部分。',
+faqCollaborationTips: '如何在 WPlace Live 上有效协作？',
+faqCollaborationTipsAnswer: '有效的协作需要尊重现有作品，与其他用户沟通，并为共享项目建设性地贡献。WPlace Live 社区依赖积极的合作和相互尊重而蓬勃发展。'
+
+    },
+
     // SEO Meta数据
     meta: {
         defaultDescription: '专业的像素艺术转换工具，将您的创意想法转化为令人惊叹的像素艺术杰作，具有无限的可能性。',

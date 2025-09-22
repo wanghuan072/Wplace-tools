@@ -180,60 +180,44 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                                 <span class="feature-icon">💻</span>
                                 {{ t('wplaceBotPage.customScriptTitle') }}
                             </h3>
-                            <p class="feature-subtitle">Create your own WPlace Bot automation scripts using the WPlace
-                                Bot framework</p>
+                            <p class="feature-subtitle">{{ t('wplaceBotPage.customScriptSubtitle') }}</p>
                             <ul class="feature-list">
-                                <li>Initialize custom WPlace Bot drawing algorithms using
-                                    wplaceBot.customDraw(algorithm)</li>
-                                <li>Implement WPlace Bot callback functions for progress monitoring and error handling
-                                </li>
-                                <li>Create reusable WPlace Bot modules for common drawing patterns and shapes</li>
-                                <li>Integrate WPlace Bot with external APIs for dynamic content generation</li>
+                                <li>{{ t('wplaceBotPage.customScriptFeature1') }}</li>
+                                <li>{{ t('wplaceBotPage.customScriptFeature2') }}</li>
+                                <li>{{ t('wplaceBotPage.customScriptFeature3') }}</li>
+                                <li>{{ t('wplaceBotPage.customScriptFeature4') }}</li>
                             </ul>
-                            <p class="feature-description">The WPlace Bot automation tool provides a flexible JavaScript
-                                API that allows developers to create custom WPlace Bot automation scripts. You can
-                                extend the base WPlace Bot functionality to handle complex drawing patterns, implement
-                                custom WPlace Bot algorithms, or integrate with external data sources. The modular
-                                WPlace Bot architecture supports plugin development and custom image processing
-                                pipelines.</p>
+                            <p class="feature-description">{{ t('wplaceBotPage.customScriptDesc') }}</p>
                         </div>
 
                         <div class="feature-card">
                             <h3 class="feature-title">
                                 <span class="feature-icon">🔄</span>
-                                Batch Processing & Automation
+                                {{ t('wplaceBotPage.batchProcessing') }}
                             </h3>
-                            <p class="feature-subtitle">Handle multiple images and complex projects with advanced batch
-                                processing</p>
+                            <p class="feature-subtitle">{{ t('wplaceBotPage.batchProcessingDescription') }}</p>
                             <ul class="feature-list">
-                                <li>Use wplaceBot.batchProcess([images]) for multiple image processing</li>
-                                <li>Implement queue management with priority levels and dependencies</li>
-                                <li>Set up automatic conflict detection and resolution strategies</li>
-                                <li>Configure retry mechanisms with exponential backoff algorithms</li>
+                                <li>{{ t('wplaceBotPage.useBatchProcess') }}</li>
+                                <li>{{ t('wplaceBotPage.implementQueueManagement') }}</li>
+                                <li>{{ t('wplaceBotPage.setupConflictDetection') }}</li>
+                                <li>{{ t('wplaceBotPage.configureRetryMechanisms') }}</li>
                             </ul>
-                            <p class="feature-description">For large-scale projects, the tool supports sophisticated
-                                batch processing capabilities. You can queue multiple images, set processing priorities,
-                                and implement conditional logic based on canvas state. The system includes conflict
-                                resolution mechanisms and automatic retry logic for failed pixel placements.</p>
+                            <p class="feature-description">{{ t('wplaceBotPage.featureDescription') }}</p>
                         </div>
 
                         <div class="feature-card">
                             <h3 class="feature-title">
                                 <span class="feature-icon">⚡</span>
-                                Performance Optimization
+                                {{ t('wplaceBotPage.performanceOptimization') }}
                             </h3>
-                            <p class="feature-subtitle">Advanced techniques for optimizing drawing performance and
-                                resource usage</p>
+                            <p class="feature-subtitle">{{ t('wplaceBotPage.performanceOptimizationDescription') }}</p>
                             <ul class="feature-list">
-                                <li>Configure adaptive delay algorithms: wplaceBot.setAdaptiveDelay(true)</li>
-                                <li>Implement memory-efficient image processing with chunking strategies</li>
-                                <li>Use canvas state caching to reduce redundant operations</li>
-                                <li>Optimize drawing paths using pathfinding algorithms</li>
+                                <li>{{ t('wplaceBotPage.configureAdaptiveDelay') }}</li>
+                                <li>{{ t('wplaceBotPage.implementMemoryEfficient') }}</li>
+                                <li>{{ t('wplaceBotPage.useCanvasStateCaching') }}</li>
+                                <li>{{ t('wplaceBotPage.performanceOptimization') }}</li>
                             </ul>
-                            <p class="feature-description">Optimize your automation performance using advanced
-                                configuration options. The tool includes memory management features, intelligent caching
-                                systems, and adaptive timing algorithms that adjust to server load conditions. Learn how
-                                to implement efficient drawing patterns and minimize resource consumption.</p>
+                            <p class="feature-description">{{ t('wplaceBotPage.featureDescription2') }}</p>
                         </div>
                     </div>
                 </div>
@@ -247,13 +231,10 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="api-section">
                             <h3 class="api-title">
                                 <span class="api-icon">🎯</span>
-                                Core API Methods
+                                {{ t('wplaceBotPage.coreAPITitle') }}
                             </h3>
-                            <p class="api-subtitle">Complete reference for essential WPlace Bot automation methods</p>
-                            <p>The WPlace Bot API provides a comprehensive set of methods for programmatic control of
-                                pixel art creation. All WPlace Bot methods are designed to be chainable and support both
-                                synchronous and asynchronous operation modes. Error handling is built into every WPlace
-                                Bot method with detailed error reporting.</p>
+                            <p class="api-subtitle"> {{ t('wplaceBotPage.coreAPISubtitle') }}</p>
+                            <p>{{ t('wplaceBotPage.coreAPIDesc') }}</p>
                             <div class="code-block">
                                 <pre><code>wplaceBot.start();                // Start drawing
 wplaceBot.stop();                 // Stop drawing
@@ -265,13 +246,10 @@ wplaceBot.setDelay(1000);         // Set speed (1s delay)</code></pre>
                         <div class="api-section">
                             <h3 class="api-title">
                                 <span class="api-icon">🖼️</span>
-                                Image Processing API
+                                {{ t('wplaceBotPage.imageProcessingAPITitle') }}
                             </h3>
-                            <p class="api-subtitle">Advanced image manipulation and conversion functions</p>
-                            <p>The image processing API handles format conversion, color palette optimization, and size
-                                scaling. It supports multiple image formats and provides fine-grained control over color
-                                quantization algorithms. The API includes built-in dithering options and transparency
-                                handling.</p>
+                            <p class="api-subtitle">{{ t('wplaceBotPage.imageProcessingAPISubtitle') }}</p>
+                            <p>{{ t('wplaceBotPage.imageProcessingAPIDesc') }}</p>
                             <div class="code-block">
                                 <pre><code>// Load pre-defined images
 wplaceBot.loadHeartImage();
@@ -289,38 +267,31 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="api-section">
                             <h3 class="api-title">
                                 <span class="api-icon">📡</span>
-                                Event System & Callbacks
+                                {{ t('wplaceBotPage.eventSystemTitle') }}
                             </h3>
-                            <p class="api-subtitle">Monitor automation progress and handle events programmatically</p>
+                            <p class="api-subtitle">{{ t('wplaceBotPage.eventSystemSubtitle') }}</p>
                             <ul class="api-list">
-                                <li>Register event listeners: wplaceBot.on('pixelPlaced', callback)</li>
-                                <li>Monitor progress: wplaceBot.on('progress', (percent) => {})</li>
-                                <li>Handle errors: wplaceBot.on('error', (error) => {})</li>
-                                <li>Track completion: wplaceBot.on('complete', () => {})</li>
+                                <li>{{ t('wplaceBotPage.eventSystemFeature1') }}</li>
+                                <li>{{ t('wplaceBotPage.eventSystemFeature2') }}</li>
+                                <li>{{ t('wplaceBotPage.eventSystemFeature3') }}</li>
+                                <li>{{ t('wplaceBotPage.eventSystemFeature4') }}</li>
                             </ul>
-                            <p>The event system provides real-time feedback on automation progress, error conditions,
-                                and user interactions. You can register custom event listeners for pixel placement
-                                events, error recovery attempts, and completion notifications. The system supports both
-                                global and scoped event handling.</p>
+                            <p>{{ t('wplaceBotPage.eventSystemDesc') }}</p>
                         </div>
 
                         <div class="api-section">
                             <h3 class="api-title">
                                 <span class="api-icon">⚙️</span>
-                                Configuration Options
+                                {{ t('wplaceBotPage.configOptionsTitle') }}
                             </h3>
-                            <p class="api-subtitle">Comprehensive configuration system for fine-tuning automation
-                                behavior</p>
+                            <p class="api-subtitle">{{ t('wplaceBotPage.configOptionsSubtitle') }}</p>
                             <ul class="api-list">
-                                <li>Global config: wplaceBot.config.set('key', value)</li>
-                                <li>Load profiles: wplaceBot.loadConfig('profileName')</li>
-                                <li>Safety limits: wplaceBot.config.safety.maxPixelsPerSecond = 2</li>
-                                <li>Export settings: wplaceBot.exportConfig()</li>
+                                <li>{{ t('wplaceBotPage.configOptionsFeature1') }}</li>
+                                <li>{{ t('wplaceBotPage.configOptionsFeature2') }}</li>
+                                <li>{{ t('wplaceBotPage.configOptionsFeature3') }}</li>
+                                <li>{{ t('wplaceBotPage.configOptionsFeature4') }}</li>
                             </ul>
-                            <p>The configuration system allows detailed customization of automation behavior, timing
-                                parameters, and safety mechanisms. You can save and load configuration profiles, set
-                                environment-specific parameters, and implement custom validation rules for drawing
-                                operations.</p>
+                            <p>{{ t('wplaceBotPage.configOptionsDesc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -334,31 +305,26 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="troubleshooting-section">
                             <h3 class="troubleshooting-title">
                                 <span class="troubleshooting-icon">🔧</span>
-                                Common Error Resolution
+                               {{ t('wplaceBotPage.commonErrorTitle') }}
                             </h3>
-                            <p class="troubleshooting-subtitle">Step-by-step solutions for frequently encountered issues
-                            </p>
+                            <p class="troubleshooting-subtitle">{{ t('wplaceBotPage.commonErrorSubtitle') }}</p>
 
                             <div class="issue-list">
                                 <div class="issue-item">
-                                    <h4>Canvas Loading Issues:</h4>
-                                    <p>If the canvas fails to load, clear browser cache and reload the page. Ensure
-                                        wplace.live is fully loaded before running the bot script.</p>
+                                    <h4>{{ t('wplaceBotPage.canvasLoadingTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.canvasLoadingDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Rate Limiting Errors:</h4>
-                                    <p>When you encounter rate limiting, increase the delay setting using
-                                        wplaceBot.setDelay(2000) or higher. The default should be at least 1000ms.</p>
+                                    <h4>{{ t('wplaceBotPage.rateLimitingTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.rateLimitingDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Memory Consumption:</h4>
-                                    <p>For large images, use wplaceBot.config.memoryOptimized = true to enable chunked
-                                        processing and reduce memory usage.</p>
+                                    <h4>{{ t('wplaceBotPage.memoryConsumptionTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.memoryConsumptionDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Browser Compatibility:</h4>
-                                    <p>If the bot fails to load, ensure JavaScript is enabled and try using Chrome or
-                                        Firefox. Some browser extensions may interfere with functionality.</p>
+                                    <h4>{{ t('wplaceBotPage.browserCompatibilityTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.browserCompatibilityDesc') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -366,30 +332,26 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="troubleshooting-section">
                             <h3 class="troubleshooting-title">
                                 <span class="troubleshooting-icon">⚡</span>
-                                Performance Issues
+                                {{ t('wplaceBotPage.performanceIssuesTitle') }}
                             </h3>
-                            <p class="troubleshooting-subtitle">Optimize performance and resolve slowdowns</p>
+                            <p class="troubleshooting-subtitle">{{ t('wplaceBotPage.performanceIssuesSubtitle') }}</p>
 
                             <div class="issue-list">
                                 <div class="issue-item">
-                                    <h4>Slow Pixel Placement:</h4>
-                                    <p>Check your internet connection and increase delay if experiencing timeouts. Use
-                                        wplaceBot.diagnostics.networkTest() to check connection quality.</p>
+                                    <h4>{{ t('wplaceBotPage.slowPixelTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.slowPixelDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>High CPU Usage:</h4>
-                                    <p>Enable adaptive timing with wplaceBot.setAdaptiveDelay(true) to automatically
-                                        adjust processing speed based on system performance.</p>
+                                    <h4>{{ t('wplaceBotPage.highCPUTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.highCPUDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Memory Leaks:</h4>
-                                    <p>Restart the bot periodically for long sessions using wplaceBot.restart(). Clear
-                                        image cache with wplaceBot.clearCache() if memory usage grows.</p>
+                                    <h4>{{ t('wplaceBotPage.memoryLeaksTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.memoryLeaksDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Browser Freezing:</h4>
-                                    <p>Reduce image size or enable background processing mode with
-                                        wplaceBot.config.backgroundMode = true for better responsiveness.</p>
+                                    <h4>{{ t('wplaceBotPage.browserFreezingTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.browserFreezingDesc') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -397,25 +359,22 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="troubleshooting-section">
                             <h3 class="troubleshooting-title">
                                 <span class="troubleshooting-icon">🔗</span>
-                                Integration Problems
+                                {{ t('wplaceBotPage.integrationProblemsTitle') }}
                             </h3>
-                            <p class="troubleshooting-subtitle">Resolve issues with external tools and integrations</p>
+                            <p class="troubleshooting-subtitle">{{ t('wplaceBotPage.integrationProblemsSubtitle') }}</p>
 
                             <div class="issue-list">
                                 <div class="issue-item">
-                                    <h4>Image Upload Failures:</h4>
-                                    <p>Verify image format compatibility (PNG, JPG, GIF supported). Use
-                                        wplaceBot.validateImage(file) to check format before processing.</p>
+                                    <h4>{{ t('wplaceBotPage.imageUploadFailuresTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.imageUploadFailuresDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Script Loading Errors:</h4>
-                                    <p>If the fetch command fails, check your internet connection and try loading from a
-                                        different CDN mirror using the alternative fetch URL.</p>
+                                    <h4>{{ t('wplaceBotPage.scriptLoadingErrorsTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.scriptLoadingErrorsDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Cross-Origin Issues:</h4>
-                                    <p>Some images may fail due to CORS restrictions. Use the built-in image converter
-                                        or upload images to a compatible hosting service.</p>
+                                    <h4>{{ t('wplaceBotPage.crossOriginTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.crossOriginDesc') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -423,30 +382,26 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="troubleshooting-section">
                             <h3 class="troubleshooting-title">
                                 <span class="troubleshooting-icon">🐛</span>
-                                Advanced Debugging
+                                {{ t('wplaceBotPage.advancedDebuggingTitle') }}
                             </h3>
-                            <p class="troubleshooting-subtitle">Debug complex issues and contribute to development</p>
+                            <p class="troubleshooting-subtitle">{{ t('wplaceBotPage.advancedDebuggingSubtitle') }}</p>
 
                             <div class="issue-list">
                                 <div class="issue-item">
-                                    <h4>Debug Mode:</h4>
-                                    <p>Enable detailed logging with wplaceBot.config.debug = true to see internal
-                                        operations and identify issues more precisely.</p>
+                                    <h4>{{ t('wplaceBotPage.debugModeTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.debugModeDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Network Monitoring:</h4>
-                                    <p>Use wplaceBot.diagnostics.networkMonitor() to track request patterns and identify
-                                        network-related problems.</p>
+                                    <h4>{{ t('wplaceBotPage.networkMonitoringTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.networkMonitoringDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>State Inspection:</h4>
-                                    <p>Check bot internal state with wplaceBot.getState() to diagnose unexpected
-                                        behavior and validate configuration settings.</p>
+                                    <h4>{{ t('wplaceBotPage.stateInspectionTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.stateInspectionDesc') }}</p>
                                 </div>
                                 <div class="issue-item">
-                                    <h4>Error Reporting:</h4>
-                                    <p>Generate detailed error reports with wplaceBot.generateErrorReport() and submit
-                                        to GitHub issues for community support and bug fixes.</p>
+                                    <h4>{{ t('wplaceBotPage.errorReportingTitle') }}</h4>
+                                    <p>{{ t('wplaceBotPage.errorReportingDesc') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -558,129 +513,87 @@ wplaceBot.loadImageFromUrl('data:image/png;base64,...', 50, 50);</code></pre>
                         <div class="faq-item">
                             <h3 class="faq-question">{{ t('wplaceBotPage.faqAllowed') }}</h3>
                             <div class="faq-answer">
-                                <p>The WPlace Bot tool is designed with respect for the wplace.live community. It
-                                    includes built-in rate limiting, delay controls, and follows responsible automation
-                                    practices. The WPlace Bot implements safety mechanisms to prevent abuse and
-                                    maintains compliance with platform guidelines. Always check the current wplace.live
-                                    terms of service and use the WPlace Bot respectfully. The WPlace Bot community
-                                    promotes ethical automation usage.</p>
+                                <p>{{ t('wplaceBotPage.faqAllowedAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I load the WPlace Bot automation tool?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqHowToLoad') }}</h3>
                             <div class="faq-answer">
-                                <p>Loading the WPlace Bot is simple: Open wplace.live, press F12 to open Developer
-                                    Tools, click the Console tab, and paste this WPlace Bot command:</p>
+                                <p>{{ t('wplaceBotPage.faqHowToLoadAnswer1') }}</p>
                                 <div class="code-block">
                                     <pre><code>fetch('https://raw.githubusercontent.com/gcampos04/wplace-automation/main/wplace-bot.js').then(r=>r.text()).then(eval)</code></pre>
                                 </div>
-                                <p>The WPlace Bot will load automatically and display a success message when ready. The
-                                    WPlace Bot control panel will appear in the top-right corner of your screen.</p>
+                                <p>{{ t('wplaceBotPage.faqHowToLoadAnswer2') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What's the easiest way to draw an image with WPlace Bot?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqEasiestWay') }}</h3>
                             <div class="faq-answer">
-                                <p>Use Option A: Direct Upload. After loading the WPlace Bot, click the "📁 Carregar
-                                    Imagem" button on the WPlace Bot control panel, select your image file, set the
-                                    position, and click "▶️ Iniciar" to start the WPlace Bot automation. This is the
-                                    most beginner-friendly WPlace Bot method that requires no technical knowledge.</p>
+                                <p>{{ t('wplaceBotPage.faqEasiestWayAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What are the WPlace Bot 'Converter' and 'Editor' tools?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqConverterEditor') }}</h3>
                             <div class="faq-answer">
-                                <p>The WPlace Bot Converter is an advanced web tool for fine-tuning image conversion
-                                    with custom settings like color palette optimization and size scaling. The WPlace
-                                    Bot Editor is a built-in pixel art creation tool where you can draw directly and
-                                    generate WPlace Bot scripts automatically. Both tools integrate seamlessly with the
-                                    main WPlace Bot automation system for enhanced creative control.</p>
+                                <p>{{ t('wplaceBotPage.faqConverterEditorAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I use WPlace Bot on any browser?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqBrowser') }}</h3>
                             <div class="faq-answer">
-                                <p>The WPlace Bot works best on modern browsers like Chrome, Firefox, and Edge. Make
-                                    sure JavaScript is enabled and disable any script blockers that might interfere with
-                                    WPlace Bot functionality. The WPlace Bot is optimized for Chromium-based browsers
-                                    but works well across all major browser platforms. Mobile browsers may have limited
-                                    WPlace Bot functionality.</p>
+                                <p>{{ t('wplaceBotPage.faqBrowserAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How fast does WPlace Bot place pixels?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqSpeed') }}</h3>
                             <div class="faq-answer">
-                                <p>WPlace Bot includes intelligent timing controls with a default delay of 1000ms
-                                    between pixel placements to respect server limits. You can adjust the WPlace Bot
-                                    speed using wplaceBot.setDelay() command. The WPlace Bot automatically adapts to
-                                    server conditions and includes built-in rate limiting protection to ensure stable
-                                    performance.</p>
+                                <p>{{ t('wplaceBotPage.faqSpeedAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can WPlace Bot handle large images?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqLargeImages') }}</h3>
                             <div class="faq-answer">
-                                <p>Yes! WPlace Bot includes advanced memory management and chunked processing for large
-                                    images. Enable memory optimization with wplaceBot.config.memoryOptimized = true for
-                                    better performance with large WPlace Bot projects. The WPlace Bot automatically
-                                    scales and optimizes images for the wplace.live canvas while maintaining quality.
-                                </p>
+                                <p>{{ t('wplaceBotPage.faqLargeImagesAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">What image formats does WPlace Bot support?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqImageFormats') }}</h3>
                             <div class="faq-answer">
-                                <p>WPlace Bot supports all major image formats including PNG, JPG, JPEG, GIF, and WebP.
-                                    The WPlace Bot automatically converts and optimizes images for pixel art creation.
-                                    You can also load images from URLs or custom data arrays using WPlace Bot API
-                                    methods for maximum flexibility.</p>
+                                <p>{{ t('wplaceBotPage.faqImageFormatsAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">How do I stop WPlace Bot if something goes wrong?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqStop') }}</h3>
                             <div class="faq-answer">
-                                <p>You can immediately stop WPlace Bot by running wplaceBot.stop() in the console or
-                                    clicking the stop button on the WPlace Bot control panel. The WPlace Bot includes
-                                    emergency stop functions and error recovery mechanisms to handle unexpected
-                                    situations safely. The WPlace Bot also has automatic timeout protection.</p>
+                                <p>{{ t('wplaceBotPage.faqStopAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Can I customize WPlace Bot behavior and settings?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqCustomize') }}</h3>
                             <div class="faq-answer">
-                                <p>Absolutely! WPlace Bot offers extensive customization options through the
-                                    configuration API. You can adjust timing, memory usage, safety limits, and create
-                                    custom WPlace Bot profiles. Advanced users can develop custom WPlace Bot scripts and
-                                    integrate external APIs for enhanced functionality. The WPlace Bot supports both
-                                    beginner and expert customization levels.</p>
+                                <p>{{ t('wplaceBotPage.faqCustomizeAnswer') }}</p>
                             </div>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Is WPlace Bot safe to use with other users on the canvas?</h3>
+                            <h3 class="faq-question">{{ t('wplaceBotPage.faqSafe') }}</h3>
                             <div class="faq-answer">
-                                <p>Yes, WPlace Bot is designed for collaborative use. It includes intelligent conflict
-                                    detection, respects other users' artwork, and implements adaptive timing to work
-                                    harmoniously with the wplace.live community. The WPlace Bot follows responsible
-                                    automation practices and community guidelines to ensure a positive experience for
-                                    all users.</p>
+                                <p>{{ t('wplaceBotPage.faqSafeAnswer') }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </div>
 </template>
 

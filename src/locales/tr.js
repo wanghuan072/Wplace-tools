@@ -789,6 +789,333 @@ export default {
     // Ana Sayfa Butonu
     startWithExtension: 'Wplace Uzantısı ile Başlayın',
 
+    // WPlace Bot 页面内容
+    wplaceBotPage: {
+        officialGuide: 'Resmi Kılavuz',
+        title: 'WPlace Bot Belgeleri & Eğitim',
+        description: 'wplace-automation için kapsamlı kılavuz - wplace.live için tasarlanmış, piksel sanatını otomasyon yoluyla basitleştiren güçlü bir araç. Kurulum, yapılandırma ve ileri düzey kullanım hakkında ayrıntılı belgelerle bilgi edinin.',
+        bottomHint: 'wplace.live için tasarlanmış, piksel sanatını otomasyon yoluyla basitleştiren güçlü bir araç.',
+        quickStart: 'Hızlı Başlangıç',
+        creationMethods: 'Oluşturma Yöntemleri',
+        consoleCommands: 'Konsol Komutları',
+        advancedUsage: 'Gelişmiş Kullanım',
+        apiReference: 'API Referansı',
+        troubleshooting: 'Sorun Giderme',
+
+        // Quick Start Tab Content
+        quickStartTitle: 'WPlace Bot Hızlı Başlangıç Kılavuzu',
+        quickStartIntro: 'wplace.live için WPlace Bot otomasyonuna başlayın. Bu kapsamlı WPlace Bot eğitimi, WPlace Bot otomasyon aracının kurulum ve ayar sürecinde size rehberlik edecek.',
+        step1Preparation: 'Adım 1: Hazırlık',
+        step1Description: 'wplace.live sitesini açın ve geliştirici konsolunu hazırlayın. WPlace Bot otomasyon aracı doğrudan tarayıcınızda JavaScript enjeksiyonu ile çalışır ve wplace.live tuvali ile sorunsuz bir entegrasyon sağlar.',
+
+        // Step content for Quick Start
+        openWplaceLiveStep: 'wplace.live\'ı tarayıcınızda açın.',
+        pressF12Step: 'Geliştirici Araçlarını açmak için F12 (veya Ctrl+Shift+I) tuşlarına basın.',
+        clickConsoleStep: '"Konsol" sekmesine tıklayın.',
+        step2LoadBot: 'Adım 2: WPlace Bot\'u Yükleyin (Gerekli)',
+        step2Description: 'WPlace Bot otomasyon betiğini doğrudan GitHub\'dan yükleyin. Bu tek satırlık komut, en son WPlace Bot sürümünü indirir ve tüm otomasyon özelliklerini başlatır. WPlace Bot aracı düzenli güncellemelerle aktif olarak geliştirilir.',
+        successMessage: 'Başarılı!',
+        waitForBotLoadedMessage: '"🎨 WPlace Bot Yüklendi!" mesajını ve sağ üst köşede kontrol panelini bekleyin.',
+        step3StartDrawing: 'Adım 3: WPlace Bot ile Çizime Başlayın!',
+        step3Description: 'Sanat yaratmaya başlamak için WPlace Bot yöntemlerinden birini seçin. WPlace Bot aracı, farklı kullanıcı tercihleri ve beceri seviyelerine uygun birçok yaklaşım sunar.',
+        step3Details: 'Artık WPlace Bot ekran panelini veya konsol komutlarını kullanarak çizim yapabilirsiniz. Otomasyon, piksel yerleştirme zamanlamasını, çarpışma tespitini ve hata kurtarmayı otomatik olarak yönetir. Daha fazla bilgi için "Oluşturma Yöntemleri" sekmesine bakın.',
+        quickTest: 'Hızlı Test:',
+
+        // Creation Methods Tab Content
+        creationMethodsTitle: 'WPlace Bot Oluşturma Yöntemleri',
+        creationMethodsIntro: 'wplace.live üzerinde piksel sanatını oluşturmak için WPlace Bot\'u kullanmanın farklı yollarını keşfedin. Her yöntem, farklı projeler için benzersiz avantajlar sunar.',
+        optionATitle: 'Seçenek A: Doğrudan Yükleme',
+        optionAEasiest: '(En Kolay)',
+        optionAStep1: 'WPlace Bot panelinde "📁 Görsel Yükle" butonuna tıklayın.',
+        optionAStep2: 'İşlenecek görsel dosyanızı (PNG, JPG, vb.) seçin.',
+        optionAStep3: 'WPlace Bot panelinde X ve Y konumunu ayarlayın.',
+        optionAStep4: 'WPlace Bot otomasyonunu başlatmak için "▶️ Başlat" butonuna tıklayın.',
+        optionBTitle: 'Seçenek B: Gelişmiş Dönüştürücü',
+        optionBStep1: 'Panelde "🔧 Dönüştürücü" butonuna tıklayın.',
+        optionBStep2: 'Görselinizi yeni sekmeye sürükleyin.',
+        optionBStep3: 'Boyut ve renk modu gibi seçenekleri ayarlayın.',
+        optionBStep4: '"📝 Betik Oluştur" butonuna tıklayın ve kodu kopyalayın.',
+        optionBStep5: 'Kopyalanan betiği wplace.live konsoluna yapıştırın.',
+        optionCTitle: 'Seçenek C: Piksel Sanat Editörü',
+        optionCStep1: 'Panelde "🎨 Editör" butonuna tıklayın.',
+        optionCStep2: 'Sanatınızı doğrudan editörde çizin.',
+        optionCStep3: 'Betik siz çizdikçe otomatik olarak oluşturulur.',
+        optionCStep4: 'WPlace Bot betiğini kopyalayın.',
+        optionCStep5: 'wplace.live konsoluna yapıştırın ve çalıştırın.',
+
+        // Console Commands Tab Content
+        consoleCommandsTitle: 'WPlace Bot Konsol Komutları',
+        consoleCommandsIntro: 'Gelişmiş kontrol için WPlace Bot konsol komutlarını öğrenin. Bu komutları kullanarak otomasyon oturumlarını programatik olarak yönetin.',
+
+        basicControlsHeader: 'Temel Kontroller',
+        imageLoadingHeader: 'Görsel Yükleme',
+        troubleshootingHeader: 'Sorun Giderme',
+        canvasNotFoundError: '"Tuval bulunamadı": Sayfayı yeniden yükleyin ve tamamen açılmasını bekleyin.',
+        wplaceBotNotFoundError: '"WPlace Bot bulunamadı": Betiği yüklemek için `fetch` komutunu yeniden çalıştırın.',
+        botNotWorkingError: 'WPlace Bot çalışmıyor: Konsolda hata veya script engelleyicileri kontrol edin. Tekrar başlatmak için `wplaceBot.init();` komutunu deneyin.',
+
+        // Advanced Usage Tab Content
+        advancedUsageTitle: 'WPlace Bot Gelişmiş Kullanım',
+        advancedUsageIntro: 'Gelişmiş özelliklerle WPlace Bot\'un tüm potansiyelini açığa çıkarın. Davranışları özelleştirin, özel betikler oluşturun ve performansı optimize edin.',
+
+        // Advanced Usage detailed content
+        customScriptTitle: 'Özel Betik Geliştirme',
+        customScriptSubtitle: 'Kendi WPlace Bot otomasyon betiklerinizi oluşturun',
+        customScriptFeature1: 'wplaceBot.customDraw(algorithm) ile özel çizim algoritmaları başlatın',
+        customScriptFeature2: 'İlerleme izleme ve hata yönetimi için geri çağrı fonksiyonları ekleyin',
+        customScriptFeature3: 'Yaygın desenler ve şekiller için yeniden kullanılabilir modüller oluşturun',
+        customScriptFeature4: 'Harici API\'lerle entegrasyon sağlayın',
+        customScriptDesc: 'WPlace Bot, esnek bir JavaScript API sağlar. Geliştiriciler özel algoritmalar, desenler ve harici veri kaynakları ile entegrasyon için işlevselliği genişletebilir.',
+
+        // Performance Optimization
+        batchProcessing: 'Toplu İşleme & Otomasyon',
+        batchProcessingDescription: 'Birden fazla görseli ve karmaşık projeleri işleyin',
+        useBatchProcess: 'Birden fazla görsel için wplaceBot.batchProcess([images]) kullanın',
+        implementQueueManagement: 'Öncelik seviyeleri ve bağımlılıklarla sıra yönetimi uygulayın',
+        setupConflictDetection: 'Otomatik çakışma tespiti ve çözüm stratejileri ayarlayın',
+        configureRetryMechanisms: 'Geri deneme mekanizmalarını ayarlayın',
+        featureDescription: 'Büyük projeler için gelişmiş toplu işleme özellikleri mevcuttur. Görselleri sıraya alabilir, öncelik atayabilir ve koşullu mantık uygulayabilirsiniz.',
+
+        // 
+        performanceOptimization: 'Performans Optimizasyonu',
+        performanceOptimizationDescription: 'Çizim performansını ve kaynak kullanımını optimize edin',
+        configureAdaptiveDelay: 'Uyarlanabilir gecikme ayarlayın: wplaceBot.setAdaptiveDelay(true)',
+        implementMemoryEfficient: 'Bellek dostu işleme için parçalama stratejileri kullanın',
+        useCanvasStateCaching: 'Yinelenen işlemleri azaltmak için tuval önbelleğe almayı kullanın',
+        optimizeDrawingPaths: 'Çizim yollarını optimize etmek için algoritmalar kullanın',
+        featureDescription2: 'Gelişmiş yapılandırmalarla performansı optimize edin. Araç, bellek yönetimi, önbellekleme ve uyarlanabilir zamanlama algoritmaları içerir.',
+
+        // API Reference Tab Content
+        apiReferenceTitle: 'WPlace Bot API Referansı',
+        apiReferenceIntro: 'Geliştiriciler için kapsamlı API belgeleri. Tüm yöntemleri öğrenin ve güçlü otomasyon betikleri oluşturun.',
+
+        // API Reference detailed content
+        coreAPITitle: 'Çekirdek API Yöntemleri',
+        coreAPISubtitle: 'Temel otomasyon yöntemlerinin tam referansı',
+        coreAPIDesc: 'API, piksel sanatını programatik olarak kontrol etmek için kapsamlı yöntemler sağlar. Tüm yöntemler zincirleme çalışır ve senkron/asenkron modları destekler.',
+
+        // Image Processing API
+        imageProcessingAPITitle: 'Görsel İşleme API\'si',
+        imageProcessingAPISubtitle: 'Gelişmiş görsel işleme ve dönüştürme',
+        imageProcessingAPIDesc: 'Format dönüştürme, renk paleti optimizasyonu ve boyut ölçekleme içerir. Birden fazla formatı destekler ve ince ayar sağlar.',
+
+        // Event System & Callbacks
+        eventSystemTitle: 'Olay Sistemi & Geri Çağrılar',
+        eventSystemSubtitle: 'İlerlemeyi izleyin ve olayları yönetin',
+        eventSystemFeature1: 'Olay dinleyicisi kaydedin: wplaceBot.on(\'pixelPlaced\', callback)',
+        eventSystemFeature2: 'İlerlemeyi izleyin: wplaceBot.on(\'progress\', (percent) => {})',
+        eventSystemFeature3: 'Hataları yönetin: wplaceBot.on(\'error\', (error) => {})',
+        eventSystemFeature4: 'Tamamlanmayı izleyin: wplaceBot.on(\'complete\', () => {})',
+        eventSystemDesc: 'Olay sistemi, otomasyon ilerlemesi, hatalar ve kullanıcı etkileşimleri hakkında gerçek zamanlı geri bildirim sağlar.',
+
+        // Configuration Options
+        configOptionsTitle: 'Yapılandırma Seçenekleri',
+        configOptionsSubtitle: 'Otomasyon davranışını ince ayarlarla özelleştirin',
+        configOptionsFeature1: 'Genel ayar: wplaceBot.config.set(\'key\', value)',
+        configOptionsFeature2: 'Profilleri yükle: wplaceBot.loadConfig(\'profileName\')',
+        configOptionsFeature3: 'Güvenlik limitleri: wplaceBot.config.safety.maxPixelsPerSecond = 2',
+        configOptionsFeature4: 'Ayarları dışa aktarın: wplaceBot.exportConfig()',
+        configOptionsDesc: 'Ayrıntılı özelleştirme sağlar. Profil yükleme, güvenlik sınırları ve doğrulama kuralları içerir.',
+
+        // Troubleshooting detailed content
+        commonErrorTitle: 'Yaygın Hata Çözümleri',
+        commonErrorSubtitle: 'Sık karşılaşılan sorunlar için adım adım çözümler',
+        canvasLoadingTitle: 'Tuval Yükleme Sorunları:',
+        canvasLoadingDesc: 'Tuval yüklenmezse tarayıcı önbelleğini temizleyin ve sayfayı yeniden yükleyin.',
+        rateLimitingTitle: 'Hız Sınırlama Hataları:',
+        rateLimitingDesc: 'Hız sınırlaması durumunda gecikmeyi artırın: wplaceBot.setDelay(2000). Varsayılan en az 1000ms olmalıdır.',
+        memoryConsumptionTitle: 'Bellek Kullanımı:',
+        memoryConsumptionDesc: 'Büyük görseller için wplaceBot.config.memoryOptimized = true ayarlayın.',
+        browserCompatibilityTitle: 'Tarayıcı Uyumluluğu:',
+        browserCompatibilityDesc: 'Bot yüklenmezse JavaScript\'in etkin olduğundan emin olun ve Chrome veya Firefox deneyin. Bazı eklentiler işlevselliği engelleyebilir.',
+
+        // Performance Issues
+        performanceIssuesTitle: 'Performans Sorunları',
+        performanceIssuesSubtitle: 'Performansı optimize edin ve yavaşlamaları çözün',
+        slowPixelTitle: 'Yavaş Piksel Yerleştirme:',
+        slowPixelDesc: 'İnternet bağlantınızı kontrol edin ve zaman aşımı yaşıyorsanız gecikmeyi artırın. Bağlantı kalitesini kontrol etmek için wplaceBot.diagnostics.networkTest() komutunu kullanın.',
+        highCPUTitle: 'Yüksek CPU Kullanımı:',
+        highCPUDesc: 'Sistem performansına göre işlem hızını otomatik olarak ayarlamak için wplaceBot.setAdaptiveDelay(true) ile uyarlanabilir zamanlamayı etkinleştirin.',
+        memoryLeaksTitle: 'Bellek Sızıntıları:',
+        memoryLeaksDesc: 'Uzun oturumlar için botu periyodik olarak wplaceBot.restart() ile yeniden başlatın. Bellek kullanımı artarsa wplaceBot.clearCache() ile resim önbelleğini temizleyin.',
+        browserFreezingTitle: 'Tarayıcı Donması:',
+        browserFreezingDesc: 'Daha iyi yanıt verebilirlik için resim boyutunu küçültün veya wplaceBot.config.backgroundMode = true ile arka plan işleme modunu etkinleştirin.',
+
+        // Integration Problems
+        integrationProblemsTitle: 'Entegrasyon Sorunları',
+        integrationProblemsSubtitle: 'Harici araçlar ve entegrasyonlarla ilgili sorunları çözün',
+        imageUploadFailuresTitle: 'Resim Yükleme Hataları:',
+        imageUploadFailuresDesc: 'Resim formatı uyumluluğunu doğrulayın (PNG, JPG, GIF desteklenir). İşlemden önce formatı kontrol etmek için wplaceBot.validateImage(file) kullanın.',
+        scriptLoadingErrorsTitle: 'Komut Dosyası Yükleme Hataları:',
+        scriptLoadingErrorsDesc: 'Eğer fetch komutu başarısız olursa, internet bağlantınızı kontrol edin ve alternatif fetch URL’si ile farklı bir CDN aynasından yüklemeyi deneyin.',
+        crossOriginTitle: 'Çapraz Kaynak Sorunları:',
+        crossOriginDesc: 'Bazı resimler CORS kısıtlamaları nedeniyle yüklenemeyebilir. Yerleşik resim dönüştürücüsünü kullanın veya resimleri uyumlu bir barındırma hizmetine yükleyin.',
+
+        // Advanced Debugging
+        advancedDebuggingTitle: 'Gelişmiş Hata Ayıklama',
+        advancedDebuggingSubtitle: 'Karmaşık sorunları hata ayıklayın ve geliştirmeye katkıda bulunun',
+        debugModeTitle: 'Hata Ayıklama Modu:',
+        debugModeDesc: 'Dahili işlemleri görmek ve sorunları daha hassas tanımlamak için wplaceBot.config.debug = true ile ayrıntılı günlük kaydını etkinleştirin.',
+        networkMonitoringTitle: 'Ağ İzleme:',
+        networkMonitoringDesc: 'İstek modellerini takip etmek ve ağla ilgili sorunları belirlemek için wplaceBot.diagnostics.networkMonitor() kullanın.',
+        stateInspectionTitle: 'Durum İncelemesi:',
+        stateInspectionDesc: 'Beklenmedik davranışları teşhis etmek ve yapılandırma ayarlarını doğrulamak için wplaceBot.getState() ile botun dahili durumunu kontrol edin.',
+        errorReportingTitle: 'Hata Raporlama:',
+        errorReportingDesc: 'wplaceBot.generateErrorReport() ile ayrıntılı hata raporları oluşturun ve topluluk desteği ve hata düzeltmeleri için GitHub sorunlarına gönderin.',
+
+        // About Tool Section
+        aboutToolTitle: 'WPlace-Otomasyon Aracı Hakkında',
+        toolOverview: 'Araç Genel Bakış',
+        toolOverviewDesc1: 'WPlace Bot otomasyon aracı, özellikle wplace.live işbirlikçi piksel sanat platformu için tasarlanmış kapsamlı bir JavaScript tabanlı çözümdür. Bu tarayıcı tabanlı WPlace Bot otomasyon çerçevesi, kullanıcıların programatik kontrol aracılığıyla gelişmiş piksel sanatı oluşturmasına olanak tanır ve hem yeni başlayanlar için kullanıcı dostu arayüzler hem de gelişmiş WPlace Bot betik yetenekleri sunar.',
+        toolOverviewDesc2: 'Modern web teknolojileriyle geliştirilen WPlace Bot aracı tamamen tarayıcı ortamında çalışır, ek yazılım yükleme veya sistem yapılandırması gerektirmez. WPlace Bot mimarisi güvenilirlik, performans ve kullanım kolaylığı için tasarlanmıştır, böylece her teknik düzeydeki kullanıcı için erişilebilir hale gelir.',
+        keyFeatures: 'Temel Özellikler',
+        keyFeaturesDesc1: 'WPlace Bot otomasyon çerçevesi, doğrudan resim yükleme, gelişmiş resim dönüştürme araçları ve yerleşik bir piksel sanat editörü dahil olmak üzere birden fazla giriş yöntemi içerir. WPlace Bot sistemi, renk paleti optimizasyonunu, format dönüşümünü ve boyut ölçeklemesini otomatik olarak yönetir, wplace.live platformu ile en iyi uyumluluğu sağlar.',
+        keyFeaturesDesc2: 'Gelişmiş WPlace Bot özellikleri arasında toplu işleme yetenekleri, özel betik geliştirme desteği ve kapsamlı hata işleme mekanizmaları bulunur. WPlace Bot aracı, sunucu yük koşullarına uyum sağlayan uyarlanabilir zamanlama algoritmalarını içerir ve tuvaldeki diğer kullanıcılarla uyumlu çalışmak için akıllı çakışma algılama uygular.',
+        technicalImplementation: 'Teknik Uygulama',
+        technicalImplementationDesc1: 'WPlace Bot otomasyon çerçevesi, modern JavaScript ES6+ özellikleri kullanılarak inşa edilmiştir ve en iyi performans için eşzamansız programlama modellerini uygular. WPlace Bot kod tabanı, belirli otomasyon stratejilerini uygulamak isteyen geliştiriciler için kolay genişletme ve özelleştirme sağlayan modüler tasarım ilkelerini izler.',
+        technicalImplementationDesc2: 'Bellek yönetimi, büyük resimler için akıllı önbellekleme sistemleri ve parçalı işleme ile optimize edilmiştir. WPlace Bot aracı, hata ayıklama ve geliştirme çalışmalarını kolaylaştırmak için kapsamlı hata ayıklama özellikleri ve ayrıntılı hata raporlaması içerir.',
+        communityAndSupport: 'Topluluk ve Destek',
+        communityAndSupportDesc1: 'WPlace Bot otomasyon projesi topluluk odaklıdır ve açık kaynaktır, aktif geliştirme ve düzenli güncellemeler yapılmaktadır. Kullanıcılar GitHub üzerinden projeye katkıda bulunabilir, sorun bildirebilir, özellik talep edebilir ve özel WPlace Bot betiklerini toplulukla paylaşabilir. Belgeler sürekli güncellenerek yeni özellikler ve en iyi uygulamalar yansıtılır.',
+        communityAndSupportDesc2: 'WPlace Bot aracı, wplace.live topluluk yönergelerine uyumu sağlamak için yerleşik güvenlik mekanizmaları içerir ve sorumlu otomasyon uygulamalarını takip eder. Hız sınırlama, gecikme kontrolleri ve saygılı kullanım kalıpları, WPlace Bot otomasyon çerçevesi tasarımının temel ilkeleridir.',
+
+        // Features Section
+        featuresTitle: 'Her İş Akışı İçin Bir Özellik',
+        featuresSubtitle: 'Tek tıklamayla yüklemeden gelişmiş betiklemeye kadar, WPlace Bot ihtiyacınız olan her şeyi sunar.',
+        instantConsoleLoading: 'Anında Konsol Yükleme',
+        instantConsoleLoadingDesc: 'İndirme gerekmez. Tarayıcınızın geliştirici konsoluna tek satır kod yapıştırarak tüm WPlace Bot’u yükleyin.',
+        onScreenControlPanel: 'Ekran Üstü Kontrol Paneli',
+        onScreenControlPanelDesc: 'wplace.live üzerinde doğrudan görünen sezgisel panel ile konum, gecikme ve resim yüklemeyi tamamen kontrol edin.',
+        directImageUpload: 'Doğrudan Resim Yükleme',
+        directImageUploadDesc: 'Başlamanın en kolay yolu. Herhangi bir resmi (PNG, JPG, GIF) doğrudan panel aracılığıyla yükleyin ve WPlace Bot geri kalanını halletsin.',
+        advancedImageConverter: 'Gelişmiş Resim Dönüştürücü',
+        advancedImageConverterDesc: 'Resimleri boyut, renk paleti ve diğer optimizasyonlar üzerinde ince ayarlarla dönüştürmek için güçlü web aracımızı kullanın.',
+        livePixelArtEditor: 'Canlı Piksel Sanat Editörü',
+        livePixelArtEditorDesc: 'Yaratıcı mı hissediyorsunuz? Kendi piksel sanatınızı sıfırdan çizin ve anında WPlace Bot betiği oluşturun.',
+        fullConsoleControl: 'Tam Konsol Kontrolü',
+        fullConsoleControlDesc: 'Güçlü kullanıcılar için her özellik, gelişmiş betikleme için doğrudan konsolda basit JavaScript komutlarıyla erişilebilir.',
+
+        // FAQ Section
+        faqTitle: 'Sıkça Sorulan Sorular',
+        faqSubtitle: 'WPlace Bot kullanımı hakkında bilmeniz gereken her şey',
+        faqDownloadInstall: 'WPlace Bot için herhangi bir şey indirip yüklemem gerekiyor mu?',
+        faqDownloadInstallAnswer: 'Hayır! WPlace Bot tamamen tarayıcı tabanlıdır. Tarayıcınızın konsoluna tek satır kod yapıştırmanız yeterlidir ve otomasyon aracı anında yüklenir. İndirme, kurulum veya tarayıcı eklentisi gerekmez. WPlace Bot tamamen tarayıcınızda JavaScript kullanarak çalışır, modern web tarayıcısına sahip herhangi bir cihazdan erişilebilir.',
+        faqAllowed: 'WPlace Bot’u wplace.live üzerinde kullanmak serbest mi?',
+        faqAllowedAnswer: 'WPlace Bot aracı, wplace.live topluluğuna saygı çerçevesinde tasarlanmıştır. Yerleşik hız sınırlama, gecikme kontrolleri içerir ve sorumlu otomasyon uygulamalarını takip eder. WPlace Bot kötüye kullanımı önlemek için güvenlik mekanizmaları uygular ve platform yönergelerine uyumu korur. Güncel wplace.live hizmet koşullarını her zaman kontrol edin ve aracı saygılı bir şekilde kullanın. WPlace Bot topluluğu etik otomasyon kullanımını teşvik eder.',
+        faqHowToLoad: 'WPlace Bot otomasyon aracını nasıl yüklerim?',
+        faqHowToLoadAnswer1: 'WPlace Bot’u yüklemek basittir: wplace.live sitesini açın, F12’ye basarak Geliştirici Araçlarını açın, Konsol sekmesine tıklayın ve şu komutu yapıştırın:',
+        faqHowToLoadAnswer2: 'WPlace Bot hazır olduğunda otomatik olarak yüklenir ve başarı mesajı görüntüler. WPlace Bot kontrol paneli ekranınızın sağ üst köşesinde görünecektir.',
+        faqEasiestWay: 'Bir resmi WPlace Bot ile çizmenin en kolay yolu nedir?',
+        faqEasiestWayAnswer: 'Seçenek A’yı kullanın: Doğrudan Yükleme. WPlace Bot yüklendikten sonra kontrol panelindeki "📁 Carregar Imagem" butonuna tıklayın, resim dosyanızı seçin, konumu ayarlayın ve otomasyonu başlatmak için "▶️ Iniciar" butonuna basın. Bu, teknik bilgi gerektirmeyen en kullanıcı dostu yöntemdir.',
+        faqConverterEditor: 'WPlace Bot "Dönüştürücü" ve "Editör" araçları nelerdir?',
+        faqConverterEditorAnswer: 'WPlace Bot Dönüştürücü, özel ayarlarla resim dönüşümünü ince ayarlamanıza olanak tanıyan gelişmiş bir web aracıdır (ör. renk paleti optimizasyonu, boyut ölçekleme). WPlace Bot Editör ise doğrudan çizebileceğiniz ve otomatik olarak betik oluşturabileceğiniz yerleşik bir piksel sanat aracıdır. Her iki araç da ana otomasyon sistemiyle sorunsuz şekilde entegre olur.',
+        faqBrowser: 'WPlace Bot’u herhangi bir tarayıcıda kullanabilir miyim?',
+        faqBrowserAnswer: 'WPlace Bot, Chrome, Firefox ve Edge gibi modern tarayıcılarda en iyi şekilde çalışır. JavaScript’in etkin olduğundan ve botun işlevselliğine engel olabilecek komut engelleyicilerin kapalı olduğundan emin olun. WPlace Bot, Chromium tabanlı tarayıcılar için optimize edilmiştir ancak tüm büyük tarayıcı platformlarında iyi çalışır. Mobil tarayıcılar sınırlı işlevselliğe sahip olabilir.',
+        faqSpeed: 'WPlace Bot pikselleri ne kadar hızlı yerleştirir?',
+        faqSpeedAnswer: 'WPlace Bot, sunucu limitlerine saygı göstermek için piksel yerleştirmeleri arasında varsayılan 1000ms gecikme içeren akıllı zamanlama kontrolleri içerir. Hızı wplaceBot.setDelay() komutuyla ayarlayabilirsiniz. WPlace Bot, sunucu koşullarına otomatik olarak uyum sağlar ve istikrarlı performans için yerleşik hız sınırlama koruması içerir.',
+        faqLargeImages: 'WPlace Bot büyük resimleri işleyebilir mi?',
+        faqLargeImagesAnswer: 'Evet! WPlace Bot, büyük resimler için gelişmiş bellek yönetimi ve parçalı işleme içerir. Büyük projelerde daha iyi performans için wplaceBot.config.memoryOptimized = true özelliğini etkinleştirin. WPlace Bot, kaliteyi korurken resimleri wplace.live tuvali için otomatik olarak ölçekler ve optimize eder.',
+        faqImageFormats: 'WPlace Bot hangi resim formatlarını destekler?',
+        faqImageFormatsAnswer: 'WPlace Bot, PNG, JPG, JPEG, GIF ve WebP dahil olmak üzere tüm yaygın resim formatlarını destekler. Resimleri otomatik olarak dönüştürür ve piksel sanat için optimize eder. Maksimum esneklik için URL’lerden veya özel veri dizilerinden resim yükleyebilirsiniz.',
+        faqStop: 'Bir şeyler ters giderse WPlace Bot’u nasıl durdurabilirim?',
+        faqStopAnswer: 'Konsolda wplaceBot.stop() çalıştırarak veya kontrol panelindeki durdur butonuna tıklayarak WPlace Bot’u hemen durdurabilirsiniz. WPlace Bot, acil durdurma işlevleri ve hata kurtarma mekanizmaları içerir. Ayrıca otomatik zaman aşımı koruması da vardır.',
+        faqCustomize: 'WPlace Bot davranışını ve ayarlarını özelleştirebilir miyim?',
+        faqCustomizeAnswer: 'Kesinlikle! WPlace Bot, yapılandırma API’si aracılığıyla kapsamlı özelleştirme seçenekleri sunar. Zamanlama, bellek kullanımı, güvenlik limitlerini ayarlayabilir ve özel profiller oluşturabilirsiniz. Gelişmiş kullanıcılar, özel betikler geliştirebilir ve işlevselliği artırmak için harici API’lerle entegrasyon sağlayabilir.',
+        faqSafe: 'WPlace Bot, tuvalde diğer kullanıcılarla güvenli şekilde kullanılabilir mi?',
+        faqSafeAnswer: 'Evet, WPlace Bot işbirliği için tasarlanmıştır. Akıllı çakışma algılama içerir, diğer kullanıcıların sanat eserlerine saygı duyar ve toplulukla uyumlu çalışmak için uyarlanabilir zamanlama uygular. WPlace Bot, sorumlu otomasyon uygulamalarını ve topluluk yönergelerini takip ederek herkes için olumlu bir deneyim sağlar.',
+
+    },
+
+    // WPlace Live 页面内容
+    wplaceLivePage: {
+        officialPlatform: 'Resmi Platform',
+        title: 'WPlace Live - Ortak Piksel Sanatı Tuvali',
+        description: 'Yaratıcılığın toplulukla buluştuğu en üst düzey ortak piksel sanat platformunu deneyimleyin. WPlace Live, dünyanın dört bir yanından sanatçıları bir araya getirerek paylaşılan bir tuval üzerinde çarpıcı piksel sanat şaheserleri yaratmalarını sağlar.',
+        subtitle: 'Milyonlarca sanatçıya WPlace Live’da katılın ve dünyanın en büyük ortak piksel sanat projesine katkıda bulunun. WPlace Live’daki her piksel yaratıcılığın ve iş birliğinin bir hikâyesini anlatır.',
+        visitWplaceLive: 'WPlace Live’ı Ziyaret Et',
+        watchDemo: 'Demoyu İzle',
+        exploreFeatures: 'Özellikleri Keşfet',
+        bottomHint: 'Topluluk yaratıcılığıyla güçlendirilmiş dünyanın en büyük ortak piksel sanat platformu.',
+
+        // Video Section
+        videoTitle: 'WPlace Live’ı İş Başında Görün',
+        videoSubtitle: 'WPlace Live’ın bireysel yaratıcılığı gerçek zamanlı piksel sanat üretimiyle nasıl ortak şaheserlere dönüştürdüğünü izleyin.',
+        videoDescription: 'Bu demo, WPlace Live’ın gerçek zamanlı iş birliği, geniş renk paleti ve kusursuz kullanıcı deneyimi de dahil olmak üzere temel özelliklerini sergileyerek WPlace Live’ı ortak piksel sanat yaratımı için en önde gelen destinasyon haline getirmektedir.',
+
+        // Features Section
+        featuresTitle: 'Neden WPlace Live’ı Seçmelisiniz?',
+        featuresSubtitle: 'WPlace Live’ı dünyanın en popüler ortak piksel sanat platformu yapan şeyleri keşfedin.',
+        collaborativeCanvas: 'Ortak Tuval',
+        collaborativeCanvasDesc: 'WPlace Live, binlerce sanatçının aynı anda birlikte çalıştığı devasa bir ortak tuval sunar. WPlace Live’da yerleştirilen her piksel, küresel topluluğun kolektif yaratıcılığını temsil eden sürekli gelişen bir şahesere katkıda bulunur.',
+        realTimeCollaboration: 'Gerçek Zamanlı İş Birliği',
+        realTimeCollaborationDesc: 'WPlace Live’da gerçek zamanlı güncellemeler ve canlı piksel yerleştirme ile anında iş birliği deneyimi yaşayın. Dünyanın dört bir yanından gelen katkılarla WPlace Live’ın gözlerinizin önünde nasıl dönüştüğünü izleyin.',
+        colorPalette: 'Zengin Renk Paleti',
+        colorPaletteDesc: 'WPlace Live, piksel sanat yaratımı için optimize edilmiş özenle seçilmiş 64 renkli bir palet sunar. WPlace Live’daki her renk, sanatsal ifadeyi en üst düzeye çıkarmak ve ortak tuval genelinde görsel uyumu korumak için seçilmiştir.',
+        communityDriven: 'Topluluk Odaklı',
+        communityDrivenDesc: 'WPlace Live, topluluk katılımı ve demokratik karar alma ile gelişir. WPlace Live topluluğu, platformun gelişimini geri bildirim, öneriler ve iş birliğine dayalı yönetişim yoluyla şekillendirir.',
+        toolIntegration: 'Araç Entegrasyonu',
+        toolIntegrationDesc: 'WPlace Live, piksel sanat oluşturucular, renk dönüştürücüler ve otomasyon betikleri gibi yaratıcı araçlarımızın paketiyle sorunsuz bir şekilde entegre olur. Bu WPlace Live entegrasyonları yaratıcı iş akışınızı geliştirir ve sanatsal olanaklarınızı genişletir.',
+        crossPlatform: 'Çapraz Platform Erişimi',
+        crossPlatformDesc: 'WPlace Live’a modern bir web tarayıcısına sahip herhangi bir cihazdan erişin. İster masaüstünde, tablette veya mobilde olun, WPlace Live tüm platformlarda tutarlı ve optimize edilmiş bir deneyim sunar.',
+        artisticFreedom: 'Sanatsal Özgürlük',
+        artisticFreedomDesc: 'WPlace Live, ortak bir çerçeve içinde sınırsız yaratıcılığa güç verir. Kendi sanatsal vizyonunuzu WPlace Live’da ifade edin ve WPlace Live deneyimini tanımlayan kolektif şahesere katkıda bulunun.',
+        globalCanvas: 'Küresel Tuval',
+        globalCanvasDesc: 'WPlace Live, dünyanın her köşesinden sanatçıları tek bir paylaşılan tuval üzerinde birleştirir. Kültürlerin, stillerin ve yaratıcılık bakış açılarının coğrafi sınırları aşarak birleştiği WPlace Live’ın büyüsünü deneyimleyin.',
+        instantUpdates: 'Anlık Güncellemeler',
+        instantUpdatesDesc: 'WPlace Live, bağlı tüm kullanıcılar arasında anında piksel güncellemeleri ile gerçek zamanlı senkronizasyon sunar. Binlerce sanatçı aynı anda katkıda bulunurken WPlace Live’ın gerçek zamanlı olarak nasıl evrimleştiğini izleyin.',
+
+        // Community Section
+        communityTitle: 'WPlace Live Topluluğu',
+        communitySubtitle: 'WPlace Live’da canlı ve küresel bir sanatçılar ve yaratıcılar topluluğuna katılın.',
+
+        activeUsers: '50K+',
+        activeUsersLabel: 'Aktif WPlace Live Kullanıcıları',
+        pixelsPlaced: '100M+',
+        pixelsPlacedLabel: 'WPlace Live’da Yerleştirilen Piksel',
+        artworksCreated: '10K+',
+        artworksCreatedLabel: 'WPlace Live’da Oluşturulan Ortak Sanat Eserleri',
+        countriesJoined: '150+',
+        countriesJoinedLabel: 'WPlace Live’a Katılan Ülkeler',
+        dailyContributions: '500K+',
+        dailyContributionsLabel: 'WPlace Live’a Günlük Katkılar',
+        totalSessions: '2M+',
+        totalSessionsLabel: 'Toplam WPlace Live Oturumları',
+        communityDescription: 'WPlace Live topluluğu internet tarihindeki en büyük ortak sanat projelerinden birini temsil etmektedir. Her kıtadan sanatçılar WPlace Live’a katkıda bulunarak çeşitliliği, yaratıcılığı ve kolektif sanatsal ifadenin gücünü kutlayan gerçek bir küresel tuval yaratırlar. WPlace Live sadece bir platform değil; insanların ortak yaratıcı deneyimlerle birleşebileceğini gösteren bir harekettir.',
+
+        // About Section
+        aboutTitle: 'WPlace Live Hakkında',
+        platformOverview: 'Platform Genel Bakış',
+        platformOverviewDesc: 'WPlace Live, büyük ölçekte gerçek zamanlı yaratıcı iş birliğini mümkün kılan devrim niteliğinde bir ortak piksel sanat platformudur. Modern web teknolojileri üzerine inşa edilen WPlace Live, binlerce eşzamanlı kullanıcının paylaşılan bir tuval üzerinde birlikte çalışmasını destekler.',
+        technologyStack: 'Teknoloji ve İnovasyon',
+        technologyStackDesc: 'WPlace Live, kullanıcılar arasında kusursuz iş birliği sağlamak için gelişmiş gerçek zamanlı senkronizasyon teknolojisi kullanır. WPlace Live altyapısı, milyonlarca piksel yerleştirmesini desteklerken ölçeklenebilirlik, güvenilirlik ve performans için tasarlanmıştır.',
+        communityGuidelines: 'Topluluk ve Kurallar',
+        communityGuidelinesDesc: 'WPlace Live, topluluk odaklı moderasyon ve açık yönergeler aracılığıyla pozitif ve kapsayıcı bir ortamı korur. WPlace Live topluluğu, demokratik süreçler ve karşılıklı saygı yoluyla kendi kendini düzenler.',
+        futureVision: 'Gelecek Vizyonu',
+        futureVisionDesc: 'WPlace Live, yeni özellikler, genişletilmiş tuval boyutları ve gelişmiş iş birliği araçlarıyla gelişmeye devam ediyor. WPlace Live’ın geleceği, gelişmiş sanatsal araçlar, iyileştirilmiş mobil deneyimler ve ortak sanatı sergilemenin yenilikçi yollarını içermektedir.',
+
+        // FAQ Section
+        faqTitle: 'WPlace Live Hakkında Sıkça Sorulan Sorular',
+        faqSubtitle: 'WPlace Live’ı kullanma ve ortak piksel sanat topluluğuna katılma hakkında bilmeniz gereken her şey.',
+        faqWhatIs: 'WPlace Live nedir?',
+        faqWhatIsAnswer: 'WPlace Live, dünyanın dört bir yanından kullanıcıların paylaşılan bir tuval üzerinde birlikte çalıştığı ortak bir piksel sanat platformudur.',
+        faqHowToJoin: 'WPlace Live’a nasıl katılırım?',
+        faqHowToJoinAnswer: 'Sadece tarayıcınızda WPlace Live’ı ziyaret edin - kayıt gerekmez! WPlace Live tamamen ücretsizdir.',
+        faqCanvasSize: 'WPlace Live tuvali ne kadar büyük?',
+        faqCanvasSizeAnswer: 'WPlace Live tuvali milyonlarca piksel içerir ve büyük ölçekli ortak sanat eserlerini destekler.',
+        faqPixelCooldown: 'WPlace Live’da piksel yerleştirmeler arasında bekleme süresi var mı?',
+        faqPixelCooldownAnswer: 'Evet, adil katılımı sağlamak için WPlace Live bir bekleme süresi sistemi uygular.',
+        faqMobileSupport: 'WPlace Live’ı mobil cihazlarda kullanabilir miyim?',
+        faqMobileSupportAnswer: 'Kesinlikle! WPlace Live tamamen mobil cihazlar için optimize edilmiştir.',
+        faqToolsIntegration: 'WPlace Live ve Wplace Tools birlikte nasıl çalışır?',
+        faqToolsIntegrationAnswer: 'WPlace Live, piksel sanat oluşturucular ve otomasyon betikleri dahil olmak üzere Wplace Tools ile sorunsuz bir şekilde entegre olur.',
+        faqCommunityRules: 'WPlace Live’ın topluluk kuralları nelerdir?',
+        faqCommunityRulesAnswer: 'WPlace Live, saygı, yaratıcılık ve iş birliğini teşvik eden topluluk yönergeleriyle pozitif bir ortamı korur.',
+        faqDataPersistence: 'WPlace Live’da sanat eserleri ne kadar süre kalır?',
+        faqDataPersistenceAnswer: 'WPlace Live’daki sanat eserleri kalıcıdır ve kolektif tuvalin bir parçası haline gelir.',
+        faqCollaborationTips: 'WPlace Live’da nasıl etkili iş birliği yapabilirim?',
+        faqCollaborationTipsAnswer: 'Etkili iş birliği, mevcut eserlere saygı duymayı, diğer kullanıcılarla iletişim kurmayı ve yapıcı katkıda bulunmayı içerir.'
+
+    },
+
     // SEO Meta Verisi
     meta: {
         defaultDescription: 'Yaratıcı fikirlerinizi sınırsız olanaklarla çarpıcı piksel sanatı eserlerine dönüştüren profesyonel piksel sanatı dönüştürme araçları.',
